@@ -3,9 +3,6 @@ The dropdown will give a list of options from which the user can
   choose only one option. In the design mode you can set the options  
   for the dropdown menu.
   
-In this demo the user will be able to choose an option from the dropdown menu
-  and then click the go button to see if they find which direction the candy 
-  is located.
 */
 
 /*
@@ -13,6 +10,9 @@ The code waits for the go button to get clicked and looks to see what option
   the user has selected in the dropdown menu. It displays a screen that the
   selected direction leads to. 
 */
+setText("direction_dropdown", "");
+setText("dropdown6", "");
+
 if (getText("dropdown6") == getText("direction_dropdown")) {
   hideElement("go_button");
 }
@@ -150,7 +150,7 @@ onEvent("direction_dropdown", "click", function(event) {
     hideElement("drop_1700");
     hideElement("dropdownCSM1901");
     hideElement("dropdownqp999P");
-      setText("dropdownCGS9002", " ");
+    setText("dropdownCGS9002", " ");
     setText("dropdownCNS6201", "");
     setText("dropdownCNS6801","");
     setText("dropdownEDNS9001","");
@@ -1364,11 +1364,11 @@ onEvent("go_button", "click", function(event) {
 
   } else if ((getText("dropdown3500") == "06-31" && getText("dropdown6") == "CNS-6201")) {
     setScreen("screen1");
-  } else if ((getText("dropdown3500") == "07-41" && getText("dropdown6") == "CSM-1901")) {
+  } else if ((getText("dropdown3500") == "07-41" && getText("dropdown6") == "CNS-6201")) {
   	setText("Sol1", "≧05-01");
-  } else if ((getText("dropdown3500") == "08-11" && getText("dropdown6") == "CSM-1901")) { 
+  } else if ((getText("dropdown3500") == "08-11" && getText("dropdown6") == "CNS-6201")) { 
     setText("Sol1", "≧05-01");
-  } else if ((getText("dropdown3500") == "08-31" && getText("dropdown6") == "CSM-1901")) { 
+  } else if ((getText("dropdown3500") == "08-31" && getText("dropdown6") == "CNS-6201")) { 
   	setText("Sol1", "≧05-01");
 
 
@@ -1661,14 +1661,16 @@ onEvent("go_button", "click", function(event) {
   	setScreen("screen1");
   } else if ((getText("BSM-6000") == "08-02" && getText("dropdown6") == "CGS-9001 Pager Gateway (Legacy)")) { 
     setScreen("screen2");
+    	showElement("notearea2");
+  	setText("notearea2", "08-02: ZM-View causes an issue when used with CGS-9001/CGS-9002/QP-983P.");
   } else if ((getText("BSM-6000") == "08-12" && getText("dropdown6") == "CGS-9001 Pager Gateway (Legacy)")) { 
   	setScreen("screen1");
   	showElement("notearea");
   	setText("notearea", "08-12 and later: ZM-View needs to be set to OFF when used with CGS-9001/CGS-9002/QP-983P.");
-  	
-  	
   } else if ((getText("BSM-6000") == "08-31" && getText("dropdown6") == "CGS-9001 Pager Gateway (Legacy)")) { 
   	setScreen("screen1");
+  	 	showElement("notearea");
+  	setText("notearea", "08-12 and later: ZM-View needs to be set to OFF when used with CGS-9001/CGS-9002/QP-983P.");
 
   } else if ((getText("BSM-6000") == "07-02" && getText("dropdown6") == "CGS-9002 HL7 Gateway (Legacy)")) {
     setScreen("screen1");
@@ -1676,10 +1678,17 @@ onEvent("go_button", "click", function(event) {
   	setScreen("screen1");
   } else if ((getText("BSM-6000") == "08-02" && getText("dropdown6") == "CGS-9002 HL7 Gateway (Legacy)")) { 
    setScreen("screen2");
+       	showElement("notearea2");
+  	setText("notearea2", "08-02: ZM-View causes an issue when used with CGS-9001/CGS-9002/QP-983P.");
   } else if ((getText("BSM-6000") == "08-12" && getText("dropdown6") == "CGS-9002 HL7 Gateway (Legacy)")) { 
   	setScreen("screen1");
+  	showElement("notearea");
+  	setText("notearea", "08-12 and later: ZM-View needs to be set to OFF when used with CGS-9001/CGS-9002/QP-983P.");
   } else if ((getText("BSM-6000") == "08-31" && getText("dropdown6") == "CGS-9002 HL7 Gateway (Legacy)")) { 
   	setScreen("screen1");
+  	  		showElement("notearea");
+  	setText("notearea", "08-12 and later: ZM-View needs to be set to OFF when used with CGS-9001/CGS-9002/QP-983P.");
+
 
   } else if ((getText("BSM-6000") == "07-02" && getText("dropdown6") == "QP-983P NetKonnect/RNS Server")) {
     setScreen("screen1");
@@ -1687,10 +1696,16 @@ onEvent("go_button", "click", function(event) {
   	setScreen("screen1");
   } else if ((getText("BSM-6000") == "08-02" && getText("dropdown6") == "QP-983P NetKonnect/RNS Server")) { 
     setScreen("screen2");
+           	showElement("notearea2");
+  	setText("notearea2", "08-02: ZM-View causes an issue when used with CGS-9001/CGS-9002/QP-983P.");
   } else if ((getText("BSM-6000") == "08-12" && getText("dropdown6") == "QP-983P NetKonnect/RNS Server")) { 
   	setScreen("screen1");
+  		showElement("notearea");
+  	setText("notearea", "08-12 and later: ZM-View needs to be set to OFF when used with CGS-9001/CGS-9002/QP-983P.");
   } else if ((getText("BSM-6000") == "08-31" && getText("dropdown6") == "QP-983P NetKonnect/RNS Server")) { 
   	setScreen("screen1");
+  	  		showElement("notearea");
+  	setText("notearea", "08-12 and later: ZM-View needs to be set to OFF when used with CGS-9001/CGS-9002/QP-983P.");
 
 
   } else if ((getText("BSM-6000") == "07-02" && getText("dropdown6") == "QP-986P Host1000 Server")) {
@@ -1830,8 +1845,12 @@ onEvent("go_button", "click", function(event) {
   	setScreen("screen1");
   } else if ((getText("dropdownCSM1901") == "01-30" && getText("dropdown6") == "CNS-6201")) { 
   	setScreen("screen1");
+  	showElement("notearea");
+  	setText("notearea", "01-30 and later: HiQ-View needs to be set to OFF when used with CGS-9001/CGS-9002/QP-983P.");
    } else if ((getText("dropdownCSM1901") == "01-32" && getText("dropdown6") == "CNS-6201")) { 
   	setScreen("screen1");
+  		showElement("notearea");
+  	setText("notearea", "01-30 and later: HiQ-View needs to be set to OFF when used with CGS-9001/CGS-9002/QP-983P.");
 
   } else if ((getText("dropdownCSM1901") == "01-21" && getText("dropdown6") == "CNS-6801")) {
     setScreen("screen1");
@@ -1950,8 +1969,12 @@ onEvent("go_button", "click", function(event) {
   	setScreen("screen1");
   } else if ((getText("dropdownCSM1901") == "01-30" && getText("dropdown6") == "CGS-9001 Pager Gateway (Legacy)")) { 
   	setScreen("screen1");
+  		showElement("notearea");
+  	setText("notearea", "01-30 and later: HiQ-View needs to be set to OFF when used with CGS-9001/CGS-9002/QP-983P.");
    } else if ((getText("dropdownCSM1901") == "01-32" && getText("dropdown6") == "CGS-9001 Pager Gateway (Legacy)")) { 
   	setScreen("screen1");
+  		showElement("notearea");
+  	setText("notearea", "01-30 and later: HiQ-View needs to be set to OFF when used with CGS-9001/CGS-9002/QP-983P.");
 
 
   } else if ((getText("dropdownCSM1901") == "01-21" && getText("dropdown6") == "CGS-9002 HL7 Gateway (Legacy)")) {
@@ -1966,8 +1989,12 @@ onEvent("go_button", "click", function(event) {
   	setScreen("screen1");
   } else if ((getText("dropdownCSM1901") == "01-30" && getText("dropdown6") == "CGS-9002 HL7 Gateway (Legacy)")) { 
   	setScreen("screen1");
+  		showElement("notearea");
+  	setText("notearea", "01-30 and later: HiQ-View needs to be set to OFF when used with CGS-9001/CGS-9002/QP-983P.");
    } else if ((getText("dropdownCSM1901") == "01-32" && getText("dropdown6") == "CGS-9002 HL7 Gateway (Legacy)")) { 
   	setScreen("screen1");
+  		showElement("notearea");
+  	setText("notearea", "01-30 and later: HiQ-View needs to be set to OFF when used with CGS-9001/CGS-9002/QP-983P.");
 
   } else if ((getText("dropdownCSM1901") == "01-21" && getText("dropdown6") == "QP-983P NetKonnect/RNS Server")) {
     setScreen("screen1");
@@ -1981,8 +2008,12 @@ onEvent("go_button", "click", function(event) {
   	setScreen("screen1");
   } else if ((getText("dropdownCSM1901") == "01-30" && getText("dropdown6") == "QP-983P NetKonnect/RNS Server")) { 
   	setScreen("screen1");
+  		showElement("notearea");
+  	setText("notearea", "01-30 and later: HiQ-View needs to be set to OFF when used with CGS-9001/CGS-9002/QP-983P.");
    } else if ((getText("dropdownCSM1901") == "01-32" && getText("dropdown6") == "QP-983P NetKonnect/RNS Server")) { 
   	setScreen("screen1");
+  		showElement("notearea");
+  	setText("notearea", "01-30 and later: HiQ-View needs to be set to OFF when used with CGS-9001/CGS-9002/QP-983P.");
 
   } else if ((getText("dropdownCSM1901") == "01-21" && getText("dropdown6") == "QP-986P Host1000 Server")) {
     setScreen("screen1");
@@ -2080,92 +2111,174 @@ onEvent("go_button", "click", function(event) {
   setText("Sol1", "=01-15");
   } else if ((getText("dropdownCNS6201") == "05-01" && getText("dropdown6") == "BSM-1700 (+UG/TS)")) { 
     setScreen("screen1");
+    showElement("notearea");
+  	setText("notearea", "It is not recommended to use Old GUI CNS with New GUI CNS/RNS. It is not recommended to use New GUI CNS with Old GUI CNS/RNS or Prefense.");
   } else if ((getText("dropdownCNS6201") == "05-07" && getText("dropdown6") == "BSM-1700 (+UG/TS)")) { 
   	setScreen("screen1");
+  	showElement("notearea");
+  	setText("notearea", "It is not recommended to use Old GUI CNS with New GUI CNS/RNS. It is not recommended to use New GUI CNS with Old GUI CNS/RNS or Prefense.");
   } else if ((getText("dropdownCNS6201") == "05-08" && getText("dropdown6") == "BSM-1700 (+UG/TS)")) { 
   	setScreen("screen1");
+  	showElement("notearea");
+  	setText("notearea", "It is not recommended to use Old GUI CNS with New GUI CNS/RNS. It is not recommended to use New GUI CNS with Old GUI CNS/RNS or Prefense.");
   } else if ((getText("dropdownCNS6201") == "05-10" && getText("dropdown6") == "BSM-1700 (+UG/TS)")) { 
   	setScreen("screen1");
+  	showElement("notearea");
+  	setText("notearea", "It is not recommended to use Old GUI CNS with New GUI CNS/RNS. It is not recommended to use New GUI CNS with Old GUI CNS/RNS or Prefense.");
   } else if ((getText("dropdownCNS6201") == "05-13" && getText("dropdown6") == "BSM-1700 (+UG/TS)")) { 
   	setScreen("screen1");
+  	showElement("notearea");
+  	setText("notearea", "It is not recommended to use Old GUI CNS with New GUI CNS/RNS. It is not recommended to use New GUI CNS with Old GUI CNS/RNS or Prefense.");
 
   } else if ((getText("dropdownCNS6201") == "02-40" && getText("dropdown6") == "BSM-3500")) {
      setScreen("screen1");
+     showElement("notearea");
+  	setText("notearea", "It is not recommended to use Old GUI CNS with New GUI CNS/RNS. It is not recommended to use New GUI CNS with Old GUI CNS/RNS or Prefense.");
   } else if ((getText("dropdownCNS6201") == "03-40" && getText("dropdown6") == "BSM-3500")) {
   setScreen("screen1");
+  showElement("notearea");
+  	setText("notearea", "It is not recommended to use Old GUI CNS with New GUI CNS/RNS. It is not recommended to use New GUI CNS with Old GUI CNS/RNS or Prefense.");
   } else if ((getText("dropdownCNS6201") == "05-01" && getText("dropdown6") == "BSM-3500")) { 
     setScreen("screen1");
+    showElement("notearea");
+  	setText("notearea", "It is not recommended to use Old GUI CNS with New GUI CNS/RNS. It is not recommended to use New GUI CNS with Old GUI CNS/RNS or Prefense.");
   } else if ((getText("dropdownCNS6201") == "05-07" && getText("dropdown6") == "BSM-3500")) { 
   	setScreen("screen1");
+  	showElement("notearea");
+  	setText("notearea", "It is not recommended to use Old GUI CNS with New GUI CNS/RNS. It is not recommended to use New GUI CNS with Old GUI CNS/RNS or Prefense.");
   } else if ((getText("dropdownCNS6201") == "05-08" && getText("dropdown6") == "BSM-3500")) { 
   	setScreen("screen1");
+  	showElement("notearea");
+  	setText("notearea", "It is not recommended to use Old GUI CNS with New GUI CNS/RNS. It is not recommended to use New GUI CNS with Old GUI CNS/RNS or Prefense.");
   } else if ((getText("dropdownCNS6201") == "05-10" && getText("dropdown6") == "BSM-3500")) { 
   	setScreen("screen1");
+  	showElement("notearea");
+  	setText("notearea", "It is not recommended to use Old GUI CNS with New GUI CNS/RNS. It is not recommended to use New GUI CNS with Old GUI CNS/RNS or Prefense.");
   } else if ((getText("dropdownCNS6201") == "05-13" && getText("dropdown6") == "BSM-3500")) { 
   	setScreen("screen1");
+  	showElement("notearea");
+  	setText("notearea", "It is not recommended to use Old GUI CNS with New GUI CNS/RNS. It is not recommended to use New GUI CNS with Old GUI CNS/RNS or Prefense.");
 
   } else if ((getText("dropdownCNS6201") == "02-40" && getText("dropdown6") == "BSM-6000")) {
      setScreen("screen1");
+     showElement("notearea");
+  	setText("notearea", "It is not recommended to use Old GUI CNS with New GUI CNS/RNS. It is not recommended to use New GUI CNS with Old GUI CNS/RNS or Prefense.");
   } else if ((getText("dropdownCNS6201") == "03-40" && getText("dropdown6") == "BSM-6000")) {
   setScreen("screen1");
+  showElement("notearea");
+  	setText("notearea", "It is not recommended to use Old GUI CNS with New GUI CNS/RNS. It is not recommended to use New GUI CNS with Old GUI CNS/RNS or Prefense.");
   } else if ((getText("dropdownCNS6201") == "05-01" && getText("dropdown6") == "BSM-6000")) { 
     setScreen("screen1");
+    showElement("notearea");
+  	setText("notearea", "It is not recommended to use Old GUI CNS with New GUI CNS/RNS. It is not recommended to use New GUI CNS with Old GUI CNS/RNS or Prefense.");
   } else if ((getText("dropdownCNS6201") == "05-07" && getText("dropdown6") == "BSM-6000")) { 
   	setScreen("screen1");
+  	showElement("notearea");
+  	setText("notearea", "It is not recommended to use Old GUI CNS with New GUI CNS/RNS. It is not recommended to use New GUI CNS with Old GUI CNS/RNS or Prefense.");
   } else if ((getText("dropdownCNS6201") == "05-08" && getText("dropdown6") == "BSM-6000")) { 
   	setScreen("screen1");
+  	showElement("notearea");
+  	setText("notearea", "It is not recommended to use Old GUI CNS with New GUI CNS/RNS. It is not recommended to use New GUI CNS with Old GUI CNS/RNS or Prefense.");
   } else if ((getText("dropdownCNS6201") == "05-10" && getText("dropdown6") == "BSM-6000")) { 
   	setScreen("screen1");
+  	showElement("notearea");
+  	setText("notearea", "It is not recommended to use Old GUI CNS with New GUI CNS/RNS. It is not recommended to use New GUI CNS with Old GUI CNS/RNS or Prefense.");
   } else if ((getText("dropdownCNS6201") == "05-13" && getText("dropdown6") == "BSM-6000")) { 
   	setScreen("screen1");
+  	showElement("notearea");
+  	setText("notearea", "It is not recommended to use Old GUI CNS with New GUI CNS/RNS. It is not recommended to use New GUI CNS with Old GUI CNS/RNS or Prefense.");
 
   } else if ((getText("dropdownCNS6201") == "02-40" && getText("dropdown6") == "CSM-1901")) {
      setScreen("screen1");
+     showElement("notearea");
+  	setText("notearea", "It is not recommended to use Old GUI CNS with New GUI CNS/RNS. It is not recommended to use New GUI CNS with Old GUI CNS/RNS or Prefense.");
   } else if ((getText("dropdownCNS6201") == "03-40" && getText("dropdown6") == "CSM-1901")) {
   setScreen("screen1");
+  showElement("notearea");
+  	setText("notearea", "It is not recommended to use Old GUI CNS with New GUI CNS/RNS. It is not recommended to use New GUI CNS with Old GUI CNS/RNS or Prefense.");
   } else if ((getText("dropdownCNS6201") == "05-01" && getText("dropdown6") == "CSM-1901")) { 
     setScreen("screen1");
+    showElement("notearea");
+  	setText("notearea", "It is not recommended to use Old GUI CNS with New GUI CNS/RNS. It is not recommended to use New GUI CNS with Old GUI CNS/RNS or Prefense.");
   } else if ((getText("dropdownCNS6201") == "05-07" && getText("dropdown6") == "CSM-1901")) { 
   	setScreen("screen1");
+  	showElement("notearea");
+  	setText("notearea", "It is not recommended to use Old GUI CNS with New GUI CNS/RNS. It is not recommended to use New GUI CNS with Old GUI CNS/RNS or Prefense.");
   } else if ((getText("dropdownCNS6201") == "05-08" && getText("dropdown6") == "CSM-1901")) { 
   	setScreen("screen1");
+  	showElement("notearea");
+  	setText("notearea", "It is not recommended to use Old GUI CNS with New GUI CNS/RNS. It is not recommended to use New GUI CNS with Old GUI CNS/RNS or Prefense.");
   } else if ((getText("dropdownCNS6201") == "05-10" && getText("dropdown6") == "CSM-1901")) { 
   	setScreen("screen1");
+  	showElement("notearea");
+  	setText("notearea", "It is not recommended to use Old GUI CNS with New GUI CNS/RNS. It is not recommended to use New GUI CNS with Old GUI CNS/RNS or Prefense.");
   } else if ((getText("dropdownCNS6201") == "05-13" && getText("dropdown6") == "CSM-1901")) { 
   	setScreen("screen1");
+  	showElement("notearea");
+  	setText("notearea", "It is not recommended to use Old GUI CNS with New GUI CNS/RNS. It is not recommended to use New GUI CNS with Old GUI CNS/RNS or Prefense.");
 
   } else if ((getText("dropdownCNS6201") == "02-40" && getText("dropdown6") == "CNS-6801")) {
      setScreen("screen1");
+  	showElement("notearea");
+  	setText("notearea", "It is not recommended to use Old GUI CNS with New GUI CNS/RNS. It is not recommended to use New GUI CNS with Old GUI CNS/RNS or Prefense.");
   } else if ((getText("dropdownCNS6201") == "03-40" && getText("dropdown6") == "CNS-6801")) {
   setScreen("screen1");
+  showElement("notearea");
+  	setText("notearea", "It is not recommended to use Old GUI CNS with New GUI CNS/RNS. It is not recommended to use New GUI CNS with Old GUI CNS/RNS or Prefense.");
   } else if ((getText("dropdownCNS6201") == "05-01" && getText("dropdown6") == "CNS-6801")) { 
     setScreen("screen1");
+    showElement("notearea");
+  	setText("notearea", "It is not recommended to use Old GUI CNS with New GUI CNS/RNS. It is not recommended to use New GUI CNS with Old GUI CNS/RNS or Prefense.");
   } else if ((getText("dropdownCNS6201") == "05-07" && getText("dropdown6") == "CNS-6801")) { 
   	setScreen("screen1");
+  	showElement("notearea");
+  	setText("notearea", "It is not recommended to use Old GUI CNS with New GUI CNS/RNS. It is not recommended to use New GUI CNS with Old GUI CNS/RNS or Prefense.");
   } else if ((getText("dropdownCNS6201") == "05-08" && getText("dropdown6") == "CNS-6801")) { 
   	setScreen("screen1");
+  	showElement("notearea");
+  	setText("notearea", "It is not recommended to use Old GUI CNS with New GUI CNS/RNS. It is not recommended to use New GUI CNS with Old GUI CNS/RNS or Prefense.");
   } else if ((getText("dropdownCNS6201") == "05-10" && getText("dropdown6") == "CNS-6801")) { 
   	setScreen("screen1");
+  	showElement("notearea");
+  	setText("notearea", "It is not recommended to use Old GUI CNS with New GUI CNS/RNS. It is not recommended to use New GUI CNS with Old GUI CNS/RNS or Prefense.");
   } else if ((getText("dropdownCNS6201") == "05-13" && getText("dropdown6") == "CNS-6801")) { 
   	setScreen("screen1");
+  	showElement("notearea");
+  	setText("notearea", "It is not recommended to use Old GUI CNS with New GUI CNS/RNS. It is not recommended to use New GUI CNS with Old GUI CNS/RNS or Prefense.");
 
   } else if ((getText("dropdownCNS6201") == "02-40" && getText("dropdown6") == "RNS-9703(Old GUI)")) {
      setScreen("screen1");
+     showElement("notearea");
+  	setText("notearea", "It is not recommended to use Old GUI CNS with New GUI CNS/RNS. It is not recommended to use New GUI CNS with Old GUI CNS/RNS or Prefense.");
   } else if ((getText("dropdownCNS6201") == "03-40" && getText("dropdown6") == "RNS-9703(Old GUI)")) {
   setScreen("screen1");
+  showElement("notearea");
+  	setText("notearea", "It is not recommended to use Old GUI CNS with New GUI CNS/RNS. It is not recommended to use New GUI CNS with Old GUI CNS/RNS or Prefense.");
   } else if ((getText("dropdownCNS6201") == "05-01" && getText("dropdown6") == "RNS-9703(Old GUI)")) { 
     setScreen("screen1");
+    showElement("notearea");
+  	setText("notearea", "It is not recommended to use Old GUI CNS with New GUI CNS/RNS. It is not recommended to use New GUI CNS with Old GUI CNS/RNS or Prefense.");
   } else if ((getText("dropdownCNS6201") == "05-07" && getText("dropdown6") == "RNS-9703(Old GUI)")) { 
   	setScreen("screen1");
+  	showElement("notearea");
+  	setText("notearea", "It is not recommended to use Old GUI CNS with New GUI CNS/RNS. It is not recommended to use New GUI CNS with Old GUI CNS/RNS or Prefense.");
   } else if ((getText("dropdownCNS6201") == "05-08" && getText("dropdown6") == "RNS-9703(Old GUI)")) { 
   	setScreen("screen1");
+  	showElement("notearea");
+  	setText("notearea", "It is not recommended to use Old GUI CNS with New GUI CNS/RNS. It is not recommended to use New GUI CNS with Old GUI CNS/RNS or Prefense.");
   } else if ((getText("dropdownCNS6201") == "05-10" && getText("dropdown6") == "RNS-9703(Old GUI)")) { 
   	setScreen("screen1");
+  	showElement("notearea");
+  	setText("notearea", "It is not recommended to use Old GUI CNS with New GUI CNS/RNS. It is not recommended to use New GUI CNS with Old GUI CNS/RNS or Prefense.");
   } else if ((getText("dropdownCNS6201") == "05-13" && getText("dropdown6") == "RNS-9703(Old GUI)")) { 
   	setScreen("screen1");
+  	showElement("notearea");
+  	setText("notearea", "It is not recommended to use Old GUI CNS with New GUI CNS/RNS. It is not recommended to use New GUI CNS with Old GUI CNS/RNS or Prefense.");
 
   } else if ((getText("dropdownCNS6201") == "02-40" && getText("dropdown6") == "RNS-6803(Audio)")) {
      setScreen("screen1");
+     showElement("notearea");
+  	setText("notearea", "It is not recommended to use Old GUI CNS with New GUI CNS/RNS. It is not recommended to use New GUI CNS with Old GUI CNS/RNS or Prefense.");
   } else if ((getText("dropdownCNS6201") == "03-40" && getText("dropdown6") == "RNS-6803(Audio)")) {
   setScreen("screen1");
   } else if ((getText("dropdownCNS6201") == "05-01" && getText("dropdown6") == "RNS-6803(Audio)")) { 
@@ -2181,8 +2294,11 @@ onEvent("go_button", "click", function(event) {
 
   } else if ((getText("dropdownCNS6201") == "02-40" && getText("dropdown6") == "RNS-6804(No Audio)")) {
      setScreen("screen1");
+     showElement("notearea");
+  	setText("notearea", "It is not recommended to use Old GUI CNS with New GUI CNS/RNS. It is not recommended to use New GUI CNS with Old GUI CNS/RNS or Prefense.");
   } else if ((getText("dropdownCNS6201") == "03-40" && getText("dropdown6") == "RNS-6804(No Audio)")) {
   setScreen("screen1");
+  setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownCNS6201") == "05-01" && getText("dropdown6") == "RNS-6804(No Audio)")) { 
     setScreen("screen1");
   } else if ((getText("dropdownCNS6201") == "05-07" && getText("dropdown6") == "RNS-6804(No Audio)")) { 
@@ -2196,18 +2312,32 @@ onEvent("go_button", "click", function(event) {
 
   } else if ((getText("dropdownCNS6201") == "02-40" && getText("dropdown6") == "EDNS-9001 Prefense")) {
      setScreen("screen1");
+    showElement("notearea");
+     setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownCNS6201") == "03-40" && getText("dropdown6") == "EDNS-9001 Prefense")) {
   setScreen("screen1");
+  showElement("notearea");
+  setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownCNS6201") == "05-01" && getText("dropdown6") == "EDNS-9001 Prefense")) { 
     setScreen("screen1");
+    showElement("notearea");
+    setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownCNS6201") == "05-07" && getText("dropdown6") == "EDNS-9001 Prefense")) { 
   	setScreen("screen1");
+  	showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownCNS6201") == "05-08" && getText("dropdown6") == "EDNS-9001 Prefense")) { 
   	setScreen("screen1");
+  	showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownCNS6201") == "05-10" && getText("dropdown6") == "EDNS-9001 Prefense")) { 
   	setScreen("screen1");
+  	showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownCNS6201") == "05-13" && getText("dropdown6") == "EDNS-9001 Prefense")) { 
   	setScreen("screen1");
+  	showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
 
   } else if ((getText("dropdownCNS6201") == "02-40" && getText("dropdown6") == "GZ-100P (+UG/TS)")) {
      setScreen("screen2");
@@ -2215,29 +2345,53 @@ onEvent("go_button", "click", function(event) {
   setScreen("screen2");
   } else if ((getText("dropdownCNS6201") == "05-01" && getText("dropdown6") == "GZ-100P (+UG/TS)")) { 
     setScreen("screen1");
+    showElement("notearea");
+    setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownCNS6201") == "05-07" && getText("dropdown6") == "GZ-100P (+UG/TS)")) { 
   	setScreen("screen1");
+  	showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownCNS6201") == "05-08" && getText("dropdown6") == "GZ-100P (+UG/TS)")) { 
   	setScreen("screen1");
+  	showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownCNS6201") == "05-10" && getText("dropdown6") == "GZ-100P (+UG/TS)")) { 
   	setScreen("screen1");
+  	showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownCNS6201") == "05-13" && getText("dropdown6") == "GZ-100P (+UG/TS)")) { 
   	setScreen("screen1");
+  	showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
 
   } else if ((getText("dropdownCNS6201") == "02-40" && getText("dropdown6") == "ORG-9100")) {
      setScreen("screen1");
+     showElement("notearea");
+     setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownCNS6201") == "03-40" && getText("dropdown6") == "ORG-9100")) {
   setScreen("screen1");
+  showElement("notearea");
+  setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownCNS6201") == "05-01" && getText("dropdown6") == "ORG-9100")) { 
     setScreen("screen1");
+    showElement("notearea");
+    setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownCNS6201") == "05-07" && getText("dropdown6") == "ORG-9100")) { 
   	setScreen("screen1");
+  	showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownCNS6201") == "05-08" && getText("dropdown6") == "ORG-9100")) { 
   	setScreen("screen1");
+  	showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownCNS6201") == "05-10" && getText("dropdown6") == "ORG-9100")) { 
   	setScreen("screen1");
+  	showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownCNS6201") == "05-13" && getText("dropdown6") == "ORG-9100")) { 
   	setScreen("screen1");
+  	showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
 
   } else if ((getText("dropdownCNS6201") == "02-40" && getText("dropdown6") == "CGS-9001 Pager Gateway (Legacy)")) {
    setText("Sol1", "NA");
@@ -2286,83 +2440,155 @@ onEvent("go_button", "click", function(event) {
 
   } else if ((getText("dropdownCNS6201") == "02-40" && getText("dropdown6") == "QP-986P Host1000 Server")) {
      setScreen("screen1");
+     showElement("notearea");
+     setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownCNS6201") == "03-40" && getText("dropdown6") == "QP-986P Host1000 Server")) {
   setScreen("screen1");
+  showElement("notearea");
+  setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownCNS6201") == "05-01" && getText("dropdown6") == "QP-986P Host1000 Server")) { 
     setScreen("screen1");
+    showElement("notearea");
+    setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownCNS6201") == "05-07" && getText("dropdown6") == "QP-986P Host1000 Server")) { 
   	setScreen("screen1");
+  	showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownCNS6201") == "05-08" && getText("dropdown6") == "QP-986P Host1000 Server")) { 
   	setScreen("screen1");
+  	showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownCNS6201") == "05-10" && getText("dropdown6") == "QP-986P Host1000 Server")) { 
   	setScreen("screen1");
+  	showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownCNS6201") == "05-13" && getText("dropdown6") == "QP-986P Host1000 Server")) { 
   	setScreen("screen1");
+  	showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
 
   } else if ((getText("dropdownCNS6201") == "02-40" && getText("dropdown6") == "QP-988P Unified Gateway")) {
      setScreen("screen1");
+     showElement("notearea");
+     setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownCNS6201") == "03-40" && getText("dropdown6") == "QP-988P Unified Gateway")) {
   setScreen("screen1");
+  showElement("notearea");
+   setText("notearea", "Send to EMR cannot be used with CGS-9002 or QP-988P(EG). Supports receiving software from NKAnyhwere, but does not support receiving settings.");
   } else if ((getText("dropdownCNS6201") == "05-01" && getText("dropdown6") == "QP-988P Unified Gateway")) { 
     setScreen("screen1");
+    showElement("notearea");
+    setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownCNS6201") == "05-07" && getText("dropdown6") == "QP-988P Unified Gateway")) { 
   	setScreen("screen1");
+  	showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownCNS6201") == "05-08" && getText("dropdown6") == "QP-988P Unified Gateway")) { 
   	setScreen("screen1");
+  	showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownCNS6201") == "05-10" && getText("dropdown6") == "QP-988P Unified Gateway")) { 
   	setScreen("screen1");
+  	showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownCNS6201") == "05-13" && getText("dropdown6") == "QP-988P Unified Gateway")) { 
   	setScreen("screen1");
+  	showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
 
   } else if ((getText("dropdownCNS6201") == "02-40" && getText("dropdown6") == "QP-988P Enterprise Gateway")) {
      setScreen("screen1");
+     showElement("notearea");
+     setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownCNS6201") == "03-40" && getText("dropdown6") == "QP-988P Enterprise Gateway")) {
   setScreen("screen2");
+  showElement("notearea2");
+  setText("notearea2", "03-40: Send to EMR cannot be used with CGS-9002 or QP-988P(EG). Supports receiving software from NKAnyhwere, but does not support receiving settings.");
   } else if ((getText("dropdownCNS6201") == "05-01" && getText("dropdown6") == "QP-988P Enterprise Gateway")) { 
     setScreen("screen1");
+    showElement("notearea");
+    setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownCNS6201") == "05-07" && getText("dropdown6") == "QP-988P Enterprise Gateway")) { 
   	setScreen("screen1");
+  	showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownCNS6201") == "05-08" && getText("dropdown6") == "QP-988P Enterprise Gateway")) { 
   	setScreen("screen1");
+  	showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownCNS6201") == "05-10" && getText("dropdown6") == "QP-988P Enterprise Gateway")) { 
   	setScreen("screen1");
+  	showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownCNS6201") == "05-13" && getText("dropdown6") == "QP-988P Enterprise Gateway")) { 
   	setScreen("screen1");
+  	showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
 
   } else if ((getText("dropdownCNS6201") == "02-40" && getText("dropdown6") == "QP-989P ViTrac iOS")) {
      setScreen("screen1");
+     showElement("notearea");
+     setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownCNS6201") == "03-40" && getText("dropdown6") == "QP-989P ViTrac iOS")) {
   setScreen("screen1");
+  showElement("notearea");
+  setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownCNS6201") == "05-01" && getText("dropdown6") == "QP-989P ViTrac iOS")) { 
     setScreen("screen1");
+    showElement("notearea");
+    setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownCNS6201") == "05-07" && getText("dropdown6") == "QP-989P ViTrac iOS")) { 
   	setScreen("screen1");
+  	showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownCNS6201") == "05-08" && getText("dropdown6") == "QP-989P ViTrac iOS")) { 
   	setScreen("screen1");
+  	showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownCNS6201") == "05-10" && getText("dropdown6") == "QP-989P ViTrac iOS")) { 
   	setScreen("screen1");
+  	showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownCNS6201") == "05-13" && getText("dropdown6") == "QP-989P ViTrac iOS")) { 
   	setScreen("screen1");
+  	showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
 
   } else if ((getText("dropdownCNS6201") == "02-40" && getText("dropdown6") == "QP-991P ViTrac Android")) {
      setScreen("screen1");
+     showElement("notearea");
+     setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownCNS6201") == "03-40" && getText("dropdown6") == "QP-991P ViTrac Android")) {
   setScreen("screen1");
+  showElement("notearea");
+  setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownCNS6201") == "05-01" && getText("dropdown6") == "QP-991P ViTrac Android")) { 
     setScreen("screen1");
+    showElement("notearea");
+    setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownCNS6201") == "05-07" && getText("dropdown6") == "QP-991P ViTrac Android")) { 
   	setScreen("screen1");
+  	showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownCNS6201") == "05-08" && getText("dropdown6") == "QP-991P ViTrac Android")) { 
   	setScreen("screen1");
+  	showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownCNS6201") == "05-10" && getText("dropdown6") == "QP-991P ViTrac Android")) { 
   	setScreen("screen1");
+  	showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownCNS6201") == "05-13" && getText("dropdown6") == "QP-991P ViTrac Android")) { 
   	setScreen("screen1");
+  	showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
 
   } else if ((getText("dropdownCNS6201") == "02-40" && getText("dropdown6") == "QP-999P NKAnywhere")) {
      setScreen("screen2");
   } else if ((getText("dropdownCNS6201") == "03-40" && getText("dropdown6") == "QP-999P NKAnywhere")) {
   setScreen("screen2");
+  showElement("notearea2");
+   setText("notearea2", "Send to EMR cannot be used with CGS-9002 or QP-988P(EG). Supports receiving software from NKAnyhwere, but does not support receiving settings.")
   } else if ((getText("dropdownCNS6201") == "05-01" && getText("dropdown6") == "QP-999P NKAnywhere")) { 
     setScreen("screen2");
   } else if ((getText("dropdownCNS6201") == "05-07" && getText("dropdown6") == "QP-999P NKAnywhere")) { 
@@ -2376,64 +2602,118 @@ onEvent("go_button", "click", function(event) {
 
   } else if ((getText("dropdownCNS6201") == "02-40" && getText("dropdown6") == "OLG-3800")) {
      setScreen("screen1");
+     showElement("notearea");
+     setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownCNS6201") == "03-40" && getText("dropdown6") == "OLG-3800")) {
   setScreen("screen1");
+  showElement("notearea");
+  setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownCNS6201") == "05-01" && getText("dropdown6") == "OLG-3800")) { 
     setScreen("screen1");
+    showElement("notearea");
+    setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownCNS6201") == "05-07" && getText("dropdown6") == "OLG-3800")) { 
   	setScreen("screen1");
+  	showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownCNS6201") == "05-08" && getText("dropdown6") == "OLG-3800")) { 
   	setScreen("screen1");
+  	showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownCNS6201") == "05-10" && getText("dropdown6") == "OLG-3800")) { 
   	setScreen("screen1");
+  	showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownCNS6201") == "05-13" && getText("dropdown6") == "OLG-3800")) { 
   	setScreen("screen1");
+  	showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
 
 
   } else if ((getText("dropdownCNS6801") == "02-01" && getText("dropdown6") == "BSM-1700 (+UG/TS)")) {
      setScreen("screen1");
+     	showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownCNS6801") == "02-07" && getText("dropdown6") == "BSM-1700 (+UG/TS)")) {
   setScreen("screen1");
+  	showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownCNS6801") == "02-08" && getText("dropdown6") == "BSM-1700 (+UG/TS)")) { 
     setScreen("screen1");
+    	showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownCNS6801") == "02-10" && getText("dropdown6") == "BSM-1700 (+UG/TS)")) { 
   	setScreen("screen1");
+  		showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownCNS6801") == "02-13" && getText("dropdown6") == "BSM-1700 (+UG/TS)")) { 
   	setScreen("screen1");
+  		showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
 
   } else if ((getText("dropdownCNS6801") == "02-01" && getText("dropdown6") == "BSM-3500")) {
      setScreen("screen1");
+     	showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownCNS6801") == "02-07" && getText("dropdown6") == "BSM-3500")) {
   setScreen("screen1");
+  	showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownCNS6801") == "02-08" && getText("dropdown6") == "BSM-3500")) { 
     setScreen("screen1");
+    	showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownCNS6801") == "02-10" && getText("dropdown6") == "BSM-3500")) { 
   	setScreen("screen1");
+  		showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownCNS6801") == "02-13" && getText("dropdown6") == "BSM-3500")) { 
   	setScreen("screen1");
+  		showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
 
   } else if ((getText("dropdownCNS6801") == "02-01" && getText("dropdown6") == "BSM-6000")) {
      setScreen("screen1");
+     	showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownCNS6801") == "02-07" && getText("dropdown6") == "BSM-6000")) {
   setScreen("screen1");
+  	showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownCNS6801") == "02-08" && getText("dropdown6") == "BSM-6000")) { 
     setScreen("screen1");
+    	showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownCNS6801") == "02-10" && getText("dropdown6") == "BSM-6000")) { 
   	setScreen("screen1");
+  		showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownCNS6801") == "02-13" && getText("dropdown6") == "BSM-6000")) { 
   	setScreen("screen1");
+  		showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
 
 
   } else if ((getText("dropdownCNS6801") == "02-01" && getText("dropdown6") == "CSM-1901")) {
      setScreen("screen1");
+     	showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownCNS6801") == "02-07" && getText("dropdown6") == "CSM-1901")) {
   setScreen("screen1");
+  	showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownCNS6801") == "02-08" && getText("dropdown6") == "CSM-1901")) { 
     setScreen("screen1");
+    	showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownCNS6801") == "02-10" && getText("dropdown6") == "CSM-1901")) { 
   	setScreen("screen1");
+  		showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownCNS6801") == "02-13" && getText("dropdown6") == "CSM-1901")) { 
   	setScreen("screen1");
+  		showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
 
   } else if ((getText("dropdownCNS6801") == "02-01" && getText("dropdown6") == "CNS-6201")) {
       setText("Sol1", "≧03-40");
@@ -2448,69 +2728,129 @@ onEvent("go_button", "click", function(event) {
 
   } else if ((getText("dropdownCNS6801") == "02-01" && getText("dropdown6") == "RNS-9703(Old GUI)")) {
      setScreen("screen1");
+     	showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownCNS6801") == "02-07" && getText("dropdown6") == "RNS-9703(Old GUI)")) {
   setScreen("screen1");
+  	showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownCNS6801") == "02-08" && getText("dropdown6") == "RNS-9703(Old GUI)")) { 
     setScreen("screen1");
+    	showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownCNS6801") == "02-10" && getText("dropdown6") == "RNS-9703(Old GUI)")) { 
   	setScreen("screen1");
+  		showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownCNS6801") == "02-13" && getText("dropdown6") == "RNS-9703(Old GUI)")) { 
   	setScreen("screen1");
+  		showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
 
   } else if ((getText("dropdownCNS6801") == "02-01" && getText("dropdown6") == "RNS-6803(Audio)")) {
      setScreen("screen1");
+     	showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownCNS6801") == "02-07" && getText("dropdown6") == "RNS-6803(Audio)")) {
   setScreen("screen1");
+  	showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownCNS6801") == "02-08" && getText("dropdown6") == "RNS-6803(Audio)")) { 
     setScreen("screen1");
+    	showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownCNS6801") == "02-10" && getText("dropdown6") == "RNS-6803(Audio)")) { 
   	setScreen("screen1");
+  		showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownCNS6801") == "02-13" && getText("dropdown6") == "RNS-6803(Audio)")) { 
   	setScreen("screen1");
+  		showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
 
   } else if ((getText("dropdownCNS6801") == "02-01" && getText("dropdown6") == "RNS-6804(No Audio)")) {
      setScreen("screen1");
+     	showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownCNS6801") == "02-07" && getText("dropdown6") == "RNS-6804(No Audio)")) {
   setScreen("screen1");
+  	showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownCNS6801") == "02-08" && getText("dropdown6") == "RNS-6804(No Audio)")) { 
     setScreen("screen1");
+    	showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownCNS6801") == "02-10" && getText("dropdown6") == "RNS-6804(No Audio)")) { 
   	setScreen("screen1");
+  		showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownCNS6801") == "02-13" && getText("dropdown6") == "RNS-6804(No Audio)")) { 
   	setScreen("screen1");
+  		showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
 
   } else if ((getText("dropdownCNS6801") == "02-01" && getText("dropdown6") == "EDNS-9001 Prefense")) {
      setScreen("screen1");
+     	showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownCNS6801") == "02-07" && getText("dropdown6") == "EDNS-9001 Prefense")) {
   setScreen("screen1");
+  	showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownCNS6801") == "02-08" && getText("dropdown6") == "EDNS-9001 Prefense")) { 
     setScreen("screen1");
+    	showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownCNS6801") == "02-10" && getText("dropdown6") == "EDNS-9001 Prefense")) { 
   	setScreen("screen1");
+  		showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownCNS6801") == "02-13" && getText("dropdown6") == "EDNS-9001 Prefense")) { 
   	setScreen("screen1");
+  		showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
 
   } else if ((getText("dropdownCNS6801") == "02-01" && getText("dropdown6") == "GZ-100P (+UG/TS)")) {
      setScreen("screen1");
+     	showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownCNS6801") == "02-07" && getText("dropdown6") == "GZ-100P (+UG/TS)")) {
   setScreen("screen1");
+  	showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownCNS6801") == "02-08" && getText("dropdown6") == "GZ-100P (+UG/TS)")) { 
     setScreen("screen1");
+    	showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownCNS6801") == "02-10" && getText("dropdown6") == "GZ-100P (+UG/TS)")) { 
   	setScreen("screen1");
+  		showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownCNS6801") == "02-13" && getText("dropdown6") == "GZ-100P (+UG/TS)")) { 
   	setScreen("screen1");
+  		showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
 
   } else if ((getText("dropdownCNS6801") == "02-01" && getText("dropdown6") == "ORG-9100")) {
      setScreen("screen1");
+     	showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownCNS6801") == "02-07" && getText("dropdown6") == "ORG-9100")) {
   setScreen("screen1");
+  	showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownCNS6801") == "02-08" && getText("dropdown6") == "ORG-9100")) { 
     setScreen("screen1");
+    	showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownCNS6801") == "02-10" && getText("dropdown6") == "ORG-9100")) { 
   	setScreen("screen1");
+  		showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownCNS6801") == "02-13" && getText("dropdown6") == "ORG-9100")) { 
   	setScreen("screen1");
+  		showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
 
   } else if ((getText("dropdownCNS6801") == "02-01" && getText("dropdown6") == "CGS-9001 Pager Gateway (Legacy)")) {
      setText("Sol1", "NA");
@@ -2550,60 +2890,110 @@ onEvent("go_button", "click", function(event) {
 
   } else if ((getText("dropdownCNS6801") == "02-01" && getText("dropdown6") == "QP-986P Host1000 Server")) {
      setScreen("screen1");
+     	showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownCNS6801") == "02-07" && getText("dropdown6") == "QP-986P Host1000 Server")) {
   setScreen("screen1");
+  	showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownCNS6801") == "02-08" && getText("dropdown6") == "QP-986P Host1000 Server")) { 
     setScreen("screen1");
+    	showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownCNS6801") == "02-10" && getText("dropdown6") == "QP-986P Host1000 Server")) { 
   	setScreen("screen1");
+  		showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownCNS6801") == "02-13" && getText("dropdown6") == "QP-986P Host1000 Server")) { 
   	setScreen("screen1");
+  		showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
 
   } else if ((getText("dropdownCNS6801") == "02-01" && getText("dropdown6") == "QP-988P Unified Gateway")) {
      setScreen("screen1");
+     	showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownCNS6801") == "02-07" && getText("dropdown6") == "QP-988P Unified Gateway")) {
   setScreen("screen1");
+  	showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownCNS6801") == "02-08" && getText("dropdown6") == "QP-988P Unified Gateway")) { 
     setScreen("screen1");
+    	showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownCNS6801") == "02-10" && getText("dropdown6") == "QP-988P Unified Gateway")) { 
   	setScreen("screen1");
+  		showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownCNS6801") == "02-13" && getText("dropdown6") == "QP-988P Unified Gateway")) { 
   	setScreen("screen1");
+  		showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
 
 
   } else if ((getText("dropdownCNS6801") == "02-01" && getText("dropdown6") == "QP-988P Enterprise Gateway")) {
      setScreen("screen1");
+     	showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownCNS6801") == "02-07" && getText("dropdown6") == "QP-988P Enterprise Gateway")) {
   setScreen("screen1");
+  	showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownCNS6801") == "02-08" && getText("dropdown6") == "QP-988P Enterprise Gateway")) { 
     setScreen("screen1");
+    	showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownCNS6801") == "02-10" && getText("dropdown6") == "QP-988P Enterprise Gateway")) { 
   	setScreen("screen1");
+  		showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownCNS6801") == "02-13" && getText("dropdown6") == "QP-988P Enterprise Gateway")) { 
   	setScreen("screen1");
+  		showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
 
   } else if ((getText("dropdownCNS6801") == "02-01" && getText("dropdown6") == "QP-989P ViTrac iOS")) {
      setScreen("screen1");
+     	showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownCNS6801") == "02-07" && getText("dropdown6") == "QP-989P ViTrac iOS")) {
   setScreen("screen1");
+  	showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownCNS6801") == "02-08" && getText("dropdown6") == "QP-989P ViTrac iOS")) { 
     setScreen("screen1");
+    	showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownCNS6801") == "02-10" && getText("dropdown6") == "QP-989P ViTrac iOS")) { 
   	setScreen("screen1");
+  		showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownCNS6801") == "02-13" && getText("dropdown6") == "QP-989P ViTrac iOS")) { 
   	setScreen("screen1");
+  		showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
 
 
   } else if ((getText("dropdownCNS6801") == "02-01" && getText("dropdown6") == "QP-991P ViTrac Android")) {
      setScreen("screen1");
+     	showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownCNS6801") == "02-07" && getText("dropdown6") == "QP-991P ViTrac Android")) {
   setScreen("screen1");
+  	showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownCNS6801") == "02-08" && getText("dropdown6") == "QP-991P ViTrac Android")) { 
     setScreen("screen1");
+    	showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownCNS6801") == "02-10" && getText("dropdown6") == "QP-991P ViTrac Android")) { 
   	setScreen("screen1");
+  		showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownCNS6801") == "02-13" && getText("dropdown6") == "QP-991P ViTrac Android")) { 
   	setScreen("screen1");
+  		showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
 
   } else if ((getText("dropdownCNS6801") == "02-01" && getText("dropdown6") == "QP-999P NKAnywhere")) {
      setScreen("screen2");
@@ -2617,15 +3007,27 @@ onEvent("go_button", "click", function(event) {
   	setScreen("screen2");
 
   } else if ((getText("dropdownCNS6801") == "02-01" && getText("dropdown6") == "OLG-3800")) {
-     setScreen("screen2");
+     setScreen("screen1");
+     	showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownCNS6801") == "02-07" && getText("dropdown6") == "OLG-3800")) {
-  setScreen("screen2");
+  setScreen("screen1");
+  	showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownCNS6801") == "02-08" && getText("dropdown6") == "OLG-3800")) { 
-    setScreen("screen2");
+    setScreen("screen1");
+    	showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownCNS6801") == "02-10" && getText("dropdown6") == "OLG-3800")) { 
-  	setScreen("screen2");
+  	setScreen("screen1");
+  		showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownCNS6801") == "02-13" && getText("dropdown6") == "OLG-3800")) { 
-  	setScreen("screen2");
+  	setScreen("screen1");
+  		showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
+  	
+  	//RNS9703
 
   } else if ((getText("dropdownRNS9703") == "03-40" && getText("dropdown6") == "BSM-1700 (+UG/TS)")) {
       setText("Sol1", "=01-15");
@@ -2655,8 +3057,13 @@ onEvent("go_button", "click", function(event) {
 
   } else if ((getText("dropdownRNS9703") == "03-40" && getText("dropdown6") == "CNS-6801")) {
          setScreen("screen1");
+           		showElement("notearea");
+  	setText("notearea", "It is not recommended to use Old GUI RNS with New GUI CNS.");
+  	
   } else if ((getText("dropdownRNS9703") == "03-40b" && getText("dropdown6") == "CNS-6801")) {
     setScreen("screen1");
+               		showElement("notearea");
+  	setText("notearea", "It is not recommended to use Old GUI RNS with New GUI CNS.");
 
   } else if ((getText("dropdownRNS9703") == "03-40" && getText("dropdown6") == "RNS-6803(Audio)")) {
          setScreen("screen1");
@@ -2712,8 +3119,12 @@ onEvent("go_button", "click", function(event) {
 
   } else if ((getText("dropdownRNS9703") == "03-40" && getText("dropdown6") == "QP-988P Enterprise Gateway")) {
          setScreen("screen1");
+      showElement("notearea");
+  	setText("notearea", "QP-988P(EG) supports RNS Server Extension, if using QP-988P(EG) as RNS Server.");
   } else if ((getText("dropdownRNS9703") == "03-40b" && getText("dropdown6") == "QP-988P Enterprise Gateway")) {
     setScreen("screen1");
+          showElement("notearea");
+  	setText("notearea", "QP-988P(EG) supports RNS Server Extension, if using QP-988P(EG) as RNS Server.");
 
 
   } else if ((getText("dropdownRNS9703") == "03-40" && getText("dropdown6") == "QP-989P ViTrac iOS")) {
@@ -2736,45 +3147,75 @@ onEvent("go_button", "click", function(event) {
          setScreen("screen1");
   } else if ((getText("dropdownRNS9703") == "03-40b" && getText("dropdown6") == "OLG-3800")) {
     setScreen("screen1");
+    
+    
 //RNS6803
 
 
   } else if ((getText("dropdownRNS6803") == "02-06" && getText("dropdown6") == "BSM-1700 (+UG/TS)")) {
          setScreen("screen1");
+           		showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownRNS6803") == "02-10" && getText("dropdown6") == "BSM-1700 (+UG/TS)")) {
     setScreen("screen1");
+               		showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
 
 
   } else if ((getText("dropdownRNS6803") == "02-06" && getText("dropdown6") == "BSM-3500")) {
          setScreen("screen1");
+                    		showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownRNS6803") == "02-10" && getText("dropdown6") == "BSM-3500")) {
     setScreen("screen1");
+               		showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
 
   } else if ((getText("dropdownRNS6803") == "02-06" && getText("dropdown6") == "BSM-6000")) {
          setScreen("screen1");
+                    		showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownRNS6803") == "02-10" && getText("dropdown6") == "BSM-6000")) {
     setScreen("screen1");
+               		showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
 
   } else if ((getText("dropdownRNS6803") == "02-06" && getText("dropdown6") == "CSM-1901")) {
          setScreen("screen1");
+                    		showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownRNS6803") == "02-10" && getText("dropdown6") == "CSM-1901")) {
     setScreen("screen1");
+               		showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
 
   } else if ((getText("dropdownRNS6803") == "02-06" && getText("dropdown6") == "CNS-6201")) {
          setScreen("screen1");
+                    		showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownRNS6803") == "02-10" && getText("dropdown6") == "CNS-6201")) {
     setScreen("screen1");
+               		showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
 
   } else if ((getText("dropdownRNS6803") == "02-06" && getText("dropdown6") == "CNS-6801")) {
          setScreen("screen1");
+                    		showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownRNS6803") == "02-10" && getText("dropdown6") == "CNS-6801")) {
     setScreen("screen1");
+               		showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
 
 
   } else if ((getText("dropdownRNS6803") == "02-06" && getText("dropdown6") == "RNS-9703(Old GUI)")) {
          setScreen("screen1");
+                    		showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownRNS6803") == "02-10" && getText("dropdown6") == "RNS-9703(Old GUI)")) {
     setScreen("screen1");
+               		showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
 
   } else if ((getText("dropdownRNS6803") == "02-06" && getText("dropdown6") == "RNS-6804(No Audio)")) {
          setText("Sol1", "Same Product");
@@ -2788,13 +3229,21 @@ onEvent("go_button", "click", function(event) {
 
   } else if ((getText("dropdownRNS6803") == "02-06" && getText("dropdown6") == "GZ-100P (+UG/TS)")) {
          setScreen("screen1");
+                    		showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownRNS6803") == "02-10" && getText("dropdown6") == "GZ-100P (+UG/TS)")) {
     setScreen("screen1");
+               		showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
 
   } else if ((getText("dropdownRNS6803") == "02-06" && getText("dropdown6") == "ORG-9100")) {
          setScreen("screen1");
+                    		showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownRNS6803") == "02-10" && getText("dropdown6") == "ORG-9100")) {
     setScreen("screen1");
+               		showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
 
 
   } else if ((getText("dropdownRNS6803") == "02-06" && getText("dropdown6") == "CGS-9001 Pager Gateway (Legacy)")) {
@@ -2815,20 +3264,32 @@ onEvent("go_button", "click", function(event) {
 
   } else if ((getText("dropdownRNS6803") == "02-06" && getText("dropdown6") == "QP-986P Host1000 Server")) {
          setScreen("screen1");
+                    		showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownRNS6803") == "02-10" && getText("dropdown6") == "QP-986P Host1000 Server")) {
     setScreen("screen1");
+               		showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
 
 
 
   } else if ((getText("dropdownRNS6803") == "02-06" && getText("dropdown6") == "QP-988P Unified Gateway")) {
           setText("Sol1", "NA");
+                     		showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownRNS6803") == "02-10" && getText("dropdown6") == "QP-988P Unified Gateway")) {
     setText("Sol1", "NA");
+               		showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
 
   } else if ((getText("dropdownRNS6803") == "02-06" && getText("dropdown6") == "QP-988P Enterprise Gateway")) {
          setScreen("screen1");
+                    		showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownRNS6803") == "02-10" && getText("dropdown6") == "QP-988P Enterprise Gateway")) {
     setScreen("screen1");
+               		showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
 
 
 
@@ -2851,37 +3312,54 @@ onEvent("go_button", "click", function(event) {
 
   } else if ((getText("dropdownRNS6803") == "02-06" && getText("dropdown6") == "OLG-3800")) {
          setScreen("screen1");
+                    		showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
   } else if ((getText("dropdownRNS6803") == "02-10" && getText("dropdown6") == "OLG-3800")) {
     setScreen("screen1");
+               		showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
 
 //RNS6804
 
 
   } else if ((getText("dropdownRNS6804") == "02-10" && getText("dropdown6") == "BSM-1700 (+UG/TS)")) {
          setScreen("screen1");
-
+           		showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
 
   } else if ((getText("dropdownRNS6804") == "02-10" && getText("dropdown6") == "BSM-3500")) {
     setScreen("screen1");
+               		showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
 
   } else if ((getText("dropdownRNS6804") == "02-10" && getText("dropdown6") == "BSM-6000")) {
     setScreen("screen1");
+               		showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
 
   } else if ((getText("dropdownRNS6804") == "02-10" && getText("dropdown6") == "CSM-1901")) {
     setScreen("screen1");
+               		showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
 
 
   } else if ((getText("dropdownRNS6804") == "02-10" && getText("dropdown6") == "CNS-6201")) {
     setScreen("screen1");
+               		showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
 
 
   } else if ((getText("dropdownRNS6804") == "02-10" && getText("dropdown6") == "CNS-6801")) {
     setScreen("screen1");
+               		showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
 
 
 
   } else if ((getText("dropdownRNS6804") == "02-10" && getText("dropdown6") == "RNS-9703(Old GUI)")) {
     setScreen("screen1");
+               		showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
 
 
   } else if ((getText("dropdownRNS6804") == "02-10" && getText("dropdown6") == "RNS-6804(No Audio)")) {
@@ -2890,13 +3368,18 @@ onEvent("go_button", "click", function(event) {
 
   } else if ((getText("dropdownRNS6804") == "02-10" && getText("dropdown6") == "EDNS-9001 Prefense")) {
     setText("Sol1", "NA");
+    
 
   } else if ((getText("dropdownRNS6804") == "02-10" && getText("dropdown6") == "GZ-100P (+UG/TS)")) {
     setScreen("screen1");
+    showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
 
 
   } else if ((getText("dropdownRNS6804") == "02-10" && getText("dropdown6") == "ORG-9100")) {
     setScreen("screen1");
+               		showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
 
 
 
@@ -2914,6 +3397,8 @@ onEvent("go_button", "click", function(event) {
 
   } else if ((getText("dropdownRNS6804") == "02-10" && getText("dropdown6") == "QP-986P Host1000 Server")) {
     setScreen("screen1");
+               		showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
 
 
 
@@ -2923,6 +3408,8 @@ onEvent("go_button", "click", function(event) {
 
   } else if ((getText("dropdownRNS6804") == "02-10" && getText("dropdown6") == "QP-988P Enterprise Gateway")) {
     setScreen("screen1");
+               		showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
 
 
   } else if ((getText("dropdownRNS6804") == "02-10" && getText("dropdown6") == "QP-989P ViTrac iOS")) {
@@ -2938,6 +3425,8 @@ onEvent("go_button", "click", function(event) {
 
   } else if ((getText("dropdownRNS6804") == "02-10" && getText("dropdown6") == "OLG-3800")) {
     setScreen("screen1");
+               		showElement("notearea");
+  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
 
 //EDNS-9001
 
@@ -2969,8 +3458,12 @@ onEvent("go_button", "click", function(event) {
 
   } else if ((getText("dropdownEDNS9001") == "02-07" && getText("dropdown6") == "CNS-6801")) {
              setScreen("screen1");
+  showElement("notearea");
+  	setText("notearea", "It is not recommended to use Prefense with New GUI CNS. ");
   } else if ((getText("dropdownEDNS9001") == "02-08" && getText("dropdown6") == "CNS-6801")) {
        setScreen("screen1");
+         showElement("notearea");
+  	setText("notearea", "It is not recommended to use Prefense with New GUI CNS. ");
 
   } else if ((getText("dropdownEDNS9001") == "02-07" && getText("dropdown6") == "RNS-9703(Old GUI)")) {
           setText("Sol1", "NA");
@@ -2995,8 +3488,12 @@ onEvent("go_button", "click", function(event) {
 
   } else if ((getText("dropdownEDNS9001") == "02-07" && getText("dropdown6") == "ORG-9100")) {
              setScreen("screen1");
+               showElement("notearea");
+  	setText("notearea", "ORG needs to be set to Alarm Type: Main and Protocol: 1st GEN. ");
   } else if ((getText("dropdownEDNS9001") == "02-08" && getText("dropdown6") == "ORG-9100")) {
        setScreen("screen1");
+                      showElement("notearea");
+  	setText("notearea", "ORG needs to be set to Alarm Type: Main and Protocol: 1st GEN. ");
 
   } else if ((getText("dropdownEDNS9001") == "02-07" && getText("dropdown6") == "CGS-9001 Pager Gateway (Legacy)")) {
           setText("Sol1", "NA");
@@ -3053,201 +3550,201 @@ onEvent("go_button", "click", function(event) {
 //GZ-100P
 
 
-  } else if ((getText("dropdownEDNS9001") == "02-06" && getText("dropdown6") == "BSM-1700 (+UG/TS)")) {
+  } else if ((getText("dropdownGZ100P") == "02-06" && getText("dropdown6") == "BSM-1700 (+UG/TS)")) {
           setText("Sol1", "NA");
-  } else if ((getText("dropdownEDNS9001") == "02-10" && getText("dropdown6") == "BSM-1700 (+UG/TS)")) {
+  } else if ((getText("dropdownGZ100P") == "02-10" && getText("dropdown6") == "BSM-1700 (+UG/TS)")) {
     setText("Sol1", "NA");
-   } else if ((getText("dropdownEDNS9001") == "02-20" && getText("dropdown6") == "BSM-1700 (+UG/TS)")) {
+   } else if ((getText("dropdownGZ100P") == "02-20" && getText("dropdown6") == "BSM-1700 (+UG/TS)")) {
     setText("Sol1", "NA");
-   } else if ((getText("dropdownEDNS9001") == "02-22" && getText("dropdown6") == "BSM-1700 (+UG/TS)")) {
+   } else if ((getText("dropdownGZ100P") == "02-22" && getText("dropdown6") == "BSM-1700 (+UG/TS)")) {
     setText("Sol1", "NA");
 
-  } else if ((getText("dropdownEDNS9001") == "02-06" && getText("dropdown6") == "BSM-3500")) {
+  } else if ((getText("dropdownGZ100P") == "02-06" && getText("dropdown6") == "BSM-3500")) {
               setScreen("screen1");
-  } else if ((getText("dropdownEDNS9001") == "02-10" && getText("dropdown6") == "BSM-3500")) {
+  } else if ((getText("dropdownGZ100P") == "02-10" && getText("dropdown6") == "BSM-3500")) {
     setScreen("screen1");
-   } else if ((getText("dropdownEDNS9001") == "02-20" && getText("dropdown6") == "BSM-3500")) {
+   } else if ((getText("dropdownGZ100P") == "02-20" && getText("dropdown6") == "BSM-3500")) {
     setScreen("screen1");
-   } else if ((getText("dropdownEDNS9001") == "02-22" && getText("dropdown6") == "BSM-3500")) {
+   } else if ((getText("dropdownGZ100P") == "02-22" && getText("dropdown6") == "BSM-3500")) {
     setScreen("screen1");
 
-  } else if ((getText("dropdownEDNS9001") == "02-06" && getText("dropdown6") == "BSM-6000")) {
+  } else if ((getText("dropdownGZ100P") == "02-06" && getText("dropdown6") == "BSM-6000")) {
               setScreen("screen1");
-  } else if ((getText("dropdownEDNS9001") == "02-10" && getText("dropdown6") == "BSM-6000")) {
+  } else if ((getText("dropdownGZ100P") == "02-10" && getText("dropdown6") == "BSM-6000")) {
     setScreen("screen1");
-   } else if ((getText("dropdownEDNS9001") == "02-20" && getText("dropdown6") == "BSM-6000")) {
+   } else if ((getText("dropdownGZ100P") == "02-20" && getText("dropdown6") == "BSM-6000")) {
     setScreen("screen1");
-   } else if ((getText("dropdownEDNS9001") == "02-22" && getText("dropdown6") == "BSM-6000")) {
+   } else if ((getText("dropdownGZ100P") == "02-22" && getText("dropdown6") == "BSM-6000")) {
     setScreen("screen1");
 
-  } else if ((getText("dropdownEDNS9001") == "02-06" && getText("dropdown6") == "CSM-1901")) {
+  } else if ((getText("dropdownGZ100P") == "02-06" && getText("dropdown6") == "CSM-1901")) {
               setScreen("screen1");
-  } else if ((getText("dropdownEDNS9001") == "02-10" && getText("dropdown6") == "CSM-1901")) {
+  } else if ((getText("dropdownGZ100P") == "02-10" && getText("dropdown6") == "CSM-1901")) {
     setScreen("screen1");
-   } else if ((getText("dropdownEDNS9001") == "02-20" && getText("dropdown6") == "CSM-1901")) {
+   } else if ((getText("dropdownGZ100P") == "02-20" && getText("dropdown6") == "CSM-1901")) {
     setScreen("screen1");
-   } else if ((getText("dropdownEDNS9001") == "02-22" && getText("dropdown6") == "CSM-1901")) {
+   } else if ((getText("dropdownGZ100P") == "02-22" && getText("dropdown6") == "CSM-1901")) {
     setScreen("screen1");
 
-  } else if ((getText("dropdownEDNS9001") == "02-06" && getText("dropdown6") == "CNS-6201")) {
+  } else if ((getText("dropdownGZ100P") == "02-06" && getText("dropdown6") == "CNS-6201")) {
               setScreen("screen1");
-  } else if ((getText("dropdownEDNS9001") == "02-10" && getText("dropdown6") == "CNS-6201")) {
+  } else if ((getText("dropdownGZ100P") == "02-10" && getText("dropdown6") == "CNS-6201")) {
     setScreen("screen1");
-   } else if ((getText("dropdownEDNS9001") == "02-20" && getText("dropdown6") == "CNS-6201")) {
+   } else if ((getText("dropdownGZ100P") == "02-20" && getText("dropdown6") == "CNS-6201")) {
     setScreen("screen1");
-   } else if ((getText("dropdownEDNS9001") == "02-22" && getText("dropdown6") == "CNS-6201")) {
+   } else if ((getText("dropdownGZ100P") == "02-22" && getText("dropdown6") == "CNS-6201")) {
     setScreen("screen1");
 
 
-  } else if ((getText("dropdownEDNS9001") == "02-06" && getText("dropdown6") == "CNS-6801")) {
+  } else if ((getText("dropdownGZ100P") == "02-06" && getText("dropdown6") == "CNS-6801")) {
               setScreen("screen1");
-  } else if ((getText("dropdownEDNS9001") == "02-10" && getText("dropdown6") == "CNS-6801")) {
+  } else if ((getText("dropdownGZ100P") == "02-10" && getText("dropdown6") == "CNS-6801")) {
     setScreen("screen1");
-   } else if ((getText("dropdownEDNS9001") == "02-20" && getText("dropdown6") == "CNS-6801")) {
+   } else if ((getText("dropdownGZ100P") == "02-20" && getText("dropdown6") == "CNS-6801")) {
     setScreen("screen1");
-   } else if ((getText("dropdownEDNS9001") == "02-22" && getText("dropdown6") == "CNS-6801")) {
+   } else if ((getText("dropdownGZ100P") == "02-22" && getText("dropdown6") == "CNS-6801")) {
     setScreen("screen1");
 
 
-  } else if ((getText("dropdownEDNS9001") == "02-06" && getText("dropdown6") == "RNS-9703(Old GUI)")) {
+  } else if ((getText("dropdownGZ100P") == "02-06" && getText("dropdown6") == "RNS-9703(Old GUI)")) {
               setScreen("screen1");
-  } else if ((getText("dropdownEDNS9001") == "02-10" && getText("dropdown6") == "RNS-9703(Old GUI)")) {
+  } else if ((getText("dropdownGZ100P") == "02-10" && getText("dropdown6") == "RNS-9703(Old GUI)")) {
     setScreen("screen1");
-   } else if ((getText("dropdownEDNS9001") == "02-20" && getText("dropdown6") == "RNS-9703(Old GUI)")) {
+   } else if ((getText("dropdownGZ100P") == "02-20" && getText("dropdown6") == "RNS-9703(Old GUI)")) {
     setScreen("screen1");
-   } else if ((getText("dropdownEDNS9001") == "02-22" && getText("dropdown6") == "RNS-9703(Old GUI)")) {
+   } else if ((getText("dropdownGZ100P") == "02-22" && getText("dropdown6") == "RNS-9703(Old GUI)")) {
     setScreen("screen1");
 
 
 
-  } else if ((getText("dropdownEDNS9001") == "02-06" && getText("dropdown6") == "RNS-6803(Audio)")) {
+  } else if ((getText("dropdownGZ100P") == "02-06" && getText("dropdown6") == "RNS-6803(Audio)")) {
               setScreen("screen1");
-  } else if ((getText("dropdownEDNS9001") == "02-10" && getText("dropdown6") == "RNS-6803(Audio)")) {
+  } else if ((getText("dropdownGZ100P") == "02-10" && getText("dropdown6") == "RNS-6803(Audio)")) {
     setScreen("screen1");
-   } else if ((getText("dropdownEDNS9001") == "02-20" && getText("dropdown6") == "RNS-6803(Audio)")) {
+   } else if ((getText("dropdownGZ100P") == "02-20" && getText("dropdown6") == "RNS-6803(Audio)")) {
     setScreen("screen1");
-   } else if ((getText("dropdownEDNS9001") == "02-22" && getText("dropdown6") == "RNS-6803(Audio)")) {
+   } else if ((getText("dropdownGZ100P") == "02-22" && getText("dropdown6") == "RNS-6803(Audio)")) {
     setScreen("screen1");
 
-  } else if ((getText("dropdownEDNS9001") == "02-06" && getText("dropdown6") == "RNS-6804(No Audio)")) {
+  } else if ((getText("dropdownGZ100P") == "02-06" && getText("dropdown6") == "RNS-6804(No Audio)")) {
               setScreen("screen1");
-  } else if ((getText("dropdownEDNS9001") == "02-10" && getText("dropdown6") == "RNS-6804(No Audio)")) {
+  } else if ((getText("dropdownGZ100P") == "02-10" && getText("dropdown6") == "RNS-6804(No Audio)")) {
     setScreen("screen1");
-   } else if ((getText("dropdownEDNS9001") == "02-20" && getText("dropdown6") == "RNS-6804(No Audio)")) {
+   } else if ((getText("dropdownGZ100P") == "02-20" && getText("dropdown6") == "RNS-6804(No Audio)")) {
     setScreen("screen1");
-   } else if ((getText("dropdownEDNS9001") == "02-22" && getText("dropdown6") == "RNS-6804(No Audio)")) {
+   } else if ((getText("dropdownGZ100P") == "02-22" && getText("dropdown6") == "RNS-6804(No Audio)")) {
     setScreen("screen1");
 
-  } else if ((getText("dropdownEDNS9001") == "02-06" && getText("dropdown6") == "EDNS-9001 Prefense")) {
+  } else if ((getText("dropdownGZ100P") == "02-06" && getText("dropdown6") == "EDNS-9001 Prefense")) {
               setText("Sol1", "NA");
-  } else if ((getText("dropdownEDNS9001") == "02-10" && getText("dropdown6") == "EDNS-9001 Prefense")) {
+  } else if ((getText("dropdownGZ100P") == "02-10" && getText("dropdown6") == "EDNS-9001 Prefense")) {
     setText("Sol1", "NA");
-   } else if ((getText("dropdownEDNS9001") == "02-20" && getText("dropdown6") == "EDNS-9001 Prefense")) {
+   } else if ((getText("dropdownGZ100P") == "02-20" && getText("dropdown6") == "EDNS-9001 Prefense")) {
     setText("Sol1", "NA");
-   } else if ((getText("dropdownEDNS9001") == "02-22" && getText("dropdown6") == "EDNS-9001 Prefense")) {
+   } else if ((getText("dropdownGZ100P") == "02-22" && getText("dropdown6") == "EDNS-9001 Prefense")) {
     setText("Sol1", "NA");
 
-  } else if ((getText("dropdownEDNS9001") == "02-06" && getText("dropdown6") == "ORG-9100")) {
+  } else if ((getText("dropdownGZ100P") == "02-06" && getText("dropdown6") == "ORG-9100")) {
               setText("Sol1", "NA");
-  } else if ((getText("dropdownEDNS9001") == "02-10" && getText("dropdown6") == "ORG-9100")) {
+  } else if ((getText("dropdownGZ100P") == "02-10" && getText("dropdown6") == "ORG-9100")) {
     setText("Sol1", "NA");
-   } else if ((getText("dropdownEDNS9001") == "02-20" && getText("dropdown6") == "ORG-9100")) {
+   } else if ((getText("dropdownGZ100P") == "02-20" && getText("dropdown6") == "ORG-9100")) {
     setText("Sol1", "NA");
-   } else if ((getText("dropdownEDNS9001") == "02-22" && getText("dropdown6") == "ORG-9100")) {
+   } else if ((getText("dropdownGZ100P") == "02-22" && getText("dropdown6") == "ORG-9100")) {
     setText("Sol1", "NA");
 
-  } else if ((getText("dropdownEDNS9001") == "02-06" && getText("dropdown6") == "CGS-9001 Pager Gateway (Legacy)")) {
+  } else if ((getText("dropdownGZ100P") == "02-06" && getText("dropdown6") == "CGS-9001 Pager Gateway (Legacy)")) {
              setText("Sol1", "≧02-03b");
-  } else if ((getText("dropdownEDNS9001") == "02-10" && getText("dropdown6") == "CGS-9001 Pager Gateway (Legacy)")) {
+  } else if ((getText("dropdownGZ100P") == "02-10" && getText("dropdown6") == "CGS-9001 Pager Gateway (Legacy)")) {
     setText("Sol1", "≧02-03b");
-   } else if ((getText("dropdownEDNS9001") == "02-20" && getText("dropdown6") == "CGS-9001 Pager Gateway (Legacy)")) {
-    setText("Sol1", "≧02-03b");
-   } else if ((getText("dropdownEDNS9001") == "02-22" && getText("dropdown6") == "CGS-9001 Pager Gateway (Legacy)")) {
-    setText("Sol1", "≧02-03b");
+   } else if ((getText("dropdownGZ100P") == "02-20" && getText("dropdown6") == "CGS-9001 Pager Gateway (Legacy)")) {
+    setText("Sol1", "≧02-03b 'HiQ-View needs to be set to OFF when used with CGS-9001/CGS-9002/QP-983P.'");
+   } else if ((getText("dropdownGZ100P") == "02-22" && getText("dropdown6") == "CGS-9001 Pager Gateway (Legacy)")) {
+    setText("Sol1", "≧02-03b 'HiQ-View needs to be set to OFF when used with CGS-9001/CGS-9002/QP-983P.'");
 
 
-  } else if ((getText("dropdownEDNS9001") == "02-06" && getText("dropdown6") == "CGS-9002 HL7 Gateway (Legacy)")) {
+  } else if ((getText("dropdownGZ100P") == "02-06" && getText("dropdown6") == "CGS-9002 HL7 Gateway (Legacy)")) {
              setText("Sol1", "≧01-09a");
-  } else if ((getText("dropdownEDNS9001") == "02-10" && getText("dropdown6") == "CGS-9002 HL7 Gateway (Legacy)")) {
+  } else if ((getText("dropdownGZ100P") == "02-10" && getText("dropdown6") == "CGS-9002 HL7 Gateway (Legacy)")) {
     setText("Sol1", "≧01-09a");
-   } else if ((getText("dropdownEDNS9001") == "02-20" && getText("dropdown6") == "CGS-9002 HL7 Gateway (Legacy)")) {
-    setText("Sol1", "≧01-09a");
-   } else if ((getText("dropdownEDNS9001") == "02-22" && getText("dropdown6") == "CGS-9002 HL7 Gateway (Legacy)")) {
-    setText("Sol1", "≧01-09a");
+   } else if ((getText("dropdownGZ100P") == "02-20" && getText("dropdown6") == "CGS-9002 HL7 Gateway (Legacy)")) {
+    setText("Sol1", "≧01-09a 'HiQ-View needs to be set to OFF when used with CGS-9001/CGS-9002/QP-983P.'");
+   } else if ((getText("dropdownGZ100P") == "02-22" && getText("dropdown6") == "CGS-9002 HL7 Gateway (Legacy)")) {
+    setText("Sol1", "≧01-09a 'HiQ-View needs to be set to OFF when used with CGS-9001/CGS-9002/QP-983P.'");
 
 
-  } else if ((getText("dropdownEDNS9001") == "02-06" && getText("dropdown6") == "QP-983P NetKonnect/RNS Server")) {
+  } else if ((getText("dropdownGZ100P") == "02-06" && getText("dropdown6") == "QP-983P NetKonnect/RNS Server")) {
              setText("Sol1", "≧02-11");
-  } else if ((getText("dropdownEDNS9001") == "02-10" && getText("dropdown6") == "QP-983P NetKonnect/RNS Server")) {
+  } else if ((getText("dropdownGZ100P") == "02-10" && getText("dropdown6") == "QP-983P NetKonnect/RNS Server")) {
     setText("Sol1", "≧02-11");
-   } else if ((getText("dropdownEDNS9001") == "02-20" && getText("dropdown6") == "QP-983P NetKonnect/RNS Server")) {
-    setText("Sol1", "≧02-11");
-   } else if ((getText("dropdownEDNS9001") == "02-22" && getText("dropdown6") == "QP-983P NetKonnect/RNS Server")) {
-    setText("Sol1", "≧02-11");
+   } else if ((getText("dropdownGZ100P") == "02-20" && getText("dropdown6") == "QP-983P NetKonnect/RNS Server")) {
+    setText("Sol1", "≧02-11 'HiQ-View needs to be set to OFF when used with CGS-9001/CGS-9002/QP-983P.'");
+   } else if ((getText("dropdownGZ100P") == "02-22" && getText("dropdown6") == "QP-983P NetKonnect/RNS Server")) {
+    setText("Sol1", "≧02-11 'HiQ-View needs to be set to OFF when used with CGS-9001/CGS-9002/QP-983P.'");
 
 
 
-  } else if ((getText("dropdownEDNS9001") == "02-06" && getText("dropdown6") == "QP-986P Host1000 Server")) {
+  } else if ((getText("dropdownGZ100P") == "02-06" && getText("dropdown6") == "QP-986P Host1000 Server")) {
               setScreen("screen1");
-  } else if ((getText("dropdownEDNS9001") == "02-10" && getText("dropdown6") == "QP-986P Host1000 Server")) {
+  } else if ((getText("dropdownGZ100P") == "02-10" && getText("dropdown6") == "QP-986P Host1000 Server")) {
     setScreen("screen1");
-   } else if ((getText("dropdownEDNS9001") == "02-20" && getText("dropdown6") == "QP-986P Host1000 Server")) {
+   } else if ((getText("dropdownGZ100P") == "02-20" && getText("dropdown6") == "QP-986P Host1000 Server")) {
     setScreen("screen1");
-   } else if ((getText("dropdownEDNS9001") == "02-22" && getText("dropdown6") == "QP-986P Host1000 Server")) {
+   } else if ((getText("dropdownGZ100P") == "02-22" && getText("dropdown6") == "QP-986P Host1000 Server")) {
     setScreen("screen1");
 
-  } else if ((getText("dropdownEDNS9001") == "02-06" && getText("dropdown6") == "QP-988P Unified Gateway")) {
+  } else if ((getText("dropdownGZ100P") == "02-06" && getText("dropdown6") == "QP-988P Unified Gateway")) {
               setText("Sol1", "≧01-10");
-  } else if ((getText("dropdownEDNS9001") == "02-10" && getText("dropdown6") == "QP-988P Unified Gateway")) {
+  } else if ((getText("dropdownGZ100P") == "02-10" && getText("dropdown6") == "QP-988P Unified Gateway")) {
    setText("Sol1", "≧01-10");
-   } else if ((getText("dropdownEDNS9001") == "02-20" && getText("dropdown6") == "QP-988P Unified Gateway")) {
+   } else if ((getText("dropdownGZ100P") == "02-20" && getText("dropdown6") == "QP-988P Unified Gateway")) {
     setText("Sol1", "≧01-10");
-   } else if ((getText("dropdownEDNS9001") == "02-22" && getText("dropdown6") == "QP-988P Unified Gateway")) {
+   } else if ((getText("dropdownGZ100P") == "02-22" && getText("dropdown6") == "QP-988P Unified Gateway")) {
     setText("Sol1", "≧01-10");
 
-  } else if ((getText("dropdownEDNS9001") == "02-06" && getText("dropdown6") == "QP-988P Enterprise Gateway")) {
+  } else if ((getText("dropdownGZ100P") == "02-06" && getText("dropdown6") == "QP-988P Enterprise Gateway")) {
               setScreen("screen1");
-  } else if ((getText("dropdownEDNS9001") == "02-10" && getText("dropdown6") == "QP-988P Enterprise Gateway")) {
+  } else if ((getText("dropdownGZ100P") == "02-10" && getText("dropdown6") == "QP-988P Enterprise Gateway")) {
     setScreen("screen1");
-   } else if ((getText("dropdownEDNS9001") == "02-20" && getText("dropdown6") == "QP-988P Enterprise Gateway")) {
+   } else if ((getText("dropdownGZ100P") == "02-20" && getText("dropdown6") == "QP-988P Enterprise Gateway")) {
     setScreen("screen1");
-   } else if ((getText("dropdownEDNS9001") == "02-22" && getText("dropdown6") == "QP-988P Enterprise Gateway")) {
+   } else if ((getText("dropdownGZ100P") == "02-22" && getText("dropdown6") == "QP-988P Enterprise Gateway")) {
     setScreen("screen1");
 
-  } else if ((getText("dropdownEDNS9001") == "02-06" && getText("dropdown6") == "QP-989P ViTrac iOS")) {
+  } else if ((getText("dropdownGZ100P") == "02-06" && getText("dropdown6") == "QP-989P ViTrac iOS")) {
               setScreen("screen1");
-  } else if ((getText("dropdownEDNS9001") == "02-10" && getText("dropdown6") == "QP-989P ViTrac iOS")) {
+  } else if ((getText("dropdownGZ100P") == "02-10" && getText("dropdown6") == "QP-989P ViTrac iOS")) {
     setScreen("screen1");
-   } else if ((getText("dropdownEDNS9001") == "02-20" && getText("dropdown6") == "QP-989P ViTrac iOS")) {
+   } else if ((getText("dropdownGZ100P") == "02-20" && getText("dropdown6") == "QP-989P ViTrac iOS")) {
     setScreen("screen1");
-   } else if ((getText("dropdownEDNS9001") == "02-22" && getText("dropdown6") == "QP-989P ViTrac iOS")) {
+   } else if ((getText("dropdownGZ100P") == "02-22" && getText("dropdown6") == "QP-989P ViTrac iOS")) {
     setScreen("screen1");
 
-  } else if ((getText("dropdownEDNS9001") == "02-06" && getText("dropdown6") == "QP-991P ViTrac Android")) {
+  } else if ((getText("dropdownGZ100P") == "02-06" && getText("dropdown6") == "QP-991P ViTrac Android")) {
               setScreen("screen1");
-  } else if ((getText("dropdownEDNS9001") == "02-10" && getText("dropdown6") == "QP-991P ViTrac Android")) {
+  } else if ((getText("dropdownGZ100P") == "02-10" && getText("dropdown6") == "QP-991P ViTrac Android")) {
     setScreen("screen1");
-   } else if ((getText("dropdownEDNS9001") == "02-20" && getText("dropdown6") == "QP-991P ViTrac Android")) {
+   } else if ((getText("dropdownGZ100P") == "02-20" && getText("dropdown6") == "QP-991P ViTrac Android")) {
     setScreen("screen1");
-   } else if ((getText("dropdownEDNS9001") == "02-22" && getText("dropdown6") == "QP-991P ViTrac Android")) {
+   } else if ((getText("dropdownGZ100P") == "02-22" && getText("dropdown6") == "QP-991P ViTrac Android")) {
     setScreen("screen1");
 
-  } else if ((getText("dropdownEDNS9001") == "02-06" && getText("dropdown6") == "QP-999P NKAnywhere")) {
+  } else if ((getText("dropdownGZ100P") == "02-06" && getText("dropdown6") == "QP-999P NKAnywhere")) {
               setScreen("screen1");
-  } else if ((getText("dropdownEDNS9001") == "02-10" && getText("dropdown6") == "QP-999P NKAnywhere")) {
+  } else if ((getText("dropdownGZ100P") == "02-10" && getText("dropdown6") == "QP-999P NKAnywhere")) {
     setScreen("screen1");
-   } else if ((getText("dropdownEDNS9001") == "02-20" && getText("dropdown6") == "QP-999P NKAnywhere")) {
+   } else if ((getText("dropdownGZ100P") == "02-20" && getText("dropdown6") == "QP-999P NKAnywhere")) {
     setScreen("screen1");
-   } else if ((getText("dropdownEDNS9001") == "02-22" && getText("dropdown6") == "QP-999P NKAnywhere")) {
+   } else if ((getText("dropdownGZ100P") == "02-22" && getText("dropdown6") == "QP-999P NKAnywhere")) {
     setScreen("screen1");
 
-  } else if ((getText("dropdownEDNS9001") == "02-06" && getText("dropdown6") == "OLG-3800")) {
+  } else if ((getText("dropdownGZ100P") == "02-06" && getText("dropdown6") == "OLG-3800")) {
               setScreen("screen1");
-  } else if ((getText("dropdownEDNS9001") == "02-10" && getText("dropdown6") == "OLG-3800")) {
+  } else if ((getText("dropdownGZ100P") == "02-10" && getText("dropdown6") == "OLG-3800")) {
     setScreen("screen1");
-   } else if ((getText("dropdownEDNS9001") == "02-20" && getText("dropdown6") == "OLG-3800")) {
+   } else if ((getText("dropdownGZ100P") == "02-20" && getText("dropdown6") == "OLG-3800")) {
     setScreen("screen1");
-   } else if ((getText("dropdownEDNS9001") == "02-22" && getText("dropdown6") == "OLG-3800")) {
+   } else if ((getText("dropdownGZ100P") == "02-22" && getText("dropdown6") == "OLG-3800")) {
     setScreen("screen1");
 
 //ORG-9100
@@ -3368,6 +3865,8 @@ onEvent("go_button", "click", function(event) {
      setScreen("screen2");
    } else if ((getText("dropdownORG9100") == "04-51" && getText("dropdown6") == "CGS-9001 Pager Gateway (Legacy)")) {
    setScreen("screen1");
+        showElement("notearea");
+  	setText("notearea", "ZM-View/HiQ-View needs to be set to OFF when used with CGS-9001/CGS-9002/QP-983P. ");
 
   } else if ((getText("dropdownORG9100") == "04-01" && getText("dropdown6") == "CGS-9002 HL7 Gateway (Legacy)")) {
            setScreen("screen1");
@@ -3377,6 +3876,8 @@ onEvent("go_button", "click", function(event) {
      setScreen("screen2");
    } else if ((getText("dropdownORG9100") == "04-51" && getText("dropdown6") == "CGS-9002 HL7 Gateway (Legacy)")) {
    setScreen("screen1");
+         showElement("notearea");
+  	setText("notearea", "ZM-View/HiQ-View needs to be set to OFF when used with CGS-9001/CGS-9002/QP-983P. ");
 
 
   } else if ((getText("dropdownORG9100") == "04-01" && getText("dropdown6") == "QP-983P NetKonnect/RNS Server")) {
@@ -3387,6 +3888,8 @@ onEvent("go_button", "click", function(event) {
      setScreen("screen2");
    } else if ((getText("dropdownORG9100") == "04-51" && getText("dropdown6") == "QP-983P NetKonnect/RNS Server")) {
    setScreen("screen1");
+         showElement("notearea");
+  	setText("notearea", "ZM-View/HiQ-View needs to be set to OFF when used with CGS-9001/CGS-9002/QP-983P. ");
 
   } else if ((getText("dropdownORG9100") == "04-01" && getText("dropdown6") == "QP-986P Host1000 Server")) {
            setScreen("screen1");
@@ -3453,200 +3956,223 @@ onEvent("go_button", "click", function(event) {
    setScreen("screen1");
 
 //CGS-9001
-  } else if ((getText("dropdownCGS9001") == "04-01" && getText("dropdown6") == "BSM-1700 (+UG/TS)")) {
+  } else if ((getText("dropdownCGS9001") == "02-03a" && getText("dropdown6") == "BSM-1700 (+UG/TS)")) {
            setText("Sol1", "=01-15");
-  } else if ((getText("dropdownCGS9001") == "04-20" && getText("dropdown6") == "BSM-1700 (+UG/TS)")) {
+  } else if ((getText("dropdownCGS9001") == "02-03b" && getText("dropdown6") == "BSM-1700 (+UG/TS)")) {
      setScreen("screen1");
-   } else if ((getText("dropdownCGS9001") == "04-31" && getText("dropdown6") == "BSM-1700 (+UG/TS)")) {
+   } else if ((getText("dropdownCGS9001") == "02-03c" && getText("dropdown6") == "BSM-1700 (+UG/TS)")) {
      setScreen("screen1");
-   } else if ((getText("dropdownCGS9001") == "04-51" && getText("dropdown6") == "BSM-1700 (+UG/TS)")) {
+   } else if ((getText("dropdownCGS9001") == "02-03d" && getText("dropdown6") == "BSM-1700 (+UG/TS)")) {
    setScreen("screen1");
 
-  } else if ((getText("dropdownCGS9001") == "04-01" && getText("dropdown6") == "BSM-3500")) {
+  } else if ((getText("dropdownCGS9001") == "02-03a" && getText("dropdown6") == "BSM-3500")) {
            setScreen("screen1");
-  } else if ((getText("dropdownCGS9001") == "04-20" && getText("dropdown6") == "BSM-3500")) {
+  } else if ((getText("dropdownCGS9001") == "02-03b" && getText("dropdown6") == "BSM-3500")) {
      setScreen("screen1");
-   } else if ((getText("dropdownCGS9001") == "04-31" && getText("dropdown6") == "BSM-3500")) {
+   } else if ((getText("dropdownCGS9001") == "02-03c" && getText("dropdown6") == "BSM-3500")) {
      setScreen("screen1");
-   } else if ((getText("dropdownCGS9001") == "04-51" && getText("dropdown6") == "BSM-3500")) {
+   } else if ((getText("dropdownCGS9001") == "02-03d" && getText("dropdown6") == "BSM-3500")) {
    setScreen("screen1");
 
-  } else if ((getText("dropdownCGS9001") == "04-01" && getText("dropdown6") == "BSM-6000")) {
+  } else if ((getText("dropdownCGS9001") == "02-03a" && getText("dropdown6") == "BSM-6000")) {
            setText("Sol1", "≦07-41, ≧08-12*");
-  } else if ((getText("dropdownCGS9001") == "04-20" && getText("dropdown6") == "BSM-6000")) {
+  } else if ((getText("dropdownCGS9001") == "02-03b" && getText("dropdown6") == "BSM-6000")) {
      setText("Sol1", "≦07-41, ≧08-12*");
-   } else if ((getText("dropdownCGS9001") == "04-31" && getText("dropdown6") == "BSM-6000")) {
+   } else if ((getText("dropdownCGS9001") == "02-03c" && getText("dropdown6") == "BSM-6000")) {
      setText("Sol1", "≦07-41, ≧08-12*");
-   } else if ((getText("dropdownCGS9001") == "04-51" && getText("dropdown6") == "BSM-6000")) {
+   } else if ((getText("dropdownCGS9001") == "02-03d" && getText("dropdown6") == "BSM-6000")) {
    setText("Sol1", "≦07-41, ≧08-12*");
 
-  } else if ((getText("dropdownCGS9001") == "04-01" && getText("dropdown6") == "CSM-1901")) {
+  } else if ((getText("dropdownCGS9001") == "02-03a" && getText("dropdown6") == "CSM-1901")) {
            setScreen("screen1");
-  } else if ((getText("dropdownCGS9001") == "04-20" && getText("dropdown6") == "CSM-1901")) {
+      showElement("notearea");
+  	setText("notearea", "ZM-View/HiQ-View causes an issue when used with CGS-9001/CGS-9002/QP-983P. ZM-View/HiQ-View needs to be set to OFF when used with CGS-9001/CGS-9002/QP-983P. Do not activate Pager Server Extension of QP-988P(EG).  ");
+  } else if ((getText("dropdownCGS9001") == "02-03b" && getText("dropdown6") == "CSM-1901")) {
      setScreen("screen1");
-   } else if ((getText("dropdownCGS9001") == "04-31" && getText("dropdown6") == "CSM-1901")) {
+      showElement("notearea");
+  	setText("notearea", "ZM-View/HiQ-View causes an issue when used with CGS-9001/CGS-9002/QP-983P. ZM-View/HiQ-View needs to be set to OFF when used with CGS-9001/CGS-9002/QP-983P. Do not activate Pager Server Extension of QP-988P(EG).  ");
+   } else if ((getText("dropdownCGS9001") == "02-03c" && getText("dropdown6") == "CSM-1901")) {
      setScreen("screen1");
-   } else if ((getText("dropdownCGS9001") == "04-51" && getText("dropdown6") == "CSM-1901")) {
+      showElement("notearea");
+  	setText("notearea", "ZM-View/HiQ-View causes an issue when used with CGS-9001/CGS-9002/QP-983P. ZM-View/HiQ-View needs to be set to OFF when used with CGS-9001/CGS-9002/QP-983P. Do not activate Pager Server Extension of QP-988P(EG).  ");
+   } else if ((getText("dropdownCGS9001") == "02-03d" && getText("dropdown6") == "CSM-1901")) {
    setScreen("screen1");
+    showElement("notearea");
+  	setText("notearea", "ZM-View/HiQ-View causes an issue when used with CGS-9001/CGS-9002/QP-983P. ZM-View/HiQ-View needs to be set to OFF when used with CGS-9001/CGS-9002/QP-983P. Do not activate Pager Server Extension of QP-988P(EG).  ");
 
-  } else if ((getText("dropdownCGS9001") == "04-01" && getText("dropdown6") == "CNS-6201")) {
+  } else if ((getText("dropdownCGS9001") == "02-03a" && getText("dropdown6") == "CNS-6201")) {
            setText("Sol1", "NA");
-  } else if ((getText("dropdownCGS9001") == "04-20" && getText("dropdown6") == "CNS-6201")) {
+  } else if ((getText("dropdownCGS9001") == "02-03b" && getText("dropdown6") == "CNS-6201")) {
      setText("Sol1", "NA");
-   } else if ((getText("dropdownCGS9001") == "04-31" && getText("dropdown6") == "CNS-6201")) {
+   } else if ((getText("dropdownCGS9001") == "02-03c" && getText("dropdown6") == "CNS-6201")) {
      setText("Sol1", "NA");
-   } else if ((getText("dropdownCGS9001") == "04-51" && getText("dropdown6") == "CNS-6201")) {
+   } else if ((getText("dropdownCGS9001") == "02-03d" && getText("dropdown6") == "CNS-6201")) {
    setText("Sol1", "NA");
 
 
-  } else if ((getText("dropdownCGS9001") == "04-01" && getText("dropdown6") == "CNS-6801")) {
+  } else if ((getText("dropdownCGS9001") == "02-03a" && getText("dropdown6") == "CNS-6801")) {
            setText("Sol1", "NA");
-  } else if ((getText("dropdownCGS9001") == "04-20" && getText("dropdown6") == "CNS-6801")) {
+  } else if ((getText("dropdownCGS9001") == "02-03b" && getText("dropdown6") == "CNS-6801")) {
      setText("Sol1", "NA");
-   } else if ((getText("dropdownCGS9001") == "04-31" && getText("dropdown6") == "CNS-6801")) {
+   } else if ((getText("dropdownCGS9001") == "02-03c" && getText("dropdown6") == "CNS-6801")) {
      setText("Sol1", "NA");
-   } else if ((getText("dropdownCGS9001") == "04-51" && getText("dropdown6") == "CNS-6801")) {
+   } else if ((getText("dropdownCGS9001") == "02-03d" && getText("dropdown6") == "CNS-6801")) {
    setText("Sol1", "NA");
 
-  } else if ((getText("dropdownCGS9001") == "04-01" && getText("dropdown6") == "RNS-9703(Old GUI)")) {
+  } else if ((getText("dropdownCGS9001") == "02-03a" && getText("dropdown6") == "RNS-9703(Old GUI)")) {
            setText("Sol1", "NA");
-  } else if ((getText("dropdownCGS9001") == "04-20" && getText("dropdown6") == "RNS-9703(Old GUI)")) {
+  } else if ((getText("dropdownCGS9001") == "02-03b" && getText("dropdown6") == "RNS-9703(Old GUI)")) {
      setText("Sol1", "NA");
-   } else if ((getText("dropdownCGS9001") == "04-31" && getText("dropdown6") == "RNS-9703(Old GUI)")) {
+   } else if ((getText("dropdownCGS9001") == "02-03c" && getText("dropdown6") == "RNS-9703(Old GUI)")) {
      setText("Sol1", "NA");
-   } else if ((getText("dropdownCGS9001") == "04-51" && getText("dropdown6") == "RNS-9703(Old GUI)")) {
+   } else if ((getText("dropdownCGS9001") == "02-03d" && getText("dropdown6") == "RNS-9703(Old GUI)")) {
    setText("Sol1", "NA");
 
-  } else if ((getText("dropdownCGS9001") == "04-01" && getText("dropdown6") == "RNS-6803(Audio)")) {
+  } else if ((getText("dropdownCGS9001") == "02-03a" && getText("dropdown6") == "RNS-6803(Audio)")) {
            setText("Sol1", "NA");
-  } else if ((getText("dropdownCGS9001") == "04-20" && getText("dropdown6") == "RNS-6803(Audio)")) {
+  } else if ((getText("dropdownCGS9001") == "02-03b" && getText("dropdown6") == "RNS-6803(Audio)")) {
      setText("Sol1", "NA");
-   } else if ((getText("dropdownCGS9001") == "04-31" && getText("dropdown6") == "RNS-6803(Audio)")) {
+   } else if ((getText("dropdownCGS9001") == "02-03c" && getText("dropdown6") == "RNS-6803(Audio)")) {
      setText("Sol1", "NA");
-   } else if ((getText("dropdownCGS9001") == "04-51" && getText("dropdown6") == "RNS-6803(Audio)")) {
+   } else if ((getText("dropdownCGS9001") == "02-03d" && getText("dropdown6") == "RNS-6803(Audio)")) {
    setText("Sol1", "NA");
 
-  } else if ((getText("dropdownCGS9001") == "04-01" && getText("dropdown6") == "RNS-6804(No Audio)")) {
+  } else if ((getText("dropdownCGS9001") == "02-03a" && getText("dropdown6") == "RNS-6804(No Audio)")) {
            setText("Sol1", "NA");
-  } else if ((getText("dropdownCGS9001") == "04-20" && getText("dropdown6") == "RNS-6804(No Audio)")) {
+  } else if ((getText("dropdownCGS9001") == "02-03b" && getText("dropdown6") == "RNS-6804(No Audio)")) {
      setText("Sol1", "NA");
-   } else if ((getText("dropdownCGS9001") == "04-31" && getText("dropdown6") == "RNS-6804(No Audio)")) {
+   } else if ((getText("dropdownCGS9001") == "02-03c" && getText("dropdown6") == "RNS-6804(No Audio)")) {
      setText("Sol1", "NA");
-   } else if ((getText("dropdownCGS9001") == "04-51" && getText("dropdown6") == "RNS-6804(No Audio)")) {
+   } else if ((getText("dropdownCGS9001") == "02-03d" && getText("dropdown6") == "RNS-6804(No Audio)")) {
    setText("Sol1", "NA");
 
-  } else if ((getText("dropdownCGS9001") == "04-01" && getText("dropdown6") == "EDNS-9001 Prefense")) {
+  } else if ((getText("dropdownCGS9001") == "02-03a" && getText("dropdown6") == "EDNS-9001 Prefense")) {
            setText("Sol1", "NA");
-  } else if ((getText("dropdownCGS9001") == "04-20" && getText("dropdown6") == "EDNS-9001 Prefense")) {
+  } else if ((getText("dropdownCGS9001") == "02-03b" && getText("dropdown6") == "EDNS-9001 Prefense")) {
      setText("Sol1", "NA");
-   } else if ((getText("dropdownCGS9001") == "04-31" && getText("dropdown6") == "EDNS-9001 Prefense")) {
+   } else if ((getText("dropdownCGS9001") == "02-03c" && getText("dropdown6") == "EDNS-9001 Prefense")) {
      setText("Sol1", "NA");
-   } else if ((getText("dropdownCGS9001") == "04-51" && getText("dropdown6") == "EDNS-9001 Prefense")) {
+   } else if ((getText("dropdownCGS9001") == "02-03d" && getText("dropdown6") == "EDNS-9001 Prefense")) {
    setText("Sol1", "NA");
 
 
-  } else if ((getText("dropdownCGS9001") == "04-01" && getText("dropdown6") == "GZ-100P (+UG/TS)")) {
+  } else if ((getText("dropdownCGS9001") == "02-03a" && getText("dropdown6") == "GZ-100P (+UG/TS)")) {
              setScreen("screen2");
-  } else if ((getText("dropdownCGS9001") == "04-20" && getText("dropdown6") == "GZ-100P (+UG/TS)")) {
+  } else if ((getText("dropdownCGS9001") == "02-03b" && getText("dropdown6") == "GZ-100P (+UG/TS)")) {
      setScreen("screen1");
-   } else if ((getText("dropdownCGS9001") == "04-31" && getText("dropdown6") == "GZ-100P (+UG/TS)")) {
+     showElement("notearea");
+  	setText("notearea", "ZM-View/HiQ-View causes an issue when used with CGS-9001/CGS-9002/QP-983P. ZM-View/HiQ-View needs to be set to OFF when used with CGS-9001/CGS-9002/QP-983P. Do not activate Pager Server Extension of QP-988P(EG).  ");
+   } else if ((getText("dropdownCGS9001") == "02-03c" && getText("dropdown6") == "GZ-100P (+UG/TS)")) {
      setScreen("screen1");
-   } else if ((getText("dropdownCGS9001") == "04-51" && getText("dropdown6") == "GZ-100P (+UG/TS)")) {
+     showElement("notearea");
+	setText("notearea", "ZM-View/HiQ-View causes an issue when used with CGS-9001/CGS-9002/QP-983P. ZM-View/HiQ-View needs to be set to OFF when used with CGS-9001/CGS-9002/QP-983P. Do not activate Pager Server Extension of QP-988P(EG).  ");
+   } else if ((getText("dropdownCGS9001") == "02-03d" && getText("dropdown6") == "GZ-100P (+UG/TS)")) {
    setScreen("screen1");
+   showElement("notearea");
+  	setText("notearea", "ZM-View/HiQ-View causes an issue when used with CGS-9001/CGS-9002/QP-983P. ZM-View/HiQ-View needs to be set to OFF when used with CGS-9001/CGS-9002/QP-983P. Do not activate Pager Server Extension of QP-988P(EG).  ");
 
 
-  } else if ((getText("dropdownCGS9001") == "04-01" && getText("dropdown6") == "ORG-9100")) {
+  } else if ((getText("dropdownCGS9001") == "02-03a" && getText("dropdown6") == "ORG-9100")) {
              setText("Sol1", "≦04-20, ≧04-51*");
-  } else if ((getText("dropdownCGS9001") == "04-20" && getText("dropdown6") == "ORG-9100")) {
+  } else if ((getText("dropdownCGS9001") == "02-03b" && getText("dropdown6") == "ORG-9100")) {
      ssetText("Sol1", "≦04-20, ≧04-51*");
-   } else if ((getText("dropdownCGS9001") == "04-31" && getText("dropdown6") == "ORG-9100")) {
+   } else if ((getText("dropdownCGS9001") == "02-03c" && getText("dropdown6") == "ORG-9100")) {
      setText("Sol1", "≦04-20, ≧04-51*");
-   } else if ((getText("dropdownCGS9001") == "04-51" && getText("dropdown6") == "ORG-9100")) {
+   } else if ((getText("dropdownCGS9001") == "02-03d" && getText("dropdown6") == "ORG-9100")) {
    setText("Sol1", "≦04-20, ≧04-51*");
 
-  } else if ((getText("dropdownCGS9001") == "04-01" && getText("dropdown6") == "CGS-9002 HL7 Gateway (Legacy)")) {
+  } else if ((getText("dropdownCGS9001") == "02-03a" && getText("dropdown6") == "CGS-9002 HL7 Gateway (Legacy)")) {
            setText("Sol1", "NA");
-  } else if ((getText("dropdownCGS9001") == "04-20" && getText("dropdown6") == "CGS-9002 HL7 Gateway (Legacy)")) {
+  } else if ((getText("dropdownCGS9001") == "02-03b" && getText("dropdown6") == "CGS-9002 HL7 Gateway (Legacy)")) {
      setText("Sol1", "NA");
-   } else if ((getText("dropdownCGS9001") == "04-31" && getText("dropdown6") == "CGS-9002 HL7 Gateway (Legacy)")) {
+   } else if ((getText("dropdownCGS9001") == "02-03c" && getText("dropdown6") == "CGS-9002 HL7 Gateway (Legacy)")) {
      setText("Sol1", "NA");
-   } else if ((getText("dropdownCGS9001") == "04-51" && getText("dropdown6") == "CGS-9002 HL7 Gateway (Legacy)")) {
+   } else if ((getText("dropdownCGS9001") == "02-03d" && getText("dropdown6") == "CGS-9002 HL7 Gateway (Legacy)")) {
    setText("Sol1", "NA");
 
 
-  } else if ((getText("dropdownCGS9001") == "04-01" && getText("dropdown6") == "QP-983P NetKonnect/RNS Server")) {
+  } else if ((getText("dropdownCGS9001") == "02-03a" && getText("dropdown6") == "QP-983P NetKonnect/RNS Server")) {
            setText("Sol1", "NA");
-  } else if ((getText("dropdownCGS9001") == "04-20" && getText("dropdown6") == "QP-983P NetKonnect/RNS Server")) {
+  } else if ((getText("dropdownCGS9001") == "02-03b" && getText("dropdown6") == "QP-983P NetKonnect/RNS Server")) {
      setText("Sol1", "NA");
-   } else if ((getText("dropdownCGS9001") == "04-31" && getText("dropdown6") == "QP-983P NetKonnect/RNS Server")) {
+   } else if ((getText("dropdownCGS9001") == "02-03c" && getText("dropdown6") == "QP-983P NetKonnect/RNS Server")) {
      setText("Sol1", "NA");
-   } else if ((getText("dropdownCGS9001") == "04-51" && getText("dropdown6") == "QP-983P NetKonnect/RNS Server")) {
+   } else if ((getText("dropdownCGS9001") == "02-03d" && getText("dropdown6") == "QP-983P NetKonnect/RNS Server")) {
    setText("Sol1", "NA");
 
-  } else if ((getText("dropdownCGS9001") == "04-01" && getText("dropdown6") == "QP-986P Host1000 Server")) {
+  } else if ((getText("dropdownCGS9001") == "02-03a" && getText("dropdown6") == "QP-986P Host1000 Server")) {
              setScreen("screen1");
-  } else if ((getText("dropdownCGS9001") == "04-20" && getText("dropdown6") == "QP-986P Host1000 Server")) {
+  } else if ((getText("dropdownCGS9001") == "02-03b" && getText("dropdown6") == "QP-986P Host1000 Server")) {
      setScreen("screen1");
-   } else if ((getText("dropdownCGS9001") == "04-31" && getText("dropdown6") == "QP-986P Host1000 Server")) {
+   } else if ((getText("dropdownCGS9001") == "02-03c" && getText("dropdown6") == "QP-986P Host1000 Server")) {
      setScreen("screen1");
-   } else if ((getText("dropdownCGS9001") == "04-51" && getText("dropdown6") == "QP-986P Host1000 Server")) {
+   } else if ((getText("dropdownCGS9001") == "02-03d" && getText("dropdown6") == "QP-986P Host1000 Server")) {
    setScreen("screen1");
 
 
 
-  } else if ((getText("dropdownCGS9001") == "04-01" && getText("dropdown6") == "QP-988P Unified Gateway")) {
+  } else if ((getText("dropdownCGS9001") == "02-03a" && getText("dropdown6") == "QP-988P Unified Gateway")) {
            setText("Sol1", "NA");
-  } else if ((getText("dropdownCGS9001") == "04-20" && getText("dropdown6") == "QP-988P Unified Gateway")) {
+  } else if ((getText("dropdownCGS9001") == "02-03b" && getText("dropdown6") == "QP-988P Unified Gateway")) {
      setText("Sol1", "NA");
-   } else if ((getText("dropdownCGS9001") == "04-31" && getText("dropdown6") == "QP-988P Unified Gateway")) {
+   } else if ((getText("dropdownCGS9001") == "02-03c" && getText("dropdown6") == "QP-988P Unified Gateway")) {
      setText("Sol1", "NA");
-   } else if ((getText("dropdownCGS9001") == "04-51" && getText("dropdown6") == "QP-988P Unified Gateway")) {
+   } else if ((getText("dropdownCGS9001") == "02-03d" && getText("dropdown6") == "QP-988P Unified Gateway")) {
    setText("Sol1", "NA");
 
 
-  } else if ((getText("dropdownCGS9001") == "04-01" && getText("dropdown6") == "QP-988P Enterprise Gateway")) {
+  } else if ((getText("dropdownCGS9001") == "02-03a" && getText("dropdown6") == "QP-988P Enterprise Gateway")) {
            setScreen("screen1");
-  } else if ((getText("dropdownCGS9001") == "04-20" && getText("dropdown6") == "QP-988P Enterprise Gateway")) {
+           showElement("notearea");
+  	setText("notearea", "ZM-View/HiQ-View causes an issue when used with CGS-9001/CGS-9002/QP-983P. ZM-View/HiQ-View needs to be set to OFF when used with CGS-9001/CGS-9002/QP-983P. Do not activate Pager Server Extension of QP-988P(EG).  ");
+  } else if ((getText("dropdownCGS9001") == "02-03b" && getText("dropdown6") == "QP-988P Enterprise Gateway")) {
      setScreen("screen1");
-   } else if ((getText("dropdownCGS9001") == "04-31" && getText("dropdown6") == "QP-988P Enterprise Gateway")) {
+     showElement("notearea");
+  	setText("notearea", "ZM-View/HiQ-View causes an issue when used with CGS-9001/CGS-9002/QP-983P. ZM-View/HiQ-View needs to be set to OFF when used with CGS-9001/CGS-9002/QP-983P. Do not activate Pager Server Extension of QP-988P(EG).  ");
+   } else if ((getText("dropdownCGS9001") == "02-03c" && getText("dropdown6") == "QP-988P Enterprise Gateway")) {
      setScreen("screen1");
-   } else if ((getText("dropdownCGS9001") == "04-51" && getText("dropdown6") == "QP-988P Enterprise Gateway")) {
+     showElement("notearea");
+  	setText("notearea", "ZM-View/HiQ-View causes an issue when used with CGS-9001/CGS-9002/QP-983P. ZM-View/HiQ-View needs to be set to OFF when used with CGS-9001/CGS-9002/QP-983P. Do not activate Pager Server Extension of QP-988P(EG).  ");
+   } else if ((getText("dropdownCGS9001") == "02-03d" && getText("dropdown6") == "QP-988P Enterprise Gateway")) {
   setScreen("screen1");
+  showElement("notearea");
+  	setText("notearea", "ZM-View/HiQ-View causes an issue when used with CGS-9001/CGS-9002/QP-983P. ZM-View/HiQ-View needs to be set to OFF when used with CGS-9001/CGS-9002/QP-983P. Do not activate Pager Server Extension of QP-988P(EG).  ");
+
   
-  } else if ((getText("dropdownCGS9001") == "04-01" && getText("dropdown6") == "QP-989P ViTrac iOS")) {
+  } else if ((getText("dropdownCGS9001") == "02-03a" && getText("dropdown6") == "QP-989P ViTrac iOS")) {
            setText("Sol1", "NA");
-  } else if ((getText("dropdownCGS9001") == "04-20" && getText("dropdown6") == "QP-989P ViTrac iOS")) {
+  } else if ((getText("dropdownCGS9001") == "02-03b" && getText("dropdown6") == "QP-989P ViTrac iOS")) {
      setText("Sol1", "NA");
-   } else if ((getText("dropdownCGS9001") == "04-31" && getText("dropdown6") == "QP-989P ViTrac iOS")) {
+   } else if ((getText("dropdownCGS9001") == "02-03c" && getText("dropdown6") == "QP-989P ViTrac iOS")) {
      setText("Sol1", "NA");
-   } else if ((getText("dropdownCGS9001") == "04-51" && getText("dropdown6") == "QP-989P ViTrac iOS")) {
+   } else if ((getText("dropdownCGS9001") == "02-03d" && getText("dropdown6") == "QP-989P ViTrac iOS")) {
    setText("Sol1", "NA");
 
-  } else if ((getText("dropdownCGS9001") == "04-01" && getText("dropdown6") == "QP-991P ViTrac Android")) {
+  } else if ((getText("dropdownCGS9001") == "02-03a" && getText("dropdown6") == "QP-991P ViTrac Android")) {
            setText("Sol1", "NA");
-  } else if ((getText("dropdownCGS9001") == "04-20" && getText("dropdown6") == "QP-991P ViTrac Android")) {
+  } else if ((getText("dropdownCGS9001") == "02-03b" && getText("dropdown6") == "QP-991P ViTrac Android")) {
      setText("Sol1", "NA");
-   } else if ((getText("dropdownCGS9001") == "04-31" && getText("dropdown6") == "QP-991P ViTrac Android")) {
+   } else if ((getText("dropdownCGS9001") == "02-03c" && getText("dropdown6") == "QP-991P ViTrac Android")) {
      setText("Sol1", "NA");
-   } else if ((getText("dropdownCGS9001") == "04-51" && getText("dropdown6") == "QP-991P ViTrac Android")) {
+   } else if ((getText("dropdownCGS9001") == "02-03d" && getText("dropdown6") == "QP-991P ViTrac Android")) {
    setText("Sol1", "NA");
 
-  } else if ((getText("dropdownCGS9001") == "04-01" && getText("dropdown6") == "QP-999P NKAnywhere")) {
+  } else if ((getText("dropdownCGS9001") == "02-03a" && getText("dropdown6") == "QP-999P NKAnywhere")) {
            setText("Sol1", "NA");
-  } else if ((getText("dropdownCGS9001") == "04-20" && getText("dropdown6") == "QP-999P NKAnywhere")) {
+  } else if ((getText("dropdownCGS9001") == "02-03b" && getText("dropdown6") == "QP-999P NKAnywhere")) {
      setText("Sol1", "NA");
-   } else if ((getText("dropdownCGS9001") == "04-31" && getText("dropdown6") == "QP-999P NKAnywhere")) {
+   } else if ((getText("dropdownCGS9001") == "02-03c" && getText("dropdown6") == "QP-999P NKAnywhere")) {
      setText("Sol1", "NA");
-   } else if ((getText("dropdownCGS9001") == "04-51" && getText("dropdown6") == "QP-999P NKAnywhere")) {
+   } else if ((getText("dropdownCGS9001") == "02-03d" && getText("dropdown6") == "QP-999P NKAnywhere")) {
    setText("Sol1", "NA");
 
-  } else if ((getText("dropdownCGS9001") == "04-01" && getText("dropdown6") == "OLG-3800")) {
+  } else if ((getText("dropdownCGS9001") == "02-03a" && getText("dropdown6") == "OLG-3800")) {
            setScreen("screen1");
-  } else if ((getText("dropdownCGS9001") == "04-20" && getText("dropdown6") == "OLG-3800")) {
+  } else if ((getText("dropdownCGS9001") == "02-03b" && getText("dropdown6") == "OLG-3800")) {
      setScreen("screen1");
-   } else if ((getText("dropdownCGS9001") == "04-31" && getText("dropdown6") == "OLG-3800")) {
+   } else if ((getText("dropdownCGS9001") == "02-03c" && getText("dropdown6") == "OLG-3800")) {
      setScreen("screen1");
-   } else if ((getText("dropdownCGS9001") == "04-51" && getText("dropdown6") == "OLG-3800")) {
+   } else if ((getText("dropdownCGS9001") == "02-03d" && getText("dropdown6") == "OLG-3800")) {
   setScreen("screen1");
   
   
@@ -3676,10 +4202,16 @@ onEvent("go_button", "click", function(event) {
 
   } else if ((getText("dropdownCGS9002") == "01-08a" && getText("dropdown6") == "CSM-1901")) {
            setScreen("screen1");
+           showElement("notearea");
+  	setText("notearea", "ZM-View/HiQ-View causes an issue when used with CGS-9001/CGS-9002/QP-983P. ZM-View/HiQ-View needs to be set to OFF when used with CGS-9001/CGS-9002/QP-983P.Do not activate HL7 Server Extension of QP-988P(EG). ");
   } else if ((getText("dropdownCGS9002") == "01-09" && getText("dropdown6") == "CSM-1901")) {
      setScreen("screen1");
+                  showElement("notearea");
+  	setText("notearea", "supports Send to EMR with CNS-6201≥ 05-01 or CNS-6801 ≥ 02-01.");
    } else if ((getText("dropdownCGS9002") == "01-09a" && getText("dropdown6") == "CSM-1901")) {
     setScreen("screen1");
+            showElement("notearea");
+  	setText("notearea", "supports Send to EMR with CNS-6201≥ 05-01 or CNS-6801 ≥ 02-01.");
 
   } else if ((getText("dropdownCGS9002") == "01-08a" && getText("dropdown6") == "CNS-6201")) {
            setText("Sol1", " =02-40");
@@ -3725,13 +4257,14 @@ onEvent("go_button", "click", function(event) {
      setText("Sol1", "NA");
 
 
-
   } else if ((getText("dropdownCGS9002") == "01-08a" && getText("dropdown6") == "GZ-100P (+UG/TS)")) {
            setScreen("screen2");
   } else if ((getText("dropdownCGS9002") == "01-09" && getText("dropdown6") == "GZ-100P (+UG/TS)")) {
      setScreen("screen2");
    } else if ((getText("dropdownCGS9002") == "01-09a" && getText("dropdown6") == "GZ-100P (+UG/TS)")) {
     setScreen("screen1");
+         showElement("notearea");
+  	setText("notearea", "supports Send to EMR with CNS-6201≥ 05-01 or CNS-6801 ≥ 02-01.");
 
   } else if ((getText("dropdownCGS9002") == "01-08a" && getText("dropdown6") == "ORG-9100")) {
            setText("Sol1", "≦01-09, ≧04-51*");
@@ -3771,10 +4304,16 @@ onEvent("go_button", "click", function(event) {
 
   } else if ((getText("dropdownCGS9002") == "01-08a" && getText("dropdown6") == "QP-988P Enterprise Gateway")) {
            setScreen("screen1");
+                   showElement("notearea");
+  	setText("notearea", "ZM-View/HiQ-View causes an issue when used with CGS-9001/CGS-9002/QP-983P. ZM-View/HiQ-View needs to be set to OFF when used with CGS-9001/CGS-9002/QP-983P.Do not activate HL7 Server Extension of QP-988P(EG). ");
   } else if ((getText("dropdownCGS9002") == "01-09" && getText("dropdown6") == "QP-988P Enterprise Gateway")) {
      setScreen("screen1");
+             showElement("notearea");
+  	setText("notearea", "supports Send to EMR with CNS-6201≥ 05-01 or CNS-6801 ≥ 02-01.");
    } else if ((getText("dropdownCGS9002") == "01-09a" && getText("dropdown6") == "QP-988P Enterprise Gateway")) {
      setScreen("screen1");
+                  showElement("notearea");
+  	setText("notearea", "supports Send to EMR with CNS-6201≥ 05-01 or CNS-6801 ≥ 02-01.");
 
   } else if ((getText("dropdownCGS9002") == "01-08a" && getText("dropdown6") == "QP-989P ViTrac iOS")) {
            setText("Sol1", "NA");
@@ -3823,8 +4362,12 @@ onEvent("go_button", "click", function(event) {
 
    } else if ((getText("dropdownQP983P") == "02-10" && getText("dropdown6") == "CSM-1901")) {
      setScreen("screen1");
+          showElement("notearea");
+  	setText("notearea", "ZM-View/HiQ-View causes an issue when used with CGS-9001/CGS-9002/QP-983P. ZM-View/HiQ-View needs to be set to OFF when used with CGS-9001/CGS-9002/QP-983P. Do not activate RNS Server Extension of QP-988P(EG).");
    } else if ((getText("dropdownQP983P") == "02-11" && getText("dropdown6") == "CSM-1901")) {
      setScreen("screen1");
+               showElement("notearea");
+  	setText("notearea", "ZM-View/HiQ-View causes an issue when used with CGS-9001/CGS-9002/QP-983P. ZM-View/HiQ-View needs to be set to OFF when used with CGS-9001/CGS-9002/QP-983P. Do not activate RNS Server Extension of QP-988P(EG).");
 
    } else if ((getText("dropdownQP983P") == "02-10" && getText("dropdown6") == "CNS-6201")) {
      setText("Sol1", "NA");
@@ -3859,6 +4402,8 @@ onEvent("go_button", "click", function(event) {
      setScreen("screen2");
    } else if ((getText("dropdownQP983P") == "02-11" && getText("dropdown6") == "GZ-100P (+UG/TS)")) {
      setScreen("screen1");
+               showElement("notearea");
+  	setText("notearea", "ZM-View/HiQ-View causes an issue when used with CGS-9001/CGS-9002/QP-983P. ZM-View/HiQ-View needs to be set to OFF when used with CGS-9001/CGS-9002/QP-983P. Do not activate RNS Server Extension of QP-988P(EG).");
 
 
    } else if ((getText("dropdownQP983P") == "02-10" && getText("dropdown6") == "ORG-9100")) {
@@ -3890,8 +4435,12 @@ onEvent("go_button", "click", function(event) {
 
    } else if ((getText("dropdownQP983P") == "02-10" && getText("dropdown6") == "QP-988P Enterprise Gateway")) {
      setScreen("screen1");
+               showElement("notearea");
+  	setText("notearea", "ZM-View/HiQ-View causes an issue when used with CGS-9001/CGS-9002/QP-983P. ZM-View/HiQ-View needs to be set to OFF when used with CGS-9001/CGS-9002/QP-983P. Do not activate RNS Server Extension of QP-988P(EG).");
    } else if ((getText("dropdownQP983P") == "02-11" && getText("dropdown6") == "QP-988P Enterprise Gateway")) {
      setScreen("screen1");
+               showElement("notearea");
+  	setText("notearea", "ZM-View/HiQ-View causes an issue when used with CGS-9001/CGS-9002/QP-983P. ZM-View/HiQ-View needs to be set to OFF when used with CGS-9001/CGS-9002/QP-983P. Do not activate RNS Server Extension of QP-988P(EG).");
 
    } else if ((getText("dropdownQP983P") == "02-10" && getText("dropdown6") == "QP-989P ViTrac iOS")) {
      setText("Sol1", "NA");
@@ -4813,198 +5362,7 @@ onEvent("go_button", "click", function(event) {
 
 
 
-//GZ100P
 
-   } else if ((getText("dropdownGZ100P") == "02-06" && getText("dropdown6") == "BSM-1700 (+UG/TS)")) {
-     setText("Sol1", "NA");
-   } else if ((getText("dropdownGZ100P") == "02-10" && getText("dropdown6") == "BSM-1700 (+UG/TS)")) {
-     setText("Sol1", "NA");
-   } else if ((getText("dropdownGZ100P") == "02-20" && getText("dropdown6") == "BSM-1700 (+UG/TS)")) {
-     setText("Sol1", "NA");
-   } else if ((getText("dropdownGZ100P") == "02-22" && getText("dropdown6") == "BSM-1700 (+UG/TS)")) {
-     setText("Sol1", "NA");
-
-   } else if ((getText("dropdownGZ100P") == "02-06" && getText("dropdown6") == "BSM-3500")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownGZ100P") == "02-10" && getText("dropdown6") == "BSM-3500")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownGZ100P") == "02-20" && getText("dropdown6") == "BSM-3500")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownGZ100P") == "02-22" && getText("dropdown6") == "BSM-3500")) {
-     setScreen("screen1");
-
-   } else if ((getText("dropdownGZ100P") == "02-06" && getText("dropdown6") == "BSM-6000")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownGZ100P") == "02-10" && getText("dropdown6") == "BSM-6000")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownGZ100P") == "02-20" && getText("dropdown6") == "BSM-6000")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownGZ100P") == "02-22" && getText("dropdown6") == "BSM-6000")) {
-     setScreen("screen1");
-
-   } else if ((getText("dropdownGZ100P") == "02-06" && getText("dropdown6") == "CSM-1901")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownGZ100P") == "02-10" && getText("dropdown6") == "CSM-1901")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownGZ100P") == "02-20" && getText("dropdown6") == "CSM-1901")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownGZ100P") == "02-22" && getText("dropdown6") == "CSM-1901")) {
-     setScreen("screen1");
-
-
-   } else if ((getText("dropdownGZ100P") == "02-06" && getText("dropdown6") == "CNS-6201")) {
-     setText("Sol1", "≧05-01");
-   } else if ((getText("dropdownGZ100P") == "02-10" && getText("dropdown6") == "CNS-6201")) {
-     setText("Sol1", "≧05-01");
-   } else if ((getText("dropdownGZ100P") == "02-20" && getText("dropdown6") == "CNS-6201")) {
-     setText("Sol1", "≧05-01");
-   } else if ((getText("dropdownGZ100P") == "02-22" && getText("dropdown6") == "CNS-6201")) {
-     setText("Sol1", "≧05-01");
-
-   } else if ((getText("dropdownGZ100P") == "02-06" && getText("dropdown6") == "CNS-6801")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownGZ100P") == "02-10" && getText("dropdown6") == "CNS-6801")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownGZ100P") == "02-20" && getText("dropdown6") == "CNS-6801")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownGZ100P") == "02-22" && getText("dropdown6") == "CNS-6801")) {
-     setScreen("screen1");
-
-   } else if ((getText("dropdownGZ100P") == "02-06" && getText("dropdown6") == "RNS-9703(Old GUI)")) {
-     setText("Sol1", "≧03-40b");
-   } else if ((getText("dropdownGZ100P") == "02-10" && getText("dropdown6") == "RNS-9703(Old GUI)")) {
-     setText("Sol1", "≧03-40b");
-   } else if ((getText("dropdownGZ100P") == "02-20" && getText("dropdown6") == "RNS-9703(Old GUI)")) {
-     setText("Sol1", "≧03-40b");
-   } else if ((getText("dropdownGZ100P") == "02-22" && getText("dropdown6") == "RNS-9703(Old GUI)")) {
-     setText("Sol1", "≧03-40b");
-
-   } else if ((getText("dropdownGZ100P") == "02-06" && getText("dropdown6") == "RNS-6803(Audio)")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownGZ100P") == "02-10" && getText("dropdown6") == "RNS-6803(Audio)")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownGZ100P") == "02-20" && getText("dropdown6") == "RNS-6803(Audio)")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownGZ100P") == "02-22" && getText("dropdown6") == "RNS-6803(Audio)")) {
-     setScreen("screen1");
-
-   } else if ((getText("dropdownGZ100P") == "02-06" && getText("dropdown6") == "RNS-6804(No Audio)")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownGZ100P") == "02-10" && getText("dropdown6") == "RNS-6804(No Audio)")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownGZ100P") == "02-20" && getText("dropdown6") == "RNS-6804(No Audio)")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownGZ100P") == "02-22" && getText("dropdown6") == "RNS-6804(No Audio)")) {
-     setScreen("screen1");
-
-   } else if ((getText("dropdownGZ100P") == "02-06" && getText("dropdown6") == "EDNS-9001 Prefense")) {
-     setText("Sol1", "NA");
-   } else if ((getText("dropdownGZ100P") == "02-10" && getText("dropdown6") == "EDNS-9001 Prefense")) {
-     setText("Sol1", "NA");
-   } else if ((getText("dropdownGZ100P") == "02-20" && getText("dropdown6") == "EDNS-9001 Prefense")) {
-     setText("Sol1", "NA");
-   } else if ((getText("dropdownGZ100P") == "02-22" && getText("dropdown6") == "EDNS-9001 Prefense")) {
-     setText("Sol1", "NA");
-
-   } else if ((getText("dropdownGZ100P") == "02-06" && getText("dropdown6") == "ORG-9100")) {
-     setText("Sol1", "NA");
-   } else if ((getText("dropdownGZ100P") == "02-10" && getText("dropdown6") == "ORG-9100")) {
-     setText("Sol1", "NA");
-   } else if ((getText("dropdownGZ100P") == "02-20" && getText("dropdown6") == "ORG-9100")) {
-     setText("Sol1", "NA");
-   } else if ((getText("dropdownGZ100P") == "02-22" && getText("dropdown6") == "ORG-9100")) {
-     setText("Sol1", "NA");
-
-
-   } else if ((getText("dropdownGZ100P") == "02-06" && getText("dropdown6") == "CGS-9001 Pager Gateway (Legacy)")) {
-     setText("Sol1", "≧02-03b");
-   } else if ((getText("dropdownGZ100P") == "02-10" && getText("dropdown6") == "CGS-9001 Pager Gateway (Legacy)")) {
-     setText("Sol1", "≧02-03b");
-   } else if ((getText("dropdownGZ100P") == "02-20" && getText("dropdown6") == "CGS-9001 Pager Gateway (Legacy)")) {
-     setText("Sol1", "≧02-03b");
-   } else if ((getText("dropdownGZ100P") == "02-22" && getText("dropdown6") == "CGS-9001 Pager Gateway (Legacy)")) {
-     setText("Sol1", "≧02-03b");
-
-   } else if ((getText("dropdownGZ100P") == "02-06" && getText("dropdown6") == "CGS-9002 HL7 Gateway (Legacy)")) {
-     setText("Sol1", "≧01-09a");
-   } else if ((getText("dropdownGZ100P") == "02-10" && getText("dropdown6") == "CGS-9002 HL7 Gateway (Legacy)")) {
-     setText("Sol1", "≧01-09a");
-   } else if ((getText("dropdownGZ100P") == "02-20" && getText("dropdown6") == "CGS-9002 HL7 Gateway (Legacy)")) {
-     setText("Sol1", "≧01-09a");
-   } else if ((getText("dropdownGZ100P") == "02-22" && getText("dropdown6") == "CGS-9002 HL7 Gateway (Legacy)")) {
-     setText("Sol1", "≧01-09a");
-
-   } else if ((getText("dropdownGZ100P") == "02-06" && getText("dropdown6") == "QP-983P NetKonnect/RNS Server")) {
-     setText("Sol1", "≧02-11");
-   } else if ((getText("dropdownGZ100P") == "02-10" && getText("dropdown6") == "QP-983P NetKonnect/RNS Server")) {
-     setText("Sol1", "≧02-11");
-   } else if ((getText("dropdownGZ100P") == "02-20" && getText("dropdown6") == "QP-983P NetKonnect/RNS Server")) {
-     setText("Sol1", "≧02-11");
-   } else if ((getText("dropdownGZ100P") == "02-22" && getText("dropdown6") == "QP-983P NetKonnect/RNS Server")) {
-     setText("Sol1", "≧02-11");
-
-   } else if ((getText("dropdownGZ100P") == "02-06" && getText("dropdown6") == "QP-986P Host1000 Server")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownGZ100P") == "02-10" && getText("dropdown6") == "QP-986P Host1000 Server")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownGZ100P") == "02-20" && getText("dropdown6") == "QP-986P Host1000 Server")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownGZ100P") == "02-22" && getText("dropdown6") == "QP-986P Host1000 Server")) {
-     setScreen("screen1");
-
-   } else if ((getText("dropdownGZ100P") == "02-06" && getText("dropdown6") == "QP-988P Unified Gateway")) {
-     setText("Sol1", "≧01-10");
-   } else if ((getText("dropdownGZ100P") == "02-10" && getText("dropdown6") == "QP-988P Unified Gateway")) {
-     setText("Sol1", "≧01-10");
-   } else if ((getText("dropdownGZ100P") == "02-20" && getText("dropdown6") == "QP-988P Unified Gateway")) {
-     setText("Sol1", "≧01-10");
-   } else if ((getText("dropdownGZ100P") == "02-22" && getText("dropdown6") == "QP-988P Unified Gateway")) {
-     setText("Sol1", "≧01-10");
-
-   } else if ((getText("dropdownGZ100P") == "02-06" && getText("dropdown6") == "QP-988P Enterprise Gateway")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownGZ100P") == "02-10" && getText("dropdown6") == "QP-988P Enterprise Gateway")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownGZ100P") == "02-20" && getText("dropdown6") == "QP-988P Enterprise Gateway")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownGZ100P") == "02-22" && getText("dropdown6") == "QP-988P Enterprise Gateway")) {
-     setScreen("screen1");
-
-   } else if ((getText("dropdownGZ100P") == "02-06" && getText("dropdown6") == "QP-989P ViTrac iOS")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownGZ100P") == "02-10" && getText("dropdown6") == "QP-989P ViTrac iOS")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownGZ100P") == "02-20" && getText("dropdown6") == "QP-989P ViTrac iOS")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownGZ100P") == "02-22" && getText("dropdown6") == "QP-989P ViTrac iOS")) {
-     setScreen("screen1");
-
-   } else if ((getText("dropdownGZ100P") == "02-06" && getText("dropdown6") == "QP-991P ViTrac Android")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownGZ100P") == "02-10" && getText("dropdown6") == "QP-991P ViTrac Android")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownGZ100P") == "02-20" && getText("dropdown6") == "QP-991P ViTrac Android")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownGZ100P") == "02-22" && getText("dropdown6") == "QP-991P ViTrac Android")) {
-     setScreen("screen1");
-
-   } else if ((getText("dropdownGZ100P") == "02-06" && getText("dropdown6") == "QP-999P NKAnywhere")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownGZ100P") == "02-10" && getText("dropdown6") == "QP-999P NKAnywhere")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownGZ100P") == "02-20" && getText("dropdown6") == "QP-999P NKAnywhere")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownGZ100P") == "02-22" && getText("dropdown6") == "QP-999P NKAnywhere")) {
-     setScreen("screen1");
-
-   } else if ((getText("dropdownGZ100P") == "02-06" && getText("dropdown6") == "OLG-3800")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownGZ100P") == "02-10" && getText("dropdown6") == "OLG-3800")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownGZ100P") == "02-20" && getText("dropdown6") == "OLG-3800")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownGZ100P") == "02-22" && getText("dropdown6") == "OLG-3800")) {
-     setScreen("screen1");
 
 
   } else if ((getText("dropdownGZ100P") == "" || getText("dropdown6") == "")) {
@@ -5116,3 +5474,114 @@ onEvent("direction_dropdown", "change", function(event) {
   setText("Sol1", "")
 });
 
+onEvent("Homebutton2", "click", function(event) {
+  console.log("Homebutton2 clicked!");
+  hideElement("notearea2");
+  setText("notearea2", "");
+  setText("direction_dropdown", " ");
+  setText("dropdown6", " ");
+  setText("Sol1","")
+    hideElement("drop_1700");
+    hideElement("dropdownCGS9002");
+    hideElement("dropdownCNS6201");
+    hideElement("dropdownCNS6801");
+    hideElement("dropdownEDNS9001");
+    hideElement("dropdownqp999P");
+    hideElement("dropdownqp991p");
+    hideElement("dropdownolg3800");
+    hideElement("dropdownlist2");
+    hideElement("dropdownRNS9703");
+    hideElement("dropdownRNS6804");
+    hideElement("dropdownRNS6803");
+    hideElement("dropdownQP989p");
+    hideElement("dropdownQP988P");
+    hideElement("dropdownQP988");
+    hideElement("dropdownQP983P");
+    hideElement("dropdownQP-986P");
+    hideElement("dropdownORG9100");
+    hideElement("dropdownGZ100P");
+    hideElement("dropdownCGS9002");
+    hideElement("dropdown3500");
+    hideElement("BSM-6000");
+    hideElement("dropdownCSM1901");
+    hideElement("dropdownqp999P");
+        setText("dropdownCGS9002", " ");
+    setText("dropdownCNS6201", "");
+    setText("dropdownCNS6801","");
+    setText("dropdownEDNS9001","");
+    setText("dropdownqp999P","");
+    setText("dropdownqp991p","");
+    setText("dropdownolg3800","");
+    setText("dropdownRNS9703","");
+    setText("dropdownRNS6804","");
+    setText("dropdownRNS6803","");
+    setText("dropdownQP989p","");
+    setText("dropdownQP988P","");
+    setText("dropdownQP988","");
+    setText("dropdownQP983P","");
+    setText("dropdownQP-986P","");
+    setText("dropdownORG9100","");
+    setText("dropdownGZ100P","");
+    setText("dropdownCGS9002","");
+    setText("dropdown3500","");
+    setText("BSM-6000","");
+    setText("dropdownCSM1901","");
+    setText("dropdownqp999P","");
+    setText("drop_1700","");
+});
+onEvent("Homebutton2", "click", function(event) {
+  console.log("Homebutton2 clicked!");
+});
+onEvent("button3", "click", function(event) {
+  console.log("button3 clicked!");
+setText("direction_dropdown", " ");
+setText("dropdown6", " ");
+setText("Sol1","")
+    hideElement("drop_1700");
+    hideElement("dropdownCGS9002");
+    hideElement("dropdownCNS6201");
+    hideElement("dropdownCNS6801");
+    hideElement("dropdownEDNS9001");
+    hideElement("dropdownqp999P");
+    hideElement("dropdownqp991p");
+    hideElement("dropdownolg3800");
+    hideElement("dropdownlist2");
+    hideElement("dropdownRNS9703");
+    hideElement("dropdownRNS6804");
+    hideElement("dropdownRNS6803");
+    hideElement("dropdownQP989p");
+    hideElement("dropdownQP988P");
+    hideElement("dropdownQP988");
+    hideElement("dropdownQP983P");
+    hideElement("dropdownQP-986P");
+    hideElement("dropdownORG9100");
+    hideElement("dropdownGZ100P");
+    hideElement("dropdownCGS9002");
+    hideElement("dropdown3500");
+    hideElement("BSM-6000");
+    hideElement("dropdownCSM1901");
+    hideElement("dropdownqp999P");
+    setText("dropdownCGS9002", " ");
+    setText("dropdownCNS6201", "");
+    setText("dropdownCNS6801","");
+    setText("dropdownEDNS9001","");
+    setText("dropdownqp999P","");
+    setText("dropdownqp991p","");
+    setText("dropdownolg3800","");
+    setText("dropdownRNS9703","");
+    setText("dropdownRNS6804","");
+    setText("dropdownRNS6803","");
+    setText("dropdownQP989p","");
+    setText("dropdownQP988P","");
+    setText("dropdownQP988","");
+    setText("dropdownQP983P","");
+    setText("dropdownQP-986P","");
+    setText("dropdownORG9100","");
+    setText("dropdownGZ100P","");
+    setText("dropdownCGS9002","");
+    setText("dropdown3500","");
+    setText("BSM-6000","");
+    setText("dropdownCSM1901","");
+    setText("dropdownqp999P","");
+    setText("drop_1700","");
+});
