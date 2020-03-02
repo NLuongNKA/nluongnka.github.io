@@ -15,10 +15,35 @@ setText("dropdown6", "");
 
 if (getText("dropdown6") == getText("direction_dropdown")) {
   hideElement("go_button");
+  
 }
 if (getText("dropdown6") != getText("direction_dropdown")) {
   showElement("go_button");
 }
+    setText("dropdownCGS9002", " ");
+    setText("dropdownCNS6201", "");
+    setText("dropdownCNS6801","");
+    setText("dropdownEDNS9001","");
+    setText("dropdownqp999P","");
+    setText("dropdownqp991p","");
+    setText("dropdownolg3800","");
+    setText("dropdownRNS9703","");
+    setText("dropdownRNS6804","");
+    setText("dropdownRNS6803","");
+    setText("dropdownQP989p","");
+    setText("dropdownQP988P","");
+    setText("dropdownQP988","");
+    setText("dropdownQP983P","");
+    setText("dropdownQP-986P","");
+    setText("dropdownORG9100","");
+    setText("dropdownGZ100P","");
+    setText("dropdownCGS9002","");
+    setText("dropdown3500","");
+    setText("BSM-6000","");
+    setText("dropdownCSM1901","");
+    setText("dropdownqp999P","");
+    setText("drop_1700","");
+    setText("dropdownCGS9001","");
 hideElement("dropdown3500");
 hideElement("go_button");
 hideElement("BSM-6000");
@@ -34,7 +59,6 @@ onEvent("direction_dropdown", "click", function(event) {
     hideElement("dropdownqp999P");
     hideElement("dropdownqp991p");
     hideElement("dropdownolg3800");
-    hideElement("dropdownlist2");
     hideElement("dropdownRNS9703");
     hideElement("dropdownRNS6804");
     hideElement("dropdownRNS6803");
@@ -1679,7 +1703,7 @@ onEvent("go_button", "click", function(event) {
   } else if ((getText("BSM-6000") == "08-02" && getText("dropdown6") == "CGS-9002 HL7 Gateway (Legacy)")) { 
    setScreen("screen2");
        	showElement("notearea2");
-  	setText("notearea2", "08-02: ZM-View causes an issue when used with CGS-9001/CGS-9002/QP-983P.");
+   setText("notearea2", "08-02: ZM-View causes an issue when used with CGS-9001/CGS-9002/QP-983P.");
   } else if ((getText("BSM-6000") == "08-12" && getText("dropdown6") == "CGS-9002 HL7 Gateway (Legacy)")) { 
   	setScreen("screen1");
   	showElement("notearea");
@@ -3866,7 +3890,7 @@ onEvent("go_button", "click", function(event) {
    } else if ((getText("dropdownORG9100") == "04-51" && getText("dropdown6") == "CGS-9001 Pager Gateway (Legacy)")) {
    setScreen("screen1");
         showElement("notearea");
-  	setText("notearea", "ZM-View/HiQ-View needs to be set to OFF when used with CGS-9001/CGS-9002/QP-983P. ");
+   setText("notearea", "ZM-View/HiQ-View needs to be set to OFF when used with CGS-9001/CGS-9002/QP-983P. ");
 
   } else if ((getText("dropdownORG9100") == "04-01" && getText("dropdown6") == "CGS-9002 HL7 Gateway (Legacy)")) {
            setScreen("screen1");
@@ -3877,7 +3901,7 @@ onEvent("go_button", "click", function(event) {
    } else if ((getText("dropdownORG9100") == "04-51" && getText("dropdown6") == "CGS-9002 HL7 Gateway (Legacy)")) {
    setScreen("screen1");
          showElement("notearea");
-  	setText("notearea", "ZM-View/HiQ-View needs to be set to OFF when used with CGS-9001/CGS-9002/QP-983P. ");
+   setText("notearea", "ZM-View/HiQ-View needs to be set to OFF when used with CGS-9001/CGS-9002/QP-983P. ");
 
 
   } else if ((getText("dropdownORG9100") == "04-01" && getText("dropdown6") == "QP-983P NetKonnect/RNS Server")) {
@@ -3889,7 +3913,7 @@ onEvent("go_button", "click", function(event) {
    } else if ((getText("dropdownORG9100") == "04-51" && getText("dropdown6") == "QP-983P NetKonnect/RNS Server")) {
    setScreen("screen1");
          showElement("notearea");
-  	setText("notearea", "ZM-View/HiQ-View needs to be set to OFF when used with CGS-9001/CGS-9002/QP-983P. ");
+   setText("notearea", "ZM-View/HiQ-View needs to be set to OFF when used with CGS-9001/CGS-9002/QP-983P. ");
 
   } else if ((getText("dropdownORG9100") == "04-01" && getText("dropdown6") == "QP-986P Host1000 Server")) {
            setScreen("screen1");
@@ -3998,7 +4022,7 @@ onEvent("go_button", "click", function(event) {
    } else if ((getText("dropdownCGS9001") == "02-03d" && getText("dropdown6") == "CSM-1901")) {
    setScreen("screen1");
     showElement("notearea");
-  	setText("notearea", "ZM-View/HiQ-View causes an issue when used with CGS-9001/CGS-9002/QP-983P. ZM-View/HiQ-View needs to be set to OFF when used with CGS-9001/CGS-9002/QP-983P. Do not activate Pager Server Extension of QP-988P(EG).  ");
+   setText("notearea", "ZM-View/HiQ-View causes an issue when used with CGS-9001/CGS-9002/QP-983P. ZM-View/HiQ-View needs to be set to OFF when used with CGS-9001/CGS-9002/QP-983P. Do not activate Pager Server Extension of QP-988P(EG).  ");
 
   } else if ((getText("dropdownCGS9001") == "02-03a" && getText("dropdown6") == "CNS-6201")) {
            setText("Sol1", "NA");
@@ -4069,7 +4093,7 @@ onEvent("go_button", "click", function(event) {
    } else if ((getText("dropdownCGS9001") == "02-03d" && getText("dropdown6") == "GZ-100P (+UG/TS)")) {
    setScreen("screen1");
    showElement("notearea");
-  	setText("notearea", "ZM-View/HiQ-View causes an issue when used with CGS-9001/CGS-9002/QP-983P. ZM-View/HiQ-View needs to be set to OFF when used with CGS-9001/CGS-9002/QP-983P. Do not activate Pager Server Extension of QP-988P(EG).  ");
+   setText("notearea", "ZM-View/HiQ-View causes an issue when used with CGS-9001/CGS-9002/QP-983P. ZM-View/HiQ-View needs to be set to OFF when used with CGS-9001/CGS-9002/QP-983P. Do not activate Pager Server Extension of QP-988P(EG).  ");
 
 
   } else if ((getText("dropdownCGS9001") == "02-03a" && getText("dropdown6") == "ORG-9100")) {
@@ -5424,6 +5448,7 @@ onEvent("dropdown6", "change", function(event) {
 onEvent("dropdown6", "change", function(event) {
   if (getText("dropdown6") == getText("direction_dropdown")) {
     hideElement("go_button");
+   
   }
   if (getText("dropdown6") != getText("direction_dropdown")) {
     showElement("go_button");
@@ -5528,6 +5553,7 @@ onEvent("Homebutton2", "click", function(event) {
     setText("dropdownCSM1901","");
     setText("dropdownqp999P","");
     setText("drop_1700","");
+    setText("dropdownCGS9001","");
 });
 onEvent("Homebutton2", "click", function(event) {
   console.log("Homebutton2 clicked!");
@@ -5584,4 +5610,5 @@ setText("Sol1","")
     setText("dropdownCSM1901","");
     setText("dropdownqp999P","");
     setText("drop_1700","");
+     setText("dropdownCGS9001","");
 });
