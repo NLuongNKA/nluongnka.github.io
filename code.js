@@ -1145,2488 +1145,985 @@ onEvent("Homebutton2", "click", function(event) {
 onEvent("go_button", "click", function(event) {
   console.log("go_button clicked!");
   //To check if ready for 1700 
-  if (getText("drop_1700") == "01-15" && getText("dropdown6") == "BSM-3500") {
+  if (getText("drop_1700") == "01-15" && getText("dropdown6") == "Unified Gateway (01-08a)") {
+    setScreen("screen1");
+  } else if ((getText("drop_1700") == "02-10" && getText("dropdown6") == "Unified Gateway (01-08a)")) {
+    setScreen("screen2");
+  } else if ((getText("drop_1700") == "02-30" && getText("dropdown6") == "Unified Gateway (01-08a)")) {
+    setScreen("screen2");
+  } else if ((getText("drop_1700") == "02-40" && getText("dropdown6") == "Unified Gateway (01-08a)")) {
+    setScreen("screen2");
+  } else if ((getText("drop_1700") == "02-61" && getText("dropdown6") == "Unified Gateway (01-08a)")) {
+    setScreen("screen2");
+    
+  } else if ((getText("drop_1700") == "01-15" && getText("dropdown6") == "Unified Gateway (01-10)")) {
+    setScreen("screen1");
+  } else if ((getText("drop_1700") == "02-10" && getText("dropdown6") == "Unified Gateway (01-10)")) {
+    setScreen("screen1"); 
+  } else if ((getText("drop_1700") == "02-30" && getText("dropdown6") == "Unified Gateway (01-10)")) {
+  	setScreen("screen1"); 
+  } else if ((getText("drop_1700") == "02-40" && getText("dropdown6") == "Unified Gateway (01-10)")) { 
+  	setScreen("screen2");
+  } else if ((getText("drop_1700") == "02-61" && getText("dropdown6") == "Unified Gateway (01-10)")) { 
+  	setScreen("screen2");
+  	
+
+  } else if ((getText("drop_1700") == "01-15" && getText("dropdown6") == "Unified Gateway (01-11)")) {
+    setScreen("screen1");
+  } else if ((getText("drop_1700") == "02-10" && getText("dropdown6") == "Unified Gateway (01-11)")) {
+  	setScreen("screen1");
+  } else if ((getText("drop_1700") == "02-30" && getText("dropdown6") == "Unified Gateway (01-11)")) { 
+     setScreen("screen1");
+  } else if ((getText("drop_1700") == "02-40" && getText("dropdown6") == "Unified Gateway (01-11)")) { 
+  	setScreen("screen2");
+   } else if ((getText("drop_1700") == "02-61" && getText("dropdown6") == "Unified Gateway (01-11)")) { 
+  setScreen("screen2");
+  
+  } else if ((getText("drop_1700") == "01-15" && getText("dropdown6") == "Enterprise Gateway(01-02)")) {
+    setScreen("screen1");
+  } else if ((getText("drop_1700") == "02-10" && getText("dropdown6") == "Enterprise Gateway(01-02)")) {
+  	setScreen("screen1");
+  } else if ((getText("drop_1700") == "02-30" && getText("dropdown6") == "Enterprise Gateway(01-02)")) { 
+  	setScreen("screen1");
+  } else if ((getText("drop_1700") == "02-40" && getText("dropdown6") == "Enterprise Gateway(01-02)")) { 
+  	setScreen("screen1");
+   } else if ((getText("drop_1700") == "02-61" && getText("dropdown6") == "Enterprise Gateway(01-02)")) { 
+  	setScreen("screen1");
+  	
+  } else if ((getText("drop_1700") == "01-15" && getText("dropdown6") == "Enterprise Gateway(01-03)")) {
+    setScreen("screen1");
+  } else if ((getText("drop_1700") == "02-10" && getText("dropdown6") == "Enterprise Gateway(01-03)")) {
+  	setScreen("screen1");
+  } else if ((getText("drop_1700") == "02-30" && getText("dropdown6") == "Enterprise Gateway(01-03)")) { 
+     setScreen("screen1");
+  } else if ((getText("drop_1700") == "02-40" && getText("dropdown6") == "Enterprise Gateway(01-03)")) { 
+  	setScreen("screen1");
+   } else if ((getText("drop_1700") == "02-61" && getText("dropdown6") == "Enterprise Gateway(01-03)")) { 
+  setScreen("screen1");
+
+  } else if ((getText("drop_1700") == "01-15" && getText("dropdown6") == "Enterprise Gateway(02-01)")) {
+    setScreen("screen1");
+  } else if ((getText("drop_1700") == "02-10" && getText("dropdown6") == "Enterprise Gateway(02-01)")) {
+  	setScreen("screen1");
+  } else if ((getText("drop_1700") == "02-30" && getText("dropdown6") == "Enterprise Gateway(02-01)")) { 
+     setScreen("screen1");
+  } else if ((getText("drop_1700") == "02-40" && getText("dropdown6") == "Enterprise Gateway(02-01)")) { 
+  	setScreen("screen1");
+   } else if ((getText("drop_1700") == "02-61" && getText("dropdown6") == "Enterprise Gateway(02-01)")) { 
+  setScreen("screen1");
+  
+  } else if ((getText("drop_1700") == "01-15" && getText("dropdown6") == "Enterprise Gateway(02-03)")) {
+    setScreen("screen1");
+  } else if ((getText("drop_1700") == "02-10" && getText("dropdown6") == "Enterprise Gateway(02-03)")) {
+  	setScreen("screen1");
+  } else if ((getText("drop_1700") == "02-30" && getText("dropdown6") == "Enterprise Gateway(02-03)")) { 
+     setScreen("screen1");
+  } else if ((getText("drop_1700") == "02-40" && getText("dropdown6") == "Enterprise Gateway(02-03)")) { 
+  	setScreen("screen1");
+   } else if ((getText("drop_1700") == "02-61" && getText("dropdown6") == "Enterprise Gateway(02-03)")) { 
+  setScreen("screen1");
+
+  } else if ((getText("drop_1700") == "01-15" && getText("dropdown6") == "Enterprise Gateway(02-04)")) {
+    setScreen("screen1");
+  } else if ((getText("drop_1700") == "02-10" && getText("dropdown6") == "Enterprise Gateway(02-04)")) {
+  	setScreen("screen1");
+  } else if ((getText("drop_1700") == "02-30" && getText("dropdown6") == "Enterprise Gateway(02-04)")) { 
+     setScreen("screen1");
+  } else if ((getText("drop_1700") == "02-40" && getText("dropdown6") == "Enterprise Gateway(02-04)")) { 
+  	setScreen("screen1");
+   } else if ((getText("drop_1700") == "02-61" && getText("dropdown6") == "Enterprise Gateway(02-04)")) { 
+  setScreen("screen1");
+
+  } else if ((getText("drop_1700") == "01-15" && getText("dropdown6") == "Enterprise Gateway(02-06)")) {
+    setScreen("screen1");
+  } else if ((getText("drop_1700") == "02-10" && getText("dropdown6") == "Enterprise Gateway(02-06)")) {
+  	setScreen("screen1");
+  } else if ((getText("drop_1700") == "02-30" && getText("dropdown6") == "Enterprise Gateway(02-06)")) { 
+     setScreen("screen1");
+  } else if ((getText("drop_1700") == "02-40" && getText("dropdown6") == "Enterprise Gateway(02-06)")) { 
+  	setScreen("screen1");
+   } else if ((getText("drop_1700") == "02-61" && getText("dropdown6") == "Enterprise Gateway(02-06)")) { 
+  setScreen("screen1");
+
+  } else if ((getText("drop_1700") == "01-15" && getText("dropdown6") == "Enterprise Gateway(04-01)")) {
+    setScreen("screen1");
+  } else if ((getText("drop_1700") == "02-10" && getText("dropdown6") == "Enterprise Gateway(04-01)")) {
+  	setScreen("screen1");
+  } else if ((getText("drop_1700") == "02-30" && getText("dropdown6") == "Enterprise Gateway(04-01)")) { 
+     setScreen("screen1");
+  } else if ((getText("drop_1700") == "02-40" && getText("dropdown6") == "Enterprise Gateway(04-01)")) { 
+  	setScreen("screen1");
+   } else if ((getText("drop_1700") == "02-61" && getText("dropdown6") == "Enterprise Gateway(04-01)")) { 
+  setScreen("screen1");
+
+BSM3500
+  } else if ((getText("dropdown3500") == "06-31" && getText("dropdown6") == "Unified Gateway (01-08a)")) {
+    setScreen("screen1");
+  } else if ((getText("dropdown3500") == "07-41" && getText("dropdown6") == "Unified Gateway (01-08a)")) {
+  	setScreen("screen1");
+  } else if ((getText("dropdown3500") == "08-11" && getText("dropdown6") == "Unified Gateway (01-08a)")) { 
+    setScreen("screen2");
+  } else if ((getText("dropdown3500") == "08-31" && getText("dropdown6") == "Unified Gateway (01-08a)")) { 
+  	setScreen("screen2");
+
+  } else if ((getText("dropdown3500") == "06-31" && getText("dropdown6") == "Unified Gateway (01-10)")) {
+    setScreen("screen1");
+  } else if ((getText("dropdown3500") == "07-41" && getText("dropdown6") == "Unified Gateway (01-10)")) {
+  	setScreen("screen1");
+  } else if ((getText("dropdown3500") == "08-11" && getText("dropdown6") == "Unified Gateway (01-10)")) { 
+    setScreen("screen2");
+  } else if ((getText("dropdown3500") == "08-31" && getText("dropdown6") == "Unified Gateway (01-10)")) { 
+  	setScreen("screen2");
+
+  } else if ((getText("dropdown3500") == "06-31" && getText("dropdown6") == "Unified Gateway (01-11)")) {
+    setScreen("screen1");
+  } else if ((getText("dropdown3500") == "07-41" && getText("dropdown6") == "Unified Gateway (01-11)")) {
+  	setScreen("screen1");
+  } else if ((getText("dropdown3500") == "08-11" && getText("dropdown6") == "Unified Gateway (01-11)")) { 
+    setScreen("screen2");
+  } else if ((getText("dropdown3500") == "08-31" && getText("dropdown6") == "Unified Gateway (01-11)")) { 
+  	setScreen("screen2");
+
+  } else if ((getText("dropdown3500") == "06-31" && getText("dropdown6") == "Enterprise Gateway(01-02)")) {
+    setScreen("screen1");
+  } else if ((getText("dropdown3500") == "07-41" && getText("dropdown6") == "Enterprise Gateway(01-02)")) {
+  	setScreen("screen1");;
+  } else if ((getText("dropdown3500") == "08-11" && getText("dropdown6") == "Enterprise Gateway(01-02)")) { 
+    setScreen("screen1");
+  } else if ((getText("dropdown3500") == "08-31" && getText("dropdown6") == "Enterprise Gateway(01-02)")) { 
+  	setScreen("screen1");
+
+  } else if ((getText("dropdown3500") == "06-31" && getText("dropdown6") == "Enterprise Gateway(01-03)")) {
+    setScreen("screen1");
+  } else if ((getText("dropdown3500") == "07-41" && getText("dropdown6") == "Enterprise Gateway(01-03)")) {
+  	setScreen("screen1");;
+  } else if ((getText("dropdown3500") == "08-11" && getText("dropdown6") == "Enterprise Gateway(01-03)")) { 
+    setScreen("screen1");
+  } else if ((getText("dropdown3500") == "08-31" && getText("dropdown6") == "Enterprise Gateway(01-03)")) { 
+  	setScreen("screen1");
+
+  } else if ((getText("dropdown3500") == "06-31" && getText("dropdown6") == "Enterprise Gateway(02-01)")) {
+    setScreen("screen1");
+  } else if ((getText("dropdown3500") == "07-41" && getText("dropdown6") == "Enterprise Gateway(02-01)")) {
+  	setScreen("screen1");;
+  } else if ((getText("dropdown3500") == "08-11" && getText("dropdown6") == "Enterprise Gateway(02-01)")) { 
+    setScreen("screen1");
+  } else if ((getText("dropdown3500") == "08-31" && getText("dropdown6") == "Enterprise Gateway(02-01)")) { 
+  	setScreen("screen1");
+
+  } else if ((getText("dropdown3500") == "06-31" && getText("dropdown6") == "Enterprise Gateway(02-03)")) {
+    setScreen("screen1");
+  } else if ((getText("dropdown3500") == "07-41" && getText("dropdown6") == "Enterprise Gateway(02-03)")) {
+  	setScreen("screen1");;
+  } else if ((getText("dropdown3500") == "08-11" && getText("dropdown6") == "Enterprise Gateway(02-03)")) { 
+    setScreen("screen1");
+  } else if ((getText("dropdown3500") == "08-31" && getText("dropdown6") == "Enterprise Gateway(02-03)")) { 
+  	setScreen("screen1");
+
+  } else if ((getText("dropdown3500") == "06-31" && getText("dropdown6") == "Enterprise Gateway(02-04)")) {
+    setScreen("screen1");
+  } else if ((getText("dropdown3500") == "07-41" && getText("dropdown6") == "Enterprise Gateway(02-04)")) {
+  	setScreen("screen1");;
+  } else if ((getText("dropdown3500") == "08-11" && getText("dropdown6") == "Enterprise Gateway(02-04)")) { 
+    setScreen("screen1");
+  } else if ((getText("dropdown3500") == "08-31" && getText("dropdown6") == "Enterprise Gateway(02-04)")) { 
+  	setScreen("screen1");
+
+  } else if ((getText("dropdown3500") == "06-31" && getText("dropdown6") == "Enterprise Gateway(02-06)")) {
+    setScreen("screen1");
+  } else if ((getText("dropdown3500") == "07-41" && getText("dropdown6") == "Enterprise Gateway(02-06)")) {
+  	setScreen("screen1");;
+  } else if ((getText("dropdown3500") == "08-11" && getText("dropdown6") == "Enterprise Gateway(02-06)")) { 
+    setScreen("screen1");
+  } else if ((getText("dropdown3500") == "08-31" && getText("dropdown6") == "Enterprise Gateway(02-06)")) { 
+  	setScreen("screen1");
+
+  } else if ((getText("dropdown3500") == "06-31" && getText("dropdown6") == "Enterprise Gateway(04-01)")) {
+    setScreen("screen1");
+  } else if ((getText("dropdown3500") == "07-41" && getText("dropdown6") == "Enterprise Gateway(04-01)")) {
+  	setScreen("screen1");;
+  } else if ((getText("dropdown3500") == "08-11" && getText("dropdown6") == "Enterprise Gateway(04-01)")) { 
+    setScreen("screen1");
+  } else if ((getText("dropdown3500") == "08-31" && getText("dropdown6") == "Enterprise Gateway(04-01)")) { 
+  	setScreen("screen1");
+
+  } else if ((getText("BSM-6000") == "07-02" && getText("dropdown6") == "Unified Gateway (01-08a)")) {
+    setScreen("screen1");
+  } else if ((getText("BSM-6000") == "07-41" && getText("dropdown6") == "Unified Gateway (01-08a)")) {
+  	setScreen("screen1");
+  } else if ((getText("BSM-6000") == "08-02" && getText("dropdown6") == "Unified Gateway (01-08a)")) { 
+   setScreen("screen2");
+  } else if ((getText("BSM-6000") == "08-12" && getText("dropdown6") == "Unified Gateway (01-08a)")) { 
+  	setScreen("screen2");
+   } else if ((getText("BSM-6000") == "08-31" && getText("dropdown6") == "Unified Gateway (01-08a)")) { 
+  	setScreen("screen2");
+
+
+  } else if ((getText("BSM-6000") == "07-02" && getText("dropdown6") == "Unified Gateway (01-10)")) {
+    setScreen("screen1");
+  } else if ((getText("BSM-6000") == "07-41" && getText("dropdown6") == "Unified Gateway (01-10)")) {
+  	setScreen("screen1");
+  } else if ((getText("BSM-6000") == "08-02" && getText("dropdown6") == "Unified Gateway (01-10)")) { 
+    setScreen("screen2");
+  } else if ((getText("BSM-6000") == "08-12" && getText("dropdown6") == "Unified Gateway (01-10)")) { 
+  	setScreen("screen2");
+   } else if ((getText("BSM-6000") == "08-31" && getText("dropdown6") == "Unified Gateway (01-10)")) { 
+  	setScreen("screen2");
+
+  } else if ((getText("BSM-6000") == "07-02" && getText("dropdown6") == "Unified Gateway (01-11)")) {
+    setScreen("screen1");
+  } else if ((getText("BSM-6000") == "07-41" && getText("dropdown6") == "Unified Gateway (01-11)")) {
+  	setScreen("screen1");
+  } else if ((getText("BSM-6000") == "08-02" && getText("dropdown6") == "Unified Gateway (01-11)")) { 
+    setScreen("screen2");
+  } else if ((getText("BSM-6000") == "08-12" && getText("dropdown6") == "Unified Gateway (01-11)")) { 
+  	setScreen("screen2");
+  } else if ((getText("BSM-6000") == "08-31" && getText("dropdown6") == "Unified Gateway (01-11)")) { 
+  	setScreen("screen2");
+
+
+  } else if ((getText("BSM-6000") == "07-02" && getText("dropdown6") == "Enterprise Gateway(01-02)")) {
+    setScreen("screen1");
+  } else if ((getText("BSM-6000") == "07-41" && getText("dropdown6") == "Enterprise Gateway(01-02)")) {
+  	setScreen("screen1");
+  } else if ((getText("BSM-6000") == "08-02" && getText("dropdown6") == "Enterprise Gateway(01-02)")) { 
+    setScreen("screen1");
+  } else if ((getText("BSM-6000") == "08-12" && getText("dropdown6") == "Enterprise Gateway(01-02)")) { 
+  	setScreen("screen1");
+  } else if ((getText("BSM-6000") == "08-31" && getText("dropdown6") == "Enterprise Gateway(01-02)")) { 
+  	setScreen("screen1");
+
+
+  } else if ((getText("BSM-6000") == "07-02" && getText("dropdown6") == "Enterprise Gateway(01-03)")) {
+    setScreen("screen1");
+  } else if ((getText("BSM-6000") == "07-41" && getText("dropdown6") == "Enterprise Gateway(01-03)")) {
+  	setScreen("screen1");
+  } else if ((getText("BSM-6000") == "08-02" && getText("dropdown6") == "Enterprise Gateway(01-03)")) { 
+    setScreen("screen1");
+  } else if ((getText("BSM-6000") == "08-12" && getText("dropdown6") == "Enterprise Gateway(01-03)")) { 
+  	setScreen("screen1");
+  } else if ((getText("BSM-6000") == "08-31" && getText("dropdown6") == "Enterprise Gateway(01-03)")) { 
+  	setScreen("screen1");
+
+
+  } else if ((getText("BSM-6000") == "07-02" && getText("dropdown6") == "Enterprise Gateway(02-01)")) {
+    setScreen("screen1");
+  } else if ((getText("BSM-6000") == "07-41" && getText("dropdown6") == "Enterprise Gateway(02-01)")) {
+  setScreen("screen1");
+  } else if ((getText("BSM-6000") == "08-02" && getText("dropdown6") == "Enterprise Gateway(02-01)")) { 
+     setScreen("screen1");
+  } else if ((getText("BSM-6000") == "08-12" && getText("dropdown6") == "Enterprise Gateway(02-01)")) { 
+  	setScreen("screen1");
+  } else if ((getText("BSM-6000") == "08-31" && getText("dropdown6") == "Enterprise Gateway(02-01)")) { 
+  setScreen("screen1");
+  
+  
+  } else if ((getText("BSM-6000") == "07-02" && getText("dropdown6") == "Enterprise Gateway(02-03)")) {
+    setScreen("screen1");
+  } else if ((getText("BSM-6000") == "07-41" && getText("dropdown6") == "Enterprise Gateway(02-03)")) {
+  	setScreen("screen1");
+  } else if ((getText("BSM-6000") == "08-02" && getText("dropdown6") == "Enterprise Gateway(02-03)")) { 
+    setScreen("screen1");
+  } else if ((getText("BSM-6000") == "08-12" && getText("dropdown6") == "Enterprise Gateway(02-03)")) { 
+  	setScreen("screen1");
+  } else if ((getText("BSM-6000") == "08-31" && getText("dropdown6") == "Enterprise Gateway(02-03)")) { 
+  	setScreen("screen1");
+
+  } else if ((getText("BSM-6000") == "07-02" && getText("dropdown6") == "Enterprise Gateway(02-04)")) {
+    setScreen("screen1");
+  } else if ((getText("BSM-6000") == "07-41" && getText("dropdown6") == "Enterprise Gateway(02-04)")) {
+  	setScreen("screen1");
+  } else if ((getText("BSM-6000") == "08-02" && getText("dropdown6") == "Enterprise Gateway(02-04)")) { 
+    setScreen("screen1");
+  } else if ((getText("BSM-6000") == "08-12" && getText("dropdown6") == "Enterprise Gateway(02-04)")) { 
+  	setScreen("screen1");
+  } else if ((getText("BSM-6000") == "08-31" && getText("dropdown6") == "Enterprise Gateway(02-04)")) { 
+  	setScreen("screen1");
+
+  } else if ((getText("BSM-6000") == "07-02" && getText("dropdown6") == "Enterprise Gateway(04-01)")) {
+    setScreen("screen1");
+  } else if ((getText("BSM-6000") == "07-41" && getText("dropdown6") == "Enterprise Gateway(04-01)")) {
+  	setScreen("screen1");
+  } else if ((getText("BSM-6000") == "08-02" && getText("dropdown6") == "Enterprise Gateway(04-01)")) { 
+    setScreen("screen1");
+  } else if ((getText("BSM-6000") == "08-12" && getText("dropdown6") == "Enterprise Gateway(04-01)")) { 
+  	setScreen("screen1");
+  } else if ((getText("BSM-6000") == "08-31" && getText("dropdown6") == "Enterprise Gateway(04-01)")) { 
+  	setScreen("screen1");
+
+
+  } else if ((getText("dropdownCSM1901") == "01-21" && getText("dropdown6") == "Unified Gateway (01-08a)")) {
+    setScreen("screen1");
+  } else if ((getText("dropdownCSM1901") == "01-23" && getText("dropdown6") == "Unified Gateway (01-08a)")) {
+  	setScreen("screen1");
+  } else if ((getText("dropdownCSM1901") == "01-26" && getText("dropdown6") == "Unified Gateway (01-08a)")) { 
+   setScreen("screen1");
+  } else if ((getText("dropdownCSM1901") == "01-27" && getText("dropdown6") == "Unified Gateway (01-08a)")) { 
+  	setScreen("screen1");
+   } else if ((getText("dropdownCSM1901") == "01-28" && getText("dropdown6") == "Unified Gateway (01-08a)")) { 
+  	setScreen("screen1");
+   } else if ((getText("dropdownCSM1901") == "01-30" && getText("dropdown6") == "Unified Gateway (01-08a)")) { 
+  	setScreen("screen2");
+   } else if ((getText("dropdownCSM1901") == "01-32" && getText("dropdown6") == "Unified Gateway (01-08a)")) { 
+  	setScreen("screen2");
+
+
+  } else if ((getText("dropdownCSM1901") == "01-21" && getText("dropdown6") == "Unified Gateway (01-10)")) {
+    setScreen("screen1");
+  } else if ((getText("dropdownCSM1901") == "01-23" && getText("dropdown6") == "Unified Gateway (01-10)")) {
+  	setScreen("screen1");
+  } else if ((getText("dropdownCSM1901") == "01-26" && getText("dropdown6") == "Unified Gateway (01-10)")) { 
+    setScreen("screen1");
+  } else if ((getText("dropdownCSM1901") == "01-27" && getText("dropdown6") == "Unified Gateway (01-10)")) { 
+  	setScreen("screen1");
+   } else if ((getText("dropdownCSM1901") == "01-28" && getText("dropdown6") == "Unified Gateway (01-10)")) { 
+  	setScreen("screen1");
+  } else if ((getText("dropdownCSM1901") == "01-30" && getText("dropdown6") == "Unified Gateway (01-10)")) { 
+  	setScreen("screen2");
+   } else if ((getText("dropdownCSM1901") == "01-32" && getText("dropdown6") == "Unified Gateway (01-10)")) { 
+  	setScreen("screen2");
+
+  } else if ((getText("dropdownCSM1901") == "01-21" && getText("dropdown6") == "Unified Gateway (01-11)")) {
+    setScreen("screen1");
+  } else if ((getText("dropdownCSM1901") == "01-23" && getText("dropdown6") == "Unified Gateway (01-11)")) {
+  	setScreen("screen1");
+  } else if ((getText("dropdownCSM1901") == "01-26" && getText("dropdown6") == "Unified Gateway (01-11)")) { 
+    setScreen("screen1");
+  } else if ((getText("dropdownCSM1901") == "01-27" && getText("dropdown6") == "Unified Gateway (01-11)")) { 
+  	setScreen("screen1");
+  } else if ((getText("dropdownCSM1901") == "01-28" && getText("dropdown6") == "Unified Gateway (01-11)")) { 
+  	setScreen("screen1");
+  } else if ((getText("dropdownCSM1901") == "01-30" && getText("dropdown6") == "Unified Gateway (01-11)")) { 
+  	setScreen("screen2");
+   } else if ((getText("dropdownCSM1901") == "01-32" && getText("dropdown6") == "Unified Gateway (01-11)")) { 
+  	setScreen("screen2");
+
+  } else if ((getText("dropdownCSM1901") == "01-21" && getText("dropdown6") == "Enterprise Gateway(01-02)")) {
+    setScreen("screen1");
+  } else if ((getText("dropdownCSM1901") == "01-23" && getText("dropdown6") == "Enterprise Gateway(01-02)")) {
+  	setScreen("screen1");
+  } else if ((getText("dropdownCSM1901") == "01-26" && getText("dropdown6") == "Enterprise Gateway(01-02)")) { 
+    setScreen("screen1");
+  } else if ((getText("dropdownCSM1901") == "01-27" && getText("dropdown6") == "Enterprise Gateway(01-02)")) { 
+  	setScreen("screen1");
+  } else if ((getText("dropdownCSM1901") == "01-28" && getText("dropdown6") == "Enterprise Gateway(01-02)")) { 
+  	setScreen("screen1");
+  } else if ((getText("dropdownCSM1901") == "01-30" && getText("dropdown6") == "Enterprise Gateway(01-02)")) { 
+  	setScreen("screen1");
+   } else if ((getText("dropdownCSM1901") == "01-32" && getText("dropdown6") == "Enterprise Gateway(01-02)")) { 
+  	setScreen("screen1");
+
+  } else if ((getText("dropdownCSM1901") == "01-21" && getText("dropdown6") == "Enterprise Gateway(01-03)")) {
+    setScreen("screen1");
+  } else if ((getText("dropdownCSM1901") == "01-23" && getText("dropdown6") == "Enterprise Gateway(01-03)")) {
+  	setScreen("screen1");
+  } else if ((getText("dropdownCSM1901") == "01-26" && getText("dropdown6") == "Enterprise Gateway(01-03)")) { 
+    setScreen("screen1");
+  } else if ((getText("dropdownCSM1901") == "01-27" && getText("dropdown6") == "Enterprise Gateway(01-03)")) { 
+  	setScreen("screen1");
+  } else if ((getText("dropdownCSM1901") == "01-28" && getText("dropdown6") == "Enterprise Gateway(01-03)")) { 
+  	setScreen("screen1");
+  } else if ((getText("dropdownCSM1901") == "01-30" && getText("dropdown6") == "Enterprise Gateway(01-03)")) { 
+  	setScreen("screen1");
+   } else if ((getText("dropdownCSM1901") == "01-32" && getText("dropdown6") == "Enterprise Gateway(01-03)")) { 
+  	setScreen("screen1");
+
+  } else if ((getText("dropdownCSM1901") == "01-21" && getText("dropdown6") == "Enterprise Gateway(02-01)")) {
+    setScreen("screen1");
+  } else if ((getText("dropdownCSM1901") == "01-23" && getText("dropdown6") == "Enterprise Gateway(02-01)")) {
+  	setScreen("screen1");
+  } else if ((getText("dropdownCSM1901") == "01-26" && getText("dropdown6") == "Enterprise Gateway(02-01)")) { 
+    setScreen("screen1");
+  } else if ((getText("dropdownCSM1901") == "01-27" && getText("dropdown6") == "Enterprise Gateway(02-01)")) { 
+  	setScreen("screen1");
+  } else if ((getText("dropdownCSM1901") == "01-28" && getText("dropdown6") == "Enterprise Gateway(02-01)")) { 
+  	setScreen("screen1");
+  } else if ((getText("dropdownCSM1901") == "01-30" && getText("dropdown6") == "Enterprise Gateway(02-01)")) { 
+  	setScreen("screen1");
+   } else if ((getText("dropdownCSM1901") == "01-32" && getText("dropdown6") == "Enterprise Gateway(02-01)")) { 
+  	setScreen("screen1");
+
+  } else if ((getText("dropdownCSM1901") == "01-21" && getText("dropdown6") == "Enterprise Gateway(02-03)")) {
+    setScreen("screen1");
+  } else if ((getText("dropdownCSM1901") == "01-23" && getText("dropdown6") == "Enterprise Gateway(02-03)")) {
+  	setScreen("screen1");
+  } else if ((getText("dropdownCSM1901") == "01-26" && getText("dropdown6") == "Enterprise Gateway(02-03)")) { 
+    setScreen("screen1");
+  } else if ((getText("dropdownCSM1901") == "01-27" && getText("dropdown6") == "Enterprise Gateway(02-03)")) { 
+  	setScreen("screen1");
+  } else if ((getText("dropdownCSM1901") == "01-28" && getText("dropdown6") == "Enterprise Gateway(02-03)")) { 
+  	setScreen("screen1");
+  } else if ((getText("dropdownCSM1901") == "01-30" && getText("dropdown6") == "Enterprise Gateway(02-03)")) { 
+  	setScreen("screen1");
+   } else if ((getText("dropdownCSM1901") == "01-32" && getText("dropdown6") == "Enterprise Gateway(02-03)")) { 
+  	setScreen("screen1");
+
+  } else if ((getText("dropdownCSM1901") == "01-21" && getText("dropdown6") == "Enterprise Gateway(02-04)")) {
+    setScreen("screen1");
+  } else if ((getText("dropdownCSM1901") == "01-23" && getText("dropdown6") == "Enterprise Gateway(02-04)")) {
+  	setScreen("screen1");
+  } else if ((getText("dropdownCSM1901") == "01-26" && getText("dropdown6") == "Enterprise Gateway(02-04)")) { 
+    setScreen("screen1");
+  } else if ((getText("dropdownCSM1901") == "01-27" && getText("dropdown6") == "Enterprise Gateway(02-04)")) { 
+  	setScreen("screen1");
+  } else if ((getText("dropdownCSM1901") == "01-28" && getText("dropdown6") == "Enterprise Gateway(02-04)")) { 
+  	setScreen("screen1");
+  } else if ((getText("dropdownCSM1901") == "01-30" && getText("dropdown6") == "Enterprise Gateway(02-04)")) { 
+  	setScreen("screen1");
+   } else if ((getText("dropdownCSM1901") == "01-32" && getText("dropdown6") == "Enterprise Gateway(02-04)")) { 
+  	setScreen("screen1");
+
+
+  } else if ((getText("dropdownCSM1901") == "01-21" && getText("dropdown6") == "Enterprise Gateway(02-06)")) {
+    setScreen("screen1");
+  } else if ((getText("dropdownCSM1901") == "01-23" && getText("dropdown6") == "Enterprise Gateway(02-06)")) {
+  	setScreen("screen1");
+  } else if ((getText("dropdownCSM1901") == "01-26" && getText("dropdown6") == "Enterprise Gateway(02-06)")) { 
+    setScreen("screen1");
+  } else if ((getText("dropdownCSM1901") == "01-27" && getText("dropdown6") == "Enterprise Gateway(02-06)")) { 
+  	setScreen("screen1");
+  } else if ((getText("dropdownCSM1901") == "01-28" && getText("dropdown6") == "Enterprise Gateway(02-06)")) { 
+  	setScreen("screen1");
+  } else if ((getText("dropdownCSM1901") == "01-30" && getText("dropdown6") == "Enterprise Gateway(02-06)")) { 
+  	setScreen("screen1");
+   } else if ((getText("dropdownCSM1901") == "01-32" && getText("dropdown6") == "Enterprise Gateway(02-06)")) { 
+  	setScreen("screen1");
+
+  } else if ((getText("dropdownCSM1901") == "01-21" && getText("dropdown6") == "Enterprise Gateway(04-01)")) {
+    setScreen("screen1");
+  } else if ((getText("dropdownCSM1901") == "01-23" && getText("dropdown6") == "Enterprise Gateway(04-01)")) {
+  	setScreen("screen1");
+  } else if ((getText("dropdownCSM1901") == "01-26" && getText("dropdown6") == "Enterprise Gateway(04-01)")) { 
+    setScreen("screen1");
+  } else if ((getText("dropdownCSM1901") == "01-27" && getText("dropdown6") == "Enterprise Gateway(04-01)")) { 
+  	setScreen("screen1");
+  } else if ((getText("dropdownCSM1901") == "01-28" && getText("dropdown6") == "Enterprise Gateway(04-01)")) { 
+  	setScreen("screen1");
+  } else if ((getText("dropdownCSM1901") == "01-30" && getText("dropdown6") == "Enterprise Gateway(04-01)")) { 
+  	setScreen("screen1");
+   } else if ((getText("dropdownCSM1901") == "01-32" && getText("dropdown6") == "Enterprise Gateway(04-01)")) { 
+  	setScreen("screen1");
+
+//cns6201
+
+  } else if ((getText("dropdownCNS6201") == "02-40" && getText("dropdown6") == "Unified Gateway (01-08a)")) {
+     setScreen("screen1"); 
+  } else if ((getText("dropdownCNS6201") == "03-40" && getText("dropdown6") == "Unified Gateway (01-08a)")) {
+  setScreen("screen1");
+  } else if ((getText("dropdownCNS6201") == "05-01" && getText("dropdown6") == "Unified Gateway (01-08a)")) { 
+    setScreen("screen1");
+  } else if ((getText("dropdownCNS6201") == "05-07" && getText("dropdown6") == "Unified Gateway (01-08a)")) { 
+  	setScreen("screen1");
+  } else if ((getText("dropdownCNS6201") == "05-08" && getText("dropdown6") == "Unified Gateway (01-08a)")) { 
+  	setScreen("screen1");
+  } else if ((getText("dropdownCNS6201") == "05-10" && getText("dropdown6") == "Unified Gateway (01-08a)")) { 
+  	setScreen("screen2");
+  } else if ((getText("dropdownCNS6201") == "05-13" && getText("dropdown6") == "Unified Gateway (01-08a)")) { 
+  	setScreen("screen2");
+ 
+  } else if ((getText("dropdownCNS6201") == "02-40" && getText("dropdown6") == "Unified Gateway (01-10)")) {
+     setScreen("screen1"); 
+  } else if ((getText("dropdownCNS6201") == "03-40" && getText("dropdown6") == "Unified Gateway (01-10)")) {
+  setScreen("screen1");
+  } else if ((getText("dropdownCNS6201") == "05-01" && getText("dropdown6") == "Unified Gateway (01-10)")) { 
+    setScreen("screen1");
+  } else if ((getText("dropdownCNS6201") == "05-07" && getText("dropdown6") == "Unified Gateway (01-10)")) { 
+  	setScreen("screen1");
+  } else if ((getText("dropdownCNS6201") == "05-08" && getText("dropdown6") == "Unified Gateway (01-10)")) { 
+  	setScreen("screen1");
+  } else if ((getText("dropdownCNS6201") == "05-10" && getText("dropdown6") == "Unified Gateway (01-10)")) { 
+  	setScreen("screen2");
+  } else if ((getText("dropdownCNS6201") == "05-13" && getText("dropdown6") == "Unified Gateway (01-10)")) { 
+  	setScreen("screen2");
+
+  } else if ((getText("dropdownCNS6201") == "02-40" && getText("dropdown6") == "Unified Gateway (01-11)")) {
+     setScreen("screen1"); 
+  } else if ((getText("dropdownCNS6201") == "03-40" && getText("dropdown6") == "Unified Gateway (01-11)")) {
+  setScreen("screen1");
+  } else if ((getText("dropdownCNS6201") == "05-01" && getText("dropdown6") == "Unified Gateway (01-11)")) { 
+    setScreen("screen1");
+  } else if ((getText("dropdownCNS6201") == "05-07" && getText("dropdown6") == "Unified Gateway (01-11)")) { 
+  	setScreen("screen1");
+  } else if ((getText("dropdownCNS6201") == "05-08" && getText("dropdown6") == "Unified Gateway (01-11)")) { 
+  	setScreen("screen1");
+  } else if ((getText("dropdownCNS6201") == "05-10" && getText("dropdown6") == "Unified Gateway (01-11)")) { 
+  	setScreen("screen2");
+  } else if ((getText("dropdownCNS6201") == "05-13" && getText("dropdown6") == "Unified Gateway (01-11)")) { 
+  	setScreen("screen2");
+
+  } else if ((getText("dropdownCNS6201") == "02-40" && getText("dropdown6") == "Enterprise Gateway(01-02)")) {
+     setScreen("screen1"); 
+  } else if ((getText("dropdownCNS6201") == "03-40" && getText("dropdown6") == "Enterprise Gateway(01-02)")) {
+  setScreen("screen1");
+  } else if ((getText("dropdownCNS6201") == "05-01" && getText("dropdown6") == "Enterprise Gateway(01-02)")) { 
+    setScreen("screen1");
+  } else if ((getText("dropdownCNS6201") == "05-07" && getText("dropdown6") == "Enterprise Gateway(01-02)")) { 
+  	setScreen("screen1");
+  } else if ((getText("dropdownCNS6201") == "05-08" && getText("dropdown6") == "Enterprise Gateway(01-02)")) { 
+  	setScreen("screen1");
+  } else if ((getText("dropdownCNS6201") == "05-10" && getText("dropdown6") == "Enterprise Gateway(01-02)")) { 
+  	setScreen("screen1");
+  } else if ((getText("dropdownCNS6201") == "05-13" && getText("dropdown6") == "Enterprise Gateway(01-02)")) { 
+  	setScreen("screen1");
+
+
+  } else if ((getText("dropdownCNS6201") == "02-40" && getText("dropdown6") == "Enterprise Gateway(01-03)")) {
+     setScreen("screen1"); 
+  } else if ((getText("dropdownCNS6201") == "03-40" && getText("dropdown6") == "Enterprise Gateway(01-03)")) {
+  setScreen("screen1");
+  } else if ((getText("dropdownCNS6201") == "05-01" && getText("dropdown6") == "Enterprise Gateway(01-03)")) { 
+    setScreen("screen1");
+  } else if ((getText("dropdownCNS6201") == "05-07" && getText("dropdown6") == "Enterprise Gateway(01-03)")) { 
+  	setScreen("screen1");
+  } else if ((getText("dropdownCNS6201") == "05-08" && getText("dropdown6") == "Enterprise Gateway(01-03)")) { 
+  	setScreen("screen1");
+  } else if ((getText("dropdownCNS6201") == "05-10" && getText("dropdown6") == "Enterprise Gateway(01-03)")) { 
+  	setScreen("screen1");
+  } else if ((getText("dropdownCNS6201") == "05-13" && getText("dropdown6") == "Enterprise Gateway(01-03)")) { 
+  	setScreen("screen1");
+
+  } else if ((getText("dropdownCNS6201") == "02-40" && getText("dropdown6") == "Enterprise Gateway(02-01)")) {
+     setScreen("screen1"); 
+  } else if ((getText("dropdownCNS6201") == "03-40" && getText("dropdown6") == "Enterprise Gateway(02-01)")) {
+  setScreen("screen1");
+  } else if ((getText("dropdownCNS6201") == "05-01" && getText("dropdown6") == "Enterprise Gateway(02-01)")) { 
+    setScreen("screen1");
+  } else if ((getText("dropdownCNS6201") == "05-07" && getText("dropdown6") == "Enterprise Gateway(02-01)")) { 
+  	setScreen("screen1");
+  } else if ((getText("dropdownCNS6201") == "05-08" && getText("dropdown6") == "Enterprise Gateway(02-01)")) { 
+  	setScreen("screen1");
+  } else if ((getText("dropdownCNS6201") == "05-10" && getText("dropdown6") == "Enterprise Gateway(02-01)")) { 
+  	setScreen("screen1");
+  } else if ((getText("dropdownCNS6201") == "05-13" && getText("dropdown6") == "Enterprise Gateway(02-01)")) { 
+  	setScreen("screen1");
+
+  } else if ((getText("dropdownCNS6201") == "02-40" && getText("dropdown6") == "Enterprise Gateway(02-03)")) {
+     setScreen("screen1"); 
+  } else if ((getText("dropdownCNS6201") == "03-40" && getText("dropdown6") == "Enterprise Gateway(02-03)")) {
+  setScreen("screen1");
+  } else if ((getText("dropdownCNS6201") == "05-01" && getText("dropdown6") == "Enterprise Gateway(02-03)")) { 
+    setScreen("screen1");
+  } else if ((getText("dropdownCNS6201") == "05-07" && getText("dropdown6") == "Enterprise Gateway(02-03)")) { 
+  	setScreen("screen1");
+  } else if ((getText("dropdownCNS6201") == "05-08" && getText("dropdown6") == "Enterprise Gateway(02-03)")) { 
+  	setScreen("screen1");
+  } else if ((getText("dropdownCNS6201") == "05-10" && getText("dropdown6") == "Enterprise Gateway(02-03)")) { 
+  	setScreen("screen1");
+  } else if ((getText("dropdownCNS6201") == "05-13" && getText("dropdown6") == "Enterprise Gateway(02-03)")) { 
+  	setScreen("screen1");
+
+  } else if ((getText("dropdownCNS6201") == "02-40" && getText("dropdown6") == "Enterprise Gateway(02-04)")) {
+     setScreen("screen1"); 
+  } else if ((getText("dropdownCNS6201") == "03-40" && getText("dropdown6") == "Enterprise Gateway(02-04)")) {
+  setScreen("screen1");
+  } else if ((getText("dropdownCNS6201") == "05-01" && getText("dropdown6") == "Enterprise Gateway(02-04)")) { 
+    setScreen("screen1");
+  } else if ((getText("dropdownCNS6201") == "05-07" && getText("dropdown6") == "Enterprise Gateway(02-04)")) { 
+  	setScreen("screen1");
+  } else if ((getText("dropdownCNS6201") == "05-08" && getText("dropdown6") == "Enterprise Gateway(02-04)")) { 
+  	setScreen("screen1");
+  } else if ((getText("dropdownCNS6201") == "05-10" && getText("dropdown6") == "Enterprise Gateway(02-04)")) { 
+  	setScreen("screen1");
+  } else if ((getText("dropdownCNS6201") == "05-13" && getText("dropdown6") == "Enterprise Gateway(02-04)")) { 
+  	setScreen("screen1");
+
+  } else if ((getText("dropdownCNS6201") == "02-40" && getText("dropdown6") == "Enterprise Gateway(02-06)")) {
+     setScreen("screen1"); 
+  } else if ((getText("dropdownCNS6201") == "03-40" && getText("dropdown6") == "Enterprise Gateway(02-06)")) {
+  setScreen("screen1");
+  } else if ((getText("dropdownCNS6201") == "05-01" && getText("dropdown6") == "Enterprise Gateway(02-06)")) { 
+    setScreen("screen1");
+  } else if ((getText("dropdownCNS6201") == "05-07" && getText("dropdown6") == "Enterprise Gateway(02-06)")) { 
+  	setScreen("screen1");
+  } else if ((getText("dropdownCNS6201") == "05-08" && getText("dropdown6") == "Enterprise Gateway(02-06)")) { 
+  	setScreen("screen1");
+  } else if ((getText("dropdownCNS6201") == "05-10" && getText("dropdown6") == "Enterprise Gateway(02-06)")) { 
+  	setScreen("screen1");
+  } else if ((getText("dropdownCNS6201") == "05-13" && getText("dropdown6") == "Enterprise Gateway(02-06)")) { 
+  	setScreen("screen1");
+
+  } else if ((getText("dropdownCNS6201") == "02-40" && getText("dropdown6") == "Enterprise Gateway(04-01)")) {
+     setScreen("screen1"); 
+  } else if ((getText("dropdownCNS6201") == "03-40" && getText("dropdown6") == "Enterprise Gateway(04-01)")) {
+  setScreen("screen1");
+  } else if ((getText("dropdownCNS6201") == "05-01" && getText("dropdown6") == "Enterprise Gateway(04-01)")) { 
+    setScreen("screen1");
+  } else if ((getText("dropdownCNS6201") == "05-07" && getText("dropdown6") == "Enterprise Gateway(04-01)")) { 
+  	setScreen("screen1");
+  } else if ((getText("dropdownCNS6201") == "05-08" && getText("dropdown6") == "Enterprise Gateway(04-01)")) { 
+  	setScreen("screen1");
+  } else if ((getText("dropdownCNS6201") == "05-10" && getText("dropdown6") == "Enterprise Gateway(04-01)")) { 
+  	setScreen("screen1");
+  } else if ((getText("dropdownCNS6201") == "05-13" && getText("dropdown6") == "Enterprise Gateway(04-01)")) { 
+  	setScreen("screen1");
+
+//CNS6801
+  } else if ((getText("dropdownCNS6801") == "02-01" && getText("dropdown6") == "Unified Gateway (01-08a)")) {
+     setScreen("screen1");
+  } else if ((getText("dropdownCNS6801") == "02-07" && getText("dropdown6") == "Unified Gateway (01-08a)")) {
+  setScreen("screen1");
+  } else if ((getText("dropdownCNS6801") == "02-08" && getText("dropdown6") == "Unified Gateway (01-08a)")) { 
+    setScreen("screen1");
+  } else if ((getText("dropdownCNS6801") == "02-10" && getText("dropdown6") == "Unified Gateway (01-08a)")) { 
+  	setScreen("screen2");
+  } else if ((getText("dropdownCNS6801") == "02-13" && getText("dropdown6") == "Unified Gateway (01-08a)")) { 
+  	setScreen("screen2");
+
+  } else if ((getText("dropdownCNS6801") == "02-01" && getText("dropdown6") == "Unified Gateway (01-10)")) {
+     setScreen("screen1");
+  } else if ((getText("dropdownCNS6801") == "02-07" && getText("dropdown6") == "Unified Gateway (01-10)")) {
+  setScreen("screen1");
+  } else if ((getText("dropdownCNS6801") == "02-08" && getText("dropdown6") == "Unified Gateway (01-10)")) { 
+    setScreen("screen1");
+  } else if ((getText("dropdownCNS6801") == "02-10" && getText("dropdown6") == "Unified Gateway (01-10)")) { 
+  	setScreen("screen2");
+  } else if ((getText("dropdownCNS6801") == "02-13" && getText("dropdown6") == "Unified Gateway (01-10)")) { 
+  	setScreen("screen2");
+
+  } else if ((getText("dropdownCNS6801") == "02-01" && getText("dropdown6") == "Unified Gateway (01-11)")) {
+     setScreen("screen1");
+  } else if ((getText("dropdownCNS6801") == "02-07" && getText("dropdown6") == "Unified Gateway (01-11)")) {
+  setScreen("screen1");
+  } else if ((getText("dropdownCNS6801") == "02-08" && getText("dropdown6") == "Unified Gateway (01-11)")) { 
+    setScreen("screen1");
+  } else if ((getText("dropdownCNS6801") == "02-10" && getText("dropdown6") == "Unified Gateway (01-11)")) { 
+  	setScreen("screen2");
+  } else if ((getText("dropdownCNS6801") == "02-13" && getText("dropdown6") == "Unified Gateway (01-11)")) { 
+  	setScreen("screen2");
+
+  } else if ((getText("dropdownCNS6801") == "02-01" && getText("dropdown6") == "Enterprise Gateway(01-02)")) {
+     setScreen("screen1");
+  } else if ((getText("dropdownCNS6801") == "02-07" && getText("dropdown6") == "Enterprise Gateway(01-02)")) {
+  setScreen("screen1");
+  } else if ((getText("dropdownCNS6801") == "02-08" && getText("dropdown6") == "Enterprise Gateway(01-02)")) { 
+    setScreen("screen1");
+  } else if ((getText("dropdownCNS6801") == "02-10" && getText("dropdown6") == "Enterprise Gateway(01-02)")) { 
+  	setScreen("screen1");
+  } else if ((getText("dropdownCNS6801") == "02-13" && getText("dropdown6") == "Enterprise Gateway(01-02)")) { 
+  	setScreen("screen1");
+
+
+  } else if ((getText("dropdownCNS6801") == "02-01" && getText("dropdown6") == "Enterprise Gateway(01-03)")) {
+     setScreen("screen1");
+  } else if ((getText("dropdownCNS6801") == "02-07" && getText("dropdown6") == "Enterprise Gateway(01-03)")) {
+  setScreen("screen1");
+  } else if ((getText("dropdownCNS6801") == "02-08" && getText("dropdown6") == "Enterprise Gateway(01-03)")) { 
+    setScreen("screen1");
+  } else if ((getText("dropdownCNS6801") == "02-10" && getText("dropdown6") == "Enterprise Gateway(01-03)")) { 
+  	setScreen("screen1");
+  } else if ((getText("dropdownCNS6801") == "02-13" && getText("dropdown6") == "Enterprise Gateway(01-03)")) { 
+  	setScreen("screen1");
+  	
+  } else if ((getText("dropdownCNS6801") == "02-01" && getText("dropdown6") == "Enterprise Gateway(02-01)")) {
+     setScreen("screen1");
+  } else if ((getText("dropdownCNS6801") == "02-07" && getText("dropdown6") == "Enterprise Gateway(02-01)")) {
+  setScreen("screen1");
+  } else if ((getText("dropdownCNS6801") == "02-08" && getText("dropdown6") == "Enterprise Gateway(02-01)")) { 
+    setScreen("screen1");
+  } else if ((getText("dropdownCNS6801") == "02-10" && getText("dropdown6") == "Enterprise Gateway(02-01)")) { 
+  	setScreen("screen1");
+  } else if ((getText("dropdownCNS6801") == "02-13" && getText("dropdown6") == "Enterprise Gateway(02-01)")) { 
+  	setScreen("screen1");
+
+
+  } else if ((getText("dropdownCNS6801") == "02-01" && getText("dropdown6") == "Enterprise Gateway(02-03)")) {
+     setScreen("screen1");
+  } else if ((getText("dropdownCNS6801") == "02-07" && getText("dropdown6") == "Enterprise Gateway(02-03)")) {
+  setScreen("screen1");
+  } else if ((getText("dropdownCNS6801") == "02-08" && getText("dropdown6") == "Enterprise Gateway(02-03)")) { 
+    setScreen("screen1");
+  } else if ((getText("dropdownCNS6801") == "02-10" && getText("dropdown6") == "Enterprise Gateway(02-03)")) { 
+  	setScreen("screen1");
+  } else if ((getText("dropdownCNS6801") == "02-13" && getText("dropdown6") == "Enterprise Gateway(02-03)")) { 
+  	setScreen("screen1");
+
+  } else if ((getText("dropdownCNS6801") == "02-01" && getText("dropdown6") == "Enterprise Gateway(02-04)")) {
+     setScreen("screen1");
+  } else if ((getText("dropdownCNS6801") == "02-07" && getText("dropdown6") == "Enterprise Gateway(02-04)")) {
+  setScreen("screen1");
+  } else if ((getText("dropdownCNS6801") == "02-08" && getText("dropdown6") == "Enterprise Gateway(02-04)")) { 
+    setScreen("screen1");
+  } else if ((getText("dropdownCNS6801") == "02-10" && getText("dropdown6") == "Enterprise Gateway(02-04)")) { 
+  	setScreen("screen1");
+  } else if ((getText("dropdownCNS6801") == "02-13" && getText("dropdown6") == "Enterprise Gateway(02-04)")) { 
+  	setScreen("screen1");
+
+
+  } else if ((getText("dropdownCNS6801") == "02-01" && getText("dropdown6") == "Enterprise Gateway(02-06)")) {
+     setScreen("screen1");
+  } else if ((getText("dropdownCNS6801") == "02-07" && getText("dropdown6") == "Enterprise Gateway(02-06)")) {
+  setScreen("screen1");
+  } else if ((getText("dropdownCNS6801") == "02-08" && getText("dropdown6") == "Enterprise Gateway(02-06)")) { 
+    setScreen("screen1");
+  } else if ((getText("dropdownCNS6801") == "02-10" && getText("dropdown6") == "Enterprise Gateway(02-06)")) { 
+  	setScreen("screen1");
+  } else if ((getText("dropdownCNS6801") == "02-13" && getText("dropdown6") == "Enterprise Gateway(02-06)")) { 
+  	setScreen("screen1");
+
+  } else if ((getText("dropdownCNS6801") == "02-01" && getText("dropdown6") == "Enterprise Gateway(04-01)")) {
+     setScreen("screen1");
+  } else if ((getText("dropdownCNS6801") == "02-07" && getText("dropdown6") == "Enterprise Gateway(04-01)")) {
+  setScreen("screen1");
+  } else if ((getText("dropdownCNS6801") == "02-08" && getText("dropdown6") == "Enterprise Gateway(04-01)")) { 
+    setScreen("screen1");
+  } else if ((getText("dropdownCNS6801") == "02-10" && getText("dropdown6") == "Enterprise Gateway(04-01)")) { 
+  	setScreen("screen1");
+  } else if ((getText("dropdownCNS6801") == "02-13" && getText("dropdown6") == "Enterprise Gateway(04-01)")) { 
+  	setScreen("screen1");
+  	
+//RNS9703
+
+  } else if ((getText("dropdownRNS9703") == "03-40" && getText("dropdown6") == "Unified Gateway (01-08a)")) {
+      setText("Sol1", "=NA");
+  } else if ((getText("dropdownRNS9703") == "03-40b" && getText("dropdown6") == "Unified Gateway (01-08a)")) {
+      setText("Sol1", "=NA");
+
+  } else if ((getText("dropdownRNS9703") == "03-40" && getText("dropdown6") == "Unified Gateway (01-10)")) {
+      setText("Sol1", "=NA");
+  } else if ((getText("dropdownRNS9703") == "03-40b" && getText("dropdown6") == "Unified Gateway (01-10)")) {
+      setText("Sol1", "=NA");
+
+  } else if ((getText("dropdownRNS9703") == "03-40" && getText("dropdown6") == "Unified Gateway (01-11)")) {
+      setText("Sol1", "=NA");
+  } else if ((getText("dropdownRNS9703") == "03-40b" && getText("dropdown6") == "Unified Gateway (01-11)")) {
+      setText("Sol1", "=NA");
+
+
+  } else if ((getText("dropdownRNS9703") == "03-40" && getText("dropdown6") == "Enterprise Gateway(01-02)")) {
+         setScreen("screen1");
+  } else if ((getText("dropdownRNS9703") == "03-40b" && getText("dropdown6") == "Enterprise Gateway(01-02)")) {
+    setScreen("screen1");
+
+  } else if ((getText("dropdownRNS9703") == "03-40" && getText("dropdown6") == "Enterprise Gateway(01-03)")) {
+         setScreen("screen1");
+  } else if ((getText("dropdownRNS9703") == "03-40b" && getText("dropdown6") == "Enterprise Gateway(01-03)")) {
+    setScreen("screen1");
+
+  } else if ((getText("dropdownRNS9703") == "03-40" && getText("dropdown6") == "Enterprise Gateway(02-01)")) {
+         setScreen("screen1");
+  } else if ((getText("dropdownRNS9703") == "03-40b" && getText("dropdown6") == "Enterprise Gateway(02-01)")) {
     setScreen("screen1");
     
-  } else if ((getText("drop_1700") == "02-10" && getText("dropdown6") == "BSM-3500")) {
-    setScreen("screen1");
-  } else if ((getText("drop_1700") == "02-30" && getText("dropdown6") == "BSM-3500")) {
-    setScreen("screen1");
-  } else if ((getText("drop_1700") == "02-40" && getText("dropdown6") == "BSM-3500")) {
-    setScreen("screen1");
-  } else if ((getText("drop_1700") == "02-61" && getText("dropdown6") == "BSM-3500")) {
-    setScreen("screen1");
-  } else if ((getText("drop_1700") == "01-15" && getText("dropdown6") == "BSM-6000")) {
-    setScreen("screen1");
-  } else if ((getText("drop_1700") == "02-30" && getText("dropdown6") == "BSM-6000")) {
-  	setScreen("screen1"); 
-  } else if ((getText("drop_1700") == "02-40" && getText("dropdown6") == "BSM-6000")) { 
-  	setScreen("screen1");
-  } else if ((getText("drop_1700") == "02-61" && getText("dropdown6") == "BSM-6000")) { 
-  	setScreen("screen1");
-  } else if ((getText("drop_1700") == "02-10" && getText("dropdown6") == "BSM-6000")) {
-    setScreen("screen1");
-  } else if ((getText("drop_1700") == "01-15" && getText("dropdown6") == "CSM-1901")) {
-    setScreen("screen1");
-  } else if ((getText("drop_1700") == "02-10" && getText("dropdown6") == "CSM-1901")) {
-  	setScreen("screen1");
-  } else if ((getText("drop_1700") == "02-30" && getText("dropdown6") == "CSM-1901")) { 
-     setScreen("screen1");
-  } else if ((getText("drop_1700") == "02-40" && getText("dropdown6") == "CSM-1901")) { 
-  	setScreen("screen1");
-   } else if ((getText("drop_1700") == "02-61" && getText("dropdown6") == "CSM-1901")) { 
-  setScreen("screen1");
-  } else if ((getText("drop_1700") == "01-15" && getText("dropdown6") == "CNS-6201")) {
-    setScreen("screen1");
-  } else if ((getText("drop_1700") == "02-10" && getText("dropdown6") == "CNS-6201")) {
-  	setText("Sol1", "≧05-01");
-  } else if ((getText("drop_1700") == "02-30" && getText("dropdown6") == "CNS-6201")) { 
-  	setText("Sol1", "≧05-01");
-  } else if ((getText("drop_1700") == "02-40" && getText("dropdown6") == "CNS-6201")) { 
-  	setText("Sol1", "≧05-01");
-   } else if ((getText("drop_1700") == "02-61" && getText("dropdown6") == "CNS-6201")) { 
-  	setText("Sol1", "≧05-01");
-  } else if ((getText("drop_1700") == "01-15" && getText("dropdown6") == "CNS-6801")) {
-    setScreen("screen1");
-  } else if ((getText("drop_1700") == "02-10" && getText("dropdown6") == "CNS-6801")) {
-  	setScreen("screen1");
-  } else if ((getText("drop_1700") == "02-30" && getText("dropdown6") == "CNS-6801")) { 
-     setScreen("screen1");
-  } else if ((getText("drop_1700") == "02-40" && getText("dropdown6") == "CNS-6801")) { 
-  	setScreen("screen1");
-   } else if ((getText("drop_1700") == "02-61" && getText("dropdown6") == "CNS-6801")) { 
-  setScreen("screen1");
-  } else if ((getText("drop_1700") == "01-15" && getText("dropdown6") == "RNS-9703(Old GUI)")) {
-    setScreen("screen1");
-  } else if ((getText("drop_1700") == "02-10" && getText("dropdown6") == "RNS-9703(Old GUI)")) {
-  	setText("Sol1", "≧03-40b");
-  } else if ((getText("drop_1700") == "02-30" && getText("dropdown6") == "RNS-9703(Old GUI)")) { 
-     setText("Sol1", "≧03-40b");
-  } else if ((getText("drop_1700") == "02-40" && getText("dropdown6") == "RNS-9703(Old GUI)")) { 
-  	setText("Sol1", "≧03-40b");
-   } else if ((getText("drop_1700") == "02-61" && getText("dropdown6") == "RNS-9703(Old GUI)")) { 
-  setText("Sol1", "≧03-40b");
-  } else if ((getText("drop_1700") == "01-15" && getText("dropdown6") == "RNS-6803(Audio)")) {
-    setScreen("screen1");
-  } else if ((getText("drop_1700") == "02-10" && getText("dropdown6") == "RNS-6803(Audio)")) {
-  	setScreen("screen1");
-  } else if ((getText("drop_1700") == "02-30" && getText("dropdown6") == "RNS-6803(Audio)")) { 
-     setScreen("screen1");
-  } else if ((getText("drop_1700") == "02-40" && getText("dropdown6") == "RNS-6803(Audio)")) { 
-  	setScreen("screen1");
-   } else if ((getText("drop_1700") == "02-61" && getText("dropdown6") == "RNS-6803(Audio)")) { 
-  setScreen("screen1");
-  } else if ((getText("drop_1700") == "01-15" && getText("dropdown6") == "RNS-6804(No Audio)")) {
-    setScreen("screen1");
-  } else if ((getText("drop_1700") == "02-10" && getText("dropdown6") == "RNS-6804(No Audio)")) {
-  	setScreen("screen1");
-  } else if ((getText("drop_1700") == "02-30" && getText("dropdown6") == "RNS-6804(No Audio)")) { 
-     setScreen("screen1");
-  } else if ((getText("drop_1700") == "02-40" && getText("dropdown6") == "RNS-6804(No Audio)")) { 
-  	setScreen("screen1");
-   } else if ((getText("drop_1700") == "02-61" && getText("dropdown6") == "RNS-6804(No Audio)")) { 
-  	setScreen("screen1");
-  } else if ((getText("drop_1700") == "01-15" && getText("dropdown6") == "EDNS-9001 Prefense")) {
-    setText("Sol1", "NA");
-  } else if ((getText("drop_1700") == "02-10" && getText("dropdown6") == "EDNS-9001 Prefense")) {
-  	setText("Sol1", "NA");
-  } else if ((getText("drop_1700") == "02-30" && getText("dropdown6") == "EDNS-9001 Prefense")) { 
-     setText("Sol1", "NA");
-  } else if ((getText("drop_1700") == "02-40" && getText("dropdown6") == "EDNS-9001 Prefense")) { 
-  	setText("Sol1", "NA");
-   } else if ((getText("drop_1700") == "02-61" && getText("dropdown6") == "EDNS-9001 Prefense")) { 
-  	setText("Sol1", "NA");
-   } else if ((getText("drop_1700") == "01-15" && getText("dropdown6") == "GZ-100P (+UG/TS)")) {
-    setText("Sol1", "NA");
-  } else if ((getText("drop_1700") == "02-10" && getText("dropdown6") == "GZ-100P (+UG/TS)")) {
-  	setText("Sol1", "NA");
-  } else if ((getText("drop_1700") == "02-30" && getText("dropdown6") == "GZ-100P (+UG/TS)")) { 
-     setText("Sol1", "NA");
-  } else if ((getText("drop_1700") == "02-40" && getText("dropdown6") == "GZ-100P (+UG/TS)")) { 
-  	setText("Sol1", "NA");
-   } else if ((getText("drop_1700") == "02-61" && getText("dropdown6") == "GZ-100P (+UG/TS)")) { 
-  setText("Sol1", "NA");
-   } else if ((getText("drop_1700") == "01-15" && getText("dropdown6") == "ORG-9100")) {
-    setText("Sol1", "NA");
-  } else if ((getText("drop_1700") == "02-10" && getText("dropdown6") == "ORG-9100")) {
-  	setText("Sol1", "NA");
-  } else if ((getText("drop_1700") == "02-30" && getText("dropdown6") == "ORG-9100")) { 
-     setText("Sol1", "NA");
-  } else if ((getText("drop_1700") == "02-40" && getText("dropdown6") == "ORG-9100")) { 
-  	setText("Sol1", "NA");
-   } else if ((getText("drop_1700") == "02-61" && getText("dropdown6") == "ORG-9100")) { 
-  setText("Sol1", "NA");
-  } else if ((getText("drop_1700") == "01-15" && getText("dropdown6") == "CGS-9001 Pager Gateway (Legacy)")) {
-    setScreen("screen1");
-  } else if ((getText("drop_1700") == "02-10" && getText("dropdown6") == "CGS-9001 Pager Gateway (Legacy)")) {
-  	setText("Sol1", "≧02-03b");
-  } else if ((getText("drop_1700") == "02-30" && getText("dropdown6") == "CGS-9001 Pager Gateway (Legacy)")) { 
-    setText("Sol1", "≧02-03b");
-  } else if ((getText("drop_1700") == "02-40" && getText("dropdown6") == "CGS-9001 Pager Gateway (Legacy)")) { 
-  	setText("Sol1", "≧02-03b");
-   } else if ((getText("drop_1700") == "02-61" && getText("dropdown6") == "CGS-9001 Pager Gateway (Legacy)")) { 
-  	setText("Sol1", "≧02-03b");
-  } else if ((getText("drop_1700") == "01-15" && getText("dropdown6") == "CGS-9002 HL7 Gateway (Legacy)")) {
-    setScreen("screen1");
-  } else if ((getText("drop_1700") == "02-10" && getText("dropdown6") == "CGS-9002 HL7 Gateway (Legacy)")) {
-  	setText("Sol1", "≧01-09a");
-  } else if ((getText("drop_1700") == "02-30" && getText("dropdown6") == "CGS-9002 HL7 Gateway (Legacy)")) { 
-    setText("Sol1", "≧01-09a");
-  } else if ((getText("drop_1700") == "02-40" && getText("dropdown6") == "CGS-9002 HL7 Gateway (Legacy)")) { 
-  	setText("Sol1", "≧01-09a");
-   } else if ((getText("drop_1700") == "02-61" && getText("dropdown6") == "CGS-9002 HL7 Gateway (Legacy)")) { 
-  	setText("Sol1", "≧01-09a");
-  } else if ((getText("drop_1700") == "01-15" && getText("dropdown6") == "QP-983P NetKonnect/RNS Server")) {
-    setScreen("screen1");
-  } else if ((getText("drop_1700") == "02-10" && getText("dropdown6") == "QP-983P NetKonnect/RNS Server")) {
-  	setText("Sol1", "≧02-11");
-  } else if ((getText("drop_1700") == "02-30" && getText("dropdown6") == "QP-983P NetKonnect/RNS Server")) { 
-    setText("Sol1", "≧02-11");
-  } else if ((getText("drop_1700") == "02-40" && getText("dropdown6") == "QP-983P NetKonnect/RNS Server")) { 
-  	setText("Sol1", "≧02-11");
-   } else if ((getText("drop_1700") == "02-61" && getText("dropdown6") == "QP-983P NetKonnect/RNS Server")) { 
-  	setText("Sol1", "≧02-11");
-  } else if ((getText("drop_1700") == "01-15" && getText("dropdown6") == "QP-986P Host1000 Server")) {
-    setScreen("screen1");
-  } else if ((getText("drop_1700") == "02-10" && getText("dropdown6") == "QP-986P Host1000 Server")) {
-  	setScreen("screen1");
-  } else if ((getText("drop_1700") == "02-30" && getText("dropdown6") == "QP-986P Host1000 Server")) { 
-    setScreen("screen1");
-  } else if ((getText("drop_1700") == "02-40" && getText("dropdown6") == "QP-986P Host1000 Server")) { 
-  	setScreen("screen1");
-   } else if ((getText("drop_1700") == "02-61" && getText("dropdown6") == "QP-986P Host1000 Server")) { 
-  	setScreen("screen1");
-   } else if ((getText("drop_1700") == "01-15" && getText("dropdown6") == "QP-988P Unified Gateway")) {
-    setText("Sol1", "≦01-08a");
-  } else if ((getText("drop_1700") == "02-10" && getText("dropdown6") == "QP-988P Unified Gateway")) {
-  	setText("Sol1", "≧01-10");
-  } else if ((getText("drop_1700") == "02-30" && getText("dropdown6") == "QP-988P Unified Gateway")) { 
-    setText("Sol1", "≧01-10");
-  } else if ((getText("drop_1700") == "02-40" && getText("dropdown6") == "QP-988P Unified Gateway")) { 
-  	setText("Sol1", "≧01-10");
-   } else if ((getText("drop_1700") == "02-61" && getText("dropdown6") == "QP-988P Unified Gateway")) { 
-  	setText("Sol1", "≧01-10");
-  } else if ((getText("drop_1700") == "01-15" && getText("dropdown6") == "QP-988P Enterprise Gateway")) {
-    setScreen("screen2");
-  } else if ((getText("drop_1700") == "02-10" && getText("dropdown6") == "QP-988P Enterprise Gateway")) {
-  	setScreen("screen1");
-  } else if ((getText("drop_1700") == "02-30" && getText("dropdown6") == "QP-988P Enterprise Gateway")) { 
-    setScreen("screen1");
-  } else if ((getText("drop_1700") == "02-40" && getText("dropdown6") == "QP-988P Enterprise Gateway")) { 
-  	setScreen("screen1");
-   } else if ((getText("drop_1700") == "02-61" && getText("dropdown6") == "QP-988P Enterprise Gateway")) { 
-  	setScreen("screen1");
-  } else if ((getText("drop_1700") == "01-15" && getText("dropdown6") == "QP-989P ViTrac iOS")) {
-    setScreen("screen1");
-  } else if ((getText("drop_1700") == "02-10" && getText("dropdown6") == "QP-989P ViTrac iOS")) {
-  	setScreen("screen1");
-  } else if ((getText("drop_1700") == "02-30" && getText("dropdown6") == "QP-989P ViTrac iOS")) { 
-    setScreen("screen1");
-  } else if ((getText("drop_1700") == "02-40" && getText("dropdown6") == "QP-989P ViTrac iOS")) { 
-  	setScreen("screen1");
-   } else if ((getText("drop_1700") == "02-61" && getText("dropdown6") == "QP-989P ViTrac iOS")) { 
-  	setScreen("screen1");
-  } else if ((getText("drop_1700") == "01-15" && getText("dropdown6") == "QP-991P ViTrac Android")) {
-    setScreen("screen1");
-  } else if ((getText("drop_1700") == "02-10" && getText("dropdown6") == "QP-991P ViTrac Android")) {
-  	setScreen("screen1");
-  } else if ((getText("drop_1700") == "02-30" && getText("dropdown6") == "QP-991P ViTrac Android")) { 
-    setScreen("screen1");
-  } else if ((getText("drop_1700") == "02-40" && getText("dropdown6") == "QP-991P ViTrac Android")) { 
-  	setScreen("screen1");
-   } else if ((getText("drop_1700") == "02-61" && getText("dropdown6") == "QP-991P ViTrac Android")) { 
-  	setScreen("screen1");
-  } else if ((getText("drop_1700") == "01-15" && getText("dropdown6") == "QP-999P NKAnywhere")) {
-    setScreen("screen2");
-  } else if ((getText("drop_1700") == "02-10" && getText("dropdown6") == "QP-999P NKAnywhere")) {
-  	setScreen("screen1");
-  } else if ((getText("drop_1700") == "02-30" && getText("dropdown6") == "QP-999P NKAnywhere")) { 
-    setScreen("screen1");
-  } else if ((getText("drop_1700") == "02-40" && getText("dropdown6") == "QP-999P NKAnywhere")) { 
-  	setScreen("screen1");
-   } else if ((getText("drop_1700") == "02-61" && getText("dropdown6") == "QP-999P NKAnywhere")) { 
-  	setScreen("screen1");
-  } else if ((getText("drop_1700") == "01-15" && getText("dropdown6") == "OLG-3800")) {
-    setScreen("screen1");
-  } else if ((getText("drop_1700") == "02-10" && getText("dropdown6") == "OLG-3800")) {
-  	setScreen("screen1");
-  } else if ((getText("drop_1700") == "02-30" && getText("dropdown6") == "OLG-3800")) { 
-    setScreen("screen1");
-  } else if ((getText("drop_1700") == "02-40" && getText("dropdown6") == "OLG-3800")) { 
-  	setScreen("screen1");
-   } else if ((getText("drop_1700") == "02-61" && getText("dropdown6") == "OLG-3800")) { 
-  	setScreen("screen1");
 
-
-
-  } else if ((getText("dropdown3500") == "06-31" && getText("dropdown6") == "BSM-1700 (+UG/TS)")) {
-    setScreen("screen1");
-  } else if ((getText("dropdown3500") == "07-41" && getText("dropdown6") == "BSM-1700 (+UG/TS)")) {
-  	setScreen("screen1");
-  } else if ((getText("dropdown3500") == "08-11" && getText("dropdown6") == "BSM-1700 (+UG/TS)")) { 
-    setScreen("screen1");
-  } else if ((getText("dropdown3500") == "08-31" && getText("dropdown6") == "BSM-1700 (+UG/TS)")) { 
-  	setScreen("screen1");
-
-  } else if ((getText("dropdown3500") == "06-31" && getText("dropdown6") == "BSM-6000")) {
-    setScreen("screen1");
-  } else if ((getText("dropdown3500") == "07-41" && getText("dropdown6") == "BSM-6000")) {
-  	setScreen("screen1");
-  } else if ((getText("dropdown3500") == "08-11" && getText("dropdown6") == "BSM-6000")) { 
-    setScreen("screen1");
-  } else if ((getText("dropdown3500") == "08-31" && getText("dropdown6") == "BSM-6000")) { 
-  	setScreen("screen1");
-
-  } else if ((getText("dropdown3500") == "06-31" && getText("dropdown6") == "CSM-1901")) {
-    setScreen("screen1");
-  } else if ((getText("dropdown3500") == "07-41" && getText("dropdown6") == "CSM-1901")) {
-  	setScreen("screen1");
-  } else if ((getText("dropdown3500") == "08-11" && getText("dropdown6") == "CSM-1901")) { 
-    setScreen("screen1");
-  } else if ((getText("dropdown3500") == "08-31" && getText("dropdown6") == "CSM-1901")) { 
-  	setScreen("screen1");
-
-  } else if ((getText("dropdown3500") == "06-31" && getText("dropdown6") == "CNS-6201")) {
-    setScreen("screen1");
-  } else if ((getText("dropdown3500") == "07-41" && getText("dropdown6") == "CNS-6201")) {
-  	setText("Sol1", "≧05-01");
-  } else if ((getText("dropdown3500") == "08-11" && getText("dropdown6") == "CNS-6201")) { 
-    setText("Sol1", "≧05-01");
-  } else if ((getText("dropdown3500") == "08-31" && getText("dropdown6") == "CNS-6201")) { 
-  	setText("Sol1", "≧05-01");
-
-
-
-  } else if ((getText("dropdown3500") == "06-31" && getText("dropdown6") == "CNS-6801")) {
-    setScreen("screen1");
-  } else if ((getText("dropdown3500") == "07-41" && getText("dropdown6") == "CNS-6801")) {
-  	setScreen("screen1");
-  } else if ((getText("dropdown3500") == "08-11" && getText("dropdown6") == "CNS-6801")) { 
-    setScreen("screen1");
-  } else if ((getText("dropdown3500") == "08-31" && getText("dropdown6") == "CNS-6801")) { 
-  	setScreen("screen1");
-
-  } else if ((getText("dropdown3500") == "06-31" && getText("dropdown6") == "RNS-9703(Old GUI)")) {
-    setScreen("screen1");
-  } else if ((getText("dropdown3500") == "07-41" && getText("dropdown6") == "RNS-9703(Old GUI)")) {
-  	setText("Sol1", "≧03-40b");
-  } else if ((getText("dropdown3500") == "08-11" && getText("dropdown6") == "RNS-9703(Old GUI)")) { 
-    setText("Sol1", "≧03-40b");
-  } else if ((getText("dropdown3500") == "08-31" && getText("dropdown6") == "RNS-9703(Old GUI)")) { 
-  	setText("Sol1", "≧03-40b");
-
-  } else if ((getText("dropdown3500") == "06-31" && getText("dropdown6") == "RNS-6803(Audio)")) {
-    setScreen("screen1");
-  } else if ((getText("dropdown3500") == "07-41" && getText("dropdown6") == "RNS-6803(Audio)")) {
-  	setScreen("screen1");
-  } else if ((getText("dropdown3500") == "08-11" && getText("dropdown6") == "RNS-6803(Audio)")) { 
-    setScreen("screen1");
-  } else if ((getText("dropdown3500") == "08-31" && getText("dropdown6") == "RNS-6803(Audio)")) { 
-  	setScreen("screen1");
-
-  } else if ((getText("dropdown3500") == "06-31" && getText("dropdown6") == "RNS-6804(No Audio)")) {
-    setScreen("screen1");
-  } else if ((getText("dropdown3500") == "07-41" && getText("dropdown6") == "RNS-6804(No Audio)")) {
-  	setScreen("screen1");
-  } else if ((getText("dropdown3500") == "08-11" && getText("dropdown6") == "RNS-6804(No Audio)")) { 
-    setScreen("screen1");
-  } else if ((getText("dropdown3500") == "08-31" && getText("dropdown6") == "RNS-6804(No Audio)")) { 
-  	setScreen("screen1");
-
-  } else if ((getText("dropdown3500") == "06-31" && getText("dropdown6") == "EDNS-9001 Prefense")) {
-    setText("Sol1", "NA");
-  } else if ((getText("dropdown3500") == "07-41" && getText("dropdown6") == "EDNS-9001 Prefense")) {
-  	setText("Sol1", "NA");
-  } else if ((getText("dropdown3500") == "08-11" && getText("dropdown6") == "EDNS-9001 Prefense")) { 
-    setText("Sol1", "NA");
-  } else if ((getText("dropdown3500") == "08-31" && getText("dropdown6") == "EDNS-9001 Prefense")) { 
-  	setText("Sol1", "NA");
-
-  } else if ((getText("dropdown3500") == "06-31" && getText("dropdown6") == "GZ-100P (+UG/TS)")) {
-    setText("Sol1", "NA");
-  } else if ((getText("dropdown3500") == "07-41" && getText("dropdown6") == "GZ-100P (+UG/TS)")) {
-  	setText("Sol1", "NA");
-  } else if ((getText("dropdown3500") == "08-11" && getText("dropdown6") == "GZ-100P (+UG/TS)")) { 
-    setText("Sol1", "NA");
-  } else if ((getText("dropdown3500") == "08-31" && getText("dropdown6") == "GZ-100P (+UG/TS)")) { 
-  	setText("Sol1", "NA");
-
-  } else if ((getText("dropdown3500") == "06-31" && getText("dropdown6") == "ORG-9100")) {
-    setText("Sol1", "NA");
-  } else if ((getText("dropdown3500") == "07-41" && getText("dropdown6") == "ORG-9100")) {
-  	setText("Sol1", "NA");
-  } else if ((getText("dropdown3500") == "08-11" && getText("dropdown6") == "ORG-9100")) { 
-    setText("Sol1", "NA");
-  } else if ((getText("dropdown3500") == "08-31" && getText("dropdown6") == "ORG-9100")) { 
-  	setText("Sol1", "NA");
-
-  } else if ((getText("dropdown3500") == "06-31" && getText("dropdown6") == "CGS-9001 Pager Gateway (Legacy)")) {
-    setScreen("screen1");
-  } else if ((getText("dropdown3500") == "07-41" && getText("dropdown6") == "CGS-9001 Pager Gateway (Legacy)")) {
-  	setText("Sol1", "≧02-03b");
-  } else if ((getText("dropdown3500") == "08-11" && getText("dropdown6") == "CGS-9001 Pager Gateway (Legacy)")) { 
-    setText("Sol1", "≧02-03b");
-  } else if ((getText("dropdown3500") == "08-31" && getText("dropdown6") == "CGS-9001 Pager Gateway (Legacy)")) { 
-  	setText("Sol1", "≧02-03b");
-
-
-  } else if ((getText("dropdown3500") == "06-31" && getText("dropdown6") == "CGS-9002 HL7 Gateway (Legacy)")) {
-    setScreen("screen1");
-  } else if ((getText("dropdown3500") == "07-41" && getText("dropdown6") == "CGS-9002 HL7 Gateway (Legacy)")) {
-  	setText("Sol1", "≧01-09a");
-  } else if ((getText("dropdown3500") == "08-11" && getText("dropdown6") == "CGS-9002 HL7 Gateway (Legacy)")) { 
-    setText("Sol1", "≧01-09a");
-  } else if ((getText("dropdown3500") == "08-31" && getText("dropdown6") == "CGS-9002 HL7 Gateway (Legacy)")) { 
-  	setText("Sol1", "≧01-09a");
-
-  } else if ((getText("dropdown3500") == "06-31" && getText("dropdown6") == "QP-983P NetKonnect/RNS Server")) {
-    setScreen("screen1");
-  } else if ((getText("dropdown3500") == "07-41" && getText("dropdown6") == "QP-983P NetKonnect/RNS Server")) {
-  	setText("Sol1", "≧02-11");
-  } else if ((getText("dropdown3500") == "08-11" && getText("dropdown6") == "QP-983P NetKonnect/RNS Server")) { 
-    setText("Sol1", "≧02-11");
-  } else if ((getText("dropdown3500") == "08-31" && getText("dropdown6") == "QP-983P NetKonnect/RNS Server")) { 
-  	setText("Sol1", "≧02-11");
-
-
-  } else if ((getText("dropdown3500") == "06-31" && getText("dropdown6") == "QP-986P Host1000 Server")) {
-    setScreen("screen1");
-  } else if ((getText("dropdown3500") == "07-41" && getText("dropdown6") == "QP-986P Host1000 Server")) {
-  	setScreen("screen1");
-  } else if ((getText("dropdown3500") == "08-11" && getText("dropdown6") == "QP-986P Host1000 Server")) { 
-   setScreen("screen1");
-  } else if ((getText("dropdown3500") == "08-31" && getText("dropdown6") == "QP-986P Host1000 Server")) { 
-  	setScreen("screen1");
-
-  } else if ((getText("dropdown3500") == "06-31" && getText("dropdown6") == "QP-988P Unified Gateway")) {
-   setText("Sol1", "≦01-08a");
-  } else if ((getText("dropdown3500") == "07-41" && getText("dropdown6") == "QP-988P Unified Gateway")) {
-  	setText("Sol1", "≧01-10");
-  } else if ((getText("dropdown3500") == "08-11" && getText("dropdown6") == "QP-988P Unified Gateway")) { 
-  setText("Sol1", "≧01-10");
-  } else if ((getText("dropdown3500") == "08-31" && getText("dropdown6") == "QP-988P Unified Gateway")) { 
-  	setText("Sol1", "≧01-10");
-
-  } else if ((getText("dropdown3500") == "06-31" && getText("dropdown6") == "QP-988P Enterprise Gateway")) {
-    setScreen("screen2");
-  } else if ((getText("dropdown3500") == "07-41" && getText("dropdown6") == "QP-988P Enterprise Gateway")) {
-  	setScreen("screen1");
-  } else if ((getText("dropdown3500") == "08-11" && getText("dropdown6") == "QP-988P Enterprise Gateway")) { 
-   setScreen("screen1");
-  } else if ((getText("dropdown3500") == "08-31" && getText("dropdown6") == "QP-988P Enterprise Gateway")) { 
-  	setScreen("screen1");
-
-  } else if ((getText("dropdown3500") == "06-31" && getText("dropdown6") == "QP-989P ViTrac iOS")) {
-    setScreen("screen1");
-  } else if ((getText("dropdown3500") == "07-41" && getText("dropdown6") == "QP-989P ViTrac iOS")) {
-  	setScreen("screen1");
-  } else if ((getText("dropdown3500") == "08-11" && getText("dropdown6") == "QP-989P ViTrac iOS")) { 
-   setScreen("screen1");
-  } else if ((getText("dropdown3500") == "08-31" && getText("dropdown6") == "QP-989P ViTrac iOS")) { 
-  	setScreen("screen1");
-
-  } else if ((getText("dropdown3500") == "06-31" && getText("dropdown6") == "QP-991P ViTrac Android")) {
-    setScreen("screen1");
-  } else if ((getText("dropdown3500") == "07-41" && getText("dropdown6") == "QP-991P ViTrac Android")) {
-  	setScreen("screen1");
-  } else if ((getText("dropdown3500") == "08-11" && getText("dropdown6") == "QP-991P ViTrac Android")) { 
-   setScreen("screen1");
-  } else if ((getText("dropdown3500") == "08-31" && getText("dropdown6") == "QP-991P ViTrac Android")) { 
-  	setScreen("screen1");
-
-  } else if ((getText("dropdown3500") == "06-31" && getText("dropdown6") == "QP-999P NKAnywhere")) {
-    setScreen("screen2");
-  } else if ((getText("dropdown3500") == "07-41" && getText("dropdown6") == "QP-999P NKAnywhere")) {
-  	setScreen("screen1");
-  } else if ((getText("dropdown3500") == "08-11" && getText("dropdown6") == "QP-999P NKAnywhere")) { 
-   setScreen("screen1");
-  } else if ((getText("dropdown3500") == "08-31" && getText("dropdown6") == "QP-999P NKAnywhere")) { 
-  	setScreen("screen1");
-
-  } else if ((getText("dropdown3500") == "06-31" && getText("dropdown6") == "OLG-3800")) {
-    setScreen("screen1");
-  } else if ((getText("dropdown3500") == "07-41" && getText("dropdown6") == "OLG-3800")) {
-  	setScreen("screen1");
-  } else if ((getText("dropdown3500") == "08-11" && getText("dropdown6") == "OLG-3800")) { 
-   setScreen("screen1");
-  } else if ((getText("dropdown3500") == "08-31" && getText("dropdown6") == "OLG-3800")) { 
-  	setScreen("screen1");
-
-  } else if ((getText("BSM-6000") == "07-02" && getText("dropdown6") == "BSM-1700 (+UG/TS)")) {
-    setScreen("screen1");
-  } else if ((getText("BSM-6000") == "07-41" && getText("dropdown6") == "BSM-1700 (+UG/TS)")) {
-  	setScreen("screen1");
-  } else if ((getText("BSM-6000") == "08-02" && getText("dropdown6") == "BSM-1700 (+UG/TS)")) { 
-   setScreen("screen1");
-  } else if ((getText("BSM-6000") == "08-12" && getText("dropdown6") == "BSM-1700 (+UG/TS)")) { 
-  	setScreen("screen1");
-   } else if ((getText("BSM-6000") == "08-31" && getText("dropdown6") == "BSM-1700 (+UG/TS)")) { 
-  	setScreen("screen1");
-
-
-  } else if ((getText("BSM-6000") == "07-02" && getText("dropdown6") == "BSM-3500")) {
-    setScreen("screen1");
-  } else if ((getText("BSM-6000") == "07-41" && getText("dropdown6") == "BSM-3500")) {
-  	setScreen("screen1");
-  } else if ((getText("BSM-6000") == "08-02" && getText("dropdown6") == "BSM-3500")) { 
-    setScreen("screen1");
-  } else if ((getText("BSM-6000") == "08-12" && getText("dropdown6") == "BSM-3500")) { 
-  	setScreen("screen1");
-   } else if ((getText("BSM-6000") == "08-31" && getText("dropdown6") == "BSM-3500")) { 
-  	setScreen("screen1");
-
-  } else if ((getText("BSM-6000") == "07-02" && getText("dropdown6") == "CSM-1901")) {
-    setScreen("screen1");
-  } else if ((getText("BSM-6000") == "07-41" && getText("dropdown6") == "CSM-1901")) {
-  	setScreen("screen1");
-  } else if ((getText("BSM-6000") == "08-02" && getText("dropdown6") == "CSM-1901")) { 
-    setScreen("screen1");
-  } else if ((getText("BSM-6000") == "08-12" && getText("dropdown6") == "CSM-1901")) { 
-  	setScreen("screen1");
-  } else if ((getText("BSM-6000") == "08-31" && getText("dropdown6") == "CSM-1901")) { 
-  	setScreen("screen1");
-
-
-  } else if ((getText("BSM-6000") == "07-02" && getText("dropdown6") == "CNS-6201")) {
-    setScreen("screen1");
-  } else if ((getText("BSM-6000") == "07-41" && getText("dropdown6") == "CNS-6201")) {
-  	setScreen("screen1");
-  } else if ((getText("BSM-6000") == "08-02" && getText("dropdown6") == "CNS-6201")) { 
-    setScreen("screen1");
-  } else if ((getText("BSM-6000") == "08-12" && getText("dropdown6") == "CNS-6201")) { 
-  	setScreen("screen1");
-  } else if ((getText("BSM-6000") == "08-31" && getText("dropdown6") == "CNS-6201")) { 
-  	setScreen("screen1");
-
-
-  } else if ((getText("BSM-6000") == "07-02" && getText("dropdown6") == "CNS-6801")) {
-    setScreen("screen1");
-  } else if ((getText("BSM-6000") == "07-41" && getText("dropdown6") == "CNS-6801")) {
-  	setScreen("screen1");
-  } else if ((getText("BSM-6000") == "08-02" && getText("dropdown6") == "CNS-6801")) { 
-    setScreen("screen1");
-  } else if ((getText("BSM-6000") == "08-12" && getText("dropdown6") == "CNS-6801")) { 
-  	setScreen("screen1");
-  } else if ((getText("BSM-6000") == "08-31" && getText("dropdown6") == "CNS-6801")) { 
-  	setScreen("screen1");
-
-
-  } else if ((getText("BSM-6000") == "07-02" && getText("dropdown6") == "RNS-9703(Old GUI)")) {
-    setScreen("screen1");
-  } else if ((getText("BSM-6000") == "07-41" && getText("dropdown6") == "RNS-9703(Old GUI)")) {
-  setScreen("screen1");
-  } else if ((getText("BSM-6000") == "08-02" && getText("dropdown6") == "RNS-9703(Old GUI)")) { 
-     setScreen("screen1");
-  } else if ((getText("BSM-6000") == "08-12" && getText("dropdown6") == "RNS-9703(Old GUI)")) { 
-  	setScreen("screen1");
-  } else if ((getText("BSM-6000") == "08-31" && getText("dropdown6") == "RNS-9703(Old GUI)")) { 
-  setScreen("screen1");
-  
-  
-  } else if ((getText("BSM-6000") == "07-02" && getText("dropdown6") == "RNS-6803(Audio)")) {
-    setScreen("screen1");
-  } else if ((getText("BSM-6000") == "07-41" && getText("dropdown6") == "RNS-6803(Audio)")) {
-  	setScreen("screen1");
-  } else if ((getText("BSM-6000") == "08-02" && getText("dropdown6") == "RNS-6803(Audio)")) { 
-    setScreen("screen1");
-  } else if ((getText("BSM-6000") == "08-12" && getText("dropdown6") == "RNS-6803(Audio)")) { 
-  	setScreen("screen1");
-  } else if ((getText("BSM-6000") == "08-31" && getText("dropdown6") == "RNS-6803(Audio)")) { 
-  	setScreen("screen1");
-
-  } else if ((getText("BSM-6000") == "07-02" && getText("dropdown6") == "RNS-6804(No Audio)")) {
-    setScreen("screen1");
-  } else if ((getText("BSM-6000") == "07-41" && getText("dropdown6") == "RNS-6804(No Audio)")) {
-  	setScreen("screen1");
-  } else if ((getText("BSM-6000") == "08-02" && getText("dropdown6") == "RNS-6804(No Audio)")) { 
-    setScreen("screen1");
-  } else if ((getText("BSM-6000") == "08-12" && getText("dropdown6") == "RNS-6804(No Audio)")) { 
-  	setScreen("screen1");
-  } else if ((getText("BSM-6000") == "08-31" && getText("dropdown6") == "RNS-6804(No Audio)")) { 
-  	setScreen("screen1");
-
-
-  } else if ((getText("BSM-6000") == "07-02" && getText("dropdown6") == "EDNS-9001 Prefense")) {
-    setText("Sol1", "NA");
-  } else if ((getText("BSM-6000") == "07-41" && getText("dropdown6") == "EDNS-9001 Prefense")) {
-  	setText("Sol1", "NA");
-  } else if ((getText("BSM-6000") == "08-02" && getText("dropdown6") == "EDNS-9001 Prefense")) { 
-    setText("Sol1", "NA");
-  } else if ((getText("BSM-6000") == "08-12" && getText("dropdown6") == "EDNS-9001 Prefense")) { 
-  	setText("Sol1", "NA");
-  } else if ((getText("BSM-6000") == "08-31" && getText("dropdown6") == "EDNS-9001 Prefense")) { 
-  	setText("Sol1", "NA");
-
-  } else if ((getText("BSM-6000") == "07-02" && getText("dropdown6") == "GZ-100P (+UG/TS)")) {
-    setScreen("screen1");
-  } else if ((getText("BSM-6000") == "07-41" && getText("dropdown6") == "GZ-100P (+UG/TS)")) {
-  	setScreen("screen1");
-  } else if ((getText("BSM-6000") == "08-02" && getText("dropdown6") == "GZ-100P (+UG/TS)")) { 
-    setScreen("screen1");
-  } else if ((getText("BSM-6000") == "08-12" && getText("dropdown6") == "GZ-100P (+UG/TS)")) { 
-  	setScreen("screen1");
-  } else if ((getText("BSM-6000") == "08-31" && getText("dropdown6") == "GZ-100P (+UG/TS)")) { 
-  	setScreen("screen1");
-
-  } else if ((getText("BSM-6000") == "07-02" && getText("dropdown6") == "ORG-9100")) {
-    setScreen("screen1");
-  } else if ((getText("BSM-6000") == "07-41" && getText("dropdown6") == "ORG-9100")) {
-  	setScreen("screen1");
-  } else if ((getText("BSM-6000") == "08-02" && getText("dropdown6") == "ORG-9100")) { 
-    setScreen("screen1");
-  } else if ((getText("BSM-6000") == "08-12" && getText("dropdown6") == "ORG-9100")) { 
-  	setScreen("screen1");
-  } else if ((getText("BSM-6000") == "08-31" && getText("dropdown6") == "ORG-9100")) { 
-  	setScreen("screen1");
-
-  } else if ((getText("BSM-6000") == "07-02" && getText("dropdown6") == "CGS-9001 Pager Gateway (Legacy)")) {
-    setScreen("screen1");
-  } else if ((getText("BSM-6000") == "07-41" && getText("dropdown6") == "CGS-9001 Pager Gateway (Legacy)")) {
-  	setScreen("screen1");
-  } else if ((getText("BSM-6000") == "08-02" && getText("dropdown6") == "CGS-9001 Pager Gateway (Legacy)")) { 
-    setScreen("screen2");
-    	showElement("notearea2");
-  	setText("notearea2", "08-02: ZM-View causes an issue when used with CGS-9001/CGS-9002/QP-983P.");
-  } else if ((getText("BSM-6000") == "08-12" && getText("dropdown6") == "CGS-9001 Pager Gateway (Legacy)")) { 
-  	setScreen("screen1");
-  	showElement("notearea");
-  	setText("notearea", "08-12 and later: ZM-View needs to be set to OFF when used with CGS-9001/CGS-9002/QP-983P.");
-  } else if ((getText("BSM-6000") == "08-31" && getText("dropdown6") == "CGS-9001 Pager Gateway (Legacy)")) { 
-  	setScreen("screen1");
-  	 	showElement("notearea");
-  	setText("notearea", "08-12 and later: ZM-View needs to be set to OFF when used with CGS-9001/CGS-9002/QP-983P.");
-
-  } else if ((getText("BSM-6000") == "07-02" && getText("dropdown6") == "CGS-9002 HL7 Gateway (Legacy)")) {
-    setScreen("screen1");
-  } else if ((getText("BSM-6000") == "07-41" && getText("dropdown6") == "CGS-9002 HL7 Gateway (Legacy)")) {
-  	setScreen("screen1");
-  } else if ((getText("BSM-6000") == "08-02" && getText("dropdown6") == "CGS-9002 HL7 Gateway (Legacy)")) { 
-   setScreen("screen2");
-       	showElement("notearea2");
-   setText("notearea2", "08-02: ZM-View causes an issue when used with CGS-9001/CGS-9002/QP-983P.");
-  } else if ((getText("BSM-6000") == "08-12" && getText("dropdown6") == "CGS-9002 HL7 Gateway (Legacy)")) { 
-  	setScreen("screen1");
-  	showElement("notearea");
-  	setText("notearea", "08-12 and later: ZM-View needs to be set to OFF when used with CGS-9001/CGS-9002/QP-983P.");
-  } else if ((getText("BSM-6000") == "08-31" && getText("dropdown6") == "CGS-9002 HL7 Gateway (Legacy)")) { 
-  	setScreen("screen1");
-  	  		showElement("notearea");
-  	setText("notearea", "08-12 and later: ZM-View needs to be set to OFF when used with CGS-9001/CGS-9002/QP-983P.");
-
-
-  } else if ((getText("BSM-6000") == "07-02" && getText("dropdown6") == "QP-983P NetKonnect/RNS Server")) {
-    setScreen("screen1");
-  } else if ((getText("BSM-6000") == "07-41" && getText("dropdown6") == "QP-983P NetKonnect/RNS Server")) {
-  	setScreen("screen1");
-  } else if ((getText("BSM-6000") == "08-02" && getText("dropdown6") == "QP-983P NetKonnect/RNS Server")) { 
-    setScreen("screen2");
-           	showElement("notearea2");
-  	setText("notearea2", "08-02: ZM-View causes an issue when used with CGS-9001/CGS-9002/QP-983P.");
-  } else if ((getText("BSM-6000") == "08-12" && getText("dropdown6") == "QP-983P NetKonnect/RNS Server")) { 
-  	setScreen("screen1");
-  		showElement("notearea");
-  	setText("notearea", "08-12 and later: ZM-View needs to be set to OFF when used with CGS-9001/CGS-9002/QP-983P.");
-  } else if ((getText("BSM-6000") == "08-31" && getText("dropdown6") == "QP-983P NetKonnect/RNS Server")) { 
-  	setScreen("screen1");
-  	  		showElement("notearea");
-  	setText("notearea", "08-12 and later: ZM-View needs to be set to OFF when used with CGS-9001/CGS-9002/QP-983P.");
-
-
-  } else if ((getText("BSM-6000") == "07-02" && getText("dropdown6") == "QP-986P Host1000 Server")) {
-    setScreen("screen1");
-  } else if ((getText("BSM-6000") == "07-41" && getText("dropdown6") == "QP-986P Host1000 Server")) {
-  	setScreen("screen1");
-  } else if ((getText("BSM-6000") == "08-02" && getText("dropdown6") == "QP-986P Host1000 Server")) { 
-   setScreen("screen1");
-  } else if ((getText("BSM-6000") == "08-12" && getText("dropdown6") == "QP-986P Host1000 Server")) { 
-  	setScreen("screen1");
-  } else if ((getText("BSM-6000") == "08-31" && getText("dropdown6") == "QP-986P Host1000 Server")) { 
-  	setScreen("screen1");
-
-  } else if ((getText("BSM-6000") == "07-02" && getText("dropdown6") == "QP-988P Unified Gateway")) {
-   setScreen("screen1");
-  } else if ((getText("BSM-6000") == "07-41" && getText("dropdown6") == "QP-988P Unified Gateway")) {
-  	setScreen("screen1");
-  } else if ((getText("BSM-6000") == "08-02" && getText("dropdown6") == "QP-988P Unified Gateway")) { 
-  setScreen("screen1");
-  } else if ((getText("BSM-6000") == "08-12" && getText("dropdown6") == "QP-988P Unified Gateway")) { 
-  	setScreen("screen1");
-  } else if ((getText("BSM-6000") == "08-31" && getText("dropdown6") == "QP-988P Unified Gateway")) { 
-  	setScreen("screen1");
-
-  } else if ((getText("BSM-6000") == "07-02" && getText("dropdown6") == "QP-988P Enterprise Gateway")) {
-   setScreen("screen1");
-  } else if ((getText("BSM-6000") == "07-41" && getText("dropdown6") == "QP-988P Enterprise Gateway")) {
-  	setScreen("screen1");
-  } else if ((getText("BSM-6000") == "08-02" && getText("dropdown6") == "QP-988P Enterprise Gateway")) { 
-  setScreen("screen1");
-  } else if ((getText("BSM-6000") == "08-12" && getText("dropdown6") == "QP-988P Enterprise Gateway")) { 
-  	setScreen("screen1");
-  } else if ((getText("BSM-6000") == "08-31" && getText("dropdown6") == "QP-988P Enterprise Gateway")) { 
-  	setScreen("screen1");
-
-  } else if ((getText("BSM-6000") == "07-02" && getText("dropdown6") == "QP-989P ViTrac iOS")) {
-    setScreen("screen1");
-  } else if ((getText("BSM-6000") == "07-41" && getText("dropdown6") == "QP-989P ViTrac iOS")) {
-  	setScreen("screen1");
-  } else if ((getText("BSM-6000") == "08-02" && getText("dropdown6") == "QP-989P ViTrac iOS")) { 
-   setScreen("screen1");
-  } else if ((getText("BSM-6000") == "08-12" && getText("dropdown6") == "QP-989P ViTrac iOS")) { 
-  	setScreen("screen1");
-  } else if ((getText("BSM-6000") == "08-31" && getText("dropdown6") == "QP-989P ViTrac iOS")) { 
-  	setScreen("screen1");
-
-  } else if ((getText("BSM-6000") == "07-02" && getText("dropdown6") == "QP-991P ViTrac Android")) {
-    setScreen("screen1");
-  } else if ((getText("BSM-6000") == "07-41" && getText("dropdown6") == "QP-991P ViTrac Android")) {
-  	setScreen("screen1");
-  } else if ((getText("BSM-6000") == "08-02" && getText("dropdown6") == "QP-991P ViTrac Android")) { 
-   setScreen("screen1");
-  } else if ((getText("BSM-6000") == "08-12" && getText("dropdown6") == "QP-991P ViTrac Android")) { 
-  	setScreen("screen1");
-  } else if ((getText("BSM-6000") == "08-31" && getText("dropdown6") == "QP-991P ViTrac Android")) { 
-  	setScreen("screen1");
-
-  } else if ((getText("BSM-6000") == "07-02" && getText("dropdown6") == "QP-999P NKAnywhere")) {
-    setScreen("screen2");
-  } else if ((getText("BSM-6000") == "07-41" && getText("dropdown6") == "QP-999P NKAnywhere")) {
-  	setScreen("screen1");
-  } else if ((getText("BSM-6000") == "08-02" && getText("dropdown6") == "QP-999P NKAnywhere")) { 
-   setScreen("screen1");
-  } else if ((getText("BSM-6000") == "08-12" && getText("dropdown6") == "QP-999P NKAnywhere")) { 
-  	setScreen("screen1");
-  } else if ((getText("BSM-6000") == "08-31" && getText("dropdown6") == "QP-999P NKAnywhere")) { 
-  	setScreen("screen1");
-
-  } else if ((getText("BSM-6000") == "07-02" && getText("dropdown6") == "OLG-3800")) {
-    setScreen("screen1");
-  } else if ((getText("BSM-6000") == "07-41" && getText("dropdown6") == "OLG-3800")) {
-  	setScreen("screen1");
-  } else if ((getText("BSM-6000") == "08-02" && getText("dropdown6") == "OLG-3800")) { 
-   setScreen("screen1");
-  } else if ((getText("BSM-6000") == "08-12" && getText("dropdown6") == "OLG-3800")) { 
-  	setScreen("screen1");
-  } else if ((getText("BSM-6000") == "08-31" && getText("dropdown6") == "OLG-3800")) { 
-  	setScreen("screen1");
-
-
-  } else if ((getText("dropdownCSM1901") == "01-21" && getText("dropdown6") == "BSM-1700 (+UG/TS)")) {
-    setScreen("screen1");
-  } else if ((getText("dropdownCSM1901") == "01-23" && getText("dropdown6") == "BSM-1700 (+UG/TS)")) {
-  	setScreen("screen1");
-  } else if ((getText("dropdownCSM1901") == "01-26" && getText("dropdown6") == "BSM-1700 (+UG/TS)")) { 
-   setScreen("screen1");
-  } else if ((getText("dropdownCSM1901") == "01-27" && getText("dropdown6") == "BSM-1700 (+UG/TS)")) { 
-  	setScreen("screen1");
-   } else if ((getText("dropdownCSM1901") == "01-28" && getText("dropdown6") == "BSM-1700 (+UG/TS)")) { 
-  	setScreen("screen1");
-   } else if ((getText("dropdownCSM1901") == "01-30" && getText("dropdown6") == "BSM-1700 (+UG/TS)")) { 
-  	setScreen("screen1");
-   } else if ((getText("dropdownCSM1901") == "01-32" && getText("dropdown6") == "BSM-1700 (+UG/TS)")) { 
-  	setScreen("screen1");
-
-
-  } else if ((getText("dropdownCSM1901") == "01-21" && getText("dropdown6") == "BSM-3500")) {
-    setScreen("screen1");
-  } else if ((getText("dropdownCSM1901") == "01-23" && getText("dropdown6") == "BSM-3500")) {
-  	setScreen("screen1");
-  } else if ((getText("dropdownCSM1901") == "01-26" && getText("dropdown6") == "BSM-3500")) { 
-    setScreen("screen1");
-  } else if ((getText("dropdownCSM1901") == "01-27" && getText("dropdown6") == "BSM-3500")) { 
-  	setScreen("screen1");
-   } else if ((getText("dropdownCSM1901") == "01-28" && getText("dropdown6") == "BSM-3500")) { 
-  	setScreen("screen1");
-  } else if ((getText("dropdownCSM1901") == "01-30" && getText("dropdown6") == "BSM-3500")) { 
-  	setScreen("screen1");
-   } else if ((getText("dropdownCSM1901") == "01-32" && getText("dropdown6") == "BSM-3500")) { 
-  	setScreen("screen1");
-
-  } else if ((getText("dropdownCSM1901") == "01-21" && getText("dropdown6") == "BSM-6000")) {
-    setScreen("screen1");
-  } else if ((getText("dropdownCSM1901") == "01-23" && getText("dropdown6") == "BSM-6000")) {
-  	setScreen("screen1");
-  } else if ((getText("dropdownCSM1901") == "01-26" && getText("dropdown6") == "BSM-6000")) { 
-    setScreen("screen1");
-  } else if ((getText("dropdownCSM1901") == "01-27" && getText("dropdown6") == "BSM-6000")) { 
-  	setScreen("screen1");
-  } else if ((getText("dropdownCSM1901") == "01-28" && getText("dropdown6") == "BSM-6000")) { 
-  	setScreen("screen1");
-  } else if ((getText("dropdownCSM1901") == "01-30" && getText("dropdown6") == "BSM-6000")) { 
-  	setScreen("screen1");
-   } else if ((getText("dropdownCSM1901") == "01-32" && getText("dropdown6") == "BSM-6000")) { 
-  	setScreen("screen1");
-
-
-  } else if ((getText("dropdownCSM1901") == "01-21" && getText("dropdown6") == "CNS-6201")) {
-    setScreen("screen1");
-  } else if ((getText("dropdownCSM1901") == "01-23" && getText("dropdown6") == "CNS-6201")) {
-  	setScreen("screen1");
-  } else if ((getText("dropdownCSM1901") == "01-26" && getText("dropdown6") == "CNS-6201")) { 
-    setScreen("screen1");
-  } else if ((getText("dropdownCSM1901") == "01-27" && getText("dropdown6") == "CNS-6201")) { 
-  	setScreen("screen1");
-  } else if ((getText("dropdownCSM1901") == "01-28" && getText("dropdown6") == "CNS-6201")) { 
-  	setScreen("screen1");
-  } else if ((getText("dropdownCSM1901") == "01-30" && getText("dropdown6") == "CNS-6201")) { 
-  	setScreen("screen1");
-  	showElement("notearea");
-  	setText("notearea", "01-30 and later: HiQ-View needs to be set to OFF when used with CGS-9001/CGS-9002/QP-983P.");
-   } else if ((getText("dropdownCSM1901") == "01-32" && getText("dropdown6") == "CNS-6201")) { 
-  	setScreen("screen1");
-  		showElement("notearea");
-  	setText("notearea", "01-30 and later: HiQ-View needs to be set to OFF when used with CGS-9001/CGS-9002/QP-983P.");
-
-  } else if ((getText("dropdownCSM1901") == "01-21" && getText("dropdown6") == "CNS-6801")) {
-    setScreen("screen1");
-  } else if ((getText("dropdownCSM1901") == "01-23" && getText("dropdown6") == "CNS-6801")) {
-  	setScreen("screen1");
-  } else if ((getText("dropdownCSM1901") == "01-26" && getText("dropdown6") == "CNS-6801")) { 
-    setScreen("screen1");
-  } else if ((getText("dropdownCSM1901") == "01-27" && getText("dropdown6") == "CNS-6801")) { 
-  	setScreen("screen1");
-  } else if ((getText("dropdownCSM1901") == "01-28" && getText("dropdown6") == "CNS-6801")) { 
-  	setScreen("screen1");
-  } else if ((getText("dropdownCSM1901") == "01-30" && getText("dropdown6") == "CNS-6801")) { 
-  	setScreen("screen1");
-   } else if ((getText("dropdownCSM1901") == "01-32" && getText("dropdown6") == "CNS-6801")) { 
-  	setScreen("screen1");
-
-  } else if ((getText("dropdownCSM1901") == "01-21" && getText("dropdown6") == "RNS-9703(Old GUI)")) {
-    setScreen("screen1");
-  } else if ((getText("dropdownCSM1901") == "01-23" && getText("dropdown6") == "RNS-9703(Old GUI)")) {
-  	setScreen("screen1");
-  } else if ((getText("dropdownCSM1901") == "01-26" && getText("dropdown6") == "RNS-9703(Old GUI)")) { 
-    setScreen("screen1");
-  } else if ((getText("dropdownCSM1901") == "01-27" && getText("dropdown6") == "RNS-9703(Old GUI)")) { 
-  	setScreen("screen1");
-  } else if ((getText("dropdownCSM1901") == "01-28" && getText("dropdown6") == "RNS-9703(Old GUI)")) { 
-  	setScreen("screen1");
-  } else if ((getText("dropdownCSM1901") == "01-30" && getText("dropdown6") == "RNS-9703(Old GUI)")) { 
-  	setScreen("screen1");
-   } else if ((getText("dropdownCSM1901") == "01-32" && getText("dropdown6") == "RNS-9703(Old GUI)")) { 
-  	setScreen("screen1");
-
-  } else if ((getText("dropdownCSM1901") == "01-21" && getText("dropdown6") == "RNS-6803(Audio)")) {
-    setScreen("screen1");
-  } else if ((getText("dropdownCSM1901") == "01-23" && getText("dropdown6") == "RNS-6803(Audio)")) {
-  	setScreen("screen1");
-  } else if ((getText("dropdownCSM1901") == "01-26" && getText("dropdown6") == "RNS-6803(Audio)")) { 
-    setScreen("screen1");
-  } else if ((getText("dropdownCSM1901") == "01-27" && getText("dropdown6") == "RNS-6803(Audio)")) { 
-  	setScreen("screen1");
-  } else if ((getText("dropdownCSM1901") == "01-28" && getText("dropdown6") == "RNS-6803(Audio)")) { 
-  	setScreen("screen1");
-  } else if ((getText("dropdownCSM1901") == "01-30" && getText("dropdown6") == "RNS-6803(Audio)")) { 
-  	setScreen("screen1");
-   } else if ((getText("dropdownCSM1901") == "01-32" && getText("dropdown6") == "RNS-6803(Audio)")) { 
-  	setScreen("screen1");
-
-  } else if ((getText("dropdownCSM1901") == "01-21" && getText("dropdown6") == "RNS-6804(No Audio)")) {
-    setScreen("screen1");
-  } else if ((getText("dropdownCSM1901") == "01-23" && getText("dropdown6") == "RNS-6804(No Audio)")) {
-  	setScreen("screen1");
-  } else if ((getText("dropdownCSM1901") == "01-26" && getText("dropdown6") == "RNS-6804(No Audio)")) { 
-    setScreen("screen1");
-  } else if ((getText("dropdownCSM1901") == "01-27" && getText("dropdown6") == "RNS-6804(No Audio)")) { 
-  	setScreen("screen1");
-  } else if ((getText("dropdownCSM1901") == "01-28" && getText("dropdown6") == "RNS-6804(No Audio)")) { 
-  	setScreen("screen1");
-  } else if ((getText("dropdownCSM1901") == "01-30" && getText("dropdown6") == "RNS-6804(No Audio)")) { 
-  	setScreen("screen1");
-   } else if ((getText("dropdownCSM1901") == "01-32" && getText("dropdown6") == "RNS-6804(No Audio)")) { 
-  	setScreen("screen1");
-
-  } else if ((getText("dropdownCSM1901") == "01-21" && getText("dropdown6") == "EDNS-9001 Prefense")) {
-    setText("Sol1", "NA");
-  } else if ((getText("dropdownCSM1901") == "01-23" && getText("dropdown6") == "EDNS-9001 Prefense")) {
-  setText("Sol1", "NA");
-  } else if ((getText("dropdownCSM1901") == "01-26" && getText("dropdown6") == "EDNS-9001 Prefense")) { 
-     setText("Sol1", "NA");
-  } else if ((getText("dropdownCSM1901") == "01-27" && getText("dropdown6") == "EDNS-9001 Prefense")) { 
-  setText("Sol1", "NA");
-  } else if ((getText("dropdownCSM1901") == "01-28" && getText("dropdown6") == "EDNS-9001 Prefense")) { 
-  setText("Sol1", "NA");
-  } else if ((getText("dropdownCSM1901") == "01-30" && getText("dropdown6") == "EDNS-9001 Prefense")) { 
-  setText("Sol1", "NA");
-   } else if ((getText("dropdownCSM1901") == "01-32" && getText("dropdown6") == "EDNS-9001 Prefense")) { 
-  	setScreen("screen1");
-
-  } else if ((getText("dropdownCSM1901") == "01-21" && getText("dropdown6") == "GZ-100P (+UG/TS)")) {
-    setScreen("screen1");
-  } else if ((getText("dropdownCSM1901") == "01-23" && getText("dropdown6") == "GZ-100P (+UG/TS)")) {
-  	setScreen("screen1");
-  } else if ((getText("dropdownCSM1901") == "01-26" && getText("dropdown6") == "GZ-100P (+UG/TS)")) { 
-    setScreen("screen1");
-  } else if ((getText("dropdownCSM1901") == "01-27" && getText("dropdown6") == "GZ-100P (+UG/TS)")) { 
-  	setScreen("screen1");
-  } else if ((getText("dropdownCSM1901") == "01-28" && getText("dropdown6") == "GZ-100P (+UG/TS)")) { 
-  	setScreen("screen1");
-  } else if ((getText("dropdownCSM1901") == "01-30" && getText("dropdown6") == "GZ-100P (+UG/TS)")) { 
-  	setScreen("screen1");
-   } else if ((getText("dropdownCSM1901") == "01-32" && getText("dropdown6") == "GZ-100P (+UG/TS)")) { 
-  	setScreen("screen1");
-
-  } else if ((getText("dropdownCSM1901") == "01-21" && getText("dropdown6") == "ORG-9100")) {
-    setScreen("screen1");
-  } else if ((getText("dropdownCSM1901") == "01-23" && getText("dropdown6") == "ORG-9100")) {
-  	setScreen("screen1");
-  } else if ((getText("dropdownCSM1901") == "01-26" && getText("dropdown6") == "ORG-9100")) { 
-    setScreen("screen1");
-  } else if ((getText("dropdownCSM1901") == "01-27" && getText("dropdown6") == "ORG-9100")) { 
-  	setScreen("screen1");
-  } else if ((getText("dropdownCSM1901") == "01-28" && getText("dropdown6") == "ORG-9100")) { 
-  	setScreen("screen1");
-  } else if ((getText("dropdownCSM1901") == "01-30" && getText("dropdown6") == "ORG-9100")) { 
-  	setScreen("screen1");
-   } else if ((getText("dropdownCSM1901") == "01-32" && getText("dropdown6") == "ORG-9100")) { 
-  	setScreen("screen1");
-
-  } else if ((getText("dropdownCSM1901") == "01-21" && getText("dropdown6") == "CGS-9001 Pager Gateway (Legacy)")) {
-    setScreen("screen1");
-  } else if ((getText("dropdownCSM1901") == "01-23" && getText("dropdown6") == "CGS-9001 Pager Gateway (Legacy)")) {
-  	setScreen("screen1");
-  } else if ((getText("dropdownCSM1901") == "01-26" && getText("dropdown6") == "CGS-9001 Pager Gateway (Legacy)")) { 
-    setScreen("screen1");
-  } else if ((getText("dropdownCSM1901") == "01-27" && getText("dropdown6") == "CGS-9001 Pager Gateway (Legacy)")) { 
-  	setScreen("screen1");
-  } else if ((getText("dropdownCSM1901") == "01-28" && getText("dropdown6") == "CGS-9001 Pager Gateway (Legacy)")) { 
-  	setScreen("screen1");
-  } else if ((getText("dropdownCSM1901") == "01-30" && getText("dropdown6") == "CGS-9001 Pager Gateway (Legacy)")) { 
-  	setScreen("screen1");
-  		showElement("notearea");
-  	setText("notearea", "01-30 and later: HiQ-View needs to be set to OFF when used with CGS-9001/CGS-9002/QP-983P.");
-   } else if ((getText("dropdownCSM1901") == "01-32" && getText("dropdown6") == "CGS-9001 Pager Gateway (Legacy)")) { 
-  	setScreen("screen1");
-  		showElement("notearea");
-  	setText("notearea", "01-30 and later: HiQ-View needs to be set to OFF when used with CGS-9001/CGS-9002/QP-983P.");
-
-
-  } else if ((getText("dropdownCSM1901") == "01-21" && getText("dropdown6") == "CGS-9002 HL7 Gateway (Legacy)")) {
-    setScreen("screen1");
-  } else if ((getText("dropdownCSM1901") == "01-23" && getText("dropdown6") == "CGS-9002 HL7 Gateway (Legacy)")) {
-  	setScreen("screen1");
-  } else if ((getText("dropdownCSM1901") == "01-26" && getText("dropdown6") == "CGS-9002 HL7 Gateway (Legacy)")) { 
-    setScreen("screen1");
-  } else if ((getText("dropdownCSM1901") == "01-27" && getText("dropdown6") == "CGS-9002 HL7 Gateway (Legacy)")) { 
-  	setScreen("screen1");
-  } else if ((getText("dropdownCSM1901") == "01-28" && getText("dropdown6") == "CGS-9002 HL7 Gateway (Legacy)")) { 
-  	setScreen("screen1");
-  } else if ((getText("dropdownCSM1901") == "01-30" && getText("dropdown6") == "CGS-9002 HL7 Gateway (Legacy)")) { 
-  	setScreen("screen1");
-  		showElement("notearea");
-  	setText("notearea", "01-30 and later: HiQ-View needs to be set to OFF when used with CGS-9001/CGS-9002/QP-983P.");
-   } else if ((getText("dropdownCSM1901") == "01-32" && getText("dropdown6") == "CGS-9002 HL7 Gateway (Legacy)")) { 
-  	setScreen("screen1");
-  		showElement("notearea");
-  	setText("notearea", "01-30 and later: HiQ-View needs to be set to OFF when used with CGS-9001/CGS-9002/QP-983P.");
-
-  } else if ((getText("dropdownCSM1901") == "01-21" && getText("dropdown6") == "QP-983P NetKonnect/RNS Server")) {
-    setScreen("screen1");
-  } else if ((getText("dropdownCSM1901") == "01-23" && getText("dropdown6") == "QP-983P NetKonnect/RNS Server")) {
-  	setScreen("screen1");
-  } else if ((getText("dropdownCSM1901") == "01-26" && getText("dropdown6") == "QP-983P NetKonnect/RNS Server")) { 
-    setScreen("screen1");
-  } else if ((getText("dropdownCSM1901") == "01-27" && getText("dropdown6") == "QP-983P NetKonnect/RNS Server")) { 
-  	setScreen("screen1");
-  } else if ((getText("dropdownCSM1901") == "01-28" && getText("dropdown6") == "QP-983P NetKonnect/RNS Server")) { 
-  	setScreen("screen1");
-  } else if ((getText("dropdownCSM1901") == "01-30" && getText("dropdown6") == "QP-983P NetKonnect/RNS Server")) { 
-  	setScreen("screen1");
-  		showElement("notearea");
-  	setText("notearea", "01-30 and later: HiQ-View needs to be set to OFF when used with CGS-9001/CGS-9002/QP-983P.");
-   } else if ((getText("dropdownCSM1901") == "01-32" && getText("dropdown6") == "QP-983P NetKonnect/RNS Server")) { 
-  	setScreen("screen1");
-  		showElement("notearea");
-  	setText("notearea", "01-30 and later: HiQ-View needs to be set to OFF when used with CGS-9001/CGS-9002/QP-983P.");
-
-  } else if ((getText("dropdownCSM1901") == "01-21" && getText("dropdown6") == "QP-986P Host1000 Server")) {
-    setScreen("screen1");
-  } else if ((getText("dropdownCSM1901") == "01-23" && getText("dropdown6") == "QP-986P Host1000 Server")) {
-  	setScreen("screen1");
-  } else if ((getText("dropdownCSM1901") == "01-26" && getText("dropdown6") == "QP-986P Host1000 Server")) { 
-    setScreen("screen1");
-  } else if ((getText("dropdownCSM1901") == "01-27" && getText("dropdown6") == "QP-986P Host1000 Server")) { 
-  	setScreen("screen1");
-  } else if ((getText("dropdownCSM1901") == "01-28" && getText("dropdown6") == "QP-986P Host1000 Server")) { 
-  	setScreen("screen1");
-  } else if ((getText("dropdownCSM1901") == "01-30" && getText("dropdown6") == "QP-986P Host1000 Server")) { 
-  	setScreen("screen1");
-   } else if ((getText("dropdownCSM1901") == "01-32" && getText("dropdown6") == "QP-986P Host1000 Server")) { 
-  	setScreen("screen1");
-
-  } else if ((getText("dropdownCSM1901") == "01-21" && getText("dropdown6") == "QP-988P Unified Gateway")) {
-    setScreen("screen1");
-  } else if ((getText("dropdownCSM1901") == "01-23" && getText("dropdown6") == "QP-988P Unified Gateway")) {
-  	setScreen("screen1");
-  } else if ((getText("dropdownCSM1901") == "01-26" && getText("dropdown6") == "QP-988P Unified Gateway")) { 
-    setScreen("screen1");
-  } else if ((getText("dropdownCSM1901") == "01-27" && getText("dropdown6") == "QP-988P Unified Gateway")) { 
-  	setScreen("screen1");
-  } else if ((getText("dropdownCSM1901") == "01-28" && getText("dropdown6") == "QP-988P Unified Gateway")) { 
-  	setScreen("screen1");
-  } else if ((getText("dropdownCSM1901") == "01-30" && getText("dropdown6") == "QP-988P Unified Gateway")) { 
-  	setScreen("screen1");
-   } else if ((getText("dropdownCSM1901") == "01-32" && getText("dropdown6") == "QP-988P Unified Gateway")) { 
-  	setScreen("screen1");
-
-  } else if ((getText("dropdownCSM1901") == "01-21" && getText("dropdown6") == "QP-989P ViTrac iOS")) {
-    setScreen("screen1");
-  } else if ((getText("dropdownCSM1901") == "01-23" && getText("dropdown6") == "QP-989P ViTrac iOS")) {
-  	setScreen("screen1");
-  } else if ((getText("dropdownCSM1901") == "01-26" && getText("dropdown6") == "QP-989P ViTrac iOS")) { 
-    setScreen("screen1");
-  } else if ((getText("dropdownCSM1901") == "01-27" && getText("dropdown6") == "QP-989P ViTrac iOS")) { 
-  	setScreen("screen1");
-  } else if ((getText("dropdownCSM1901") == "01-28" && getText("dropdown6") == "QP-989P ViTrac iOS")) { 
-  	setScreen("screen1");
-  } else if ((getText("dropdownCSM1901") == "01-30" && getText("dropdown6") == "QP-989P ViTrac iOS")) { 
-  	setScreen("screen1");
-   } else if ((getText("dropdownCSM1901") == "01-32" && getText("dropdown6") == "QP-989P ViTrac iOS")) { 
-  	setScreen("screen1");
-
-  } else if ((getText("dropdownCSM1901") == "01-21" && getText("dropdown6") == "QP-991P ViTrac Android")) {
-    setScreen("screen1");
-  } else if ((getText("dropdownCSM1901") == "01-23" && getText("dropdown6") == "QP-991P ViTrac Android")) {
-  	setScreen("screen1");
-  } else if ((getText("dropdownCSM1901") == "01-26" && getText("dropdown6") == "QP-991P ViTrac Android")) { 
-    setScreen("screen1");
-  } else if ((getText("dropdownCSM1901") == "01-27" && getText("dropdown6") == "QP-991P ViTrac Android")) { 
-  	setScreen("screen1");
-  } else if ((getText("dropdownCSM1901") == "01-28" && getText("dropdown6") == "QP-991P ViTrac Android")) { 
-  	setScreen("screen1");
-  } else if ((getText("dropdownCSM1901") == "01-30" && getText("dropdown6") == "QP-991P ViTrac Android")) { 
-  	setScreen("screen1");
-   } else if ((getText("dropdownCSM1901") == "01-32" && getText("dropdown6") == "QP-991P ViTrac Android")) { 
-  	setScreen("screen1");
-
-  } else if ((getText("dropdownCSM1901") == "01-21" && getText("dropdown6") == "QP-999P NKAnywhere")) {
-    setScreen("screen2");
-  } else if ((getText("dropdownCSM1901") == "01-23" && getText("dropdown6") == "QP-999P NKAnywhere")) {
-  	setScreen("screen2");
-  } else if ((getText("dropdownCSM1901") == "01-26" && getText("dropdown6") == "QP-999P NKAnywhere")) { 
-    setScreen("screen2");
-  } else if ((getText("dropdownCSM1901") == "01-27" && getText("dropdown6") == "QP-999P NKAnywhere")) { 
-  	setScreen("screen1");
-  } else if ((getText("dropdownCSM1901") == "01-28" && getText("dropdown6") == "QP-999P NKAnywhere")) { 
-  	setScreen("screen1");
-  } else if ((getText("dropdownCSM1901") == "01-30" && getText("dropdown6") == "QP-999P NKAnywhere")) { 
-  	setScreen("screen1");
-   } else if ((getText("dropdownCSM1901") == "01-32" && getText("dropdown6") == "QP-999P NKAnywhere")) { 
-  	setScreen("screen1");
-
-  } else if ((getText("dropdownCSM1901") == "01-21" && getText("dropdown6") == "OLG-3800")) {
-    setScreen("screen1");
-  } else if ((getText("dropdownCSM1901") == "01-23" && getText("dropdown6") == "OLG-3800")) {
-  	setScreen("screen1");
-  } else if ((getText("dropdownCSM1901") == "01-26" && getText("dropdown6") == "OLG-3800")) { 
-    setScreen("screen1");
-  } else if ((getText("dropdownCSM1901") == "01-27" && getText("dropdown6") == "OLG-3800")) { 
-  	setScreen("screen1");
-  } else if ((getText("dropdownCSM1901") == "01-28" && getText("dropdown6") == "OLG-3800")) { 
-  	setScreen("screen1");
-  } else if ((getText("dropdownCSM1901") == "01-30" && getText("dropdown6") == "OLG-3800")) { 
-  	setScreen("screen1");
-   } else if ((getText("dropdownCSM1901") == "01-32" && getText("dropdown6") == "OLG-3800")) { 
-  	setScreen("screen1");
-
-  } else if ((getText("dropdownCNS6201") == "02-40" && getText("dropdown6") == "BSM-1700 (+UG/TS)")) {
-     setText("Sol1", "=01-15");
-  } else if ((getText("dropdownCNS6201") == "03-40" && getText("dropdown6") == "BSM-1700 (+UG/TS)")) {
-  setText("Sol1", "=01-15");
-  } else if ((getText("dropdownCNS6201") == "05-01" && getText("dropdown6") == "BSM-1700 (+UG/TS)")) { 
-    setScreen("screen1");
-    showElement("notearea");
-  	setText("notearea", "It is not recommended to use Old GUI CNS with New GUI CNS/RNS. It is not recommended to use New GUI CNS with Old GUI CNS/RNS or Prefense.");
-  } else if ((getText("dropdownCNS6201") == "05-07" && getText("dropdown6") == "BSM-1700 (+UG/TS)")) { 
-  	setScreen("screen1");
-  	showElement("notearea");
-  	setText("notearea", "It is not recommended to use Old GUI CNS with New GUI CNS/RNS. It is not recommended to use New GUI CNS with Old GUI CNS/RNS or Prefense.");
-  } else if ((getText("dropdownCNS6201") == "05-08" && getText("dropdown6") == "BSM-1700 (+UG/TS)")) { 
-  	setScreen("screen1");
-  	showElement("notearea");
-  	setText("notearea", "It is not recommended to use Old GUI CNS with New GUI CNS/RNS. It is not recommended to use New GUI CNS with Old GUI CNS/RNS or Prefense.");
-  } else if ((getText("dropdownCNS6201") == "05-10" && getText("dropdown6") == "BSM-1700 (+UG/TS)")) { 
-  	setScreen("screen1");
-  	showElement("notearea");
-  	setText("notearea", "It is not recommended to use Old GUI CNS with New GUI CNS/RNS. It is not recommended to use New GUI CNS with Old GUI CNS/RNS or Prefense.");
-  } else if ((getText("dropdownCNS6201") == "05-13" && getText("dropdown6") == "BSM-1700 (+UG/TS)")) { 
-  	setScreen("screen1");
-  	showElement("notearea");
-  	setText("notearea", "It is not recommended to use Old GUI CNS with New GUI CNS/RNS. It is not recommended to use New GUI CNS with Old GUI CNS/RNS or Prefense.");
-
-  } else if ((getText("dropdownCNS6201") == "02-40" && getText("dropdown6") == "BSM-3500")) {
-     setScreen("screen1");
-     showElement("notearea");
-  	setText("notearea", "It is not recommended to use Old GUI CNS with New GUI CNS/RNS. It is not recommended to use New GUI CNS with Old GUI CNS/RNS or Prefense.");
-  } else if ((getText("dropdownCNS6201") == "03-40" && getText("dropdown6") == "BSM-3500")) {
-  setScreen("screen1");
-  showElement("notearea");
-  	setText("notearea", "It is not recommended to use Old GUI CNS with New GUI CNS/RNS. It is not recommended to use New GUI CNS with Old GUI CNS/RNS or Prefense.");
-  } else if ((getText("dropdownCNS6201") == "05-01" && getText("dropdown6") == "BSM-3500")) { 
-    setScreen("screen1");
-    showElement("notearea");
-  	setText("notearea", "It is not recommended to use Old GUI CNS with New GUI CNS/RNS. It is not recommended to use New GUI CNS with Old GUI CNS/RNS or Prefense.");
-  } else if ((getText("dropdownCNS6201") == "05-07" && getText("dropdown6") == "BSM-3500")) { 
-  	setScreen("screen1");
-  	showElement("notearea");
-  	setText("notearea", "It is not recommended to use Old GUI CNS with New GUI CNS/RNS. It is not recommended to use New GUI CNS with Old GUI CNS/RNS or Prefense.");
-  } else if ((getText("dropdownCNS6201") == "05-08" && getText("dropdown6") == "BSM-3500")) { 
-  	setScreen("screen1");
-  	showElement("notearea");
-  	setText("notearea", "It is not recommended to use Old GUI CNS with New GUI CNS/RNS. It is not recommended to use New GUI CNS with Old GUI CNS/RNS or Prefense.");
-  } else if ((getText("dropdownCNS6201") == "05-10" && getText("dropdown6") == "BSM-3500")) { 
-  	setScreen("screen1");
-  	showElement("notearea");
-  	setText("notearea", "It is not recommended to use Old GUI CNS with New GUI CNS/RNS. It is not recommended to use New GUI CNS with Old GUI CNS/RNS or Prefense.");
-  } else if ((getText("dropdownCNS6201") == "05-13" && getText("dropdown6") == "BSM-3500")) { 
-  	setScreen("screen1");
-  	showElement("notearea");
-  	setText("notearea", "It is not recommended to use Old GUI CNS with New GUI CNS/RNS. It is not recommended to use New GUI CNS with Old GUI CNS/RNS or Prefense.");
-
-  } else if ((getText("dropdownCNS6201") == "02-40" && getText("dropdown6") == "BSM-6000")) {
-     setScreen("screen1");
-     showElement("notearea");
-  	setText("notearea", "It is not recommended to use Old GUI CNS with New GUI CNS/RNS. It is not recommended to use New GUI CNS with Old GUI CNS/RNS or Prefense.");
-  } else if ((getText("dropdownCNS6201") == "03-40" && getText("dropdown6") == "BSM-6000")) {
-  setScreen("screen1");
-  showElement("notearea");
-  	setText("notearea", "It is not recommended to use Old GUI CNS with New GUI CNS/RNS. It is not recommended to use New GUI CNS with Old GUI CNS/RNS or Prefense.");
-  } else if ((getText("dropdownCNS6201") == "05-01" && getText("dropdown6") == "BSM-6000")) { 
-    setScreen("screen1");
-    showElement("notearea");
-  	setText("notearea", "It is not recommended to use Old GUI CNS with New GUI CNS/RNS. It is not recommended to use New GUI CNS with Old GUI CNS/RNS or Prefense.");
-  } else if ((getText("dropdownCNS6201") == "05-07" && getText("dropdown6") == "BSM-6000")) { 
-  	setScreen("screen1");
-  	showElement("notearea");
-  	setText("notearea", "It is not recommended to use Old GUI CNS with New GUI CNS/RNS. It is not recommended to use New GUI CNS with Old GUI CNS/RNS or Prefense.");
-  } else if ((getText("dropdownCNS6201") == "05-08" && getText("dropdown6") == "BSM-6000")) { 
-  	setScreen("screen1");
-  	showElement("notearea");
-  	setText("notearea", "It is not recommended to use Old GUI CNS with New GUI CNS/RNS. It is not recommended to use New GUI CNS with Old GUI CNS/RNS or Prefense.");
-  } else if ((getText("dropdownCNS6201") == "05-10" && getText("dropdown6") == "BSM-6000")) { 
-  	setScreen("screen1");
-  	showElement("notearea");
-  	setText("notearea", "It is not recommended to use Old GUI CNS with New GUI CNS/RNS. It is not recommended to use New GUI CNS with Old GUI CNS/RNS or Prefense.");
-  } else if ((getText("dropdownCNS6201") == "05-13" && getText("dropdown6") == "BSM-6000")) { 
-  	setScreen("screen1");
-  	showElement("notearea");
-  	setText("notearea", "It is not recommended to use Old GUI CNS with New GUI CNS/RNS. It is not recommended to use New GUI CNS with Old GUI CNS/RNS or Prefense.");
-
-  } else if ((getText("dropdownCNS6201") == "02-40" && getText("dropdown6") == "CSM-1901")) {
-     setScreen("screen1");
-     showElement("notearea");
-  	setText("notearea", "It is not recommended to use Old GUI CNS with New GUI CNS/RNS. It is not recommended to use New GUI CNS with Old GUI CNS/RNS or Prefense.");
-  } else if ((getText("dropdownCNS6201") == "03-40" && getText("dropdown6") == "CSM-1901")) {
-  setScreen("screen1");
-  showElement("notearea");
-  	setText("notearea", "It is not recommended to use Old GUI CNS with New GUI CNS/RNS. It is not recommended to use New GUI CNS with Old GUI CNS/RNS or Prefense.");
-  } else if ((getText("dropdownCNS6201") == "05-01" && getText("dropdown6") == "CSM-1901")) { 
-    setScreen("screen1");
-    showElement("notearea");
-  	setText("notearea", "It is not recommended to use Old GUI CNS with New GUI CNS/RNS. It is not recommended to use New GUI CNS with Old GUI CNS/RNS or Prefense.");
-  } else if ((getText("dropdownCNS6201") == "05-07" && getText("dropdown6") == "CSM-1901")) { 
-  	setScreen("screen1");
-  	showElement("notearea");
-  	setText("notearea", "It is not recommended to use Old GUI CNS with New GUI CNS/RNS. It is not recommended to use New GUI CNS with Old GUI CNS/RNS or Prefense.");
-  } else if ((getText("dropdownCNS6201") == "05-08" && getText("dropdown6") == "CSM-1901")) { 
-  	setScreen("screen1");
-  	showElement("notearea");
-  	setText("notearea", "It is not recommended to use Old GUI CNS with New GUI CNS/RNS. It is not recommended to use New GUI CNS with Old GUI CNS/RNS or Prefense.");
-  } else if ((getText("dropdownCNS6201") == "05-10" && getText("dropdown6") == "CSM-1901")) { 
-  	setScreen("screen1");
-  	showElement("notearea");
-  	setText("notearea", "It is not recommended to use Old GUI CNS with New GUI CNS/RNS. It is not recommended to use New GUI CNS with Old GUI CNS/RNS or Prefense.");
-  } else if ((getText("dropdownCNS6201") == "05-13" && getText("dropdown6") == "CSM-1901")) { 
-  	setScreen("screen1");
-  	showElement("notearea");
-  	setText("notearea", "It is not recommended to use Old GUI CNS with New GUI CNS/RNS. It is not recommended to use New GUI CNS with Old GUI CNS/RNS or Prefense.");
-
-  } else if ((getText("dropdownCNS6201") == "02-40" && getText("dropdown6") == "CNS-6801")) {
-     setScreen("screen1");
-  	showElement("notearea");
-  	setText("notearea", "It is not recommended to use Old GUI CNS with New GUI CNS/RNS. It is not recommended to use New GUI CNS with Old GUI CNS/RNS or Prefense.");
-  } else if ((getText("dropdownCNS6201") == "03-40" && getText("dropdown6") == "CNS-6801")) {
-  setScreen("screen1");
-  showElement("notearea");
-  	setText("notearea", "It is not recommended to use Old GUI CNS with New GUI CNS/RNS. It is not recommended to use New GUI CNS with Old GUI CNS/RNS or Prefense.");
-  } else if ((getText("dropdownCNS6201") == "05-01" && getText("dropdown6") == "CNS-6801")) { 
-    setScreen("screen1");
-    showElement("notearea");
-  	setText("notearea", "It is not recommended to use Old GUI CNS with New GUI CNS/RNS. It is not recommended to use New GUI CNS with Old GUI CNS/RNS or Prefense.");
-  } else if ((getText("dropdownCNS6201") == "05-07" && getText("dropdown6") == "CNS-6801")) { 
-  	setScreen("screen1");
-  	showElement("notearea");
-  	setText("notearea", "It is not recommended to use Old GUI CNS with New GUI CNS/RNS. It is not recommended to use New GUI CNS with Old GUI CNS/RNS or Prefense.");
-  } else if ((getText("dropdownCNS6201") == "05-08" && getText("dropdown6") == "CNS-6801")) { 
-  	setScreen("screen1");
-  	showElement("notearea");
-  	setText("notearea", "It is not recommended to use Old GUI CNS with New GUI CNS/RNS. It is not recommended to use New GUI CNS with Old GUI CNS/RNS or Prefense.");
-  } else if ((getText("dropdownCNS6201") == "05-10" && getText("dropdown6") == "CNS-6801")) { 
-  	setScreen("screen1");
-  	showElement("notearea");
-  	setText("notearea", "It is not recommended to use Old GUI CNS with New GUI CNS/RNS. It is not recommended to use New GUI CNS with Old GUI CNS/RNS or Prefense.");
-  } else if ((getText("dropdownCNS6201") == "05-13" && getText("dropdown6") == "CNS-6801")) { 
-  	setScreen("screen1");
-  	showElement("notearea");
-  	setText("notearea", "It is not recommended to use Old GUI CNS with New GUI CNS/RNS. It is not recommended to use New GUI CNS with Old GUI CNS/RNS or Prefense.");
-
-  } else if ((getText("dropdownCNS6201") == "02-40" && getText("dropdown6") == "RNS-9703(Old GUI)")) {
-     setScreen("screen1");
-     showElement("notearea");
-  	setText("notearea", "It is not recommended to use Old GUI CNS with New GUI CNS/RNS. It is not recommended to use New GUI CNS with Old GUI CNS/RNS or Prefense.");
-  } else if ((getText("dropdownCNS6201") == "03-40" && getText("dropdown6") == "RNS-9703(Old GUI)")) {
-  setScreen("screen1");
-  showElement("notearea");
-  	setText("notearea", "It is not recommended to use Old GUI CNS with New GUI CNS/RNS. It is not recommended to use New GUI CNS with Old GUI CNS/RNS or Prefense.");
-  } else if ((getText("dropdownCNS6201") == "05-01" && getText("dropdown6") == "RNS-9703(Old GUI)")) { 
-    setScreen("screen1");
-    showElement("notearea");
-  	setText("notearea", "It is not recommended to use Old GUI CNS with New GUI CNS/RNS. It is not recommended to use New GUI CNS with Old GUI CNS/RNS or Prefense.");
-  } else if ((getText("dropdownCNS6201") == "05-07" && getText("dropdown6") == "RNS-9703(Old GUI)")) { 
-  	setScreen("screen1");
-  	showElement("notearea");
-  	setText("notearea", "It is not recommended to use Old GUI CNS with New GUI CNS/RNS. It is not recommended to use New GUI CNS with Old GUI CNS/RNS or Prefense.");
-  } else if ((getText("dropdownCNS6201") == "05-08" && getText("dropdown6") == "RNS-9703(Old GUI)")) { 
-  	setScreen("screen1");
-  	showElement("notearea");
-  	setText("notearea", "It is not recommended to use Old GUI CNS with New GUI CNS/RNS. It is not recommended to use New GUI CNS with Old GUI CNS/RNS or Prefense.");
-  } else if ((getText("dropdownCNS6201") == "05-10" && getText("dropdown6") == "RNS-9703(Old GUI)")) { 
-  	setScreen("screen1");
-  	showElement("notearea");
-  	setText("notearea", "It is not recommended to use Old GUI CNS with New GUI CNS/RNS. It is not recommended to use New GUI CNS with Old GUI CNS/RNS or Prefense.");
-  } else if ((getText("dropdownCNS6201") == "05-13" && getText("dropdown6") == "RNS-9703(Old GUI)")) { 
-  	setScreen("screen1");
-  	showElement("notearea");
-  	setText("notearea", "It is not recommended to use Old GUI CNS with New GUI CNS/RNS. It is not recommended to use New GUI CNS with Old GUI CNS/RNS or Prefense.");
-
-  } else if ((getText("dropdownCNS6201") == "02-40" && getText("dropdown6") == "RNS-6803(Audio)")) {
-     setScreen("screen1");
-     showElement("notearea");
-  	setText("notearea", "It is not recommended to use Old GUI CNS with New GUI CNS/RNS. It is not recommended to use New GUI CNS with Old GUI CNS/RNS or Prefense.");
-  } else if ((getText("dropdownCNS6201") == "03-40" && getText("dropdown6") == "RNS-6803(Audio)")) {
-  setScreen("screen1");
-  } else if ((getText("dropdownCNS6201") == "05-01" && getText("dropdown6") == "RNS-6803(Audio)")) { 
-    setScreen("screen1");
-  } else if ((getText("dropdownCNS6201") == "05-07" && getText("dropdown6") == "RNS-6803(Audio)")) { 
-  	setScreen("screen1");
-  } else if ((getText("dropdownCNS6201") == "05-08" && getText("dropdown6") == "RNS-6803(Audio)")) { 
-  	setScreen("screen1");
-  } else if ((getText("dropdownCNS6201") == "05-10" && getText("dropdown6") == "RNS-6803(Audio)")) { 
-  	setScreen("screen1");
-  } else if ((getText("dropdownCNS6201") == "05-13" && getText("dropdown6") == "RNS-6803(Audio)")) { 
-  	setScreen("screen1");
-
-  } else if ((getText("dropdownCNS6201") == "02-40" && getText("dropdown6") == "RNS-6804(No Audio)")) {
-     setScreen("screen1");
-     showElement("notearea");
-  	setText("notearea", "It is not recommended to use Old GUI CNS with New GUI CNS/RNS. It is not recommended to use New GUI CNS with Old GUI CNS/RNS or Prefense.");
-  } else if ((getText("dropdownCNS6201") == "03-40" && getText("dropdown6") == "RNS-6804(No Audio)")) {
-  setScreen("screen1");
-  setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownCNS6201") == "05-01" && getText("dropdown6") == "RNS-6804(No Audio)")) { 
-    setScreen("screen1");
-  } else if ((getText("dropdownCNS6201") == "05-07" && getText("dropdown6") == "RNS-6804(No Audio)")) { 
-  	setScreen("screen1");
-  } else if ((getText("dropdownCNS6201") == "05-08" && getText("dropdown6") == "RNS-6804(No Audio)")) { 
-  	setScreen("screen1");
-  } else if ((getText("dropdownCNS6201") == "05-10" && getText("dropdown6") == "RNS-6804(No Audio)")) { 
-  	setScreen("screen1");
-  } else if ((getText("dropdownCNS6201") == "05-13" && getText("dropdown6") == "RNS-6804(No Audio)")) { 
-  	setScreen("screen1");
-
-  } else if ((getText("dropdownCNS6201") == "02-40" && getText("dropdown6") == "EDNS-9001 Prefense")) {
-     setScreen("screen1");
-    showElement("notearea");
-     setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownCNS6201") == "03-40" && getText("dropdown6") == "EDNS-9001 Prefense")) {
-  setScreen("screen1");
-  showElement("notearea");
-  setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownCNS6201") == "05-01" && getText("dropdown6") == "EDNS-9001 Prefense")) { 
-    setScreen("screen1");
-    showElement("notearea");
-    setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownCNS6201") == "05-07" && getText("dropdown6") == "EDNS-9001 Prefense")) { 
-  	setScreen("screen1");
-  	showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownCNS6201") == "05-08" && getText("dropdown6") == "EDNS-9001 Prefense")) { 
-  	setScreen("screen1");
-  	showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownCNS6201") == "05-10" && getText("dropdown6") == "EDNS-9001 Prefense")) { 
-  	setScreen("screen1");
-  	showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownCNS6201") == "05-13" && getText("dropdown6") == "EDNS-9001 Prefense")) { 
-  	setScreen("screen1");
-  	showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-
-  } else if ((getText("dropdownCNS6201") == "02-40" && getText("dropdown6") == "GZ-100P (+UG/TS)")) {
-     setScreen("screen2");
-  } else if ((getText("dropdownCNS6201") == "03-40" && getText("dropdown6") == "GZ-100P (+UG/TS)")) {
-  setScreen("screen2");
-  } else if ((getText("dropdownCNS6201") == "05-01" && getText("dropdown6") == "GZ-100P (+UG/TS)")) { 
-    setScreen("screen1");
-    showElement("notearea");
-    setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownCNS6201") == "05-07" && getText("dropdown6") == "GZ-100P (+UG/TS)")) { 
-  	setScreen("screen1");
-  	showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownCNS6201") == "05-08" && getText("dropdown6") == "GZ-100P (+UG/TS)")) { 
-  	setScreen("screen1");
-  	showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownCNS6201") == "05-10" && getText("dropdown6") == "GZ-100P (+UG/TS)")) { 
-  	setScreen("screen1");
-  	showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownCNS6201") == "05-13" && getText("dropdown6") == "GZ-100P (+UG/TS)")) { 
-  	setScreen("screen1");
-  	showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-
-  } else if ((getText("dropdownCNS6201") == "02-40" && getText("dropdown6") == "ORG-9100")) {
-     setScreen("screen1");
-     showElement("notearea");
-     setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownCNS6201") == "03-40" && getText("dropdown6") == "ORG-9100")) {
-  setScreen("screen1");
-  showElement("notearea");
-  setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownCNS6201") == "05-01" && getText("dropdown6") == "ORG-9100")) { 
-    setScreen("screen1");
-    showElement("notearea");
-    setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownCNS6201") == "05-07" && getText("dropdown6") == "ORG-9100")) { 
-  	setScreen("screen1");
-  	showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownCNS6201") == "05-08" && getText("dropdown6") == "ORG-9100")) { 
-  	setScreen("screen1");
-  	showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownCNS6201") == "05-10" && getText("dropdown6") == "ORG-9100")) { 
-  	setScreen("screen1");
-  	showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownCNS6201") == "05-13" && getText("dropdown6") == "ORG-9100")) { 
-  	setScreen("screen1");
-  	showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-
-  } else if ((getText("dropdownCNS6201") == "02-40" && getText("dropdown6") == "CGS-9001 Pager Gateway (Legacy)")) {
-   setText("Sol1", "NA");
-  } else if ((getText("dropdownCNS6201") == "03-40" && getText("dropdown6") == "CGS-9001 Pager Gateway (Legacy)")) {
-   setText("Sol1", "NA");
-  } else if ((getText("dropdownCNS6201") == "05-01" && getText("dropdown6") == "CGS-9001 Pager Gateway (Legacy)")) { 
-    setText("Sol1", "NA");
-  } else if ((getText("dropdownCNS6201") == "05-07" && getText("dropdown6") == "CGS-9001 Pager Gateway (Legacy)")) { 
-  	setText("Sol1", "NA");
-  } else if ((getText("dropdownCNS6201") == "05-08" && getText("dropdown6") == "CGS-9001 Pager Gateway (Legacy)")) { 
-  	setText("Sol1", "NA");
-  } else if ((getText("dropdownCNS6201") == "05-10" && getText("dropdown6") == "CGS-9001 Pager Gateway (Legacy)")) { 
-  	setText("Sol1", "NA");
-  } else if ((getText("dropdownCNS6201") == "05-13" && getText("dropdown6") == "CGS-9001 Pager Gateway (Legacy)")) { 
-  	setText("Sol1", "NA");
-
-  } else if ((getText("dropdownCNS6201") == "02-40" && getText("dropdown6") == "CGS-9002 HL7 Gateway (Legacy)")) {
-   setText("Sol1", "NA");
-  } else if ((getText("dropdownCNS6201") == "03-40" && getText("dropdown6") == "CGS-9002 HL7 Gateway (Legacy)")) {
-  setScreen("screen2");
-  } else if ((getText("dropdownCNS6201") == "05-01" && getText("dropdown6") == "CGS-9002 HL7 Gateway (Legacy)")) { 
-    setText("Sol1", "≧01-09");
-  } else if ((getText("dropdownCNS6201") == "05-07" && getText("dropdown6") == "CGS-9002 HL7 Gateway (Legacy)")) { 
-  	setText("Sol1", "≧01-09");
-  } else if ((getText("dropdownCNS6201") == "05-08" && getText("dropdown6") == "CGS-9002 HL7 Gateway (Legacy)")) { 
-  	setText("Sol1", "≧01-09");
-  } else if ((getText("dropdownCNS6201") == "05-10" && getText("dropdown6") == "CGS-9002 HL7 Gateway (Legacy)")) { 
-  	setText("Sol1", "≧01-09");
-  } else if ((getText("dropdownCNS6201") == "05-13" && getText("dropdown6") == "CGS-9002 HL7 Gateway (Legacy)")) { 
-  	setText("Sol1", "≧01-09");
-
-  } else if ((getText("dropdownCNS6201") == "02-40" && getText("dropdown6") == "QP-983P NetKonnect/RNS Server")) {
-   setText("Sol1", "NA");
-  } else if ((getText("dropdownCNS6201") == "03-40" && getText("dropdown6") == "QP-983P NetKonnect/RNS Server")) {
-   setText("Sol1", "NA");
-  } else if ((getText("dropdownCNS6201") == "05-01" && getText("dropdown6") == "QP-983P NetKonnect/RNS Server")) { 
-    setText("Sol1", "NA");
-  } else if ((getText("dropdownCNS6201") == "05-07" && getText("dropdown6") == "QP-983P NetKonnect/RNS Server")) { 
-  	setText("Sol1", "NA");
-  } else if ((getText("dropdownCNS6201") == "05-08" && getText("dropdown6") == "QP-983P NetKonnect/RNS Server")) { 
-  	setText("Sol1", "NA");
-  } else if ((getText("dropdownCNS6201") == "05-10" && getText("dropdown6") == "QP-983P NetKonnect/RNS Server")) { 
-  	setText("Sol1", "NA");
-  } else if ((getText("dropdownCNS6201") == "05-13" && getText("dropdown6") == "QP-983P NetKonnect/RNS Server")) { 
-  	setText("Sol1", "NA");
-
-  } else if ((getText("dropdownCNS6201") == "02-40" && getText("dropdown6") == "QP-986P Host1000 Server")) {
-     setScreen("screen1");
-     showElement("notearea");
-     setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownCNS6201") == "03-40" && getText("dropdown6") == "QP-986P Host1000 Server")) {
-  setScreen("screen1");
-  showElement("notearea");
-  setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownCNS6201") == "05-01" && getText("dropdown6") == "QP-986P Host1000 Server")) { 
-    setScreen("screen1");
-    showElement("notearea");
-    setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownCNS6201") == "05-07" && getText("dropdown6") == "QP-986P Host1000 Server")) { 
-  	setScreen("screen1");
-  	showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownCNS6201") == "05-08" && getText("dropdown6") == "QP-986P Host1000 Server")) { 
-  	setScreen("screen1");
-  	showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownCNS6201") == "05-10" && getText("dropdown6") == "QP-986P Host1000 Server")) { 
-  	setScreen("screen1");
-  	showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownCNS6201") == "05-13" && getText("dropdown6") == "QP-986P Host1000 Server")) { 
-  	setScreen("screen1");
-  	showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-
-  } else if ((getText("dropdownCNS6201") == "02-40" && getText("dropdown6") == "QP-988P Unified Gateway")) {
-     setScreen("screen1");
-     showElement("notearea");
-     setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownCNS6201") == "03-40" && getText("dropdown6") == "QP-988P Unified Gateway")) {
-  setScreen("screen1");
-  showElement("notearea");
-   setText("notearea", "Send to EMR cannot be used with CGS-9002 or QP-988P(EG). Supports receiving software from NKAnyhwere, but does not support receiving settings.");
-  } else if ((getText("dropdownCNS6201") == "05-01" && getText("dropdown6") == "QP-988P Unified Gateway")) { 
-    setScreen("screen1");
-    showElement("notearea");
-    setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownCNS6201") == "05-07" && getText("dropdown6") == "QP-988P Unified Gateway")) { 
-  	setScreen("screen1");
-  	showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownCNS6201") == "05-08" && getText("dropdown6") == "QP-988P Unified Gateway")) { 
-  	setScreen("screen1");
-  	showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownCNS6201") == "05-10" && getText("dropdown6") == "QP-988P Unified Gateway")) { 
-  	setScreen("screen1");
-  	showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownCNS6201") == "05-13" && getText("dropdown6") == "QP-988P Unified Gateway")) { 
-  	setScreen("screen1");
-  	showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-
-  } else if ((getText("dropdownCNS6201") == "02-40" && getText("dropdown6") == "QP-988P Enterprise Gateway")) {
-     setScreen("screen1");
-     showElement("notearea");
-     setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownCNS6201") == "03-40" && getText("dropdown6") == "QP-988P Enterprise Gateway")) {
-  setScreen("screen2");
-  showElement("notearea2");
-  setText("notearea2", "03-40: Send to EMR cannot be used with CGS-9002 or QP-988P(EG). Supports receiving software from NKAnyhwere, but does not support receiving settings.");
-  } else if ((getText("dropdownCNS6201") == "05-01" && getText("dropdown6") == "QP-988P Enterprise Gateway")) { 
-    setScreen("screen1");
-    showElement("notearea");
-    setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownCNS6201") == "05-07" && getText("dropdown6") == "QP-988P Enterprise Gateway")) { 
-  	setScreen("screen1");
-  	showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownCNS6201") == "05-08" && getText("dropdown6") == "QP-988P Enterprise Gateway")) { 
-  	setScreen("screen1");
-  	showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownCNS6201") == "05-10" && getText("dropdown6") == "QP-988P Enterprise Gateway")) { 
-  	setScreen("screen1");
-  	showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownCNS6201") == "05-13" && getText("dropdown6") == "QP-988P Enterprise Gateway")) { 
-  	setScreen("screen1");
-  	showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-
-  } else if ((getText("dropdownCNS6201") == "02-40" && getText("dropdown6") == "QP-989P ViTrac iOS")) {
-     setScreen("screen1");
-     showElement("notearea");
-     setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownCNS6201") == "03-40" && getText("dropdown6") == "QP-989P ViTrac iOS")) {
-  setScreen("screen1");
-  showElement("notearea");
-  setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownCNS6201") == "05-01" && getText("dropdown6") == "QP-989P ViTrac iOS")) { 
-    setScreen("screen1");
-    showElement("notearea");
-    setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownCNS6201") == "05-07" && getText("dropdown6") == "QP-989P ViTrac iOS")) { 
-  	setScreen("screen1");
-  	showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownCNS6201") == "05-08" && getText("dropdown6") == "QP-989P ViTrac iOS")) { 
-  	setScreen("screen1");
-  	showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownCNS6201") == "05-10" && getText("dropdown6") == "QP-989P ViTrac iOS")) { 
-  	setScreen("screen1");
-  	showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownCNS6201") == "05-13" && getText("dropdown6") == "QP-989P ViTrac iOS")) { 
-  	setScreen("screen1");
-  	showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-
-  } else if ((getText("dropdownCNS6201") == "02-40" && getText("dropdown6") == "QP-991P ViTrac Android")) {
-     setScreen("screen1");
-     showElement("notearea");
-     setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownCNS6201") == "03-40" && getText("dropdown6") == "QP-991P ViTrac Android")) {
-  setScreen("screen1");
-  showElement("notearea");
-  setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownCNS6201") == "05-01" && getText("dropdown6") == "QP-991P ViTrac Android")) { 
-    setScreen("screen1");
-    showElement("notearea");
-    setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownCNS6201") == "05-07" && getText("dropdown6") == "QP-991P ViTrac Android")) { 
-  	setScreen("screen1");
-  	showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownCNS6201") == "05-08" && getText("dropdown6") == "QP-991P ViTrac Android")) { 
-  	setScreen("screen1");
-  	showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownCNS6201") == "05-10" && getText("dropdown6") == "QP-991P ViTrac Android")) { 
-  	setScreen("screen1");
-  	showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownCNS6201") == "05-13" && getText("dropdown6") == "QP-991P ViTrac Android")) { 
-  	setScreen("screen1");
-  	showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-
-  } else if ((getText("dropdownCNS6201") == "02-40" && getText("dropdown6") == "QP-999P NKAnywhere")) {
-     setScreen("screen2");
-  } else if ((getText("dropdownCNS6201") == "03-40" && getText("dropdown6") == "QP-999P NKAnywhere")) {
-  setScreen("screen2");
-  showElement("notearea2");
-   setText("notearea2", "Send to EMR cannot be used with CGS-9002 or QP-988P(EG). Supports receiving software from NKAnyhwere, but does not support receiving settings.")
-  } else if ((getText("dropdownCNS6201") == "05-01" && getText("dropdown6") == "QP-999P NKAnywhere")) { 
-    setScreen("screen2");
-  } else if ((getText("dropdownCNS6201") == "05-07" && getText("dropdown6") == "QP-999P NKAnywhere")) { 
-  	setScreen("screen2");
-  } else if ((getText("dropdownCNS6201") == "05-08" && getText("dropdown6") == "QP-999P NKAnywhere")) { 
-  	setScreen("screen2");
-  } else if ((getText("dropdownCNS6201") == "05-10" && getText("dropdown6") == "QP-999P NKAnywhere")) { 
-  	setScreen("screen2");
-  } else if ((getText("dropdownCNS6201") == "05-13" && getText("dropdown6") == "QP-999P NKAnywhere")) { 
-  	setScreen("screen2");
-
-  } else if ((getText("dropdownCNS6201") == "02-40" && getText("dropdown6") == "OLG-3800")) {
-     setScreen("screen1");
-     showElement("notearea");
-     setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownCNS6201") == "03-40" && getText("dropdown6") == "OLG-3800")) {
-  setScreen("screen1");
-  showElement("notearea");
-  setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownCNS6201") == "05-01" && getText("dropdown6") == "OLG-3800")) { 
-    setScreen("screen1");
-    showElement("notearea");
-    setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownCNS6201") == "05-07" && getText("dropdown6") == "OLG-3800")) { 
-  	setScreen("screen1");
-  	showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownCNS6201") == "05-08" && getText("dropdown6") == "OLG-3800")) { 
-  	setScreen("screen1");
-  	showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownCNS6201") == "05-10" && getText("dropdown6") == "OLG-3800")) { 
-  	setScreen("screen1");
-  	showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownCNS6201") == "05-13" && getText("dropdown6") == "OLG-3800")) { 
-  	setScreen("screen1");
-  	showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-
-
-  } else if ((getText("dropdownCNS6801") == "02-01" && getText("dropdown6") == "BSM-1700 (+UG/TS)")) {
-     setScreen("screen1");
-     	showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownCNS6801") == "02-07" && getText("dropdown6") == "BSM-1700 (+UG/TS)")) {
-  setScreen("screen1");
-  	showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownCNS6801") == "02-08" && getText("dropdown6") == "BSM-1700 (+UG/TS)")) { 
-    setScreen("screen1");
-    	showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownCNS6801") == "02-10" && getText("dropdown6") == "BSM-1700 (+UG/TS)")) { 
-  	setScreen("screen1");
-  		showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownCNS6801") == "02-13" && getText("dropdown6") == "BSM-1700 (+UG/TS)")) { 
-  	setScreen("screen1");
-  		showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-
-  } else if ((getText("dropdownCNS6801") == "02-01" && getText("dropdown6") == "BSM-3500")) {
-     setScreen("screen1");
-     	showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownCNS6801") == "02-07" && getText("dropdown6") == "BSM-3500")) {
-  setScreen("screen1");
-  	showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownCNS6801") == "02-08" && getText("dropdown6") == "BSM-3500")) { 
-    setScreen("screen1");
-    	showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownCNS6801") == "02-10" && getText("dropdown6") == "BSM-3500")) { 
-  	setScreen("screen1");
-  		showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownCNS6801") == "02-13" && getText("dropdown6") == "BSM-3500")) { 
-  	setScreen("screen1");
-  		showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-
-  } else if ((getText("dropdownCNS6801") == "02-01" && getText("dropdown6") == "BSM-6000")) {
-     setScreen("screen1");
-     	showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownCNS6801") == "02-07" && getText("dropdown6") == "BSM-6000")) {
-  setScreen("screen1");
-  	showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownCNS6801") == "02-08" && getText("dropdown6") == "BSM-6000")) { 
-    setScreen("screen1");
-    	showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownCNS6801") == "02-10" && getText("dropdown6") == "BSM-6000")) { 
-  	setScreen("screen1");
-  		showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownCNS6801") == "02-13" && getText("dropdown6") == "BSM-6000")) { 
-  	setScreen("screen1");
-  		showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-
-
-  } else if ((getText("dropdownCNS6801") == "02-01" && getText("dropdown6") == "CSM-1901")) {
-     setScreen("screen1");
-     	showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownCNS6801") == "02-07" && getText("dropdown6") == "CSM-1901")) {
-  setScreen("screen1");
-  	showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownCNS6801") == "02-08" && getText("dropdown6") == "CSM-1901")) { 
-    setScreen("screen1");
-    	showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownCNS6801") == "02-10" && getText("dropdown6") == "CSM-1901")) { 
-  	setScreen("screen1");
-  		showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownCNS6801") == "02-13" && getText("dropdown6") == "CSM-1901")) { 
-  	setScreen("screen1");
-  		showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-
-  } else if ((getText("dropdownCNS6801") == "02-01" && getText("dropdown6") == "CNS-6201")) {
-      setText("Sol1", "≧03-40");
-  } else if ((getText("dropdownCNS6801") == "02-07" && getText("dropdown6") == "CNS-6201")) {
-  setText("Sol1", "≧03-40");
-  } else if ((getText("dropdownCNS6801") == "02-08" && getText("dropdown6") == "CNS-6201")) { 
-    setText("Sol1", "≧03-40");
-  } else if ((getText("dropdownCNS6801") == "02-10" && getText("dropdown6") == "CNS-6201")) { 
-  	setText("Sol1", "≧03-40");
-  } else if ((getText("dropdownCNS6801") == "02-13" && getText("dropdown6") == "CNS-6201")) { 
-  	setText("Sol1", "≧03-40");
-
-  } else if ((getText("dropdownCNS6801") == "02-01" && getText("dropdown6") == "RNS-9703(Old GUI)")) {
-     setScreen("screen1");
-     	showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownCNS6801") == "02-07" && getText("dropdown6") == "RNS-9703(Old GUI)")) {
-  setScreen("screen1");
-  	showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownCNS6801") == "02-08" && getText("dropdown6") == "RNS-9703(Old GUI)")) { 
-    setScreen("screen1");
-    	showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownCNS6801") == "02-10" && getText("dropdown6") == "RNS-9703(Old GUI)")) { 
-  	setScreen("screen1");
-  		showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownCNS6801") == "02-13" && getText("dropdown6") == "RNS-9703(Old GUI)")) { 
-  	setScreen("screen1");
-  		showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-
-  } else if ((getText("dropdownCNS6801") == "02-01" && getText("dropdown6") == "RNS-6803(Audio)")) {
-     setScreen("screen1");
-     	showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownCNS6801") == "02-07" && getText("dropdown6") == "RNS-6803(Audio)")) {
-  setScreen("screen1");
-  	showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownCNS6801") == "02-08" && getText("dropdown6") == "RNS-6803(Audio)")) { 
-    setScreen("screen1");
-    	showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownCNS6801") == "02-10" && getText("dropdown6") == "RNS-6803(Audio)")) { 
-  	setScreen("screen1");
-  		showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownCNS6801") == "02-13" && getText("dropdown6") == "RNS-6803(Audio)")) { 
-  	setScreen("screen1");
-  		showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-
-  } else if ((getText("dropdownCNS6801") == "02-01" && getText("dropdown6") == "RNS-6804(No Audio)")) {
-     setScreen("screen1");
-     	showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownCNS6801") == "02-07" && getText("dropdown6") == "RNS-6804(No Audio)")) {
-  setScreen("screen1");
-  	showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownCNS6801") == "02-08" && getText("dropdown6") == "RNS-6804(No Audio)")) { 
-    setScreen("screen1");
-    	showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownCNS6801") == "02-10" && getText("dropdown6") == "RNS-6804(No Audio)")) { 
-  	setScreen("screen1");
-  		showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownCNS6801") == "02-13" && getText("dropdown6") == "RNS-6804(No Audio)")) { 
-  	setScreen("screen1");
-  		showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-
-  } else if ((getText("dropdownCNS6801") == "02-01" && getText("dropdown6") == "EDNS-9001 Prefense")) {
-     setScreen("screen1");
-     	showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownCNS6801") == "02-07" && getText("dropdown6") == "EDNS-9001 Prefense")) {
-  setScreen("screen1");
-  	showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownCNS6801") == "02-08" && getText("dropdown6") == "EDNS-9001 Prefense")) { 
-    setScreen("screen1");
-    	showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownCNS6801") == "02-10" && getText("dropdown6") == "EDNS-9001 Prefense")) { 
-  	setScreen("screen1");
-  		showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownCNS6801") == "02-13" && getText("dropdown6") == "EDNS-9001 Prefense")) { 
-  	setScreen("screen1");
-  		showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-
-  } else if ((getText("dropdownCNS6801") == "02-01" && getText("dropdown6") == "GZ-100P (+UG/TS)")) {
-     setScreen("screen1");
-     	showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownCNS6801") == "02-07" && getText("dropdown6") == "GZ-100P (+UG/TS)")) {
-  setScreen("screen1");
-  	showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownCNS6801") == "02-08" && getText("dropdown6") == "GZ-100P (+UG/TS)")) { 
-    setScreen("screen1");
-    	showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownCNS6801") == "02-10" && getText("dropdown6") == "GZ-100P (+UG/TS)")) { 
-  	setScreen("screen1");
-  		showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownCNS6801") == "02-13" && getText("dropdown6") == "GZ-100P (+UG/TS)")) { 
-  	setScreen("screen1");
-  		showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-
-  } else if ((getText("dropdownCNS6801") == "02-01" && getText("dropdown6") == "ORG-9100")) {
-     setScreen("screen1");
-     	showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownCNS6801") == "02-07" && getText("dropdown6") == "ORG-9100")) {
-  setScreen("screen1");
-  	showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownCNS6801") == "02-08" && getText("dropdown6") == "ORG-9100")) { 
-    setScreen("screen1");
-    	showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownCNS6801") == "02-10" && getText("dropdown6") == "ORG-9100")) { 
-  	setScreen("screen1");
-  		showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownCNS6801") == "02-13" && getText("dropdown6") == "ORG-9100")) { 
-  	setScreen("screen1");
-  		showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-
-  } else if ((getText("dropdownCNS6801") == "02-01" && getText("dropdown6") == "CGS-9001 Pager Gateway (Legacy)")) {
-     setText("Sol1", "NA");
-  } else if ((getText("dropdownCNS6801") == "02-07" && getText("dropdown6") == "CGS-9001 Pager Gateway (Legacy)")) {
-  setText("Sol1", "NA");
-  } else if ((getText("dropdownCNS6801") == "02-08" && getText("dropdown6") == "CGS-9001 Pager Gateway (Legacy)")) { 
-    setText("Sol1", "NA");
-  } else if ((getText("dropdownCNS6801") == "02-10" && getText("dropdown6") == "CGS-9001 Pager Gateway (Legacy)")) { 
-  	setText("Sol1", "NA");
-  } else if ((getText("dropdownCNS6801") == "02-13" && getText("dropdown6") == "CGS-9001 Pager Gateway (Legacy)")) { 
-  	setText("Sol1", "NA");
-
-
-  } else if ((getText("dropdownCNS6801") == "02-01" && getText("dropdown6") == "CGS-9002 HL7 Gateway (Legacy)")) {
-     setText("Sol1", "≧01-09");
-  } else if ((getText("dropdownCNS6801") == "02-07" && getText("dropdown6") == "CGS-9002 HL7 Gateway (Legacy)")) {
-  setText("Sol1", "≧01-09");
-  } else if ((getText("dropdownCNS6801") == "02-08" && getText("dropdown6") == "CGS-9002 HL7 Gateway (Legacy)")) { 
-    setText("Sol1", "≧01-09");
-  } else if ((getText("dropdownCNS6801") == "02-10" && getText("dropdown6") == "CGS-9002 HL7 Gateway (Legacy)")) { 
-  	setText("Sol1", "≧01-09");
-  } else if ((getText("dropdownCNS6801") == "02-13" && getText("dropdown6") == "CGS-9002 HL7 Gateway (Legacy)")) { 
-  	setText("Sol1", "≧01-09");
-
-
-  } else if ((getText("dropdownCNS6801") == "02-01" && getText("dropdown6") == "QP-983P NetKonnect/RNS Server")) {
-     setText("Sol1", "NA");
-  } else if ((getText("dropdownCNS6801") == "02-07" && getText("dropdown6") == "QP-983P NetKonnect/RNS Server")) {
-  setText("Sol1", "NA");
-  } else if ((getText("dropdownCNS6801") == "02-08" && getText("dropdown6") == "QP-983P NetKonnect/RNS Server")) { 
-    setText("Sol1", "NA");
-  } else if ((getText("dropdownCNS6801") == "02-10" && getText("dropdown6") == "QP-983P NetKonnect/RNS Server")) { 
-  	setText("Sol1", "NA");
-  } else if ((getText("dropdownCNS6801") == "02-13" && getText("dropdown6") == "QP-983P NetKonnect/RNS Server")) { 
-  	setText("Sol1", "NA");
-
-
-  } else if ((getText("dropdownCNS6801") == "02-01" && getText("dropdown6") == "QP-986P Host1000 Server")) {
-     setScreen("screen1");
-     	showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownCNS6801") == "02-07" && getText("dropdown6") == "QP-986P Host1000 Server")) {
-  setScreen("screen1");
-  	showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownCNS6801") == "02-08" && getText("dropdown6") == "QP-986P Host1000 Server")) { 
-    setScreen("screen1");
-    	showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownCNS6801") == "02-10" && getText("dropdown6") == "QP-986P Host1000 Server")) { 
-  	setScreen("screen1");
-  		showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownCNS6801") == "02-13" && getText("dropdown6") == "QP-986P Host1000 Server")) { 
-  	setScreen("screen1");
-  		showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-
-  } else if ((getText("dropdownCNS6801") == "02-01" && getText("dropdown6") == "QP-988P Unified Gateway")) {
-     setScreen("screen1");
-     	showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownCNS6801") == "02-07" && getText("dropdown6") == "QP-988P Unified Gateway")) {
-  setScreen("screen1");
-  	showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownCNS6801") == "02-08" && getText("dropdown6") == "QP-988P Unified Gateway")) { 
-    setScreen("screen1");
-    	showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownCNS6801") == "02-10" && getText("dropdown6") == "QP-988P Unified Gateway")) { 
-  	setScreen("screen1");
-  		showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownCNS6801") == "02-13" && getText("dropdown6") == "QP-988P Unified Gateway")) { 
-  	setScreen("screen1");
-  		showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-
-
-  } else if ((getText("dropdownCNS6801") == "02-01" && getText("dropdown6") == "QP-988P Enterprise Gateway")) {
-     setScreen("screen1");
-     	showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownCNS6801") == "02-07" && getText("dropdown6") == "QP-988P Enterprise Gateway")) {
-  setScreen("screen1");
-  	showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownCNS6801") == "02-08" && getText("dropdown6") == "QP-988P Enterprise Gateway")) { 
-    setScreen("screen1");
-    	showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownCNS6801") == "02-10" && getText("dropdown6") == "QP-988P Enterprise Gateway")) { 
-  	setScreen("screen1");
-  		showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownCNS6801") == "02-13" && getText("dropdown6") == "QP-988P Enterprise Gateway")) { 
-  	setScreen("screen1");
-  		showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-
-  } else if ((getText("dropdownCNS6801") == "02-01" && getText("dropdown6") == "QP-989P ViTrac iOS")) {
-     setScreen("screen1");
-     	showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownCNS6801") == "02-07" && getText("dropdown6") == "QP-989P ViTrac iOS")) {
-  setScreen("screen1");
-  	showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownCNS6801") == "02-08" && getText("dropdown6") == "QP-989P ViTrac iOS")) { 
-    setScreen("screen1");
-    	showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownCNS6801") == "02-10" && getText("dropdown6") == "QP-989P ViTrac iOS")) { 
-  	setScreen("screen1");
-  		showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownCNS6801") == "02-13" && getText("dropdown6") == "QP-989P ViTrac iOS")) { 
-  	setScreen("screen1");
-  		showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-
-
-  } else if ((getText("dropdownCNS6801") == "02-01" && getText("dropdown6") == "QP-991P ViTrac Android")) {
-     setScreen("screen1");
-     	showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownCNS6801") == "02-07" && getText("dropdown6") == "QP-991P ViTrac Android")) {
-  setScreen("screen1");
-  	showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownCNS6801") == "02-08" && getText("dropdown6") == "QP-991P ViTrac Android")) { 
-    setScreen("screen1");
-    	showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownCNS6801") == "02-10" && getText("dropdown6") == "QP-991P ViTrac Android")) { 
-  	setScreen("screen1");
-  		showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownCNS6801") == "02-13" && getText("dropdown6") == "QP-991P ViTrac Android")) { 
-  	setScreen("screen1");
-  		showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-
-  } else if ((getText("dropdownCNS6801") == "02-01" && getText("dropdown6") == "QP-999P NKAnywhere")) {
-     setScreen("screen2");
-  } else if ((getText("dropdownCNS6801") == "02-07" && getText("dropdown6") == "QP-999P NKAnywhere")) {
-  setScreen("screen2");
-  } else if ((getText("dropdownCNS6801") == "02-08" && getText("dropdown6") == "QP-999P NKAnywhere")) { 
-    setScreen("screen2");
-  } else if ((getText("dropdownCNS6801") == "02-10" && getText("dropdown6") == "QP-999P NKAnywhere")) { 
-  	setScreen("screen2");
-  } else if ((getText("dropdownCNS6801") == "02-13" && getText("dropdown6") == "QP-999P NKAnywhere")) { 
-  	setScreen("screen2");
-
-  } else if ((getText("dropdownCNS6801") == "02-01" && getText("dropdown6") == "OLG-3800")) {
-     setScreen("screen1");
-     	showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownCNS6801") == "02-07" && getText("dropdown6") == "OLG-3800")) {
-  setScreen("screen1");
-  	showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownCNS6801") == "02-08" && getText("dropdown6") == "OLG-3800")) { 
-    setScreen("screen1");
-    	showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownCNS6801") == "02-10" && getText("dropdown6") == "OLG-3800")) { 
-  	setScreen("screen1");
-  		showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownCNS6801") == "02-13" && getText("dropdown6") == "OLG-3800")) { 
-  	setScreen("screen1");
-  		showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  	
-  	//RNS9703
-
-  } else if ((getText("dropdownRNS9703") == "03-40" && getText("dropdown6") == "BSM-1700 (+UG/TS)")) {
-      setText("Sol1", "=01-15");
-  } else if ((getText("dropdownRNS9703") == "03-40b" && getText("dropdown6") == "BSM-1700 (+UG/TS)")) {
-  setScreen("screen1");
-  
-  } else if ((getText("dropdownRNS9703") == "03-40" && getText("dropdown6") == "BSM-3500")) {
-     setScreen("screen1");
-  } else if ((getText("dropdownRNS9703") == "03-40b" && getText("dropdown6") == "BSM-3500")) {
-  setScreen("screen1");
-  
-  
-  } else if ((getText("dropdownRNS9703") == "03-40" && getText("dropdown6") == "BSM-6000")) {
-      setScreen("screen1");
-  } else if ((getText("dropdownRNS9703") == "03-40b" && getText("dropdown6") == "BSM-6000")) {
-    setScreen("screen1");
-
-  } else if ((getText("dropdownRNS9703") == "03-40" && getText("dropdown6") == "CSM-1901")) {
+  } else if ((getText("dropdownRNS9703") == "03-40" && getText("dropdown6") == "Enterprise Gateway(02-03)")) {
          setScreen("screen1");
-  } else if ((getText("dropdownRNS9703") == "03-40b" && getText("dropdown6") == "CSM-1901")) {
+  } else if ((getText("dropdownRNS9703") == "03-40b" && getText("dropdown6") == "Enterprise Gateway(02-03)")) {
     setScreen("screen1");
 
-  } else if ((getText("dropdownRNS9703") == "03-40" && getText("dropdown6") == "CNS-6201")) {
-         setText("Sol1", "=02-40");
-  } else if ((getText("dropdownRNS9703") == "03-40b" && getText("dropdown6") == "CNS-6201")) {
-    setText("Sol1", "=02-40");
 
-  } else if ((getText("dropdownRNS9703") == "03-40" && getText("dropdown6") == "CNS-6801")) {
+  } else if ((getText("dropdownRNS9703") == "03-40" && getText("dropdown6") == "Enterprise Gateway(02-04)")) {
          setScreen("screen1");
-           		showElement("notearea");
-  	setText("notearea", "It is not recommended to use Old GUI RNS with New GUI CNS.");
-  	
-  } else if ((getText("dropdownRNS9703") == "03-40b" && getText("dropdown6") == "CNS-6801")) {
+  } else if ((getText("dropdownRNS9703") == "03-40b" && getText("dropdown6") == "Enterprise Gateway(02-04)")) {
     setScreen("screen1");
-               		showElement("notearea");
-  	setText("notearea", "It is not recommended to use Old GUI RNS with New GUI CNS.");
 
-  } else if ((getText("dropdownRNS9703") == "03-40" && getText("dropdown6") == "RNS-6803(Audio)")) {
+
+  } else if ((getText("dropdownRNS9703") == "03-40" && getText("dropdown6") == "Enterprise Gateway(02-06)")) {
          setScreen("screen1");
-  } else if ((getText("dropdownRNS9703") == "03-40b" && getText("dropdown6") == "RNS-6803(Audio)")) {
+  } else if ((getText("dropdownRNS9703") == "03-40b" && getText("dropdown6") == "Enterprise Gateway(02-06)")) {
     setScreen("screen1");
 
-  } else if ((getText("dropdownRNS9703") == "03-40" && getText("dropdown6") == "RNS-6804(No Audio)")) {
+  } else if ((getText("dropdownRNS9703") == "03-40" && getText("dropdown6") == "Enterprise Gateway(04-01)")) {
          setScreen("screen1");
-  } else if ((getText("dropdownRNS9703") == "03-40b" && getText("dropdown6") == "RNS-6804(No Audio)")) {
-    setScreen("screen1");
-
-
-  } else if ((getText("dropdownRNS9703") == "03-40" && getText("dropdown6") == "EDNS-9001 Prefense")) {
-           setText("Sol1", "NA");
-  } else if ((getText("dropdownRNS9703") == "03-40b" && getText("dropdown6") == "EDNS-9001 Prefense")) {
-      setText("Sol1", "NA");
-
-
-  } else if ((getText("dropdownRNS9703") == "03-40" && getText("dropdown6") == "GZ-100P (+UG/TS)")) {
-         setScreen("screen2");
-  } else if ((getText("dropdownRNS9703") == "03-40b" && getText("dropdown6") == "GZ-100P (+UG/TS)")) {
-    setScreen("screen1");
-
-  } else if ((getText("dropdownRNS9703") == "03-40" && getText("dropdown6") == "ORG-9100")) {
-         setScreen("screen1");
-  } else if ((getText("dropdownRNS9703") == "03-40b" && getText("dropdown6") == "ORG-9100")) {
-    setScreen("screen1");
-
-  } else if ((getText("dropdownRNS9703") == "03-40" && getText("dropdown6") == "CGS-9001 Pager Gateway (Legacy)")) {
-           setText("Sol1", "NA");
-  } else if ((getText("dropdownRNS9703") == "03-40b" && getText("dropdown6") == "CGS-9001 Pager Gateway (Legacy)")) {
-      setText("Sol1", "NA");
-
-  } else if ((getText("dropdownRNS9703") == "03-40" && getText("dropdown6") == "CGS-9002 HL7 Gateway (Legacy)")) {
-           setText("Sol1", "NA");
-  } else if ((getText("dropdownRNS9703") == "03-40b" && getText("dropdown6") == "CGS-9002 HL7 Gateway (Legacy)")) {
-      setText("Sol1", "NA");
-
-  } else if ((getText("dropdownRNS9703") == "03-40" && getText("dropdown6") == "QP-983P NetKonnect/RNS Server")) {
-         setScreen("screen1");
-  } else if ((getText("dropdownRNS9703") == "03-40b" && getText("dropdown6") == "QP-983P NetKonnect/RNS Server")) {
-    setScreen("screen1");
-
-  } else if ((getText("dropdownRNS9703") == "03-40" && getText("dropdown6") == "QP-986P Host1000 Server")) {
-         setScreen("screen1");
-  } else if ((getText("dropdownRNS9703") == "03-40b" && getText("dropdown6") == "QP-986P Host1000 Server")) {
-    setScreen("screen1");
-
-  } else if ((getText("dropdownRNS9703") == "03-40" && getText("dropdown6") == "QP-988P Unified Gateway")) {
-           setText("Sol1", "NA");
-  } else if ((getText("dropdownRNS9703") == "03-40b" && getText("dropdown6") == "QP-988P Unified Gateway")) {
-      setText("Sol1", "NA");
-
-  } else if ((getText("dropdownRNS9703") == "03-40" && getText("dropdown6") == "QP-988P Enterprise Gateway")) {
-         setScreen("screen1");
-      showElement("notearea");
-  	setText("notearea", "QP-988P(EG) supports RNS Server Extension, if using QP-988P(EG) as RNS Server.");
-  } else if ((getText("dropdownRNS9703") == "03-40b" && getText("dropdown6") == "QP-988P Enterprise Gateway")) {
-    setScreen("screen1");
-          showElement("notearea");
-  	setText("notearea", "QP-988P(EG) supports RNS Server Extension, if using QP-988P(EG) as RNS Server.");
-
-
-  } else if ((getText("dropdownRNS9703") == "03-40" && getText("dropdown6") == "QP-989P ViTrac iOS")) {
-           setText("Sol1", "NA");
-  } else if ((getText("dropdownRNS9703") == "03-40b" && getText("dropdown6") == "QP-989P ViTrac iOS")) {
-      setText("Sol1", "NA");
-
-  } else if ((getText("dropdownRNS9703") == "03-40" && getText("dropdown6") == "QP-991P ViTrac Android")) {
-           setText("Sol1", "NA");
-  } else if ((getText("dropdownRNS9703") == "03-40b" && getText("dropdown6") == "QP-991P ViTrac Android")) {
-      setText("Sol1", "NA");
-
-  } else if ((getText("dropdownRNS9703") == "03-40" && getText("dropdown6") == "QP-999P NKAnywhere")) {
-         setScreen("screen2");
-  } else if ((getText("dropdownRNS9703") == "03-40b" && getText("dropdown6") == "QP-999P NKAnywhere")) {
-    setScreen("screen2");
-
-
-  } else if ((getText("dropdownRNS9703") == "03-40" && getText("dropdown6") == "OLG-3800")) {
-         setScreen("screen1");
-  } else if ((getText("dropdownRNS9703") == "03-40b" && getText("dropdown6") == "OLG-3800")) {
+  } else if ((getText("dropdownRNS9703") == "03-40b" && getText("dropdown6") == "Enterprise Gateway(04-01)")) {
     setScreen("screen1");
     
     
 //RNS6803
 
 
-  } else if ((getText("dropdownRNS6803") == "02-06" && getText("dropdown6") == "BSM-1700 (+UG/TS)")) {
-         setScreen("screen1");
-           		showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownRNS6803") == "02-10" && getText("dropdown6") == "BSM-1700 (+UG/TS)")) {
-    setScreen("screen1");
-               		showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-
-
-  } else if ((getText("dropdownRNS6803") == "02-06" && getText("dropdown6") == "BSM-3500")) {
-         setScreen("screen1");
-                    		showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownRNS6803") == "02-10" && getText("dropdown6") == "BSM-3500")) {
-    setScreen("screen1");
-               		showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-
-  } else if ((getText("dropdownRNS6803") == "02-06" && getText("dropdown6") == "BSM-6000")) {
-         setScreen("screen1");
-                    		showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownRNS6803") == "02-10" && getText("dropdown6") == "BSM-6000")) {
-    setScreen("screen1");
-               		showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-
-  } else if ((getText("dropdownRNS6803") == "02-06" && getText("dropdown6") == "CSM-1901")) {
-         setScreen("screen1");
-                    		showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownRNS6803") == "02-10" && getText("dropdown6") == "CSM-1901")) {
-    setScreen("screen1");
-               		showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-
-  } else if ((getText("dropdownRNS6803") == "02-06" && getText("dropdown6") == "CNS-6201")) {
-         setScreen("screen1");
-                    		showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownRNS6803") == "02-10" && getText("dropdown6") == "CNS-6201")) {
-    setScreen("screen1");
-               		showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-
-  } else if ((getText("dropdownRNS6803") == "02-06" && getText("dropdown6") == "CNS-6801")) {
-         setScreen("screen1");
-                    		showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownRNS6803") == "02-10" && getText("dropdown6") == "CNS-6801")) {
-    setScreen("screen1");
-               		showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-
-
-  } else if ((getText("dropdownRNS6803") == "02-06" && getText("dropdown6") == "RNS-9703(Old GUI)")) {
-         setScreen("screen1");
-                    		showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownRNS6803") == "02-10" && getText("dropdown6") == "RNS-9703(Old GUI)")) {
-    setScreen("screen1");
-               		showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-
-  } else if ((getText("dropdownRNS6803") == "02-06" && getText("dropdown6") == "RNS-6804(No Audio)")) {
-         setText("Sol1", "Same Product");
-  } else if ((getText("dropdownRNS6803") == "02-10" && getText("dropdown6") == "RNS-6804(No Audio)")) {
-    setText("Sol1", "Same Product");
-
-  } else if ((getText("dropdownRNS6803") == "02-06" && getText("dropdown6") == "EDNS-9001 Prefense")) {
-         setText("Sol1", "NA");
-  } else if ((getText("dropdownRNS6803") == "02-10" && getText("dropdown6") == "EDNS-9001 Prefense")) {
-    setText("Sol1", "NA");
-
-  } else if ((getText("dropdownRNS6803") == "02-06" && getText("dropdown6") == "GZ-100P (+UG/TS)")) {
-         setScreen("screen1");
-                    		showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownRNS6803") == "02-10" && getText("dropdown6") == "GZ-100P (+UG/TS)")) {
-    setScreen("screen1");
-               		showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-
-  } else if ((getText("dropdownRNS6803") == "02-06" && getText("dropdown6") == "ORG-9100")) {
-         setScreen("screen1");
-                    		showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownRNS6803") == "02-10" && getText("dropdown6") == "ORG-9100")) {
-    setScreen("screen1");
-               		showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-
-
-  } else if ((getText("dropdownRNS6803") == "02-06" && getText("dropdown6") == "CGS-9001 Pager Gateway (Legacy)")) {
-          setText("Sol1", "NA");
-  } else if ((getText("dropdownRNS6803") == "02-10" && getText("dropdown6") == "CGS-9001 Pager Gateway (Legacy)")) {
-     setText("Sol1", "NA");
-
-  } else if ((getText("dropdownRNS6803") == "02-06" && getText("dropdown6") == "CGS-9001 Pager Gateway (Legacy)")) {
-          setText("Sol1", "≧01-09");
-  } else if ((getText("dropdownRNS6803") == "02-10" && getText("dropdown6") == "CGS-9001 Pager Gateway (Legacy)")) {
-     setText("Sol1", "≧01-09");
-
-  } else if ((getText("dropdownRNS6803") == "02-06" && getText("dropdown6") == "QP-983P NetKonnect/RNS Server")) {
+  } else if ((getText("dropdownRNS6803") == "02-06" && getText("dropdown6") == "Unified Gateway (01-08a)")) {
          setScreen("screen2");
-  } else if ((getText("dropdownRNS6803") == "02-10" && getText("dropdown6") == "QP-983P NetKonnect/RNS Server")) {
+  } else if ((getText("dropdownRNS6803") == "02-10" && getText("dropdown6") == "Unified Gateway (01-08a)")) {
     setScreen("screen2");
 
-
-  } else if ((getText("dropdownRNS6803") == "02-06" && getText("dropdown6") == "QP-986P Host1000 Server")) {
-         setScreen("screen1");
-                    		showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownRNS6803") == "02-10" && getText("dropdown6") == "QP-986P Host1000 Server")) {
-    setScreen("screen1");
-               		showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-
-
-
-  } else if ((getText("dropdownRNS6803") == "02-06" && getText("dropdown6") == "QP-988P Unified Gateway")) {
-          setText("Sol1", "NA");
-                     		showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownRNS6803") == "02-10" && getText("dropdown6") == "QP-988P Unified Gateway")) {
-    setText("Sol1", "NA");
-               		showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-
-  } else if ((getText("dropdownRNS6803") == "02-06" && getText("dropdown6") == "QP-988P Enterprise Gateway")) {
-         setScreen("screen1");
-                    		showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownRNS6803") == "02-10" && getText("dropdown6") == "QP-988P Enterprise Gateway")) {
-    setScreen("screen1");
-               		showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-
-
-
-  } else if ((getText("dropdownRNS6803") == "02-06" && getText("dropdown6") == "QP-989P ViTrac iOS")) {
-          setText("Sol1", "NA");
-  } else if ((getText("dropdownRNS6803") == "02-10" && getText("dropdown6") == "QP-989P ViTrac iOS")) {
-    setText("Sol1", "NA");
-
-
-
-  } else if ((getText("dropdownRNS6803") == "02-06" && getText("dropdown6") == "QP-991P ViTrac Android")) {
-          setText("Sol1", "NA");
-  } else if ((getText("dropdownRNS6803") == "02-10" && getText("dropdown6") == "QP-991P ViTrac Android")) {
-    setText("Sol1", "NA");
-
-  } else if ((getText("dropdownRNS6803") == "02-06" && getText("dropdown6") == "QP-999P NKAnywhere")) {
-          setScreen("screen2");
-  } else if ((getText("dropdownRNS6803") == "02-10" && getText("dropdown6") == "QP-999P NKAnywhere")) {
+  } else if ((getText("dropdownRNS6803") == "02-06" && getText("dropdown6") == "Unified Gateway (01-10)")) {
+         setScreen("screen2");
+  } else if ((getText("dropdownRNS6803") == "02-10" && getText("dropdown6") == "Unified Gateway (01-10)")) {
     setScreen("screen2");
 
-  } else if ((getText("dropdownRNS6803") == "02-06" && getText("dropdown6") == "OLG-3800")) {
+  } else if ((getText("dropdownRNS6803") == "02-06" && getText("dropdown6") == "Unified Gateway (01-11)")) {
+         setScreen("screen2");
+  } else if ((getText("dropdownRNS6803") == "02-10" && getText("dropdown6") == "Unified Gateway (01-11)")) {
+    setScreen("screen2");
+
+  } else if ((getText("dropdownRNS6803") == "02-06" && getText("dropdown6") == "Enterprise Gateway(01-02)")) {
          setScreen("screen1");
-                    		showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-  } else if ((getText("dropdownRNS6803") == "02-10" && getText("dropdown6") == "OLG-3800")) {
+  } else if ((getText("dropdownRNS6803") == "02-10" && getText("dropdown6") == "Enterprise Gateway(01-02)")) {
     setScreen("screen1");
-               		showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
+
+  } else if ((getText("dropdownRNS6803") == "02-06" && getText("dropdown6") == "Enterprise Gateway(01-03)")) {
+         setScreen("screen1");
+  } else if ((getText("dropdownRNS6803") == "02-10" && getText("dropdown6") == "Enterprise Gateway(01-03)")) {
+    setScreen("screen1");
+
+  } else if ((getText("dropdownRNS6803") == "02-06" && getText("dropdown6") == "Enterprise Gateway(02-01)")) {
+         setScreen("screen1");
+  } else if ((getText("dropdownRNS6803") == "02-10" && getText("dropdown6") == "Enterprise Gateway(02-01)")) {
+    setScreen("screen1");
+
+  } else if ((getText("dropdownRNS6803") == "02-06" && getText("dropdown6") == "Enterprise Gateway(02-03)")) {
+         setScreen("screen1");
+  } else if ((getText("dropdownRNS6803") == "02-10" && getText("dropdown6") == "Enterprise Gateway(02-03)")) {
+    setScreen("screen1");
+
+  } else if ((getText("dropdownRNS6803") == "02-06" && getText("dropdown6") == "Enterprise Gateway(02-04)")) {
+         setScreen("screen1");
+  } else if ((getText("dropdownRNS6803") == "02-10" && getText("dropdown6") == "Enterprise Gateway(02-04)")) {
+    setScreen("screen1");
+
+  } else if ((getText("dropdownRNS6803") == "02-06" && getText("dropdown6") == "Enterprise Gateway(02-06)")) {
+         setScreen("screen1");
+  } else if ((getText("dropdownRNS6803") == "02-10" && getText("dropdown6") == "Enterprise Gateway(02-06)")) {
+    setScreen("screen1");
+
+
+  } else if ((getText("dropdownRNS6803") == "02-06" && getText("dropdown6") == "Enterprise Gateway(04-01)")) {
+         setScreen("screen1");
+  } else if ((getText("dropdownRNS6803") == "02-10" && getText("dropdown6") == "Enterprise Gateway(04-01)")) {
+    setScreen("screen1");
+
 
 //RNS6804
 
 
-  } else if ((getText("dropdownRNS6804") == "02-10" && getText("dropdown6") == "BSM-1700 (+UG/TS)")) {
-         setScreen("screen1");
-           		showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
+  } else if ((getText("dropdownRNS6804") == "02-10" && getText("dropdown6") == "Unified Gateway (01-08a)")) {
+         setScreen("screen2");
 
-  } else if ((getText("dropdownRNS6804") == "02-10" && getText("dropdown6") == "BSM-3500")) {
-    setScreen("screen1");
-               		showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-
-  } else if ((getText("dropdownRNS6804") == "02-10" && getText("dropdown6") == "BSM-6000")) {
-    setScreen("screen1");
-               		showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-
-  } else if ((getText("dropdownRNS6804") == "02-10" && getText("dropdown6") == "CSM-1901")) {
-    setScreen("screen1");
-               		showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-
-
-  } else if ((getText("dropdownRNS6804") == "02-10" && getText("dropdown6") == "CNS-6201")) {
-    setScreen("screen1");
-               		showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-
-
-  } else if ((getText("dropdownRNS6804") == "02-10" && getText("dropdown6") == "CNS-6801")) {
-    setScreen("screen1");
-               		showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-
-
-
-  } else if ((getText("dropdownRNS6804") == "02-10" && getText("dropdown6") == "RNS-9703(Old GUI)")) {
-    setScreen("screen1");
-               		showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-
-
-  } else if ((getText("dropdownRNS6804") == "02-10" && getText("dropdown6") == "RNS-6804(No Audio)")) {
-    setText("Sol1", "Same Product");
-
-
-  } else if ((getText("dropdownRNS6804") == "02-10" && getText("dropdown6") == "EDNS-9001 Prefense")) {
-    setText("Sol1", "NA");
-    
-
-  } else if ((getText("dropdownRNS6804") == "02-10" && getText("dropdown6") == "GZ-100P (+UG/TS)")) {
-    setScreen("screen1");
-    showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-
-
-  } else if ((getText("dropdownRNS6804") == "02-10" && getText("dropdown6") == "ORG-9100")) {
-    setScreen("screen1");
-               		showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-
-
-
-  } else if ((getText("dropdownRNS6804") == "02-10" && getText("dropdown6") == "CGS-9001 Pager Gateway (Legacy)")) {
-     setText("Sol1", "NA");
-
-  } else if ((getText("dropdownRNS6804") == "02-10" && getText("dropdown6") == "CGS-9001 Pager Gateway (Legacy)")) {
-     setText("Sol1", "≧01-09");
-
-
-  } else if ((getText("dropdownRNS6804") == "02-10" && getText("dropdown6") == "QP-983P NetKonnect/RNS Server")) {
+  } else if ((getText("dropdownRNS6804") == "02-10" && getText("dropdown6") == "Unified Gateway (01-10)")) {
     setScreen("screen2");
 
-
-
-  } else if ((getText("dropdownRNS6804") == "02-10" && getText("dropdown6") == "QP-986P Host1000 Server")) {
-    setScreen("screen1");
-               		showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-
-
-
-
-  } else if ((getText("dropdownRNS6804") == "02-10" && getText("dropdown6") == "QP-988P Unified Gateway")) {
-    setText("Sol1", "NA");
-
-  } else if ((getText("dropdownRNS6804") == "02-10" && getText("dropdown6") == "QP-988P Enterprise Gateway")) {
-    setScreen("screen1");
-               		showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
-
-
-  } else if ((getText("dropdownRNS6804") == "02-10" && getText("dropdown6") == "QP-989P ViTrac iOS")) {
-    setText("Sol1", "NA");
-
-
-  } else if ((getText("dropdownRNS6804") == "02-10" && getText("dropdown6") == "QP-991P ViTrac Android")) {
-    setText("Sol1", "NA");
-
-
-  } else if ((getText("dropdownRNS6804") == "02-10" && getText("dropdown6") == "QP-999P NKAnywhere")) {
+  } else if ((getText("dropdownRNS6804") == "02-10" && getText("dropdown6") == "Unified Gateway (01-11)")) {
     setScreen("screen2");
 
-  } else if ((getText("dropdownRNS6804") == "02-10" && getText("dropdown6") == "OLG-3800")) {
+  } else if ((getText("dropdownRNS6804") == "02-10" && getText("dropdown6") == "Enterprise Gateway(01-02)")) {
     setScreen("screen1");
-               		showElement("notearea");
-  	setText("notearea", "Cannot monitor devices in other subnets when IP address of Class C (192.0.0.0 to 223.255.255.255) is assigned.");
+
+  } else if ((getText("dropdownRNS6804") == "02-10" && getText("dropdown6") == "Enterprise Gateway(01-03)")) {
+    setScreen("screen1");
+
+  } else if ((getText("dropdownRNS6804") == "02-10" && getText("dropdown6") == "Enterprise Gateway(02-01)")) {
+    setScreen("screen1");
+
+  } else if ((getText("dropdownRNS6804") == "02-10" && getText("dropdown6") == "Enterprise Gateway(02-03)")) {
+    setScreen("screen1");
+
+  } else if ((getText("dropdownRNS6804") == "02-10" && getText("dropdown6") == "Enterprise Gateway(02-04)")) {
+    setScreen("screen1");
+
+  } else if ((getText("dropdownRNS6804") == "02-10" && getText("dropdown6") == "Enterprise Gateway(02-06)")) {
+    setScreen("screen1");
+
+  } else if ((getText("dropdownRNS6804") == "02-10" && getText("dropdown6") == "Enterprise Gateway(04-01)")) {
+    setScreen("screen1");
 
 //EDNS-9001
 
-  } else if ((getText("dropdownEDNS9001") == "02-07" && getText("dropdown6") == "BSM-1700 (+UG/TS)")) {
+  } else if ((getText("dropdownEDNS9001") == "02-07" && getText("dropdown6") == "Unified Gateway (01-08a)")) {
           setText("Sol1", "NA");
-  } else if ((getText("dropdownEDNS9001") == "02-08" && getText("dropdown6") == "BSM-1700 (+UG/TS)")) {
+  } else if ((getText("dropdownEDNS9001") == "02-08" && getText("dropdown6") == "Unified Gateway (01-08a)")) {
     setText("Sol1", "NA");
 
-  } else if ((getText("dropdownEDNS9001") == "02-07" && getText("dropdown6") == "BSM-3500")) {
+  } else if ((getText("dropdownEDNS9001") == "02-07" && getText("dropdown6") == "Unified Gateway (01-10)")) {
           setText("Sol1", "NA");
-  } else if ((getText("dropdownEDNS9001") == "02-08" && getText("dropdown6") == "BSM-3500")) {
+  } else if ((getText("dropdownEDNS9001") == "02-08" && getText("dropdown6") == "Unified Gateway (01-10)")) {
     setText("Sol1", "NA");
 
-  } else if ((getText("dropdownEDNS9001") == "02-07" && getText("dropdown6") == "BSM-6000")) {
+  } else if ((getText("dropdownEDNS9001") == "02-07" && getText("dropdown6") == "Unified Gateway (01-11)")) {
           setText("Sol1", "NA");
-  } else if ((getText("dropdownEDNS9001") == "02-08" && getText("dropdown6") == "BSM-6000")) {
+  } else if ((getText("dropdownEDNS9001") == "02-08" && getText("dropdown6") == "Unified Gateway (01-11)")) {
     setText("Sol1", "NA");
 
-  } else if ((getText("dropdownEDNS9001") == "02-07" && getText("dropdown6") == "BSM-6000")) {
-          setText("Sol1", "NA");
-  } else if ((getText("dropdownEDNS9001") == "02-08" && getText("dropdown6") == "BSM-6000")) {
-    setText("Sol1", "NA");
+  } else if ((getText("dropdownEDNS9001") == "02-07" && getText("dropdown6") == "Enterprise Gateway(01-02)")) {
+           setScreen("screen3");
+  } else if ((getText("dropdownEDNS9001") == "02-08" && getText("dropdown6") == "Enterprise Gateway(01-02)")) {
+  setScreen("screen3");
 
-  } else if ((getText("dropdownEDNS9001") == "02-07" && getText("dropdown6") == "BSM-6000")) {
-          setText("Sol1", "=02-40");
-  } else if ((getText("dropdownEDNS9001") == "02-08" && getText("dropdown6") == "BSM-6000")) {
-    setText("Sol1", "=02-40");
+  } else if ((getText("dropdownEDNS9001") == "02-07" && getText("dropdown6") == "Enterprise Gateway(01-03)")) {
+           setScreen("screen3");
+  } else if ((getText("dropdownEDNS9001") == "02-08" && getText("dropdown6") == "Enterprise Gateway(01-03)")) {
+  setScreen("screen3");
 
+  } else if ((getText("dropdownEDNS9001") == "02-07" && getText("dropdown6") == "Enterprise Gateway(02-01)")) {
+           setScreen("screen3");
+  } else if ((getText("dropdownEDNS9001") == "02-08" && getText("dropdown6") == "Enterprise Gateway(02-01)")) {
+  setScreen("screen3");
 
-  } else if ((getText("dropdownEDNS9001") == "02-07" && getText("dropdown6") == "CNS-6801")) {
-             setScreen("screen1");
-  showElement("notearea");
-  	setText("notearea", "It is not recommended to use Prefense with New GUI CNS. ");
-  } else if ((getText("dropdownEDNS9001") == "02-08" && getText("dropdown6") == "CNS-6801")) {
-       setScreen("screen1");
-         showElement("notearea");
-  	setText("notearea", "It is not recommended to use Prefense with New GUI CNS. ");
+  } else if ((getText("dropdownEDNS9001") == "02-07" && getText("dropdown6") == "Enterprise Gateway(02-03)")) {
+           setScreen("screen3");
+  } else if ((getText("dropdownEDNS9001") == "02-08" && getText("dropdown6") == "Enterprise Gateway(02-03)")) {
+  setScreen("screen3");
 
-  } else if ((getText("dropdownEDNS9001") == "02-07" && getText("dropdown6") == "RNS-9703(Old GUI)")) {
-          setText("Sol1", "NA");
-  } else if ((getText("dropdownEDNS9001") == "02-08" && getText("dropdown6") == "RNS-9703(Old GUI)")) {
-    setText("Sol1", "NA");
+  } else if ((getText("dropdownEDNS9001") == "02-07" && getText("dropdown6") == "Enterprise Gateway(02-04)")) {
+           setScreen("screen3");
+  } else if ((getText("dropdownEDNS9001") == "02-08" && getText("dropdown6") == "Enterprise Gateway(02-04)")) {
+  setScreen("screen3");
 
-  } else if ((getText("dropdownEDNS9001") == "02-07" && getText("dropdown6") == "RNS-6803(Audio)")) {
-          setText("Sol1", "NA");
-  } else if ((getText("dropdownEDNS9001") == "02-08" && getText("dropdown6") == "RNS-6803(Audio)")) {
-    setText("Sol1", "NA");
+  } else if ((getText("dropdownEDNS9001") == "02-07" && getText("dropdown6") == "Enterprise Gateway(02-06)")) {
+           setScreen("screen3");
+  } else if ((getText("dropdownEDNS9001") == "02-08" && getText("dropdown6") == "Enterprise Gateway(02-06)")) {
+  setScreen("screen3");
 
-  } else if ((getText("dropdownEDNS9001") == "02-07" && getText("dropdown6") == "RNS-6804(No Audio)")) {
-          setText("Sol1", "NA");
-  } else if ((getText("dropdownEDNS9001") == "02-08" && getText("dropdown6") == "RNS-6804(No Audio)")) {
-    setText("Sol1", "NA");
-
-
-  } else if ((getText("dropdownEDNS9001") == "02-07" && getText("dropdown6") == "GZ-100P (+UG/TS)")) {
-          setText("Sol1", "NA");
-  } else if ((getText("dropdownEDNS9001") == "02-08" && getText("dropdown6") == "GZ-100P (+UG/TS)")) {
-    setText("Sol1", "NA");
-
-  } else if ((getText("dropdownEDNS9001") == "02-07" && getText("dropdown6") == "ORG-9100")) {
-             setScreen("screen1");
-               showElement("notearea");
-  	setText("notearea", "ORG needs to be set to Alarm Type: Main and Protocol: 1st GEN. ");
-  } else if ((getText("dropdownEDNS9001") == "02-08" && getText("dropdown6") == "ORG-9100")) {
-       setScreen("screen1");
-                      showElement("notearea");
-  	setText("notearea", "ORG needs to be set to Alarm Type: Main and Protocol: 1st GEN. ");
-
-  } else if ((getText("dropdownEDNS9001") == "02-07" && getText("dropdown6") == "CGS-9001 Pager Gateway (Legacy)")) {
-          setText("Sol1", "NA");
-  } else if ((getText("dropdownEDNS9001") == "02-08" && getText("dropdown6") == "CGS-9001 Pager Gateway (Legacy)")) {
-    setText("Sol1", "NA");
-
-  } else if ((getText("dropdownEDNS9001") == "02-07" && getText("dropdown6") == "CGS-9002 HL7 Gateway (Legacy)")) {
-          setText("Sol1", "NA");
-  } else if ((getText("dropdownEDNS9001") == "02-08" && getText("dropdown6") == "CGS-9002 HL7 Gateway (Legacy)")) {
-    setText("Sol1", "NA");
-
-  } else if ((getText("dropdownEDNS9001") == "02-07" && getText("dropdown6") == "QP-983P NetKonnect/RNS Server")) {
-          setText("Sol1", "NA");
-  } else if ((getText("dropdownEDNS9001") == "02-08" && getText("dropdown6") == "QP-983P NetKonnect/RNS Server")) {
-    setText("Sol1", "NA");
-
-  } else if ((getText("dropdownEDNS9001") == "02-07" && getText("dropdown6") == "QP-986P Host1000 Server")) {
-             setScreen("screen1");
-  } else if ((getText("dropdownEDNS9001") == "02-08" && getText("dropdown6") == "QP-986P Host1000 Server")) {
-       setScreen("screen1");
-
-  } else if ((getText("dropdownEDNS9001") == "02-07" && getText("dropdown6") == "QP-988P Unified Gateway")) {
-          setText("Sol1", "NA");
-  } else if ((getText("dropdownEDNS9001") == "02-08" && getText("dropdown6") == "QP-988P Unified Gateway")) {
-    setText("Sol1", "NA");
-
-  } else if ((getText("dropdownEDNS9001") == "02-07" && getText("dropdown6") == "QP-988P Enterprise Gateway")) {
-          setText("Sol1", "NA");
-  } else if ((getText("dropdownEDNS9001") == "02-08" && getText("dropdown6") == "QP-988P Enterprise Gateway")) {
-    setText("Sol1", "NA");
-
-  } else if ((getText("dropdownEDNS9001") == "02-07" && getText("dropdown6") == "QP-989P ViTrac iOS")) {
-          setText("Sol1", "NA");
-  } else if ((getText("dropdownEDNS9001") == "02-08" && getText("dropdown6") == "QP-989P ViTrac iOS")) {
-    setText("Sol1", "NA");
-
-
-  } else if ((getText("dropdownEDNS9001") == "02-07" && getText("dropdown6") == "QP-991P ViTrac Android")) {
-          setText("Sol1", "NA");
-  } else if ((getText("dropdownEDNS9001") == "02-08" && getText("dropdown6") == "QP-991P ViTrac Android")) {
-    setText("Sol1", "NA");
-
-  } else if ((getText("dropdownEDNS9001") == "02-07" && getText("dropdown6") == "QP-999P NKAnywhere")) {
-             setScreen("screen2");
-  } else if ((getText("dropdownEDNS9001") == "02-08" && getText("dropdown6") == "QP-999P NKAnywhere")) {
-       setScreen("screen2");
-
-  } else if ((getText("dropdownEDNS9001") == "02-07" && getText("dropdown6") == "OLG-3800")) {
-          setText("Sol1", "NA");
-  } else if ((getText("dropdownEDNS9001") == "02-08" && getText("dropdown6") == "OLG-3800")) {
-    setText("Sol1", "NA");
-
+  } else if ((getText("dropdownEDNS9001") == "02-07" && getText("dropdown6") == "Enterprise Gateway(04-01)")) {
+           setScreen("screen3");
+  } else if ((getText("dropdownEDNS9001") == "02-08" && getText("dropdown6") == "Enterprise Gateway(04-01)")) {
+  setScreen("screen3");
 
 //GZ-100P
 
 
-  } else if ((getText("dropdownGZ100P") == "02-06" && getText("dropdown6") == "BSM-1700 (+UG/TS)")) {
-          setText("Sol1", "NA");
-  } else if ((getText("dropdownGZ100P") == "02-10" && getText("dropdown6") == "BSM-1700 (+UG/TS)")) {
-    setText("Sol1", "NA");
-   } else if ((getText("dropdownGZ100P") == "02-20" && getText("dropdown6") == "BSM-1700 (+UG/TS)")) {
-    setText("Sol1", "NA");
-   } else if ((getText("dropdownGZ100P") == "02-22" && getText("dropdown6") == "BSM-1700 (+UG/TS)")) {
-    setText("Sol1", "NA");
+  } else if ((getText("dropdownGZ100P") == "02-06" && getText("dropdown6") == "Unified Gateway (01-08a)")) {
+            setScreen("screen2");
+  } else if ((getText("dropdownGZ100P") == "02-10" && getText("dropdown6") == "Unified Gateway (01-08a)")) {
+     setScreen("screen2");
+   } else if ((getText("dropdownGZ100P") == "02-20" && getText("dropdown6") == "Unified Gateway (01-08a)")) {
+     setScreen("screen2");
+   } else if ((getText("dropdownGZ100P") == "02-22" && getText("dropdown6") == "Unified Gateway (01-08a)")) {
+     setScreen("screen2");
 
-  } else if ((getText("dropdownGZ100P") == "02-06" && getText("dropdown6") == "BSM-3500")) {
+  } else if ((getText("dropdownGZ100P") == "02-06" && getText("dropdown6") == "Unified Gateway (01-10)")) {
               setScreen("screen1");
-  } else if ((getText("dropdownGZ100P") == "02-10" && getText("dropdown6") == "BSM-3500")) {
+  } else if ((getText("dropdownGZ100P") == "02-10" && getText("dropdown6") == "Unified Gateway (01-10)")) {
     setScreen("screen1");
-   } else if ((getText("dropdownGZ100P") == "02-20" && getText("dropdown6") == "BSM-3500")) {
-    setScreen("screen1");
-   } else if ((getText("dropdownGZ100P") == "02-22" && getText("dropdown6") == "BSM-3500")) {
-    setScreen("screen1");
+   } else if ((getText("dropdownGZ100P") == "02-20" && getText("dropdown6") == "Unified Gateway (01-10)")) {
+    setScreen("screen2");
+   } else if ((getText("dropdownGZ100P") == "02-22" && getText("dropdown6") == "Unified Gateway (01-10)")) {
+    setScreen("screen2");
 
-  } else if ((getText("dropdownGZ100P") == "02-06" && getText("dropdown6") == "BSM-6000")) {
+  } else if ((getText("dropdownGZ100P") == "02-06" && getText("dropdown6") == "Unified Gateway (01-11)")) {
               setScreen("screen1");
-  } else if ((getText("dropdownGZ100P") == "02-10" && getText("dropdown6") == "BSM-6000")) {
+  } else if ((getText("dropdownGZ100P") == "02-10" && getText("dropdown6") == "Unified Gateway (01-11)")) {
     setScreen("screen1");
-   } else if ((getText("dropdownGZ100P") == "02-20" && getText("dropdown6") == "BSM-6000")) {
-    setScreen("screen1");
-   } else if ((getText("dropdownGZ100P") == "02-22" && getText("dropdown6") == "BSM-6000")) {
-    setScreen("screen1");
+   } else if ((getText("dropdownGZ100P") == "02-20" && getText("dropdown6") == "Unified Gateway (01-11)")) {
+    setScreen("screen2");
+   } else if ((getText("dropdownGZ100P") == "02-22" && getText("dropdown6") == "Unified Gateway (01-11)")) {
+    setScreen("screen2");
 
-  } else if ((getText("dropdownGZ100P") == "02-06" && getText("dropdown6") == "CSM-1901")) {
+  } else if ((getText("dropdownGZ100P") == "02-06" && getText("dropdown6") == "Enterprise Gateway(01-02)")) {
               setScreen("screen1");
-  } else if ((getText("dropdownGZ100P") == "02-10" && getText("dropdown6") == "CSM-1901")) {
+  } else if ((getText("dropdownGZ100P") == "02-10" && getText("dropdown6") == "Enterprise Gateway(01-02)")) {
     setScreen("screen1");
-   } else if ((getText("dropdownGZ100P") == "02-20" && getText("dropdown6") == "CSM-1901")) {
+   } else if ((getText("dropdownGZ100P") == "02-20" && getText("dropdown6") == "Enterprise Gateway(01-02)")) {
     setScreen("screen1");
-   } else if ((getText("dropdownGZ100P") == "02-22" && getText("dropdown6") == "CSM-1901")) {
+   } else if ((getText("dropdownGZ100P") == "02-22" && getText("dropdown6") == "Enterprise Gateway(01-02)")) {
     setScreen("screen1");
 
-  } else if ((getText("dropdownGZ100P") == "02-06" && getText("dropdown6") == "CNS-6201")) {
+  } else if ((getText("dropdownGZ100P") == "02-06" && getText("dropdown6") == "Enterprise Gateway(01-03)")) {
               setScreen("screen1");
-  } else if ((getText("dropdownGZ100P") == "02-10" && getText("dropdown6") == "CNS-6201")) {
+  } else if ((getText("dropdownGZ100P") == "02-10" && getText("dropdown6") == "Enterprise Gateway(01-03)")) {
     setScreen("screen1");
-   } else if ((getText("dropdownGZ100P") == "02-20" && getText("dropdown6") == "CNS-6201")) {
+   } else if ((getText("dropdownGZ100P") == "02-20" && getText("dropdown6") == "Enterprise Gateway(01-03)")) {
     setScreen("screen1");
-   } else if ((getText("dropdownGZ100P") == "02-22" && getText("dropdown6") == "CNS-6201")) {
+   } else if ((getText("dropdownGZ100P") == "02-22" && getText("dropdown6") == "Enterprise Gateway(01-03)")) {
     setScreen("screen1");
 
 
-  } else if ((getText("dropdownGZ100P") == "02-06" && getText("dropdown6") == "CNS-6801")) {
+  } else if ((getText("dropdownGZ100P") == "02-06" && getText("dropdown6") == "Enterprise Gateway(02-01)")) {
               setScreen("screen1");
-  } else if ((getText("dropdownGZ100P") == "02-10" && getText("dropdown6") == "CNS-6801")) {
+  } else if ((getText("dropdownGZ100P") == "02-10" && getText("dropdown6") == "Enterprise Gateway(02-01)")) {
     setScreen("screen1");
-   } else if ((getText("dropdownGZ100P") == "02-20" && getText("dropdown6") == "CNS-6801")) {
+   } else if ((getText("dropdownGZ100P") == "02-20" && getText("dropdown6") == "Enterprise Gateway(02-01)")) {
     setScreen("screen1");
-   } else if ((getText("dropdownGZ100P") == "02-22" && getText("dropdown6") == "CNS-6801")) {
+   } else if ((getText("dropdownGZ100P") == "02-22" && getText("dropdown6") == "Enterprise Gateway(02-01)")) {
     setScreen("screen1");
 
 
@@ -3641,876 +2138,438 @@ onEvent("go_button", "click", function(event) {
 
 
 
-  } else if ((getText("dropdownGZ100P") == "02-06" && getText("dropdown6") == "RNS-6803(Audio)")) {
+  } else if ((getText("dropdownGZ100P") == "02-06" && getText("dropdown6") == "Enterprise Gateway(02-03)")) {
               setScreen("screen1");
-  } else if ((getText("dropdownGZ100P") == "02-10" && getText("dropdown6") == "RNS-6803(Audio)")) {
+  } else if ((getText("dropdownGZ100P") == "02-10" && getText("dropdown6") == "Enterprise Gateway(02-03)")) {
     setScreen("screen1");
-   } else if ((getText("dropdownGZ100P") == "02-20" && getText("dropdown6") == "RNS-6803(Audio)")) {
+   } else if ((getText("dropdownGZ100P") == "02-20" && getText("dropdown6") == "Enterprise Gateway(02-03)")) {
     setScreen("screen1");
-   } else if ((getText("dropdownGZ100P") == "02-22" && getText("dropdown6") == "RNS-6803(Audio)")) {
+   } else if ((getText("dropdownGZ100P") == "02-22" && getText("dropdown6") == "Enterprise Gateway(02-03)")) {
     setScreen("screen1");
 
-  } else if ((getText("dropdownGZ100P") == "02-06" && getText("dropdown6") == "RNS-6804(No Audio)")) {
+  } else if ((getText("dropdownGZ100P") == "02-06" && getText("dropdown6") == "Enterprise Gateway(02-04)")) {
               setScreen("screen1");
-  } else if ((getText("dropdownGZ100P") == "02-10" && getText("dropdown6") == "RNS-6804(No Audio)")) {
+  } else if ((getText("dropdownGZ100P") == "02-10" && getText("dropdown6") == "Enterprise Gateway(02-04)")) {
     setScreen("screen1");
-   } else if ((getText("dropdownGZ100P") == "02-20" && getText("dropdown6") == "RNS-6804(No Audio)")) {
+   } else if ((getText("dropdownGZ100P") == "02-20" && getText("dropdown6") == "Enterprise Gateway(02-04)")) {
     setScreen("screen1");
-   } else if ((getText("dropdownGZ100P") == "02-22" && getText("dropdown6") == "RNS-6804(No Audio)")) {
+   } else if ((getText("dropdownGZ100P") == "02-22" && getText("dropdown6") == "Enterprise Gateway(02-04)")) {
     setScreen("screen1");
 
-  } else if ((getText("dropdownGZ100P") == "02-06" && getText("dropdown6") == "EDNS-9001 Prefense")) {
-              setText("Sol1", "NA");
-  } else if ((getText("dropdownGZ100P") == "02-10" && getText("dropdown6") == "EDNS-9001 Prefense")) {
-    setText("Sol1", "NA");
-   } else if ((getText("dropdownGZ100P") == "02-20" && getText("dropdown6") == "EDNS-9001 Prefense")) {
-    setText("Sol1", "NA");
-   } else if ((getText("dropdownGZ100P") == "02-22" && getText("dropdown6") == "EDNS-9001 Prefense")) {
-    setText("Sol1", "NA");
-
-  } else if ((getText("dropdownGZ100P") == "02-06" && getText("dropdown6") == "ORG-9100")) {
-              setText("Sol1", "NA");
-  } else if ((getText("dropdownGZ100P") == "02-10" && getText("dropdown6") == "ORG-9100")) {
-    setText("Sol1", "NA");
-   } else if ((getText("dropdownGZ100P") == "02-20" && getText("dropdown6") == "ORG-9100")) {
-    setText("Sol1", "NA");
-   } else if ((getText("dropdownGZ100P") == "02-22" && getText("dropdown6") == "ORG-9100")) {
-    setText("Sol1", "NA");
-
-  } else if ((getText("dropdownGZ100P") == "02-06" && getText("dropdown6") == "CGS-9001 Pager Gateway (Legacy)")) {
-             setText("Sol1", "≧02-03b");
-  } else if ((getText("dropdownGZ100P") == "02-10" && getText("dropdown6") == "CGS-9001 Pager Gateway (Legacy)")) {
-    setText("Sol1", "≧02-03b");
-   } else if ((getText("dropdownGZ100P") == "02-20" && getText("dropdown6") == "CGS-9001 Pager Gateway (Legacy)")) {
-    setText("Sol1", "≧02-03b 'HiQ-View needs to be set to OFF when used with CGS-9001/CGS-9002/QP-983P.'");
-   } else if ((getText("dropdownGZ100P") == "02-22" && getText("dropdown6") == "CGS-9001 Pager Gateway (Legacy)")) {
-    setText("Sol1", "≧02-03b 'HiQ-View needs to be set to OFF when used with CGS-9001/CGS-9002/QP-983P.'");
-
-
-  } else if ((getText("dropdownGZ100P") == "02-06" && getText("dropdown6") == "CGS-9002 HL7 Gateway (Legacy)")) {
-             setText("Sol1", "≧01-09a");
-  } else if ((getText("dropdownGZ100P") == "02-10" && getText("dropdown6") == "CGS-9002 HL7 Gateway (Legacy)")) {
-    setText("Sol1", "≧01-09a");
-   } else if ((getText("dropdownGZ100P") == "02-20" && getText("dropdown6") == "CGS-9002 HL7 Gateway (Legacy)")) {
-    setText("Sol1", "≧01-09a 'HiQ-View needs to be set to OFF when used with CGS-9001/CGS-9002/QP-983P.'");
-   } else if ((getText("dropdownGZ100P") == "02-22" && getText("dropdown6") == "CGS-9002 HL7 Gateway (Legacy)")) {
-    setText("Sol1", "≧01-09a 'HiQ-View needs to be set to OFF when used with CGS-9001/CGS-9002/QP-983P.'");
-
-
-  } else if ((getText("dropdownGZ100P") == "02-06" && getText("dropdown6") == "QP-983P NetKonnect/RNS Server")) {
-             setText("Sol1", "≧02-11");
-  } else if ((getText("dropdownGZ100P") == "02-10" && getText("dropdown6") == "QP-983P NetKonnect/RNS Server")) {
-    setText("Sol1", "≧02-11");
-   } else if ((getText("dropdownGZ100P") == "02-20" && getText("dropdown6") == "QP-983P NetKonnect/RNS Server")) {
-    setText("Sol1", "≧02-11 'HiQ-View needs to be set to OFF when used with CGS-9001/CGS-9002/QP-983P.'");
-   } else if ((getText("dropdownGZ100P") == "02-22" && getText("dropdown6") == "QP-983P NetKonnect/RNS Server")) {
-    setText("Sol1", "≧02-11 'HiQ-View needs to be set to OFF when used with CGS-9001/CGS-9002/QP-983P.'");
-
-
-
-  } else if ((getText("dropdownGZ100P") == "02-06" && getText("dropdown6") == "QP-986P Host1000 Server")) {
+  } else if ((getText("dropdownGZ100P") == "02-06" && getText("dropdown6") == "Enterprise Gateway(02-06)")) {
               setScreen("screen1");
-  } else if ((getText("dropdownGZ100P") == "02-10" && getText("dropdown6") == "QP-986P Host1000 Server")) {
+  } else if ((getText("dropdownGZ100P") == "02-10" && getText("dropdown6") == "Enterprise Gateway(02-06)")) {
     setScreen("screen1");
-   } else if ((getText("dropdownGZ100P") == "02-20" && getText("dropdown6") == "QP-986P Host1000 Server")) {
-    setScreen("screen1");
-   } else if ((getText("dropdownGZ100P") == "02-22" && getText("dropdown6") == "QP-986P Host1000 Server")) {
+   } else if ((getText("dropdownGZ100P") == "02-20" && getText("dropdown6") == "Enterprise Gateway(02-06)")) {
+     setScreen("screen1");
+   } else if ((getText("dropdownGZ100P") == "02-22" && getText("dropdown6") == "Enterprise Gateway(02-06)")) {
     setScreen("screen1");
 
-  } else if ((getText("dropdownGZ100P") == "02-06" && getText("dropdown6") == "QP-988P Unified Gateway")) {
-              setText("Sol1", "≧01-10");
-  } else if ((getText("dropdownGZ100P") == "02-10" && getText("dropdown6") == "QP-988P Unified Gateway")) {
-   setText("Sol1", "≧01-10");
-   } else if ((getText("dropdownGZ100P") == "02-20" && getText("dropdown6") == "QP-988P Unified Gateway")) {
-    setText("Sol1", "≧01-10");
-   } else if ((getText("dropdownGZ100P") == "02-22" && getText("dropdown6") == "QP-988P Unified Gateway")) {
-    setText("Sol1", "≧01-10");
 
-  } else if ((getText("dropdownGZ100P") == "02-06" && getText("dropdown6") == "QP-988P Enterprise Gateway")) {
+  } else if ((getText("dropdownGZ100P") == "02-06" && getText("dropdown6") == "Enterprise Gateway(04-01)")) {
               setScreen("screen1");
-  } else if ((getText("dropdownGZ100P") == "02-10" && getText("dropdown6") == "QP-988P Enterprise Gateway")) {
+  } else if ((getText("dropdownGZ100P") == "02-10" && getText("dropdown6") == "Enterprise Gateway(04-01)")) {
     setScreen("screen1");
-   } else if ((getText("dropdownGZ100P") == "02-20" && getText("dropdown6") == "QP-988P Enterprise Gateway")) {
-    setScreen("screen1");
-   } else if ((getText("dropdownGZ100P") == "02-22" && getText("dropdown6") == "QP-988P Enterprise Gateway")) {
-    setScreen("screen1");
-
-  } else if ((getText("dropdownGZ100P") == "02-06" && getText("dropdown6") == "QP-989P ViTrac iOS")) {
-              setScreen("screen1");
-  } else if ((getText("dropdownGZ100P") == "02-10" && getText("dropdown6") == "QP-989P ViTrac iOS")) {
-    setScreen("screen1");
-   } else if ((getText("dropdownGZ100P") == "02-20" && getText("dropdown6") == "QP-989P ViTrac iOS")) {
-    setScreen("screen1");
-   } else if ((getText("dropdownGZ100P") == "02-22" && getText("dropdown6") == "QP-989P ViTrac iOS")) {
-    setScreen("screen1");
-
-  } else if ((getText("dropdownGZ100P") == "02-06" && getText("dropdown6") == "QP-991P ViTrac Android")) {
-              setScreen("screen1");
-  } else if ((getText("dropdownGZ100P") == "02-10" && getText("dropdown6") == "QP-991P ViTrac Android")) {
-    setScreen("screen1");
-   } else if ((getText("dropdownGZ100P") == "02-20" && getText("dropdown6") == "QP-991P ViTrac Android")) {
-    setScreen("screen1");
-   } else if ((getText("dropdownGZ100P") == "02-22" && getText("dropdown6") == "QP-991P ViTrac Android")) {
-    setScreen("screen1");
-
-  } else if ((getText("dropdownGZ100P") == "02-06" && getText("dropdown6") == "QP-999P NKAnywhere")) {
-              setScreen("screen1");
-  } else if ((getText("dropdownGZ100P") == "02-10" && getText("dropdown6") == "QP-999P NKAnywhere")) {
-    setScreen("screen1");
-   } else if ((getText("dropdownGZ100P") == "02-20" && getText("dropdown6") == "QP-999P NKAnywhere")) {
-    setScreen("screen1");
-   } else if ((getText("dropdownGZ100P") == "02-22" && getText("dropdown6") == "QP-999P NKAnywhere")) {
-    setScreen("screen1");
-
-  } else if ((getText("dropdownGZ100P") == "02-06" && getText("dropdown6") == "OLG-3800")) {
-              setScreen("screen1");
-  } else if ((getText("dropdownGZ100P") == "02-10" && getText("dropdown6") == "OLG-3800")) {
-    setScreen("screen1");
-   } else if ((getText("dropdownGZ100P") == "02-20" && getText("dropdown6") == "OLG-3800")) {
-    setScreen("screen1");
-   } else if ((getText("dropdownGZ100P") == "02-22" && getText("dropdown6") == "OLG-3800")) {
+   } else if ((getText("dropdownGZ100P") == "02-20" && getText("dropdown6") == "Enterprise Gateway(04-01)")) {
+     setScreen("screen1");
+   } else if ((getText("dropdownGZ100P") == "02-22" && getText("dropdown6") == "Enterprise Gateway(04-01)")) {
     setScreen("screen1");
 
 //ORG-9100
-  } else if ((getText("dropdownORG9100") == "04-01" && getText("dropdown6") == "BSM-1700 (+UG/TS)")) {
-          setText("Sol1", "NA");
-  } else if ((getText("dropdownORG9100") == "04-20" && getText("dropdown6") == "BSM-1700 (+UG/TS)")) {
-    setText("Sol1", "NA");
-   } else if ((getText("dropdownORG9100") == "04-31" && getText("dropdown6") == "BSM-1700 (+UG/TS)")) {
-    setText("Sol1", "NA");
-   } else if ((getText("dropdownORG9100") == "04-51" && getText("dropdown6") == "BSM-1700 (+UG/TS)")) {
-    setText("Sol1", "NA");
-
-  } else if ((getText("dropdownORG9100") == "04-01" && getText("dropdown6") == "BSM-3500")) {
-           setScreen("screen1");
-  } else if ((getText("dropdownORG9100") == "04-20" && getText("dropdown6") == "BSM-3500")) {
+  } else if ((getText("dropdownORG9100") == "04-01" && getText("dropdown6") == "Unified Gateway (01-08a)")) {
+       setScreen("screen1");
+  } else if ((getText("dropdownORG9100") == "04-20" && getText("dropdown6") == "Unified Gateway (01-08a)")) {
      setScreen("screen1");
-   } else if ((getText("dropdownORG9100") == "04-31" && getText("dropdown6") == "BSM-3500")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownORG9100") == "04-51" && getText("dropdown6") == "BSM-3500")) {
-   setScreen("screen1");
-
-  } else if ((getText("dropdownORG9100") == "04-01" && getText("dropdown6") == "BSM-6000")) {
-           setScreen("screen1");
-  } else if ((getText("dropdownORG9100") == "04-20" && getText("dropdown6") == "BSM-6000")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownORG9100") == "04-31" && getText("dropdown6") == "BSM-6000")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownORG9100") == "04-51" && getText("dropdown6") == "BSM-6000")) {
-   setScreen("screen1");
-
-  } else if ((getText("dropdownORG9100") == "04-01" && getText("dropdown6") == "CSM-1901")) {
-           setScreen("screen1");
-  } else if ((getText("dropdownORG9100") == "04-20" && getText("dropdown6") == "CSM-1901")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownORG9100") == "04-31" && getText("dropdown6") == "CSM-1901")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownORG9100") == "04-51" && getText("dropdown6") == "CSM-1901")) {
-   setScreen("screen1");
-
-  } else if ((getText("dropdownORG9100") == "04-01" && getText("dropdown6") == "CNS-6201")) {
-           setScreen("screen1");
-  } else if ((getText("dropdownORG9100") == "04-20" && getText("dropdown6") == "CNS-6201")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownORG9100") == "04-31" && getText("dropdown6") == "CNS-6201")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownORG9100") == "04-51" && getText("dropdown6") == "CNS-6201")) {
-   setScreen("screen1");
-
-  } else if ((getText("dropdownORG9100") == "04-01" && getText("dropdown6") == "CNS-6801")) {
-           setScreen("screen1");
-  } else if ((getText("dropdownORG9100") == "04-20" && getText("dropdown6") == "CNS-6801")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownORG9100") == "04-31" && getText("dropdown6") == "CNS-6801")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownORG9100") == "04-51" && getText("dropdown6") == "CNS-6801")) {
-   setScreen("screen1");
-
-  } else if ((getText("dropdownORG9100") == "04-01" && getText("dropdown6") == "CNS-6801")) {
-           setScreen("screen1");
-  } else if ((getText("dropdownORG9100") == "04-20" && getText("dropdown6") == "CNS-6801")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownORG9100") == "04-31" && getText("dropdown6") == "CNS-6801")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownORG9100") == "04-51" && getText("dropdown6") == "CNS-6801")) {
-   setScreen("screen1");
-
-  } else if ((getText("dropdownORG9100") == "04-01" && getText("dropdown6") == "RNS-9703(Old GUI)")) {
-           setScreen("screen1");
-  } else if ((getText("dropdownORG9100") == "04-20" && getText("dropdown6") == "RNS-9703(Old GUI)")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownORG9100") == "04-31" && getText("dropdown6") == "RNS-9703(Old GUI)")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownORG9100") == "04-51" && getText("dropdown6") == "RNS-9703(Old GUI)")) {
-   setScreen("screen1");
-
-  } else if ((getText("dropdownORG9100") == "04-01" && getText("dropdown6") == "RNS-6803(Audio)")) {
-           setScreen("screen1");
-  } else if ((getText("dropdownORG9100") == "04-20" && getText("dropdown6") == "RNS-6803(Audio)")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownORG9100") == "04-31" && getText("dropdown6") == "RNS-6803(Audio)")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownORG9100") == "04-51" && getText("dropdown6") == "RNS-6803(Audio)")) {
-   setScreen("screen1");
-
-  } else if ((getText("dropdownORG9100") == "04-01" && getText("dropdown6") == "RNS-6804(No Audio)")) {
-           setScreen("screen1");
-  } else if ((getText("dropdownORG9100") == "04-20" && getText("dropdown6") == "RNS-6804(No Audio)")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownORG9100") == "04-31" && getText("dropdown6") == "RNS-6804(No Audio)")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownORG9100") == "04-51" && getText("dropdown6") == "RNS-6804(No Audio)")) {
-   setScreen("screen1");
-
-
-  } else if ((getText("dropdownORG9100") == "04-01" && getText("dropdown6") == "EDNS-9001 Prefense")) {
-           setScreen("screen1");
-  } else if ((getText("dropdownORG9100") == "04-20" && getText("dropdown6") == "EDNS-9001 Prefense")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownORG9100") == "04-31" && getText("dropdown6") == "EDNS-9001 Prefense")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownORG9100") == "04-51" && getText("dropdown6") == "EDNS-9001 Prefense")) {
-   setScreen("screen1");
-
-  } else if ((getText("dropdownORG9100") == "04-01" && getText("dropdown6") == "GZ-100P (+UG/TS)")) {
-          setText("Sol1", "NA");
-  } else if ((getText("dropdownORG9100") == "04-20" && getText("dropdown6") == "GZ-100P (+UG/TS)")) {
-    setText("Sol1", "NA");
-   } else if ((getText("dropdownORG9100") == "04-31" && getText("dropdown6") == "GZ-100P (+UG/TS)")) {
-    setText("Sol1", "NA");
-   } else if ((getText("dropdownORG9100") == "04-51" && getText("dropdown6") == "GZ-100P (+UG/TS)")) {
-    setText("Sol1", "NA");
-
-  } else if ((getText("dropdownORG9100") == "04-01" && getText("dropdown6") == "CGS-9001 Pager Gateway (Legacy)")) {
-           setScreen("screen1");
-  } else if ((getText("dropdownORG9100") == "04-20" && getText("dropdown6") == "CGS-9001 Pager Gateway (Legacy)")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownORG9100") == "04-31" && getText("dropdown6") == "CGS-9001 Pager Gateway (Legacy)")) {
+   } else if ((getText("dropdownORG9100") == "04-31" && getText("dropdown6") == "Unified Gateway (01-08a)")) {
      setScreen("screen2");
-   } else if ((getText("dropdownORG9100") == "04-51" && getText("dropdown6") == "CGS-9001 Pager Gateway (Legacy)")) {
-   setScreen("screen1");
-        showElement("notearea");
-   setText("notearea", "ZM-View/HiQ-View needs to be set to OFF when used with CGS-9001/CGS-9002/QP-983P. ");
-
-  } else if ((getText("dropdownORG9100") == "04-01" && getText("dropdown6") == "CGS-9002 HL7 Gateway (Legacy)")) {
-           setScreen("screen1");
-  } else if ((getText("dropdownORG9100") == "04-20" && getText("dropdown6") == "CGS-9002 HL7 Gateway (Legacy)")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownORG9100") == "04-31" && getText("dropdown6") == "CGS-9002 HL7 Gateway (Legacy)")) {
+   } else if ((getText("dropdownORG9100") == "04-51" && getText("dropdown6") == "Unified Gateway (01-08a)")) {
      setScreen("screen2");
-   } else if ((getText("dropdownORG9100") == "04-51" && getText("dropdown6") == "CGS-9002 HL7 Gateway (Legacy)")) {
-   setScreen("screen1");
-         showElement("notearea");
-   setText("notearea", "ZM-View/HiQ-View needs to be set to OFF when used with CGS-9001/CGS-9002/QP-983P. ");
 
-
-  } else if ((getText("dropdownORG9100") == "04-01" && getText("dropdown6") == "QP-983P NetKonnect/RNS Server")) {
-           setScreen("screen1");
-  } else if ((getText("dropdownORG9100") == "04-20" && getText("dropdown6") == "QP-983P NetKonnect/RNS Server")) {
+  } else if ((getText("dropdownORG9100") == "04-01" && getText("dropdown6") == "Unified Gateway (01-10)")) {
+       setScreen("screen1");
+  } else if ((getText("dropdownORG9100") == "04-20" && getText("dropdown6") == "Unified Gateway (01-10)")) {
      setScreen("screen1");
-   } else if ((getText("dropdownORG9100") == "04-31" && getText("dropdown6") == "QP-983P NetKonnect/RNS Server")) {
+   } else if ((getText("dropdownORG9100") == "04-31" && getText("dropdown6") == "Unified Gateway (01-10)")) {
      setScreen("screen2");
-   } else if ((getText("dropdownORG9100") == "04-51" && getText("dropdown6") == "QP-983P NetKonnect/RNS Server")) {
-   setScreen("screen1");
-         showElement("notearea");
-   setText("notearea", "ZM-View/HiQ-View needs to be set to OFF when used with CGS-9001/CGS-9002/QP-983P. ");
+   } else if ((getText("dropdownORG9100") == "04-51" && getText("dropdown6") == "Unified Gateway (01-10)")) {
+     setScreen("screen2");
 
-  } else if ((getText("dropdownORG9100") == "04-01" && getText("dropdown6") == "QP-986P Host1000 Server")) {
-           setScreen("screen1");
-  } else if ((getText("dropdownORG9100") == "04-20" && getText("dropdown6") == "QP-986P Host1000 Server")) {
+  } else if ((getText("dropdownORG9100") == "04-01" && getText("dropdown6") == "Unified Gateway (01-11)")) {
+       setScreen("screen1");
+  } else if ((getText("dropdownORG9100") == "04-20" && getText("dropdown6") == "Unified Gateway (01-11)")) {
      setScreen("screen1");
-   } else if ((getText("dropdownORG9100") == "04-31" && getText("dropdown6") == "QP-986P Host1000 Server")) {
+   } else if ((getText("dropdownORG9100") == "04-31" && getText("dropdown6") == "Unified Gateway (01-11)")) {
+     setScreen("screen2");
+   } else if ((getText("dropdownORG9100") == "04-51" && getText("dropdown6") == "Unified Gateway (01-11)")) {
+     setScreen("screen2");
+
+  } else if ((getText("dropdownORG9100") == "04-01" && getText("dropdown6") == "Enterprise Gateway(01-02)")) {
+       setScreen("screen1");
+  showElement("notearea");
+  	setText("notearea", "Diagnosis field with more than 200 characters causes an issue to ORG-9100 when ADT is used with QP-988P(EG) and HL7 Server Extension.");
+  } else if ((getText("dropdownORG9100") == "04-20" && getText("dropdown6") == "Enterprise Gateway(01-02)")) {
      setScreen("screen1");
-   } else if ((getText("dropdownORG9100") == "04-51" && getText("dropdown6") == "QP-986P Host1000 Server")) {
-   setScreen("screen1");
+  showElement("notearea");
+  	setText("notearea", "Diagnosis field with more than 200 characters causes an issue to ORG-9100 when ADT is used with QP-988P(EG) and HL7 Server Extension.");
+   } else if ((getText("dropdownORG9100") == "04-31" && getText("dropdown6") == "Enterprise Gateway(01-02)")) {
+     setScreen("screen1");
+  showElement("notearea");
+  	setText("notearea", "Diagnosis field with more than 200 characters causes an issue to ORG-9100 when ADT is used with QP-988P(EG) and HL7 Server Extension.");
+   } else if ((getText("dropdownORG9100") == "04-51" && getText("dropdown6") == "Enterprise Gateway(01-02)")) {
+     setScreen("screen1");
+  showElement("notearea");
+  	setText("notearea", "Diagnosis field with more than 200 characters causes an issue to ORG-9100 when ADT is used with QP-988P(EG) and HL7 Server Extension.");
+
+  } else if ((getText("dropdownORG9100") == "04-01" && getText("dropdown6") == "Enterprise Gateway(01-03)")) {
+       setScreen("screen1");
+  showElement("notearea");
+  	setText("notearea", "Diagnosis field with more than 200 characters causes an issue to ORG-9100 when ADT is used with QP-988P(EG) and HL7 Server Extension.");
+  } else if ((getText("dropdownORG9100") == "04-20" && getText("dropdown6") == "Enterprise Gateway(01-03)")) {
+     setScreen("screen1");
+  showElement("notearea");
+  	setText("notearea", "Diagnosis field with more than 200 characters causes an issue to ORG-9100 when ADT is used with QP-988P(EG) and HL7 Server Extension.");
+   } else if ((getText("dropdownORG9100") == "04-31" && getText("dropdown6") == "Enterprise Gateway(01-03)")) {
+     setScreen("screen1");
+  showElement("notearea");
+  	setText("notearea", "Diagnosis field with more than 200 characters causes an issue to ORG-9100 when ADT is used with QP-988P(EG) and HL7 Server Extension.");
+   } else if ((getText("dropdownORG9100") == "04-51" && getText("dropdown6") == "Enterprise Gateway(01-03)")) {
+     setScreen("screen1");
+  showElement("notearea");
+  	setText("notearea", "Diagnosis field with more than 200 characters causes an issue to ORG-9100 when ADT is used with QP-988P(EG) and HL7 Server Extension.");
 
 
-  } else if ((getText("dropdownORG9100") == "04-01" && getText("dropdown6") == "QP-988P Unified Gateway")) {
-           setScreen("screen1");
-  } else if ((getText("dropdownORG9100") == "04-20" && getText("dropdown6") == "QP-988P Unified Gateway")) {
+  } else if ((getText("dropdownORG9100") == "04-01" && getText("dropdown6") == "Enterprise Gateway(02-01)")) {
+       setScreen("screen1");
+  showElement("notearea");
+  	setText("notearea", "Diagnosis field with more than 200 characters causes an issue to ORG-9100 when ADT is used with QP-988P(EG) and HL7 Server Extension.");
+  } else if ((getText("dropdownORG9100") == "04-20" && getText("dropdown6") == "Enterprise Gateway(02-01)")) {
      setScreen("screen1");
-   } else if ((getText("dropdownORG9100") == "04-31" && getText("dropdown6") == "QP-988P Unified Gateway")) {
+  showElement("notearea");
+  	setText("notearea", "Diagnosis field with more than 200 characters causes an issue to ORG-9100 when ADT is used with QP-988P(EG) and HL7 Server Extension.");
+   } else if ((getText("dropdownORG9100") == "04-31" && getText("dropdown6") == "Enterprise Gateway(02-01)")) {
      setScreen("screen1");
-   } else if ((getText("dropdownORG9100") == "04-51" && getText("dropdown6") == "QP-988P Unified Gateway")) {
-   setScreen("screen1");
+  showElement("notearea");
+  	setText("notearea", "Diagnosis field with more than 200 characters causes an issue to ORG-9100 when ADT is used with QP-988P(EG) and HL7 Server Extension.");
+   } else if ((getText("dropdownORG9100") == "04-51" && getText("dropdown6") == "Enterprise Gateway(02-01)")) {
+     setScreen("screen1");
+  showElement("notearea");
+  	setText("notearea", "Diagnosis field with more than 200 characters causes an issue to ORG-9100 when ADT is used with QP-988P(EG) and HL7 Server Extension.");
 
-  } else if ((getText("dropdownORG9100") == "04-01" && getText("dropdown6") == "QP-988P Enterprise Gateway")) {
-           setScreen("screen1");
-  } else if ((getText("dropdownORG9100") == "04-20" && getText("dropdown6") == "QP-988P Enterprise Gateway")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownORG9100") == "04-31" && getText("dropdown6") == "QP-988P Enterprise Gateway")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownORG9100") == "04-51" && getText("dropdown6") == "QP-988P Enterprise Gateway")) {
-   setScreen("screen1");
 
-  } else if ((getText("dropdownORG9100") == "04-01" && getText("dropdown6") == "QP-989P ViTrac iOS")) {
-           setScreen("screen1");
-  } else if ((getText("dropdownORG9100") == "04-20" && getText("dropdown6") == "QP-989P ViTrac iOS")) {
+  } else if ((getText("dropdownORG9100") == "04-01" && getText("dropdown6") == "Enterprise Gateway(02-03)")) {
+       setScreen("screen1");
+  showElement("notearea");
+  	setText("notearea", "Diagnosis field with more than 200 characters causes an issue to ORG-9100 when ADT is used with QP-988P(EG) and HL7 Server Extension.");
+  } else if ((getText("dropdownORG9100") == "04-20" && getText("dropdown6") == "Enterprise Gateway(02-03)")) {
      setScreen("screen1");
-   } else if ((getText("dropdownORG9100") == "04-31" && getText("dropdown6") == "QP-989P ViTrac iOS")) {
+  showElement("notearea");
+  	setText("notearea", "Diagnosis field with more than 200 characters causes an issue to ORG-9100 when ADT is used with QP-988P(EG) and HL7 Server Extension.");
+   } else if ((getText("dropdownORG9100") == "04-31" && getText("dropdown6") == "Enterprise Gateway(02-03)")) {
      setScreen("screen1");
-   } else if ((getText("dropdownORG9100") == "04-51" && getText("dropdown6") == "QP-989P ViTrac iOS")) {
-   setScreen("screen1");
+  showElement("notearea");
+  	setText("notearea", "Diagnosis field with more than 200 characters causes an issue to ORG-9100 when ADT is used with QP-988P(EG) and HL7 Server Extension.");
+   } else if ((getText("dropdownORG9100") == "04-51" && getText("dropdown6") == "Enterprise Gateway(02-03)")) {
+     setScreen("screen1");
+  showElement("notearea");
+  	setText("notearea", "Diagnosis field with more than 200 characters causes an issue to ORG-9100 when ADT is used with QP-988P(EG) and HL7 Server Extension.");
 
-  } else if ((getText("dropdownORG9100") == "04-01" && getText("dropdown6") == "QP-991P ViTrac Android")) {
-           setScreen("screen1");
-  } else if ((getText("dropdownORG9100") == "04-20" && getText("dropdown6") == "QP-991P ViTrac Android")) {
+  } else if ((getText("dropdownORG9100") == "04-01" && getText("dropdown6") == "Enterprise Gateway(02-04)")) {
+       setScreen("screen1");
+  showElement("notearea");
+  	setText("notearea", "Diagnosis field with more than 200 characters causes an issue to ORG-9100 when ADT is used with QP-988P(EG) and HL7 Server Extension.");
+  } else if ((getText("dropdownORG9100") == "04-20" && getText("dropdown6") == "Enterprise Gateway(02-04)")) {
      setScreen("screen1");
-   } else if ((getText("dropdownORG9100") == "04-31" && getText("dropdown6") == "QP-991P ViTrac Android")) {
+  showElement("notearea");
+  	setText("notearea", "Diagnosis field with more than 200 characters causes an issue to ORG-9100 when ADT is used with QP-988P(EG) and HL7 Server Extension.");
+   } else if ((getText("dropdownORG9100") == "04-31" && getText("dropdown6") == "Enterprise Gateway(02-04)")) {
      setScreen("screen1");
-   } else if ((getText("dropdownORG9100") == "04-51" && getText("dropdown6") == "QP-991P ViTrac Android")) {
-   setScreen("screen1");
+  showElement("notearea");
+  	setText("notearea", "Diagnosis field with more than 200 characters causes an issue to ORG-9100 when ADT is used with QP-988P(EG) and HL7 Server Extension.");
+   } else if ((getText("dropdownORG9100") == "04-51" && getText("dropdown6") == "Enterprise Gateway(02-04)")) {
+     setScreen("screen1");
+  showElement("notearea");
+  	setText("notearea", "Diagnosis field with more than 200 characters causes an issue to ORG-9100 when ADT is used with QP-988P(EG) and HL7 Server Extension.");
 
-  } else if ((getText("dropdownORG9100") == "04-01" && getText("dropdown6") == "QP-999P NKAnywhere")) {
-           setScreen("screen1");
-  } else if ((getText("dropdownORG9100") == "04-20" && getText("dropdown6") == "QP-999P NKAnywhere")) {
+  } else if ((getText("dropdownORG9100") == "04-01" && getText("dropdown6") == "Enterprise Gateway(02-06)")) {
+       setScreen("screen1");
+  showElement("notearea");
+  	setText("notearea", "Diagnosis field with more than 200 characters causes an issue to ORG-9100 when ADT is used with QP-988P(EG) and HL7 Server Extension.");
+  } else if ((getText("dropdownORG9100") == "04-20" && getText("dropdown6") == "Enterprise Gateway(02-06)")) {
      setScreen("screen1");
-   } else if ((getText("dropdownORG9100") == "04-31" && getText("dropdown6") == "QP-999P NKAnywhere")) {
+  showElement("notearea");
+  	setText("notearea", "Diagnosis field with more than 200 characters causes an issue to ORG-9100 when ADT is used with QP-988P(EG) and HL7 Server Extension.");
+   } else if ((getText("dropdownORG9100") == "04-31" && getText("dropdown6") == "Enterprise Gateway(02-06)")) {
      setScreen("screen1");
-   } else if ((getText("dropdownORG9100") == "04-51" && getText("dropdown6") == "QP-999P NKAnywhere")) {
-   setScreen("screen1");
+  showElement("notearea");
+  	setText("notearea", "Diagnosis field with more than 200 characters causes an issue to ORG-9100 when ADT is used with QP-988P(EG) and HL7 Server Extension.");
+   } else if ((getText("dropdownORG9100") == "04-51" && getText("dropdown6") == "Enterprise Gateway(02-06)")) {
+     setScreen("screen1");
+  showElement("notearea");
+  	setText("notearea", "Diagnosis field with more than 200 characters causes an issue to ORG-9100 when ADT is used with QP-988P(EG) and HL7 Server Extension.");
 
-  } else if ((getText("dropdownORG9100") == "04-01" && getText("dropdown6") == "OLG-3800")) {
-           setScreen("screen1");
-  } else if ((getText("dropdownORG9100") == "04-20" && getText("dropdown6") == "OLG-3800")) {
+  } else if ((getText("dropdownORG9100") == "04-01" && getText("dropdown6") == "Enterprise Gateway(04-01)")) {
+       setScreen("screen1");
+  showElement("notearea");
+  	setText("notearea", "Diagnosis field with more than 200 characters causes an issue to ORG-9100 when ADT is used with QP-988P(EG) and HL7 Server Extension.");
+  } else if ((getText("dropdownORG9100") == "04-20" && getText("dropdown6") == "Enterprise Gateway(04-01)")) {
      setScreen("screen1");
-   } else if ((getText("dropdownORG9100") == "04-31" && getText("dropdown6") == "OLG-3800")) {
+  showElement("notearea");
+  	setText("notearea", "Diagnosis field with more than 200 characters causes an issue to ORG-9100 when ADT is used with QP-988P(EG) and HL7 Server Extension.");
+   } else if ((getText("dropdownORG9100") == "04-31" && getText("dropdown6") == "Enterprise Gateway(04-01)")) {
      setScreen("screen1");
-   } else if ((getText("dropdownORG9100") == "04-51" && getText("dropdown6") == "OLG-3800")) {
-   setScreen("screen1");
+  showElement("notearea");
+  	setText("notearea", "Diagnosis field with more than 200 characters causes an issue to ORG-9100 when ADT is used with QP-988P(EG) and HL7 Server Extension.");
+   } else if ((getText("dropdownORG9100") == "04-51" && getText("dropdown6") == "Enterprise Gateway(04-01)")) {
+     setScreen("screen1");
+  showElement("notearea");
+  	setText("notearea", "Diagnosis field with more than 200 characters causes an issue to ORG-9100 when ADT is used with QP-988P(EG) and HL7 Server Extension.");
 
 //CGS-9001
-  } else if ((getText("dropdownCGS9001") == "02-03a" && getText("dropdown6") == "BSM-1700 (+UG/TS)")) {
-           setText("Sol1", "=01-15");
-  } else if ((getText("dropdownCGS9001") == "02-03b" && getText("dropdown6") == "BSM-1700 (+UG/TS)")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownCGS9001") == "02-03c" && getText("dropdown6") == "BSM-1700 (+UG/TS)")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownCGS9001") == "02-03d" && getText("dropdown6") == "BSM-1700 (+UG/TS)")) {
-   setScreen("screen1");
+  } else if ((getText("dropdownCGS9001") == "02-03a" && getText("dropdown6") == "Unified Gateway (01-08a)")) {
+           setText("Sol1", "=NA");
+  } else if ((getText("dropdownCGS9001") == "02-03b" && getText("dropdown6") == "Unified Gateway (01-08a)")) {
+     setText("Sol1", "=NA");
+   } else if ((getText("dropdownCGS9001") == "02-03c" && getText("dropdown6") == "Unified Gateway (01-08a)")) {
+     setText("Sol1", "=NA");
+   } else if ((getText("dropdownCGS9001") == "02-03d" && getText("dropdown6") == "Unified Gateway (01-08a)")) {
+    setText("Sol1", "=NA");
 
-  } else if ((getText("dropdownCGS9001") == "02-03a" && getText("dropdown6") == "BSM-3500")) {
-           setScreen("screen1");
-  } else if ((getText("dropdownCGS9001") == "02-03b" && getText("dropdown6") == "BSM-3500")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownCGS9001") == "02-03c" && getText("dropdown6") == "BSM-3500")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownCGS9001") == "02-03d" && getText("dropdown6") == "BSM-3500")) {
-   setScreen("screen1");
+  } else if ((getText("dropdownCGS9001") == "02-03a" && getText("dropdown6") == "Unified Gateway (01-10)")) {
+           setText("Sol1", "=NA");
+  } else if ((getText("dropdownCGS9001") == "02-03b" && getText("dropdown6") == "Unified Gateway (01-10)")) {
+     setText("Sol1", "=NA");
+   } else if ((getText("dropdownCGS9001") == "02-03c" && getText("dropdown6") == "Unified Gateway (01-10)")) {
+     setText("Sol1", "=NA");
+   } else if ((getText("dropdownCGS9001") == "02-03d" && getText("dropdown6") == "Unified Gateway (01-10)")) {
+    setText("Sol1", "=NA");
 
-  } else if ((getText("dropdownCGS9001") == "02-03a" && getText("dropdown6") == "BSM-6000")) {
-           setText("Sol1", "≦07-41, ≧08-12*");
-  } else if ((getText("dropdownCGS9001") == "02-03b" && getText("dropdown6") == "BSM-6000")) {
-     setText("Sol1", "≦07-41, ≧08-12*");
-   } else if ((getText("dropdownCGS9001") == "02-03c" && getText("dropdown6") == "BSM-6000")) {
-     setText("Sol1", "≦07-41, ≧08-12*");
-   } else if ((getText("dropdownCGS9001") == "02-03d" && getText("dropdown6") == "BSM-6000")) {
-   setText("Sol1", "≦07-41, ≧08-12*");
+  } else if ((getText("dropdownCGS9001") == "02-03a" && getText("dropdown6") == "Unified Gateway (01-11)")) {
+           setText("Sol1", "=NA");
+  } else if ((getText("dropdownCGS9001") == "02-03b" && getText("dropdown6") == "Unified Gateway (01-11)")) {
+     setText("Sol1", "=NA");
+   } else if ((getText("dropdownCGS9001") == "02-03c" && getText("dropdown6") == "Unified Gateway (01-11)")) {
+     setText("Sol1", "=NA");
+   } else if ((getText("dropdownCGS9001") == "02-03d" && getText("dropdown6") == "Unified Gateway (01-11)")) {
+    setText("Sol1", "=NA");
 
-  } else if ((getText("dropdownCGS9001") == "02-03a" && getText("dropdown6") == "CSM-1901")) {
-           setScreen("screen1");
-      showElement("notearea");
-  	setText("notearea", "ZM-View/HiQ-View causes an issue when used with CGS-9001/CGS-9002/QP-983P. ZM-View/HiQ-View needs to be set to OFF when used with CGS-9001/CGS-9002/QP-983P. Do not activate Pager Server Extension of QP-988P(EG).  ");
-  } else if ((getText("dropdownCGS9001") == "02-03b" && getText("dropdown6") == "CSM-1901")) {
-     setScreen("screen1");
-      showElement("notearea");
-  	setText("notearea", "ZM-View/HiQ-View causes an issue when used with CGS-9001/CGS-9002/QP-983P. ZM-View/HiQ-View needs to be set to OFF when used with CGS-9001/CGS-9002/QP-983P. Do not activate Pager Server Extension of QP-988P(EG).  ");
-   } else if ((getText("dropdownCGS9001") == "02-03c" && getText("dropdown6") == "CSM-1901")) {
-     setScreen("screen1");
-      showElement("notearea");
-  	setText("notearea", "ZM-View/HiQ-View causes an issue when used with CGS-9001/CGS-9002/QP-983P. ZM-View/HiQ-View needs to be set to OFF when used with CGS-9001/CGS-9002/QP-983P. Do not activate Pager Server Extension of QP-988P(EG).  ");
-   } else if ((getText("dropdownCGS9001") == "02-03d" && getText("dropdown6") == "CSM-1901")) {
-   setScreen("screen1");
-    showElement("notearea");
-   setText("notearea", "ZM-View/HiQ-View causes an issue when used with CGS-9001/CGS-9002/QP-983P. ZM-View/HiQ-View needs to be set to OFF when used with CGS-9001/CGS-9002/QP-983P. Do not activate Pager Server Extension of QP-988P(EG).  ");
+  } else if ((getText("dropdownCGS9001") == "02-03a" && getText("dropdown6") == "Enterprise Gateway(01-02)")) {
+           setScreen("screen3");
+  } else if ((getText("dropdownCGS9001") == "02-03b" && getText("dropdown6") == "Enterprise Gateway(01-02)")) {
+     setScreen("screen3");
+   } else if ((getText("dropdownCGS9001") == "02-03c" && getText("dropdown6") == "Enterprise Gateway(01-02)")) {
+     setScreen("screen3");
+   } else if ((getText("dropdownCGS9001") == "02-03d" && getText("dropdown6") == "Enterprise Gateway(01-02)")) {
+   setScreen("screen3");
 
-  } else if ((getText("dropdownCGS9001") == "02-03a" && getText("dropdown6") == "CNS-6201")) {
-           setText("Sol1", "NA");
-  } else if ((getText("dropdownCGS9001") == "02-03b" && getText("dropdown6") == "CNS-6201")) {
-     setText("Sol1", "NA");
-   } else if ((getText("dropdownCGS9001") == "02-03c" && getText("dropdown6") == "CNS-6201")) {
-     setText("Sol1", "NA");
-   } else if ((getText("dropdownCGS9001") == "02-03d" && getText("dropdown6") == "CNS-6201")) {
-   setText("Sol1", "NA");
+    } else if ((getText("dropdownCGS9001") == "02-03a" && getText("dropdown6") == "Enterprise Gateway(01-03)")) {
+           setScreen("screen3");
+  } else if ((getText("dropdownCGS9001") == "02-03b" && getText("dropdown6") == "Enterprise Gateway(01-03)")) {
+     setScreen("screen3");
+   } else if ((getText("dropdownCGS9001") == "02-03c" && getText("dropdown6") == "Enterprise Gateway(01-03)")) {
+     setScreen("screen3");
+   } else if ((getText("dropdownCGS9001") == "02-03d" && getText("dropdown6") == "Enterprise Gateway(01-03)")) {
+   setScreen("screen3");
 
 
-  } else if ((getText("dropdownCGS9001") == "02-03a" && getText("dropdown6") == "CNS-6801")) {
-           setText("Sol1", "NA");
-  } else if ((getText("dropdownCGS9001") == "02-03b" && getText("dropdown6") == "CNS-6801")) {
-     setText("Sol1", "NA");
-   } else if ((getText("dropdownCGS9001") == "02-03c" && getText("dropdown6") == "CNS-6801")) {
-     setText("Sol1", "NA");
-   } else if ((getText("dropdownCGS9001") == "02-03d" && getText("dropdown6") == "CNS-6801")) {
-   setText("Sol1", "NA");
+    } else if ((getText("dropdownCGS9001") == "02-03a" && getText("dropdown6") == "Enterprise Gateway(02-01)")) {
+           setScreen("screen3");
+  } else if ((getText("dropdownCGS9001") == "02-03b" && getText("dropdown6") == "Enterprise Gateway(02-01)")) {
+     setScreen("screen3");
+   } else if ((getText("dropdownCGS9001") == "02-03c" && getText("dropdown6") == "Enterprise Gateway(02-01)")) {
+     setScreen("screen3");
+   } else if ((getText("dropdownCGS9001") == "02-03d" && getText("dropdown6") == "Enterprise Gateway(02-01)")) {
+   setScreen("screen3");
 
-  } else if ((getText("dropdownCGS9001") == "02-03a" && getText("dropdown6") == "RNS-9703(Old GUI)")) {
-           setText("Sol1", "NA");
-  } else if ((getText("dropdownCGS9001") == "02-03b" && getText("dropdown6") == "RNS-9703(Old GUI)")) {
-     setText("Sol1", "NA");
-   } else if ((getText("dropdownCGS9001") == "02-03c" && getText("dropdown6") == "RNS-9703(Old GUI)")) {
-     setText("Sol1", "NA");
-   } else if ((getText("dropdownCGS9001") == "02-03d" && getText("dropdown6") == "RNS-9703(Old GUI)")) {
-   setText("Sol1", "NA");
+    } else if ((getText("dropdownCGS9001") == "02-03a" && getText("dropdown6") == "Enterprise Gateway(02-03)")) {
+           setScreen("screen3");
+  } else if ((getText("dropdownCGS9001") == "02-03b" && getText("dropdown6") == "Enterprise Gateway(02-03)")) {
+     setScreen("screen3");
+   } else if ((getText("dropdownCGS9001") == "02-03c" && getText("dropdown6") == "Enterprise Gateway(02-03)")) {
+     setScreen("screen3");
+   } else if ((getText("dropdownCGS9001") == "02-03d" && getText("dropdown6") == "Enterprise Gateway(02-03)")) {
+   setScreen("screen3");
 
-  } else if ((getText("dropdownCGS9001") == "02-03a" && getText("dropdown6") == "RNS-6803(Audio)")) {
-           setText("Sol1", "NA");
-  } else if ((getText("dropdownCGS9001") == "02-03b" && getText("dropdown6") == "RNS-6803(Audio)")) {
-     setText("Sol1", "NA");
-   } else if ((getText("dropdownCGS9001") == "02-03c" && getText("dropdown6") == "RNS-6803(Audio)")) {
-     setText("Sol1", "NA");
-   } else if ((getText("dropdownCGS9001") == "02-03d" && getText("dropdown6") == "RNS-6803(Audio)")) {
-   setText("Sol1", "NA");
+    } else if ((getText("dropdownCGS9001") == "02-03a" && getText("dropdown6") == "Enterprise Gateway(02-04)")) {
+           setScreen("screen3");
+  } else if ((getText("dropdownCGS9001") == "02-03b" && getText("dropdown6") == "Enterprise Gateway(02-04)")) {
+     setScreen("screen3");
+   } else if ((getText("dropdownCGS9001") == "02-03c" && getText("dropdown6") == "Enterprise Gateway(02-04)")) {
+     setScreen("screen3");
+   } else if ((getText("dropdownCGS9001") == "02-03d" && getText("dropdown6") == "Enterprise Gateway(02-04)")) {
+   setScreen("screen3");
 
-  } else if ((getText("dropdownCGS9001") == "02-03a" && getText("dropdown6") == "RNS-6804(No Audio)")) {
-           setText("Sol1", "NA");
-  } else if ((getText("dropdownCGS9001") == "02-03b" && getText("dropdown6") == "RNS-6804(No Audio)")) {
-     setText("Sol1", "NA");
-   } else if ((getText("dropdownCGS9001") == "02-03c" && getText("dropdown6") == "RNS-6804(No Audio)")) {
-     setText("Sol1", "NA");
-   } else if ((getText("dropdownCGS9001") == "02-03d" && getText("dropdown6") == "RNS-6804(No Audio)")) {
-   setText("Sol1", "NA");
-
-  } else if ((getText("dropdownCGS9001") == "02-03a" && getText("dropdown6") == "EDNS-9001 Prefense")) {
-           setText("Sol1", "NA");
-  } else if ((getText("dropdownCGS9001") == "02-03b" && getText("dropdown6") == "EDNS-9001 Prefense")) {
-     setText("Sol1", "NA");
-   } else if ((getText("dropdownCGS9001") == "02-03c" && getText("dropdown6") == "EDNS-9001 Prefense")) {
-     setText("Sol1", "NA");
-   } else if ((getText("dropdownCGS9001") == "02-03d" && getText("dropdown6") == "EDNS-9001 Prefense")) {
-   setText("Sol1", "NA");
-
-
-  } else if ((getText("dropdownCGS9001") == "02-03a" && getText("dropdown6") == "GZ-100P (+UG/TS)")) {
-             setScreen("screen2");
-  } else if ((getText("dropdownCGS9001") == "02-03b" && getText("dropdown6") == "GZ-100P (+UG/TS)")) {
-     setScreen("screen1");
-     showElement("notearea");
-  	setText("notearea", "ZM-View/HiQ-View causes an issue when used with CGS-9001/CGS-9002/QP-983P. ZM-View/HiQ-View needs to be set to OFF when used with CGS-9001/CGS-9002/QP-983P. Do not activate Pager Server Extension of QP-988P(EG).  ");
-   } else if ((getText("dropdownCGS9001") == "02-03c" && getText("dropdown6") == "GZ-100P (+UG/TS)")) {
-     setScreen("screen1");
-     showElement("notearea");
-	setText("notearea", "ZM-View/HiQ-View causes an issue when used with CGS-9001/CGS-9002/QP-983P. ZM-View/HiQ-View needs to be set to OFF when used with CGS-9001/CGS-9002/QP-983P. Do not activate Pager Server Extension of QP-988P(EG).  ");
-   } else if ((getText("dropdownCGS9001") == "02-03d" && getText("dropdown6") == "GZ-100P (+UG/TS)")) {
-   setScreen("screen1");
-   showElement("notearea");
-   setText("notearea", "ZM-View/HiQ-View causes an issue when used with CGS-9001/CGS-9002/QP-983P. ZM-View/HiQ-View needs to be set to OFF when used with CGS-9001/CGS-9002/QP-983P. Do not activate Pager Server Extension of QP-988P(EG).  ");
-
-
-  } else if ((getText("dropdownCGS9001") == "02-03a" && getText("dropdown6") == "ORG-9100")) {
-             setText("Sol1", "≦04-20, ≧04-51*");
-  } else if ((getText("dropdownCGS9001") == "02-03b" && getText("dropdown6") == "ORG-9100")) {
-     ssetText("Sol1", "≦04-20, ≧04-51*");
-   } else if ((getText("dropdownCGS9001") == "02-03c" && getText("dropdown6") == "ORG-9100")) {
-     setText("Sol1", "≦04-20, ≧04-51*");
-   } else if ((getText("dropdownCGS9001") == "02-03d" && getText("dropdown6") == "ORG-9100")) {
-   setText("Sol1", "≦04-20, ≧04-51*");
-
-  } else if ((getText("dropdownCGS9001") == "02-03a" && getText("dropdown6") == "CGS-9002 HL7 Gateway (Legacy)")) {
-           setText("Sol1", "NA");
-  } else if ((getText("dropdownCGS9001") == "02-03b" && getText("dropdown6") == "CGS-9002 HL7 Gateway (Legacy)")) {
-     setText("Sol1", "NA");
-   } else if ((getText("dropdownCGS9001") == "02-03c" && getText("dropdown6") == "CGS-9002 HL7 Gateway (Legacy)")) {
-     setText("Sol1", "NA");
-   } else if ((getText("dropdownCGS9001") == "02-03d" && getText("dropdown6") == "CGS-9002 HL7 Gateway (Legacy)")) {
-   setText("Sol1", "NA");
-
-
-  } else if ((getText("dropdownCGS9001") == "02-03a" && getText("dropdown6") == "QP-983P NetKonnect/RNS Server")) {
-           setText("Sol1", "NA");
-  } else if ((getText("dropdownCGS9001") == "02-03b" && getText("dropdown6") == "QP-983P NetKonnect/RNS Server")) {
-     setText("Sol1", "NA");
-   } else if ((getText("dropdownCGS9001") == "02-03c" && getText("dropdown6") == "QP-983P NetKonnect/RNS Server")) {
-     setText("Sol1", "NA");
-   } else if ((getText("dropdownCGS9001") == "02-03d" && getText("dropdown6") == "QP-983P NetKonnect/RNS Server")) {
-   setText("Sol1", "NA");
-
-  } else if ((getText("dropdownCGS9001") == "02-03a" && getText("dropdown6") == "QP-986P Host1000 Server")) {
-             setScreen("screen1");
-  } else if ((getText("dropdownCGS9001") == "02-03b" && getText("dropdown6") == "QP-986P Host1000 Server")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownCGS9001") == "02-03c" && getText("dropdown6") == "QP-986P Host1000 Server")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownCGS9001") == "02-03d" && getText("dropdown6") == "QP-986P Host1000 Server")) {
-   setScreen("screen1");
-
-
-
-  } else if ((getText("dropdownCGS9001") == "02-03a" && getText("dropdown6") == "QP-988P Unified Gateway")) {
-           setText("Sol1", "NA");
-  } else if ((getText("dropdownCGS9001") == "02-03b" && getText("dropdown6") == "QP-988P Unified Gateway")) {
-     setText("Sol1", "NA");
-   } else if ((getText("dropdownCGS9001") == "02-03c" && getText("dropdown6") == "QP-988P Unified Gateway")) {
-     setText("Sol1", "NA");
-   } else if ((getText("dropdownCGS9001") == "02-03d" && getText("dropdown6") == "QP-988P Unified Gateway")) {
-   setText("Sol1", "NA");
-
-
-  } else if ((getText("dropdownCGS9001") == "02-03a" && getText("dropdown6") == "QP-988P Enterprise Gateway")) {
-           setScreen("screen1");
-           showElement("notearea");
-  	setText("notearea", "ZM-View/HiQ-View causes an issue when used with CGS-9001/CGS-9002/QP-983P. ZM-View/HiQ-View needs to be set to OFF when used with CGS-9001/CGS-9002/QP-983P. Do not activate Pager Server Extension of QP-988P(EG).  ");
-  } else if ((getText("dropdownCGS9001") == "02-03b" && getText("dropdown6") == "QP-988P Enterprise Gateway")) {
-     setScreen("screen1");
-     showElement("notearea");
-  	setText("notearea", "ZM-View/HiQ-View causes an issue when used with CGS-9001/CGS-9002/QP-983P. ZM-View/HiQ-View needs to be set to OFF when used with CGS-9001/CGS-9002/QP-983P. Do not activate Pager Server Extension of QP-988P(EG).  ");
-   } else if ((getText("dropdownCGS9001") == "02-03c" && getText("dropdown6") == "QP-988P Enterprise Gateway")) {
-     setScreen("screen1");
-     showElement("notearea");
-  	setText("notearea", "ZM-View/HiQ-View causes an issue when used with CGS-9001/CGS-9002/QP-983P. ZM-View/HiQ-View needs to be set to OFF when used with CGS-9001/CGS-9002/QP-983P. Do not activate Pager Server Extension of QP-988P(EG).  ");
-   } else if ((getText("dropdownCGS9001") == "02-03d" && getText("dropdown6") == "QP-988P Enterprise Gateway")) {
-  setScreen("screen1");
-  showElement("notearea");
-  	setText("notearea", "ZM-View/HiQ-View causes an issue when used with CGS-9001/CGS-9002/QP-983P. ZM-View/HiQ-View needs to be set to OFF when used with CGS-9001/CGS-9002/QP-983P. Do not activate Pager Server Extension of QP-988P(EG).  ");
-
+    } else if ((getText("dropdownCGS9001") == "02-03a" && getText("dropdown6") == "Enterprise Gateway(02-06)")) {
+           setScreen("screen3");
+  } else if ((getText("dropdownCGS9001") == "02-03b" && getText("dropdown6") == "Enterprise Gateway(02-06)")) {
+     setScreen("screen3");
+   } else if ((getText("dropdownCGS9001") == "02-03c" && getText("dropdown6") == "Enterprise Gateway(02-06)")) {
+     setScreen("screen3");
+   } else if ((getText("dropdownCGS9001") == "02-03d" && getText("dropdown6") == "Enterprise Gateway(02-06)")) {
+   setScreen("screen3");
   
-  } else if ((getText("dropdownCGS9001") == "02-03a" && getText("dropdown6") == "QP-989P ViTrac iOS")) {
-           setText("Sol1", "NA");
-  } else if ((getText("dropdownCGS9001") == "02-03b" && getText("dropdown6") == "QP-989P ViTrac iOS")) {
-     setText("Sol1", "NA");
-   } else if ((getText("dropdownCGS9001") == "02-03c" && getText("dropdown6") == "QP-989P ViTrac iOS")) {
-     setText("Sol1", "NA");
-   } else if ((getText("dropdownCGS9001") == "02-03d" && getText("dropdown6") == "QP-989P ViTrac iOS")) {
-   setText("Sol1", "NA");
 
-  } else if ((getText("dropdownCGS9001") == "02-03a" && getText("dropdown6") == "QP-991P ViTrac Android")) {
-           setText("Sol1", "NA");
-  } else if ((getText("dropdownCGS9001") == "02-03b" && getText("dropdown6") == "QP-991P ViTrac Android")) {
-     setText("Sol1", "NA");
-   } else if ((getText("dropdownCGS9001") == "02-03c" && getText("dropdown6") == "QP-991P ViTrac Android")) {
-     setText("Sol1", "NA");
-   } else if ((getText("dropdownCGS9001") == "02-03d" && getText("dropdown6") == "QP-991P ViTrac Android")) {
-   setText("Sol1", "NA");
+    } else if ((getText("dropdownCGS9001") == "02-03a" && getText("dropdown6") == "Enterprise Gateway(04-01)")) {
+           setScreen("screen3");
+  } else if ((getText("dropdownCGS9001") == "02-03b" && getText("dropdown6") == "Enterprise Gateway(04-01)")) {
+     setScreen("screen3");
+   } else if ((getText("dropdownCGS9001") == "02-03c" && getText("dropdown6") == "Enterprise Gateway(04-01)")) {
+     setScreen("screen3");
+   } else if ((getText("dropdownCGS9001") == "02-03d" && getText("dropdown6") == "Enterprise Gateway(04-01)")) {
+   setScreen("screen3");
 
-  } else if ((getText("dropdownCGS9001") == "02-03a" && getText("dropdown6") == "QP-999P NKAnywhere")) {
-           setText("Sol1", "NA");
-  } else if ((getText("dropdownCGS9001") == "02-03b" && getText("dropdown6") == "QP-999P NKAnywhere")) {
-     setText("Sol1", "NA");
-   } else if ((getText("dropdownCGS9001") == "02-03c" && getText("dropdown6") == "QP-999P NKAnywhere")) {
-     setText("Sol1", "NA");
-   } else if ((getText("dropdownCGS9001") == "02-03d" && getText("dropdown6") == "QP-999P NKAnywhere")) {
-   setText("Sol1", "NA");
-
-  } else if ((getText("dropdownCGS9001") == "02-03a" && getText("dropdown6") == "OLG-3800")) {
-           setScreen("screen1");
-  } else if ((getText("dropdownCGS9001") == "02-03b" && getText("dropdown6") == "OLG-3800")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownCGS9001") == "02-03c" && getText("dropdown6") == "OLG-3800")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownCGS9001") == "02-03d" && getText("dropdown6") == "OLG-3800")) {
-  setScreen("screen1");
-  
-  
   //CGS9002
   
-  } else if ((getText("dropdownCGS9002") == "01-08a" && getText("dropdown6") == "BSM-1700 (+UG/TS)")) {
-           setText("Sol1", " =01-15");
-  } else if ((getText("dropdownCGS9002") == "01-09" && getText("dropdown6") == "BSM-1700 (+UG/TS)")) {
-     setText("Sol1", "=01-15");
-   } else if ((getText("dropdownCGS9002") == "01-09a" && getText("dropdown6") == "BSM-1700 (+UG/TS)")) {
-     setScreen("screen1");
+  } else if ((getText("dropdownCGS9002") == "01-08a" && getText("dropdown6") == "Unified Gateway (01-08a)")) {
+           setText("Sol1", " =NA");
+  } else if ((getText("dropdownCGS9002") == "01-09" && getText("dropdown6") == "Unified Gateway (01-08a)")) {
+     setText("Sol1", "=NA");
+   } else if ((getText("dropdownCGS9002") == "01-09a" && getText("dropdown6") == "Unified Gateway (01-08a)")) {
+    setText("Sol1", "=NA");
+
+  } else if ((getText("dropdownCGS9002") == "01-08a" && getText("dropdown6") == "Unified Gateway (01-10)")) {
+           setText("Sol1", " =NA");
+  } else if ((getText("dropdownCGS9002") == "01-09" && getText("dropdown6") == "Unified Gateway (01-10)")) {
+     setText("Sol1", "=NA");
+   } else if ((getText("dropdownCGS9002") == "01-09a" && getText("dropdown6") == "Unified Gateway (01-10)")) {
+    setText("Sol1", "=NA");
+
+  } else if ((getText("dropdownCGS9002") == "01-08a" && getText("dropdown6") == "Unified Gateway (01-11)")) {
+           setText("Sol1", " =NA");
+  } else if ((getText("dropdownCGS9002") == "01-09" && getText("dropdown6") == "Unified Gateway (01-11)")) {
+     setText("Sol1", "=NA");
+   } else if ((getText("dropdownCGS9002") == "01-09a" && getText("dropdown6") == "Unified Gateway (01-11)")) {
+    setText("Sol1", "=NA");
+
+  } else if ((getText("dropdownCGS9002") == "01-08a" && getText("dropdown6") == "Enterprise Gateway(01-02)")) {
+           setScreen("screen3");
+  } else if ((getText("dropdownCGS9002") == "01-09" && getText("dropdown6") == "Enterprise Gateway(01-02)")) {
+     setScreen("screen3");
+   } else if ((getText("dropdownCGS9002") == "01-09a" && getText("dropdown6") == "Enterprise Gateway(01-02)")) {
+    setScreen("screen3");
+
+  } else if ((getText("dropdownCGS9002") == "01-08a" && getText("dropdown6") == "Enterprise Gateway(01-03)")) {
+           setScreen("screen3");
+  } else if ((getText("dropdownCGS9002") == "01-09" && getText("dropdown6") == "Enterprise Gateway(01-03)")) {
+     setScreen("screen3");
+   } else if ((getText("dropdownCGS9002") == "01-09a" && getText("dropdown6") == "Enterprise Gateway(01-03)")) {
+    setScreen("screen3");
+
+  } else if ((getText("dropdownCGS9002") == "01-08a" && getText("dropdown6") == "Enterprise Gateway(02-01)")) {
+           setScreen("screen3");
+  } else if ((getText("dropdownCGS9002") == "01-09" && getText("dropdown6") == "Enterprise Gateway(02-01)")) {
+     setScreen("screen3");
+   } else if ((getText("dropdownCGS9002") == "01-09a" && getText("dropdown6") == "Enterprise Gateway(02-01)")) {
+    setScreen("screen3");
+
+  } else if ((getText("dropdownCGS9002") == "01-08a" && getText("dropdown6") == "Enterprise Gateway(02-03)")) {
+           setScreen("screen3");
+  } else if ((getText("dropdownCGS9002") == "01-09" && getText("dropdown6") == "Enterprise Gateway(02-03)")) {
+     setScreen("screen3");
+   } else if ((getText("dropdownCGS9002") == "01-09a" && getText("dropdown6") == "Enterprise Gateway(02-03)")) {
+    setScreen("screen3");
+
+  } else if ((getText("dropdownCGS9002") == "01-08a" && getText("dropdown6") == "Enterprise Gateway(02-04)")) {
+           setScreen("screen3");
+  } else if ((getText("dropdownCGS9002") == "01-09" && getText("dropdown6") == "Enterprise Gateway(02-04)")) {
+     setScreen("screen3");
+   } else if ((getText("dropdownCGS9002") == "01-09a" && getText("dropdown6") == "Enterprise Gateway(02-04)")) {
+    setScreen("screen3");
+
+  } else if ((getText("dropdownCGS9002") == "01-08a" && getText("dropdown6") == "Enterprise Gateway(02-06)")) {
+           setScreen("screen3");
+  } else if ((getText("dropdownCGS9002") == "01-09" && getText("dropdown6") == "Enterprise Gateway(02-06)")) {
+     setScreen("screen3");
+   } else if ((getText("dropdownCGS9002") == "01-09a" && getText("dropdown6") == "Enterprise Gateway(02-06)")) {
+    setScreen("screen3");
+
+  } else if ((getText("dropdownCGS9002") == "01-08a" && getText("dropdown6") == "Enterprise Gateway(04-01)")) {
+           setScreen("screen3");
+  } else if ((getText("dropdownCGS9002") == "01-09" && getText("dropdown6") == "Enterprise Gateway(04-01)")) {
+     setScreen("screen3");
+   } else if ((getText("dropdownCGS9002") == "01-09a" && getText("dropdown6") == "Enterprise Gateway(04-01)")) {
+    setScreen("screen3");
 
 
-  } else if ((getText("dropdownCGS9002") == "01-08a" && getText("dropdown6") == "BSM-3500")) {
-           setScreen("screen1");
-  } else if ((getText("dropdownCGS9002") == "01-09" && getText("dropdown6") == "BSM-3500")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownCGS9002") == "01-09a" && getText("dropdown6") == "BSM-3500")) {
-    setScreen("screen1");
-
-  } else if ((getText("dropdownCGS9002") == "01-08a" && getText("dropdown6") == "BSM-6000")) {
-           setText("Sol1", "≦07-41, ≧08-12*");
-  } else if ((getText("dropdownCGS9002") == "01-09" && getText("dropdown6") == "BSM-6000")) {
-     setText("Sol1", "≦07-41, ≧08-12*");
-   } else if ((getText("dropdownCGS9002") == "01-09a" && getText("dropdown6") == "BSM-6000")) {
-     setText("Sol1", "≦07-41, ≧08-12*");
-
-  } else if ((getText("dropdownCGS9002") == "01-08a" && getText("dropdown6") == "CSM-1901")) {
-           setScreen("screen1");
-           showElement("notearea");
-  	setText("notearea", "ZM-View/HiQ-View causes an issue when used with CGS-9001/CGS-9002/QP-983P. ZM-View/HiQ-View needs to be set to OFF when used with CGS-9001/CGS-9002/QP-983P.Do not activate HL7 Server Extension of QP-988P(EG). ");
-  } else if ((getText("dropdownCGS9002") == "01-09" && getText("dropdown6") == "CSM-1901")) {
-     setScreen("screen1");
-                  showElement("notearea");
-  	setText("notearea", "supports Send to EMR with CNS-6201≥ 05-01 or CNS-6801 ≥ 02-01.");
-   } else if ((getText("dropdownCGS9002") == "01-09a" && getText("dropdown6") == "CSM-1901")) {
-    setScreen("screen1");
-            showElement("notearea");
-  	setText("notearea", "supports Send to EMR with CNS-6201≥ 05-01 or CNS-6801 ≥ 02-01.");
-
-  } else if ((getText("dropdownCGS9002") == "01-08a" && getText("dropdown6") == "CNS-6201")) {
-           setText("Sol1", " =02-40");
-  } else if ((getText("dropdownCGS9002") == "01-09" && getText("dropdown6") == "CNS-6201")) {
-     setText("Sol1", "=02-40");
-   } else if ((getText("dropdownCGS9002") == "01-09a" && getText("dropdown6") == "CNS-6201")) {
-     setText("Sol1", "=02-40");
-
-  } else if ((getText("dropdownCGS9002") == "01-08a" && getText("dropdown6") == "CNS-6801")) {
-           setScreen("screen2");
-  } else if ((getText("dropdownCGS9002") == "01-09" && getText("dropdown6") == "CNS-6801")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownCGS9002") == "01-09a" && getText("dropdown6") == "CNS-6801")) {
-    setScreen("screen1");
-
-  } else if ((getText("dropdownCGS9002") == "01-08a" && getText("dropdown6") == "RNS-9703(Old GUI)")) {
-           setText("Sol1", "NA");
-  } else if ((getText("dropdownCGS9002") == "01-09" && getText("dropdown6") == "RNS-9703(Old GUI)")) {
-     setText("Sol1", "NA");
-   } else if ((getText("dropdownCGS9002") == "01-09a" && getText("dropdown6") == "RNS-9703(Old GUI)")) {
-     setText("Sol1", "NA");
-
-  } else if ((getText("dropdownCGS9002") == "01-08a" && getText("dropdown6") == "RNS-6803(Audio)")) {
-           setScreen("screen2");
-  } else if ((getText("dropdownCGS9002") == "01-09" && getText("dropdown6") == "RNS-6803(Audio)")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownCGS9002") == "01-09a" && getText("dropdown6") == "RNS-6803(Audio)")) {
-    setScreen("screen1");
-
-
-  } else if ((getText("dropdownCGS9002") == "01-08a" && getText("dropdown6") == "RNS-6804(No Audio)")) {
-           setScreen("screen2");
-  } else if ((getText("dropdownCGS9002") == "01-09" && getText("dropdown6") == "RNS-6804(No Audio)")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownCGS9002") == "01-09a" && getText("dropdown6") == "RNS-6804(No Audio)")) {
-    setScreen("screen1");
-
-  } else if ((getText("dropdownCGS9002") == "01-08a" && getText("dropdown6") == "EDNS-9001 Prefense")) {
-           setText("Sol1", "NA");
-  } else if ((getText("dropdownCGS9002") == "01-09" && getText("dropdown6") == "EDNS-9001 Prefense")) {
-     setText("Sol1", "NA");
-   } else if ((getText("dropdownCGS9002") == "01-09a" && getText("dropdown6") == "EDNS-9001 Prefense")) {
-     setText("Sol1", "NA");
-
-
-  } else if ((getText("dropdownCGS9002") == "01-08a" && getText("dropdown6") == "GZ-100P (+UG/TS)")) {
-           setScreen("screen2");
-  } else if ((getText("dropdownCGS9002") == "01-09" && getText("dropdown6") == "GZ-100P (+UG/TS)")) {
-     setScreen("screen2");
-   } else if ((getText("dropdownCGS9002") == "01-09a" && getText("dropdown6") == "GZ-100P (+UG/TS)")) {
-    setScreen("screen1");
-         showElement("notearea");
-  	setText("notearea", "supports Send to EMR with CNS-6201≥ 05-01 or CNS-6801 ≥ 02-01.");
-
-  } else if ((getText("dropdownCGS9002") == "01-08a" && getText("dropdown6") == "ORG-9100")) {
-           setText("Sol1", "≦01-09, ≧04-51*");
-  } else if ((getText("dropdownCGS9002") == "01-09" && getText("dropdown6") == "ORG-9100")) {
-     setText("Sol1", "≦01-09, ≧04-51*");
-   } else if ((getText("dropdownCGS9002") == "01-09a" && getText("dropdown6") == "ORG-9100")) {
-     setText("Sol1", "≦01-09, ≧04-51*");
-
-  } else if ((getText("dropdownCGS9002") == "01-08a" && getText("dropdown6") == "CGS-9001 Pager Gateway (Legacy)")) {
-           setText("Sol1", "NA");
-  } else if ((getText("dropdownCGS9002") == "01-09" && getText("dropdown6") == "CGS-9001 Pager Gateway (Legacy)")) {
-     setText("Sol1", "NA");
-   } else if ((getText("dropdownCGS9002") == "01-09a" && getText("dropdown6") == "CGS-9001 Pager Gateway (Legacy)")) {
-     setText("Sol1", "NA");
-
-  } else if ((getText("dropdownCGS9002") == "01-08a" && getText("dropdown6") == "QP-983P NetKonnect/RNS Server")) {
-           setText("Sol1", "NA");
-  } else if ((getText("dropdownCGS9002") == "01-09" && getText("dropdown6") == "QP-983P NetKonnect/RNS Server")) {
-     setText("Sol1", "NA");
-   } else if ((getText("dropdownCGS9002") == "01-09a" && getText("dropdown6") == "QP-983P NetKonnect/RNS Server")) {
-     setText("Sol1", "NA");
-
-  } else if ((getText("dropdownCGS9002") == "01-08a" && getText("dropdown6") == "QP-986P Host1000 Server")) {
-           setScreen("screen1");
-  } else if ((getText("dropdownCGS9002") == "01-09" && getText("dropdown6") == "QP-986P Host1000 Server")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownCGS9002") == "01-09a" && getText("dropdown6") == "QP-986P Host1000 Server")) {
-    setScreen("screen1");
-
-
-  } else if ((getText("dropdownCGS9002") == "01-08a" && getText("dropdown6") == "QP-988P Unified Gateway")) {
-           setText("Sol1", "NA");
-  } else if ((getText("dropdownCGS9002") == "01-09" && getText("dropdown6") == "QP-988P Unified Gateway")) {
-     setText("Sol1", "NA");
-   } else if ((getText("dropdownCGS9002") == "01-09a" && getText("dropdown6") == "QP-988P Unified Gateway")) {
-     setText("Sol1", "NA");
-
-  } else if ((getText("dropdownCGS9002") == "01-08a" && getText("dropdown6") == "QP-988P Enterprise Gateway")) {
-           setScreen("screen1");
-                   showElement("notearea");
-  	setText("notearea", "ZM-View/HiQ-View causes an issue when used with CGS-9001/CGS-9002/QP-983P. ZM-View/HiQ-View needs to be set to OFF when used with CGS-9001/CGS-9002/QP-983P.Do not activate HL7 Server Extension of QP-988P(EG). ");
-  } else if ((getText("dropdownCGS9002") == "01-09" && getText("dropdown6") == "QP-988P Enterprise Gateway")) {
-     setScreen("screen1");
-             showElement("notearea");
-  	setText("notearea", "supports Send to EMR with CNS-6201≥ 05-01 or CNS-6801 ≥ 02-01.");
-   } else if ((getText("dropdownCGS9002") == "01-09a" && getText("dropdown6") == "QP-988P Enterprise Gateway")) {
-     setScreen("screen1");
-                  showElement("notearea");
-  	setText("notearea", "supports Send to EMR with CNS-6201≥ 05-01 or CNS-6801 ≥ 02-01.");
-
-  } else if ((getText("dropdownCGS9002") == "01-08a" && getText("dropdown6") == "QP-989P ViTrac iOS")) {
-           setText("Sol1", "NA");
-  } else if ((getText("dropdownCGS9002") == "01-09" && getText("dropdown6") == "QP-989P ViTrac iOS")) {
-     setText("Sol1", "NA");
-   } else if ((getText("dropdownCGS9002") == "01-09a" && getText("dropdown6") == "QP-989P ViTrac iOS")) {
-     setText("Sol1", "NA");
-
-  } else if ((getText("dropdownCGS9002") == "01-08a" && getText("dropdown6") == "QP-991P ViTrac Android")) {
-           setText("Sol1", "NA");
-  } else if ((getText("dropdownCGS9002") == "01-09" && getText("dropdown6") == "QP-991P ViTrac Android")) {
-     setText("Sol1", "NA");
-   } else if ((getText("dropdownCGS9002") == "01-09a" && getText("dropdown6") == "QP-991P ViTrac Android")) {
-     setText("Sol1", "NA");
-
-  } else if ((getText("dropdownCGS9002") == "01-08a" && getText("dropdown6") == "QP-999P NKAnywhere")) {
-           setText("Sol1", "NA");
-  } else if ((getText("dropdownCGS9002") == "01-09" && getText("dropdown6") == "QP-999P NKAnywhere")) {
-     setText("Sol1", "NA");
-   } else if ((getText("dropdownCGS9002") == "01-09a" && getText("dropdown6") == "QP-999P NKAnywhere")) {
-     setText("Sol1", "NA");
-
-
-  } else if ((getText("dropdownCGS9002") == "01-08a" && getText("dropdown6") == "OLG-3800")) {
-           setScreen("screen1");
-  } else if ((getText("dropdownCGS9002") == "01-09" && getText("dropdown6") == "OLG-3800")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownCGS9002") == "01-09a" && getText("dropdown6") == "OLG-3800")) {
-     setScreen("screen1");
 
 //QP-983P
-  } else if ((getText("dropdownQP983P") == "02-10" && getText("dropdown6") == "BSM-1700 (+UG/TS)")) {
-     setText("Sol1", "=01-15");
-   } else if ((getText("dropdownQP983P") == "02-11" && getText("dropdown6") == "BSM-1700 (+UG/TS)")) {
-     setScreen("screen1");
+  } else if ((getText("dropdownQP983P") == "02-10" && getText("dropdown6") == "Unified Gateway (01-08a)")) {
+     setText("Sol1", "=NA");
+   } else if ((getText("dropdownQP983P") == "02-11" && getText("dropdown6") == "Unified Gateway (01-08a)")) {
+     setText("Sol1", "=NA");
 
-   } else if ((getText("dropdownQP983P") == "02-10" && getText("dropdown6") == "BSM-3500")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownQP983P") == "02-11" && getText("dropdown6") == "BSM-3500")) {
-     setScreen("screen1");
+  } else if ((getText("dropdownQP983P") == "02-10" && getText("dropdown6") == "Unified Gateway (01-10)")) {
+     setText("Sol1", "=NA");
+   } else if ((getText("dropdownQP983P") == "02-11" && getText("dropdown6") == "Unified Gateway (01-10)")) {
+     setText("Sol1", "=NA");
 
-   } else if ((getText("dropdownQP983P") == "02-10" && getText("dropdown6") == "BSM-6000")) {
-     setText("Sol1", "≦07-41, ≧08-12*");
-   } else if ((getText("dropdownQP983P") == "02-11" && getText("dropdown6") == "BSM-6000")) {
-     setText("Sol1", "≦07-41, ≧08-12*");
+  } else if ((getText("dropdownQP983P") == "02-10" && getText("dropdown6") == "Unified Gateway (01-11)")) {
+     setText("Sol1", "=NA");
+   } else if ((getText("dropdownQP983P") == "02-11" && getText("dropdown6") == "Unified Gateway (01-11)")) {
+     setText("Sol1", "=NA");
 
-   } else if ((getText("dropdownQP983P") == "02-10" && getText("dropdown6") == "CSM-1901")) {
-     setScreen("screen1");
-          showElement("notearea");
-  	setText("notearea", "ZM-View/HiQ-View causes an issue when used with CGS-9001/CGS-9002/QP-983P. ZM-View/HiQ-View needs to be set to OFF when used with CGS-9001/CGS-9002/QP-983P. Do not activate RNS Server Extension of QP-988P(EG).");
-   } else if ((getText("dropdownQP983P") == "02-11" && getText("dropdown6") == "CSM-1901")) {
-     setScreen("screen1");
-               showElement("notearea");
-  	setText("notearea", "ZM-View/HiQ-View causes an issue when used with CGS-9001/CGS-9002/QP-983P. ZM-View/HiQ-View needs to be set to OFF when used with CGS-9001/CGS-9002/QP-983P. Do not activate RNS Server Extension of QP-988P(EG).");
-
-   } else if ((getText("dropdownQP983P") == "02-10" && getText("dropdown6") == "CNS-6201")) {
-     setText("Sol1", "NA");
-   } else if ((getText("dropdownQP983P") == "02-11" && getText("dropdown6") == "CNS-6201")) {
-     setText("Sol1", "NA");
-
-   } else if ((getText("dropdownQP983P") == "02-10" && getText("dropdown6") == "CNS-6801")) {
-     setText("Sol1", "NA");
-   } else if ((getText("dropdownQP983P") == "02-11" && getText("dropdown6") == "CNS-6801")) {
-     setText("Sol1", "NA");
-
-   } else if ((getText("dropdownQP983P") == "02-10" && getText("dropdown6") == "RNS-9703(Old GUI)")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownQP983P") == "02-11" && getText("dropdown6") == "RNS-9703(Old GUI)")) {
-     setScreen("screen1");
-
-   } else if ((getText("dropdownQP983P") == "02-10" && getText("dropdown6") == "RNS-6803(Audio)")) {
-     setScreen("screen2");
-   } else if ((getText("dropdownQP983P") == "02-11" && getText("dropdown6") == "RNS-6803(Audio)")) {
-     setScreen("screen2");
-
-   } else if ((getText("dropdownQP983P") == "02-10" && getText("dropdown6") == "RNS-6804(No Audio)")) {
-     setScreen("screen2");
-   } else if ((getText("dropdownQP983P") == "02-11" && getText("dropdown6") == "RNS-6804(No Audio)")) {
-     setScreen("screen2");
-
-   } else if ((getText("dropdownQP983P") == "02-10" && getText("dropdown6") == "EDNS-9001 Prefense")) {
-     setText("Sol1", "NA");
-   } else if ((getText("dropdownQP983P") == "02-11" && getText("dropdown6") == "EDNS-9001 Prefense")) {
-     setText("Sol1", "NA");
-   } else if ((getText("dropdownQP983P") == "02-10" && getText("dropdown6") == "GZ-100P (+UG/TS)")) {
-     setScreen("screen2");
-   } else if ((getText("dropdownQP983P") == "02-11" && getText("dropdown6") == "GZ-100P (+UG/TS)")) {
-     setScreen("screen1");
-               showElement("notearea");
-  	setText("notearea", "ZM-View/HiQ-View causes an issue when used with CGS-9001/CGS-9002/QP-983P. ZM-View/HiQ-View needs to be set to OFF when used with CGS-9001/CGS-9002/QP-983P. Do not activate RNS Server Extension of QP-988P(EG).");
+   } else if ((getText("dropdownQP983P") == "02-10" && getText("dropdown6") == "Enterprise Gateway(01-02)")) {
+     setScreen("screen3");
+   } else if ((getText("dropdownQP983P") == "02-11" && getText("dropdown6") == "Enterprise Gateway(01-02)")) {
+     setScreen("screen3");
 
 
-   } else if ((getText("dropdownQP983P") == "02-10" && getText("dropdown6") == "ORG-9100")) {
-     setText("Sol1", "≦04-20, ≧04-51*");
-   } else if ((getText("dropdownQP983P") == "02-11" && getText("dropdown6") == "ORG-9100")) {
-     setText("Sol1", "≦04-20, ≧04-51*");
+   } else if ((getText("dropdownQP983P") == "02-10" && getText("dropdown6") == "Enterprise Gateway(01-03)")) {
+     setScreen("screen3");
+   } else if ((getText("dropdownQP983P") == "02-11" && getText("dropdown6") == "Enterprise Gateway(01-03)")) {
+     setScreen("screen3");
 
 
-   } else if ((getText("dropdownQP983P") == "02-10" && getText("dropdown6") == "CGS-9001 Pager Gateway (Legacy)")) {
-     setText("Sol1", "NA");
-   } else if ((getText("dropdownQP983P") == "02-11" && getText("dropdown6") == "CGS-9001 Pager Gateway (Legacy)")) {
-     setText("Sol1", "NA");
+   } else if ((getText("dropdownQP983P") == "02-10" && getText("dropdown6") == "Enterprise Gateway(02-01)")) {
+     setScreen("screen3");
+   } else if ((getText("dropdownQP983P") == "02-11" && getText("dropdown6") == "Enterprise Gateway(02-01)")) {
+     setScreen("screen3");
 
-   } else if ((getText("dropdownQP983P") == "02-10" && getText("dropdown6") == "CGS-9002 HL7 Gateway (Legacy)")) {
-     setText("Sol1", "NA");
-   } else if ((getText("dropdownQP983P") == "02-11" && getText("dropdown6") == "CGS-9002 HL7 Gateway (Legacy)")) {
-     setText("Sol1", "NA");
+   } else if ((getText("dropdownQP983P") == "02-10" && getText("dropdown6") == "Enterprise Gateway(02-03)")) {
+     setScreen("screen3");
+   } else if ((getText("dropdownQP983P") == "02-11" && getText("dropdown6") == "Enterprise Gateway(02-03)")) {
+     setScreen("screen3");
+
+   } else if ((getText("dropdownQP983P") == "02-10" && getText("dropdown6") == "Enterprise Gateway(02-04)")) {
+     setScreen("screen3");
+   } else if ((getText("dropdownQP983P") == "02-11" && getText("dropdown6") == "Enterprise Gateway(02-04)")) {
+     setScreen("screen3");
+
+  } else if ((getText("dropdownQP983P") == "02-10" && getText("dropdown6") == "Enterprise Gateway(02-06)")) {
+     setScreen("screen3");
+   } else if ((getText("dropdownQP983P") == "02-11" && getText("dropdown6") == "Enterprise Gateway(02-06)")) {
+     setScreen("screen3");
 
 
-   } else if ((getText("dropdownQP983P") == "02-10" && getText("dropdown6") == "QP-986P Host1000 Server")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownQP983P") == "02-11" && getText("dropdown6") == "QP-986P Host1000 Server")) {
-     setScreen("screen1");
-
-   } else if ((getText("dropdownQP983P") == "02-10" && getText("dropdown6") == "QP-988P Unified Gateway")) {
-     setText("Sol1", "NA");
-   } else if ((getText("dropdownQP983P") == "02-11" && getText("dropdown6") == "QP-988P Unified Gateway")) {
-     setText("Sol1", "NA");
-
-   } else if ((getText("dropdownQP983P") == "02-10" && getText("dropdown6") == "QP-988P Enterprise Gateway")) {
-     setScreen("screen1");
-               showElement("notearea");
-  	setText("notearea", "ZM-View/HiQ-View causes an issue when used with CGS-9001/CGS-9002/QP-983P. ZM-View/HiQ-View needs to be set to OFF when used with CGS-9001/CGS-9002/QP-983P. Do not activate RNS Server Extension of QP-988P(EG).");
-   } else if ((getText("dropdownQP983P") == "02-11" && getText("dropdown6") == "QP-988P Enterprise Gateway")) {
-     setScreen("screen1");
-               showElement("notearea");
-  	setText("notearea", "ZM-View/HiQ-View causes an issue when used with CGS-9001/CGS-9002/QP-983P. ZM-View/HiQ-View needs to be set to OFF when used with CGS-9001/CGS-9002/QP-983P. Do not activate RNS Server Extension of QP-988P(EG).");
-
-   } else if ((getText("dropdownQP983P") == "02-10" && getText("dropdown6") == "QP-989P ViTrac iOS")) {
-     setText("Sol1", "NA");
-   } else if ((getText("dropdownQP983P") == "02-11" && getText("dropdown6") == "QP-989P ViTrac iOS")) {
-     setText("Sol1", "NA");
-
-   } else if ((getText("dropdownQP983P") == "02-10" && getText("dropdown6") == "QP-991P ViTrac Android")) {
-     setText("Sol1", "NA");
-   } else if ((getText("dropdownQP983P") == "02-11" && getText("dropdown6") == "QP-991P ViTrac Android")) {
-     setText("Sol1", "NA");
-
-   } else if ((getText("dropdownQP983P") == "02-10" && getText("dropdown6") == "QP-999P NKAnywhere")) {
-     setText("Sol1", "NA");
-   } else if ((getText("dropdownQP983P") == "02-11" && getText("dropdown6") == "QP-999P NKAnywhere")) {
-     setText("Sol1", "NA");
-
-   } else if ((getText("dropdownQP983P") == "02-10" && getText("dropdown6") == "OLG-3800")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownQP983P") == "02-11" && getText("dropdown6") == "OLG-3800")) {
-     setScreen("screen1");
+  } else if ((getText("dropdownQP983P") == "02-10" && getText("dropdown6") == "Enterprise Gateway(04-01)")) {
+     setScreen("screen3");
+   } else if ((getText("dropdownQP983P") == "02-11" && getText("dropdown6") == "Enterprise Gateway(04-01)")) {
+     setScreen("screen3");
 
 //qp986p
 
-   } else if ((getText("dropdownQP-986P") == "01-03" && getText("dropdown6") == "BSM-1700 (+UG/TS)")) {
+   } else if ((getText("dropdownQP-986P") == "01-03" && getText("dropdown6") == "Unified Gateway (01-08a)")) {
      setScreen("screen1");
-   } else if ((getText("dropdownQP-986P") == "01-04" && getText("dropdown6") == "BSM-1700 (+UG/TS)")) {
-     setScreen("screen1");
-
-   } else if ((getText("dropdownQP-986P") == "01-03" && getText("dropdown6") == "BSM-3500")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownQP-986P") == "01-04" && getText("dropdown6") == "BSM-3500")) {
+   } else if ((getText("dropdownQP-986P") == "01-04" && getText("dropdown6") == "Unified Gateway (01-08a)")) {
      setScreen("screen1");
 
-   } else if ((getText("dropdownQP-986P") == "01-03" && getText("dropdown6") == "BSM-6000")) {
+   } else if ((getText("dropdownQP-986P") == "01-03" && getText("dropdown6") == "Unified Gateway (01-10)")) {
      setScreen("screen1");
-   } else if ((getText("dropdownQP-986P") == "01-04" && getText("dropdown6") == "BSM-6000")) {
-     setScreen("screen1");
-
-   } else if ((getText("dropdownQP-986P") == "01-03" && getText("dropdown6") == "CSM-1901")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownQP-986P") == "01-04" && getText("dropdown6") == "CSM-1901")) {
+   } else if ((getText("dropdownQP-986P") == "01-04" && getText("dropdown6") == "Unified Gateway (01-10)")) {
      setScreen("screen1");
 
-   } else if ((getText("dropdownQP-986P") == "01-03" && getText("dropdown6") == "CNS-6201")) {
+   } else if ((getText("dropdownQP-986P") == "01-03" && getText("dropdown6") == "Unified Gateway (01-11)")) {
      setScreen("screen1");
-   } else if ((getText("dropdownQP-986P") == "01-04" && getText("dropdown6") == "CNS-6201")) {
+   } else if ((getText("dropdownQP-986P") == "01-04" && getText("dropdown6") == "Unified Gateway (01-11)")) {
+     setScreen("screen1");
+
+   } else if ((getText("dropdownQP-986P") == "01-03" && getText("dropdown6") == "Enterprise Gateway(01-02)")) {
+     setScreen("screen1");
+   } else if ((getText("dropdownQP-986P") == "01-04" && getText("dropdown6") == "Enterprise Gateway(01-02)")) {
+     setScreen("screen1");
+
+   } else if ((getText("dropdownQP-986P") == "01-03" && getText("dropdown6") == "Enterprise Gateway(01-03)")) {
+     setScreen("screen1");
+   } else if ((getText("dropdownQP-986P") == "01-04" && getText("dropdown6") == "Enterprise Gateway(01-03)")) {
      setScreen("screen1");
 
    } else if ((getText("dropdownQP-986P") == "01-03" && getText("dropdown6") == "CNS-6801")) {
@@ -4519,870 +2578,199 @@ onEvent("go_button", "click", function(event) {
      setScreen("screen1");
 
 
-   } else if ((getText("dropdownQP-986P") == "01-03" && getText("dropdown6") == "RNS-9703(Old GUI)")) {
+   } else if ((getText("dropdownQP-986P") == "01-03" && getText("dropdown6") == "Enterprise Gateway(02-01)")) {
      setScreen("screen1");
-   } else if ((getText("dropdownQP-986P") == "01-04" && getText("dropdown6") == "RNS-9703(Old GUI)")) {
+   } else if ((getText("dropdownQP-986P") == "01-04" && getText("dropdown6") == "Enterprise Gateway(02-01)")) {
      setScreen("screen1");
 
-   } else if ((getText("dropdownQP-986P") == "01-03" && getText("dropdown6") == "RNS-6803(Audio)")) {
+   } else if ((getText("dropdownQP-986P") == "01-03" && getText("dropdown6") == "Enterprise Gateway(02-03)")) {
      setScreen("screen1");
-   } else if ((getText("dropdownQP-986P") == "01-04" && getText("dropdown6") == "RNS-6803(Audio)")) {
+   } else if ((getText("dropdownQP-986P") == "01-04" && getText("dropdown6") == "Enterprise Gateway(02-03)")) {
      setScreen("screen1");
 
-   } else if ((getText("dropdownQP-986P") == "01-03" && getText("dropdown6") == "RNS-6804(No Audio)")) {
+   } else if ((getText("dropdownQP-986P") == "01-03" && getText("dropdown6") == "Enterprise Gateway(02-04)")) {
      setScreen("screen1");
-   } else if ((getText("dropdownQP-986P") == "01-04" && getText("dropdown6") == "RNS-6804(No Audio)")) {
+   } else if ((getText("dropdownQP-986P") == "01-04" && getText("dropdown6") == "Enterprise Gateway(02-04)")) {
      setScreen("screen1");
 
-   } else if ((getText("dropdownQP-986P") == "01-03" && getText("dropdown6") == "EDNS-9001 Prefense")) {
+   } else if ((getText("dropdownQP-986P") == "01-03" && getText("dropdown6") == "Enterprise Gateway(02-06)")) {
      setScreen("screen1");
-   } else if ((getText("dropdownQP-986P") == "01-04" && getText("dropdown6") == "EDNS-9001 Prefense")) {
+   } else if ((getText("dropdownQP-986P") == "01-04" && getText("dropdown6") == "Enterprise Gateway(02-06)")) {
      setScreen("screen1");
 
-   } else if ((getText("dropdownQP-986P") == "01-03" && getText("dropdown6") == "GZ-100P (+UG/TS)")) {
+   } else if ((getText("dropdownQP-986P") == "01-03" && getText("dropdown6") == "Enterprise Gateway(04-01)")) {
      setScreen("screen1");
-   } else if ((getText("dropdownQP-986P") == "01-04" && getText("dropdown6") == "GZ-100P (+UG/TS)")) {
+   } else if ((getText("dropdownQP-986P") == "01-04" && getText("dropdown6") == "Enterprise Gateway(04-01)")) {
      setScreen("screen1");
 
-   } else if ((getText("dropdownQP-986P") == "01-03" && getText("dropdown6") == "ORG-9100")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownQP-986P") == "01-04" && getText("dropdown6") == "ORG-9100")) {
-     setScreen("screen1");
-
-   } else if ((getText("dropdownQP-986P") == "01-03" && getText("dropdown6") == "CGS-9001 Pager Gateway (Legacy)")) {
-     setText("Sol1", "≧02-03");
-   } else if ((getText("dropdownQP-986P") == "01-04" && getText("dropdown6") == "CGS-9001 Pager Gateway (Legacy)")) {
-     setScreen("screen1");
-
-   } else if ((getText("dropdownQP-986P") == "01-03" && getText("dropdown6") == "CGS-9002 HL7 Gateway (Legacy)")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownQP-986P") == "01-04" && getText("dropdown6") == "CGS-9002 HL7 Gateway (Legacy)")) {
-     setScreen("screen1");
-
-   } else if ((getText("dropdownQP-986P") == "01-03" && getText("dropdown6") == "QP-983P NetKonnect/RNS Server)")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownQP-986P") == "01-04" && getText("dropdown6") == "QP-983P NetKonnect/RNS Server)")) {
-     setScreen("screen1");
-
-   } else if ((getText("dropdownQP-986P") == "01-03" && getText("dropdown6") == "QP-988P Unified Gateway")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownQP-986P") == "01-04" && getText("dropdown6") == "QP-988P Unified Gateway")) {
-     setScreen("screen1");
-
-   } else if ((getText("dropdownQP-986P") == "01-03" && getText("dropdown6") == "QP-988P Enterprise Gateway")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownQP-986P") == "01-04" && getText("dropdown6") == "QP-988P Enterprise Gateway")) {
-     setScreen("screen1");
-
-   } else if ((getText("dropdownQP-986P") == "01-03" && getText("dropdown6") == "QP-989P ViTrac iOS")) {
-     setText("Sol1", "NA");
-   } else if ((getText("dropdownQP-986P") == "01-04" && getText("dropdown6") == "QP-989P ViTrac iOS")) {
-     setText("Sol1", "NA");
-
-   } else if ((getText("dropdownQP-986P") == "01-03" && getText("dropdown6") == "QP-989P ViTrac iOS")) {
-     setText("Sol1", "NA");
-   } else if ((getText("dropdownQP-986P") == "01-04" && getText("dropdown6") == "QP-989P ViTrac iOS")) {
-     setText("Sol1", "NA");
-
-
-   } else if ((getText("dropdownQP-986P") == "01-03" && getText("dropdown6") == "QP-991P ViTrac Android")) {
-     setText("Sol1", "NA");
-   } else if ((getText("dropdownQP-986P") == "01-04" && getText("dropdown6") == "QP-991P ViTrac Android")) {
-     setText("Sol1", "NA");
-
-   } else if ((getText("dropdownQP-986P") == "01-03" && getText("dropdown6") == "QP-999P NKAnywhere")) {
-     setText("Sol1", "NA");
-   } else if ((getText("dropdownQP-986P") == "01-04" && getText("dropdown6") == "QP-999P NKAnywhere")) {
-     setText("Sol1", "NA");
-
-   } else if ((getText("dropdownQP-986P") == "01-03" && getText("dropdown6") == "OLG-3800")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownQP-986P") == "01-04" && getText("dropdown6") == "OLG-3800")) {
-     setScreen("screen1");
-
-//qp988UG
-
-   } else if ((getText("dropdownQP988P") == "01-08a" && getText("dropdown6") == "BSM-1700 (+UG/TS)")) {
-     setText("Sol1", "=01-15");
-   } else if ((getText("dropdownQP988P") == "01-10" && getText("dropdown6") == "BSM-1700 (+UG/TS)")) {
-     setText("Sol1", "≧02-10");
-   } else if ((getText("dropdownQP988P") == "01-11" && getText("dropdown6") == "BSM-1700 (+UG/TS)")) {
-     setText("Sol1", "≧02-10");
-
-   } else if ((getText("dropdownQP988P") == "01-08a" && getText("dropdown6") == "BSM-3500")) {
-    setScreen("screen1");
-   } else if ((getText("dropdownQP988P") == "01-10" && getText("dropdown6") == "BSM-3500")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownQP988P") == "01-11" && getText("dropdown6") == "BSM-3500")) {
-     setScreen("screen1");
-
-   } else if ((getText("dropdownQP988P") == "01-08a" && getText("dropdown6") == "BSM-6000")) {
-    setScreen("screen1");
-   } else if ((getText("dropdownQP988P") == "01-10" && getText("dropdown6") == "BSM-6000")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownQP988P") == "01-11" && getText("dropdown6") == "BSM-6000")) {
-     setScreen("screen1");
-
-   } else if ((getText("dropdownQP988P") == "01-08a" && getText("dropdown6") == "CSM-1901")) {
-    setScreen("screen1");
-   } else if ((getText("dropdownQP988P") == "01-10" && getText("dropdown6") == "CSM-1901")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownQP988P") == "01-11" && getText("dropdown6") == "CSM-1901")) {
-     setScreen("screen1");
-
-   } else if ((getText("dropdownQP988P") == "01-08a" && getText("dropdown6") == "CNS-6201")) {
-    setScreen("screen1");
-   } else if ((getText("dropdownQP988P") == "01-10" && getText("dropdown6") == "CNS-6201")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownQP988P") == "01-11" && getText("dropdown6") == "CNS-6201")) {
-     setScreen("screen1");
-
-
-   } else if ((getText("dropdownQP988P") == "01-08a" && getText("dropdown6") == "CNS-6801")) {
-    setScreen("screen1");
-   } else if ((getText("dropdownQP988P") == "01-10" && getText("dropdown6") == "CNS-6801")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownQP988P") == "01-11" && getText("dropdown6") == "CNS-6801")) {
-     setScreen("screen1");
-
-
-   } else if ((getText("dropdownQP988P") == "01-08a" && getText("dropdown6") == "RNS-9703(Old GUI)")) {
-    setText("Sol1", "NA");
-   } else if ((getText("dropdownQP988P") == "01-10" && getText("dropdown6") == "RNS-9703(Old GUI)")) {
-     setText("Sol1", "NA");
-   } else if ((getText("dropdownQP988P") == "01-11" && getText("dropdown6") == "RNS-9703(Old GUI)")) {
-    setText("Sol1", "NA");
-
-
-   } else if ((getText("dropdownQP988P") == "01-08a" && getText("dropdown6") == "RNS-6803(Audio)")) {
-    setText("Sol1", "NA");
-   } else if ((getText("dropdownQP988P") == "01-10" && getText("dropdown6") == "RNS-6803(Audio)")) {
-     setText("Sol1", "NA");
-   } else if ((getText("dropdownQP988P") == "01-11" && getText("dropdown6") == "RNS-6803(Audio)")) {
-    setText("Sol1", "NA");
-
-   } else if ((getText("dropdownQP988P") == "01-08a" && getText("dropdown6") == "RNS-6804(No Audio)")) {
-    setText("Sol1", "NA");
-   } else if ((getText("dropdownQP988P") == "01-10" && getText("dropdown6") == "RNS-6804(No Audio)")) {
-     setText("Sol1", "NA");
-   } else if ((getText("dropdownQP988P") == "01-11" && getText("dropdown6") == "RNS-6804(No Audio)")) {
-    setText("Sol1", "NA");
-
-   } else if ((getText("dropdownQP988P") == "01-08a" && getText("dropdown6") == "EDNS-9001 Prefense")) {
-    setText("Sol1", "NA");
-   } else if ((getText("dropdownQP988P") == "01-10" && getText("dropdown6") == "EDNS-9001 Prefense")) {
-     setText("Sol1", "NA");
-   } else if ((getText("dropdownQP988P") == "01-11" && getText("dropdown6") == "EDNS-9001 Prefense")) {
-    setText("Sol1", "NA");
-
-   } else if ((getText("dropdownQP988P") == "01-08a" && getText("dropdown6") == "GZ-100P (+UG/TS)")) {
-    setScreen("screen2");
-   } else if ((getText("dropdownQP988P") == "01-10" && getText("dropdown6") == "GZ-100P (+UG/TS)")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownQP988P") == "01-11" && getText("dropdown6") == "GZ-100P (+UG/TS)")) {
-     setScreen("screen1");
-
-   } else if ((getText("dropdownQP988P") == "01-08a" && getText("dropdown6") == "ORG-9100")) {
-    setScreen("screen1");
-   } else if ((getText("dropdownQP988P") == "01-10" && getText("dropdown6") == "ORG-9100")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownQP988P") == "01-11" && getText("dropdown6") == "ORG-9100")) {
-     setScreen("screen1");
-
-   } else if ((getText("dropdownQP988P") == "01-08a" && getText("dropdown6") == "CGS-9001 Pager Gateway (Legacy)")) {
-      setText("Sol1", "NA");
-   } else if ((getText("dropdownQP988P") == "01-10" && getText("dropdown6") == "CGS-9001 Pager Gateway (Legacy)")) {
-       setText("Sol1", "NA");
-   } else if ((getText("dropdownQP988P") == "01-11" && getText("dropdown6") == "CGS-9001 Pager Gateway (Legacy)")) {
-      setText("Sol1", "NA");
-
-   } else if ((getText("dropdownQP988P") == "01-08a" && getText("dropdown6") == "CGS-9002 HL7 Gateway (Legacy)")) {
-     setText("Sol1", "NA");
-   } else if ((getText("dropdownQP988P") == "01-10" && getText("dropdown6") == "CGS-9002 HL7 Gateway (Legacy)")) {
-      setText("Sol1", "NA");
-   } else if ((getText("dropdownQP988P") == "01-11" && getText("dropdown6") == "CGS-9002 HL7 Gateway (Legacy)")) {
-      setText("Sol1", "NA");
-
-   } else if ((getText("dropdownQP988P") == "01-08a" && getText("dropdown6") == "QP-983P NetKonnect/RNS Server")) {
-    setText("Sol1", "NA");
-   } else if ((getText("dropdownQP988P") == "01-10" && getText("dropdown6") == "QP-983P NetKonnect/RNS Server")) {
-     setText("Sol1", "NA");
-   } else if ((getText("dropdownQP988P") == "01-11" && getText("dropdown6") == "QP-983P NetKonnect/RNS Server")) {
-     setText("Sol1", "NA");
-
-
-   } else if ((getText("dropdownQP988P") == "01-08a" && getText("dropdown6") == "QP-986P Host1000 Server")) {
-    setScreen("screen1");
-   } else if ((getText("dropdownQP988P") == "01-10" && getText("dropdown6") == "QP-986P Host1000 Server")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownQP988P") == "01-11" && getText("dropdown6") == "QP-986P Host1000 Server")) {
-     setScreen("screen1");
-
-   } else if ((getText("dropdownQP988P") == "01-08a" && getText("dropdown6") == "QP-989P ViTrac iOS")) {
-    setText("Sol1", "≧01-08");
-   } else if ((getText("dropdownQP988P") == "01-10" && getText("dropdown6") == "QP-989P ViTrac iOS")) {
-     setText("Sol1", "≧01-08");
-   } else if ((getText("dropdownQP988P") == "01-11" && getText("dropdown6") == "QP-989P ViTrac iOS")) {
-     setText("Sol1", "≧01-08");
-
-
-   } else if ((getText("dropdownQP988P") == "01-08a" && getText("dropdown6") == "QP-991P ViTrac Android")) {
-    setScreen("screen1");
-   } else if ((getText("dropdownQP988P") == "01-10" && getText("dropdown6") == "QP-991P ViTrac Android")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownQP988P") == "01-11" && getText("dropdown6") == "QP-991P ViTrac Android")) {
-     setScreen("screen1");
-
-   } else if ((getText("dropdownQP988P") == "01-08a" && getText("dropdown6") == "QP-999P NKAnywhere")) {
-    setText("Sol1", "N/A");
-   } else if ((getText("dropdownQP988P") == "01-10" && getText("dropdown6") == "QP-999P NKAnywhere")) {
-     setText("Sol1", "N/A");
-   } else if ((getText("dropdownQP988P") == "01-11" && getText("dropdown6") == "QP-999P NKAnywhere")) {
-     setText("Sol1", "N/A");
-
-   } else if ((getText("dropdownQP988P") == "01-08a" && getText("dropdown6") == "OLG-3800")) {
-    setScreen("screen1");
-   } else if ((getText("dropdownQP988P") == "01-10" && getText("dropdown6") == "OLG-3800")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownQP988P") == "01-11" && getText("dropdown6") == "OLG-3800")) {
-     setScreen("screen1");
-
-//QP-988PEG
-
-   } else if ((getText("dropdownQP988") == "01-02" && getText("dropdown6") == "BSM-1700 (+UG/TS)")) {
-    setText("Sol1", "≧02-10");
-   } else if ((getText("dropdownQP988P") == "01-03" && getText("dropdown6") == "BSM-1700 (+UG/TS)")) {
-     setText("Sol1", "≧02-10");
-   } else if ((getText("dropdownQP988P") == "02-01" && getText("dropdown6") == "BSM-1700 (+UG/TS)")) {
-     setText("Sol1", "≧02-10");
-   } else if ((getText("dropdownQP988P") == "02-02" && getText("dropdown6") == "BSM-1700 (+UG/TS)")) {
-     setText("Sol1", "≧02-10");
-   } else if ((getText("dropdownQP988P") == "02-03" && getText("dropdown6") == "BSM-1700 (+UG/TS)")) {
-     setText("Sol1", "≧02-10");
-   } else if ((getText("dropdownQP988P") == "02-04" && getText("dropdown6") == "BSM-1700 (+UG/TS)")) {
-     setText("Sol1", "≧02-10");
-   } else if ((getText("dropdownQP988P") == "02-06" && getText("dropdown6") == "BSM-1700 (+UG/TS)")) {
-     setText("Sol1", "≧02-10");
-
-   } else if ((getText("dropdownQP988") == "01-02" && getText("dropdown6") == "BSM-3500")) {
-    setScreen("screen1");
-   } else if ((getText("dropdownQP988P") == "01-03" && getText("dropdown6") == "BSM-3500")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownQP988P") == "02-01" && getText("dropdown6") == "BSM-3500")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownQP988P") == "02-02" && getText("dropdown6") == "BSM-3500")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownQP988P") == "02-03" && getText("dropdown6") == "BSM-3500")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownQP988P") == "02-04" && getText("dropdown6") == "BSM-3500")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownQP988P") == "02-06" && getText("dropdown6") == "BSM-3500")) {
-     setScreen("screen1");
-
-   } else if ((getText("dropdownQP988") == "01-02" && getText("dropdown6") == "BSM-6000")) {
-    setScreen("screen1");
-   } else if ((getText("dropdownQP988P") == "01-03" && getText("dropdown6") == "BSM-6000")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownQP988P") == "02-01" && getText("dropdown6") == "BSM-6000")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownQP988P") == "02-02" && getText("dropdown6") == "BSM-6000")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownQP988P") == "02-03" && getText("dropdown6") == "BSM-6000")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownQP988P") == "02-04" && getText("dropdown6") == "BSM-6000")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownQP988P") == "02-06" && getText("dropdown6") == "BSM-6000")) {
-     setScreen("screen1");
-
-   } else if ((getText("dropdownQP988") == "01-02" && getText("dropdown6") == "CSM-1901")) {
-    setScreen("screen1");
-   } else if ((getText("dropdownQP988P") == "01-03" && getText("dropdown6") == "CSM-1901")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownQP988P") == "02-01" && getText("dropdown6") == "CSM-1901")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownQP988P") == "02-02" && getText("dropdown6") == "CSM-1901")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownQP988P") == "02-03" && getText("dropdown6") == "CSM-1901")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownQP988P") == "02-04" && getText("dropdown6") == "CSM-1901")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownQP988P") == "02-06" && getText("dropdown6") == "CSM-1901")) {
-     setScreen("screen1");
-
-   } else if ((getText("dropdownQP988") == "01-02" && getText("dropdown6") == "CNS-6201")) {
-    setText("Sol1", "≧05-01");
-   } else if ((getText("dropdownQP988P") == "01-03" && getText("dropdown6") == "CNS-6201")) {
-     setText("Sol1", "≧05-01");
-   } else if ((getText("dropdownQP988P") == "02-01" && getText("dropdown6") == "CNS-6201")) {
-     setText("Sol1", "≧05-01");
-   } else if ((getText("dropdownQP988P") == "02-02" && getText("dropdown6") == "CNS-6201")) {
-     setText("Sol1", "≧05-01");
-   } else if ((getText("dropdownQP988P") == "02-03" && getText("dropdown6") == "CNS-6201")) {
-     setText("Sol1", "≧05-01");
-   } else if ((getText("dropdownQP988P") == "02-04" && getText("dropdown6") == "CNS-6201")) {
-     setText("Sol1", "≧05-01");
-   } else if ((getText("dropdownQP988P") == "02-06" && getText("dropdown6") == "CNS-6201")) {
-     setText("Sol1", "≧05-01");
-
-   } else if ((getText("dropdownQP988") == "01-02" && getText("dropdown6") == "CNS-6801")) {
-    setScreen("screen1");
-   } else if ((getText("dropdownQP988P") == "01-03" && getText("dropdown6") == "CNS-6801")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownQP988P") == "02-01" && getText("dropdown6") == "CNS-6801")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownQP988P") == "02-02" && getText("dropdown6") == "CNS-6801")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownQP988P") == "02-03" && getText("dropdown6") == "CNS-6801")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownQP988P") == "02-04" && getText("dropdown6") == "CNS-6801")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownQP988P") == "02-06" && getText("dropdown6") == "CNS-6801")) {
-     setScreen("screen1");
-
-   } else if ((getText("dropdownQP988") == "01-02" && getText("dropdown6") == "RNS-9703(Old GUI)")) {
-    setScreen("screen1");
-   } else if ((getText("dropdownQP988P") == "01-03" && getText("dropdown6") == "RNS-9703(Old GUI)")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownQP988P") == "02-01" && getText("dropdown6") == "RNS-9703(Old GUI)")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownQP988P") == "02-02" && getText("dropdown6") == "RNS-9703(Old GUI)")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownQP988P") == "02-03" && getText("dropdown6") == "RNS-9703(Old GUI)")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownQP988P") == "02-04" && getText("dropdown6") == "RNS-9703(Old GUI)")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownQP988P") == "02-06" && getText("dropdown6") == "RNS-9703(Old GUI)")) {
-     setScreen("screen1");
-
-   } else if ((getText("dropdownQP988") == "01-02" && getText("dropdown6") == "RNS-6803(Audio)")) {
-    setScreen("screen1");
-   } else if ((getText("dropdownQP988P") == "01-03" && getText("dropdown6") == "RNS-6803(Audio)")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownQP988P") == "02-01" && getText("dropdown6") == "RNS-6803(Audio)")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownQP988P") == "02-02" && getText("dropdown6") == "RNS-6803(Audio)")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownQP988P") == "02-03" && getText("dropdown6") == "RNS-6803(Audio)")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownQP988P") == "02-04" && getText("dropdown6") == "RNS-6803(Audio)")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownQP988P") == "02-06" && getText("dropdown6") == "RNS-6803(Audio)")) {
-     setScreen("screen1");
-
-
-   } else if ((getText("dropdownQP988") == "01-02" && getText("dropdown6") == "RNS-6804(No Audio)")) {
-    setScreen("screen1");
-   } else if ((getText("dropdownQP988P") == "01-03" && getText("dropdown6") == "RNS-6804(No Audio)")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownQP988P") == "02-01" && getText("dropdown6") == "RNS-6804(No Audio))")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownQP988P") == "02-02" && getText("dropdown6") == "RNS-6804(No Audio)")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownQP988P") == "02-03" && getText("dropdown6") == "RNS-6804(No Audio)")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownQP988P") == "02-04" && getText("dropdown6") == "RNS-6804(No Audio)")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownQP988P") == "02-06" && getText("dropdown6") == "RNS-6804(No Audio)")) {
-     setScreen("screen1");
-
-   } else if ((getText("dropdownQP988") == "01-02" && getText("dropdown6") == "EDNS-9001 Prefense")) {
-    setText("Sol1", "NA");
-   } else if ((getText("dropdownQP988P") == "01-03" && getText("dropdown6") == "EDNS-9001 Prefense")) {
-     setText("Sol1", "NA");
-   } else if ((getText("dropdownQP988P") == "02-01" && getText("dropdown6") == "EDNS-9001 Prefense")) {
-     setText("Sol1", "NA");
-   } else if ((getText("dropdownQP988P") == "02-02" && getText("dropdown6") == "EDNS-9001 Prefense")) {
-     setText("Sol1", "NA");
-   } else if ((getText("dropdownQP988P") == "02-03" && getText("dropdown6") == "EDNS-9001 Prefense")) {
-    setText("Sol1", "NA");
-   } else if ((getText("dropdownQP988P") == "02-04" && getText("dropdown6") == "EDNS-9001 Prefense")) {
-   setText("Sol1", "NA");
-   } else if ((getText("dropdownQP988P") == "02-06" && getText("dropdown6") == "EDNS-9001 Prefense")) {
-     setText("Sol1", "NA");
-
-
-   } else if ((getText("dropdownQP988") == "01-02" && getText("dropdown6") == "GZ-100P (+UG/TS)")) {
-    setScreen("screen1");
-   } else if ((getText("dropdownQP988P") == "01-03" && getText("dropdown6") == "GZ-100P (+UG/TS)")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownQP988P") == "02-01" && getText("dropdown6") == "RGZ-100P (+UG/TS)")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownQP988P") == "02-02" && getText("dropdown6") == "GZ-100P (+UG/TS)")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownQP988P") == "02-03" && getText("dropdown6") == "GZ-100P (+UG/TS)")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownQP988P") == "02-04" && getText("dropdown6") == "GZ-100P (+UG/TS)")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownQP988P") == "02-06" && getText("dropdown6") == "GZ-100P (+UG/TS)")) {
-     setScreen("screen1");
-
-   } else if ((getText("dropdownQP988") == "01-02" && getText("dropdown6") == "ORG-9100")) {
-    setScreen("screen1");
-   } else if ((getText("dropdownQP988P") == "01-03" && getText("dropdown6") == "ORG-9100")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownQP988P") == "02-01" && getText("dropdown6") == "ORG-9100")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownQP988P") == "02-02" && getText("dropdown6") == "ORG-9100")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownQP988P") == "02-03" && getText("dropdown6") == "ORG-9100")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownQP988P") == "02-04" && getText("dropdown6") == "ORG-9100")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownQP988P") == "02-06" && getText("dropdown6") == "ORG-9100")) {
-     setScreen("screen1");
-
-   } else if ((getText("dropdownQP988") == "01-02" && getText("dropdown6") == "CGS-9001 Pager Gateway (Legacy)")) {
-    setScreen("screen1");
-   } else if ((getText("dropdownQP988P") == "01-03" && getText("dropdown6") == "CGS-9001 Pager Gateway (Legacy)")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownQP988P") == "02-01" && getText("dropdown6") == "CGS-9001 Pager Gateway (Legacy)")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownQP988P") == "02-02" && getText("dropdown6") == "CGS-9001 Pager Gateway (Legacy)")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownQP988P") == "02-03" && getText("dropdown6") == "CGS-9001 Pager Gateway (Legacy)")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownQP988P") == "02-04" && getText("dropdown6") == "CGS-9001 Pager Gateway (Legacy)")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownQP988P") == "02-06" && getText("dropdown6") == "CGS-9001 Pager Gateway (Legacy)")) {
-     setScreen("screen1");
-
-   } else if ((getText("dropdownQP988") == "01-02" && getText("dropdown6") == "CGS-9002 HL7 Gateway (Legacy)")) {
-    setScreen("screen1");
-   } else if ((getText("dropdownQP988P") == "01-03" && getText("dropdown6") == "CGS-9002 HL7 Gateway (Legacy)")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownQP988P") == "02-01" && getText("dropdown6") == "CGS-9002 HL7 Gateway (Legacy)")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownQP988P") == "02-02" && getText("dropdown6") == "CGS-9002 HL7 Gateway (Legacy)")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownQP988P") == "02-03" && getText("dropdown6") == "CGS-9002 HL7 Gateway (Legacy)")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownQP988P") == "02-04" && getText("dropdown6") == "CGS-9002 HL7 Gateway (Legacy)")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownQP988P") == "02-06" && getText("dropdown6") == "CGS-9002 HL7 Gateway (Legacy)")) {
-     setScreen("screen1");
-
-
-   } else if ((getText("dropdownQP988") == "01-02" && getText("dropdown6") == "QP-983P NetKonnect/RNS Server")) {
-    setText("Sol1", "NA");
-   } else if ((getText("dropdownQP988P") == "01-03" && getText("dropdown6") == "QP-983P NetKonnect/RNS Server")) {
-     setText("Sol1", "NA");
-   } else if ((getText("dropdownQP988P") == "02-01" && getText("dropdown6") == "QP-983P NetKonnect/RNS Server")) {
-     setText("Sol1", "NA");
-   } else if ((getText("dropdownQP988P") == "02-02" && getText("dropdown6") == "QP-983P NetKonnect/RNS Server")) {
-     setText("Sol1", "NA");
-   } else if ((getText("dropdownQP988P") == "02-03" && getText("dropdown6") == "QP-983P NetKonnect/RNS Server")) {
-    setText("Sol1", "NA");
-   } else if ((getText("dropdownQP988P") == "02-04" && getText("dropdown6") == "QP-983P NetKonnect/RNS Server")) {
-   setText("Sol1", "NA");
-   } else if ((getText("dropdownQP988P") == "02-06" && getText("dropdown6") == "QP-983P NetKonnect/RNS Server")) {
-     setText("Sol1", "NA");
-
-   } else if ((getText("dropdownQP988") == "01-02" && getText("dropdown6") == "QP-986P Host1000 Server")) {
-    setScreen("screen1");
-   } else if ((getText("dropdownQP988P") == "01-03" && getText("dropdown6") == "QP-986P Host1000 Server")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownQP988P") == "02-01" && getText("dropdown6") == "QP-986P Host1000 Server")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownQP988P") == "02-02" && getText("dropdown6") == "QP-986P Host1000 Server")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownQP988P") == "02-03" && getText("dropdown6") == "QP-986P Host1000 Server")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownQP988P") == "02-04" && getText("dropdown6") == "QP-986P Host1000 Server")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownQP988P") == "02-06" && getText("dropdown6") == "QP-986P Host1000 Server")) {
-     setScreen("screen1");
-
-
-   } else if ((getText("dropdownQP988") == "01-02" && getText("dropdown6") == "QP-989P ViTrac iOS")) {
-    setText("Sol1", "≧01-08");
-   } else if ((getText("dropdownQP988P") == "01-03" && getText("dropdown6") == "QP-989P ViTrac iOS")) {
-     setText("Sol1", "≧01-08");
-   } else if ((getText("dropdownQP988P") == "02-01" && getText("dropdown6") == "QP-989P ViTrac iOS")) {
-     setText("Sol1", "≧01-08");
-   } else if ((getText("dropdownQP988P") == "02-02" && getText("dropdown6") == "QP-989P ViTrac iOS")) {
-     setText("Sol1", "≧01-08");
-   } else if ((getText("dropdownQP988P") == "02-03" && getText("dropdown6") == "QP-989P ViTrac iOS")) {
-    setText("Sol1", "≧01-08");
-   } else if ((getText("dropdownQP988P") == "02-04" && getText("dropdown6") == "QP-989P ViTrac iOS")) {
-   setText("Sol1", "≧01-08");
-   } else if ((getText("dropdownQP988P") == "02-06" && getText("dropdown6") == "QP-989P ViTrac iOS")) {
-     setText("Sol1", "≧01-08");
-
-   } else if ((getText("dropdownQP988") == "01-02" && getText("dropdown6") == "QP-991P ViTrac Android")) {
-    setScreen("screen1");
-   } else if ((getText("dropdownQP988P") == "01-03" && getText("dropdown6") == "QP-991P ViTrac Android")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownQP988P") == "02-01" && getText("dropdown6") == "QP-991P ViTrac Android")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownQP988P") == "02-02" && getText("dropdown6") == "QP-991P ViTrac Android")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownQP988P") == "02-03" && getText("dropdown6") == "QP-991P ViTrac Android")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownQP988P") == "02-04" && getText("dropdown6") == "QP-991P ViTrac Android")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownQP988P") == "02-06" && getText("dropdown6") == "QP-991P ViTrac Android")) {
-     setScreen("screen1");
-
-   } else if ((getText("dropdownQP988") == "01-02" && getText("dropdown6") == "QP-999P NKAnywhere")) {
-    setText("Sol1", "NA");
-   } else if ((getText("dropdownQP988P") == "01-03" && getText("dropdown6") == "QP-999P NKAnywhere")) {
-     setText("Sol1", "NA");
-   } else if ((getText("dropdownQP988P") == "02-01" && getText("dropdown6") == "QP-999P NKAnywhere")) {
-     setText("Sol1", "NA");
-   } else if ((getText("dropdownQP988P") == "02-02" && getText("dropdown6") == "QP-999P NKAnywhere")) {
-     setText("Sol1", "NA");
-   } else if ((getText("dropdownQP988P") == "02-03" && getText("dropdown6") == "QP-999P NKAnywhere")) {
-    setText("Sol1", "NA");
-   } else if ((getText("dropdownQP988P") == "02-04" && getText("dropdown6") == "QQP-999P NKAnywhere")) {
-   setText("Sol1", "NA");
-   } else if ((getText("dropdownQP988P") == "02-06" && getText("dropdown6") == "QP-999P NKAnywhere")) {
-     setText("Sol1", "NA");
-
-   } else if ((getText("dropdownQP988") == "01-02" && getText("dropdown6") == "OLG-3800")) {
-    setScreen("screen1");
-   } else if ((getText("dropdownQP988P") == "01-03" && getText("dropdown6") == "OLG-3800")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownQP988P") == "02-01" && getText("dropdown6") == "OLG-3800")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownQP988P") == "02-02" && getText("dropdown6") == "OLG-3800")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownQP988P") == "02-03" && getText("dropdown6") == "OLG-3800")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownQP988P") == "02-04" && getText("dropdown6") == "OLG-3800")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownQP988P") == "02-06" && getText("dropdown6") == "OLG-3800")) {
-     setScreen("screen1");
 
 //QP989P
 
-   } else if ((getText("dropdownQP989p") == "01-08" && getText("dropdown6") == "BSM-1700 (+UG/TS)")) {
+   } else if ((getText("dropdownQP989p") == "01-08" && getText("dropdown6") == "Unified Gateway (01-08a)")) {
      setScreen("screen1");
-   } else if ((getText("dropdownQP989p") == "01-10" && getText("dropdown6") == "BSM-1700 (+UG/TS)")) {
+   } else if ((getText("dropdownQP989p") == "01-10" && getText("dropdown6") == "Unified Gateway (01-08a)")) {
      setScreen("screen1");
-   } else if ((getText("dropdownQP989p") == "01-11" && getText("dropdown6") == "BSM-1700 (+UG/TS)")) {
+   } else if ((getText("dropdownQP989p") == "01-11" && getText("dropdown6") == "Unified Gateway (01-08a)")) {
      setScreen("screen1");
-   } else if ((getText("dropdownQP989p") == "01-11a" && getText("dropdown6") == "BSM-1700 (+UG/TS)")) {
-     setScreen("screen1");
-
-   } else if ((getText("dropdownQP989p") == "01-08" && getText("dropdown6") == "BSM-3500")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownQP989p") == "01-10" && getText("dropdown6") == "BSM-3500")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownQP989p") == "01-11" && getText("dropdown6") == "BSM-3500")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownQP989p") == "01-11a" && getText("dropdown6") == "BSM-3500")) {
+   } else if ((getText("dropdownQP989p") == "01-11a" && getText("dropdown6") == "Unified Gateway (01-08a)")) {
      setScreen("screen1");
 
-
-   } else if ((getText("dropdownQP989p") == "01-08" && getText("dropdown6") == "BSM-6000")) {
+   } else if ((getText("dropdownQP989p") == "01-08" && getText("dropdown6") == "Unified Gateway (01-10)")) {
      setScreen("screen1");
-   } else if ((getText("dropdownQP989p") == "01-10" && getText("dropdown6") == "BSM-6000")) {
+   } else if ((getText("dropdownQP989p") == "01-10" && getText("dropdown6") == "Unified Gateway (01-10)")) {
      setScreen("screen1");
-   } else if ((getText("dropdownQP989p") == "01-11" && getText("dropdown6") == "BSM-6000")) {
+   } else if ((getText("dropdownQP989p") == "01-11" && getText("dropdown6") == "Unified Gateway (01-10)")) {
      setScreen("screen1");
-   } else if ((getText("dropdownQP989p") == "01-11a" && getText("dropdown6") == "BSM-6000")) {
-     setScreen("screen1");
-
-   } else if ((getText("dropdownQP989p") == "01-08" && getText("dropdown6") == "CSM-1901")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownQP989p") == "01-10" && getText("dropdown6") == "CSM-1901")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownQP989p") == "01-11" && getText("dropdown6") == "CSM-1901")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownQP989p") == "01-11a" && getText("dropdown6") == "CSM-1901")) {
+   } else if ((getText("dropdownQP989p") == "01-11a" && getText("dropdown6") == "Unified Gateway (01-10)")) {
      setScreen("screen1");
 
 
+   } else if ((getText("dropdownQP989p") == "01-08" && getText("dropdown6") == "Unified Gateway (01-11)")) {
+     setScreen("screen1");
+   } else if ((getText("dropdownQP989p") == "01-10" && getText("dropdown6") == "Unified Gateway (01-11)")) {
+     setScreen("screen1");
+   } else if ((getText("dropdownQP989p") == "01-11" && getText("dropdown6") == "Unified Gateway (01-11)")) {
+     setScreen("screen1");
+   } else if ((getText("dropdownQP989p") == "01-11a" && getText("dropdown6") == "Unified Gateway (01-11)")) {
+     setScreen("screen1");
 
-   } else if ((getText("dropdownQP989p") == "01-08" && getText("dropdown6") == "CNS-6201")) {
+   } else if ((getText("dropdownQP989p") == "01-08" && getText("dropdown6") == "Enterprise Gateway(01-02)")) {
      setScreen("screen1");
-   } else if ((getText("dropdownQP989p") == "01-10" && getText("dropdown6") == "CNS-6201")) {
+   } else if ((getText("dropdownQP989p") == "01-10" && getText("dropdown6") == "Enterprise Gateway(01-02)")) {
      setScreen("screen1");
-   } else if ((getText("dropdownQP989p") == "01-11" && getText("dropdown6") == "CNS-6201")) {
+   } else if ((getText("dropdownQP989p") == "01-11" && getText("dropdown6") == "Enterprise Gateway(01-02)")) {
      setScreen("screen1");
-   } else if ((getText("dropdownQP989p") == "01-11a" && getText("dropdown6") == "CNS-6201")) {
+   } else if ((getText("dropdownQP989p") == "01-11a" && getText("dropdown6") == "Enterprise Gateway(01-02)")) {
      setScreen("screen1");
 
 
 
-   } else if ((getText("dropdownQP989p") == "01-08" && getText("dropdown6") == "CNS-6801")) {
+   } else if ((getText("dropdownQP989p") == "01-08" && getText("dropdown6") == "Enterprise Gateway(01-03)")) {
      setScreen("screen1");
-   } else if ((getText("dropdownQP989p") == "01-10" && getText("dropdown6") == "CNS-6801")) {
+   } else if ((getText("dropdownQP989p") == "01-10" && getText("dropdown6") == "Enterprise Gateway(01-03)")) {
      setScreen("screen1");
-   } else if ((getText("dropdownQP989p") == "01-11" && getText("dropdown6") == "CNS-6801")) {
+   } else if ((getText("dropdownQP989p") == "01-11" && getText("dropdown6") == "Enterprise Gateway(01-03)")) {
      setScreen("screen1");
-   } else if ((getText("dropdownQP989p") == "01-11a" && getText("dropdown6") == "CNS-6801")) {
+   } else if ((getText("dropdownQP989p") == "01-11a" && getText("dropdown6") == "Enterprise Gateway(01-03)")) {
+     setScreen("screen1");
+
+
+
+   } else if ((getText("dropdownQP989p") == "01-08" && getText("dropdown6") == "Enterprise Gateway(02-01)")) {
+     setScreen("screen1");
+   } else if ((getText("dropdownQP989p") == "01-10" && getText("dropdown6") == "Enterprise Gateway(02-01)")) {
+     setScreen("screen1");
+   } else if ((getText("dropdownQP989p") == "01-11" && getText("dropdown6") == "Enterprise Gateway(02-01)")) {
+     setScreen("screen1");
+   } else if ((getText("dropdownQP989p") == "01-11a" && getText("dropdown6") == "Enterprise Gateway(02-01)")) {
      setScreen("screen1");
 
 
-   } else if ((getText("dropdownQP989p") == "01-08" && getText("dropdown6") == "RNS-9703(Old GUI)")) {
-     setText("Sol1", "NA");
-   } else if ((getText("dropdownQP989p") == "01-10" && getText("dropdown6") == "RNS-9703(Old GUI)")) {
-     setText("Sol1", "NA");
-   } else if ((getText("dropdownQP989p") == "01-11" && getText("dropdown6") == "RNS-9703(Old GUI)")) {
-     setText("Sol1", "NA");
-   } else if ((getText("dropdownQP989p") == "01-11a" && getText("dropdown6") == "RNS-9703(Old GUI)")) {
-     setText("Sol1", "NA");
+   } else if ((getText("dropdownQP989p") == "01-08" && getText("dropdown6") == "Enterprise Gateway(02-03)")) {
+     setScreen("screen1");
+   } else if ((getText("dropdownQP989p") == "01-10" && getText("dropdown6") == "Enterprise Gateway(02-03)")) {
+    setScreen("screen1");
+   } else if ((getText("dropdownQP989p") == "01-11" && getText("dropdown6") == "Enterprise Gateway(02-03)")) {
+     setScreen("screen1");
+   } else if ((getText("dropdownQP989p") == "01-11a" && getText("dropdown6") == "Enterprise Gateway(02-03)")) {
+    setScreen("screen1");
 
-   } else if ((getText("dropdownQP989p") == "01-08" && getText("dropdown6") == "RNS-6803(Audio)")) {
-     setText("Sol1", "NA");
-   } else if ((getText("dropdownQP989p") == "01-10" && getText("dropdown6") == "RNS-6803(Audio)")) {
-     setText("Sol1", "NA");
-   } else if ((getText("dropdownQP989p") == "01-11" && getText("dropdown6") == "RNS-6803(Audio)")) {
-     setText("Sol1", "NA");
-   } else if ((getText("dropdownQP989p") == "01-11a" && getText("dropdown6") == "RNS-6803(Audio)")) {
-     setText("Sol1", "NA");
+   } else if ((getText("dropdownQP989p") == "01-08" && getText("dropdown6") == "Enterprise Gateway(02-04)")) {
+     setScreen("screen1");
+   } else if ((getText("dropdownQP989p") == "01-10" && getText("dropdown6") == "Enterprise Gateway(02-04)")) {
+    setScreen("screen1");
+   } else if ((getText("dropdownQP989p") == "01-11" && getText("dropdown6") == "Enterprise Gateway(02-04)")) {
+     setScreen("screen1");
+   } else if ((getText("dropdownQP989p") == "01-11a" && getText("dropdown6") == "Enterprise Gateway(02-04)")) {
+    setScreen("screen1");
 
-   } else if ((getText("dropdownQP989p") == "01-08" && getText("dropdown6") == "RNS-6804(No Audio)")) {
-     setText("Sol1", "NA");
-   } else if ((getText("dropdownQP989p") == "01-10" && getText("dropdown6") == "RNS-6804(No Audio)")) {
-     setText("Sol1", "NA");
-   } else if ((getText("dropdownQP989p") == "01-11" && getText("dropdown6") == "RNS-6804(No Audio)")) {
-     setText("Sol1", "NA");
-   } else if ((getText("dropdownQP989p") == "01-11a" && getText("dropdown6") == "RNS-6804(No Audio)")) {
-     setText("Sol1", "NA");
+   } else if ((getText("dropdownQP989p") == "01-08" && getText("dropdown6") == "Enterprise Gateway(02-06)")) {
+     setScreen("screen1");
+   } else if ((getText("dropdownQP989p") == "01-10" && getText("dropdown6") == "Enterprise Gateway(02-06)")) {
+    setScreen("screen1");
+   } else if ((getText("dropdownQP989p") == "01-11" && getText("dropdown6") == "Enterprise Gateway(02-06)")) {
+     setScreen("screen1");
+   } else if ((getText("dropdownQP989p") == "01-11a" && getText("dropdown6") == "Enterprise Gateway(02-06)")) {
+    setScreen("screen1");
 
-   } else if ((getText("dropdownQP989p") == "01-08" && getText("dropdown6") == "EDNS-9001 Prefense")) {
-     setText("Sol1", "NA");
-   } else if ((getText("dropdownQP989p") == "01-10" && getText("dropdown6") == "EDNS-9001 Prefense")) {
-     setText("Sol1", "NA");
-   } else if ((getText("dropdownQP989p") == "01-11" && getText("dropdown6") == "EDNS-9001 Prefense")) {
-     setText("Sol1", "NA");
-   } else if ((getText("dropdownQP989p") == "01-11a" && getText("dropdown6") == "EDNS-9001 Prefense")) {
-     setText("Sol1", "NA");
+   } else if ((getText("dropdownQP989p") == "01-08" && getText("dropdown6") == "Enterprise Gateway(04-01)")) {
+     setScreen("screen1");
+   } else if ((getText("dropdownQP989p") == "01-10" && getText("dropdown6") == "Enterprise Gateway(04-01)")) {
+    setScreen("screen1");
+   } else if ((getText("dropdownQP989p") == "01-11" && getText("dropdown6") == "Enterprise Gateway(04-01)")) {
+     setScreen("screen1");
+   } else if ((getText("dropdownQP989p") == "01-11a" && getText("dropdown6") == "Enterprise Gateway(04-01)")) {
+    setScreen("screen1");
 
-   } else if ((getText("dropdownQP989p") == "01-08" && getText("dropdown6") == "GZ-100P (+UG/TS)")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownQP989p") == "01-10" && getText("dropdown6") == "GZ-100P (+UG/TS)")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownQP989p") == "01-11" && getText("dropdown6") == "GZ-100P (+UG/TS)")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownQP989p") == "01-11a" && getText("dropdown6") == "GZ-100P (+UG/TS)")) {
-     setScreen("screen1");
-
-   } else if ((getText("dropdownQP989p") == "01-08" && getText("dropdown6") == "ORG-9100")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownQP989p") == "01-10" && getText("dropdown6") == "ORG-9100")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownQP989p") == "01-11" && getText("dropdown6") == "ORG-9100")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownQP989p") == "01-11a" && getText("dropdown6") == "ORG-9100")) {
-     setScreen("screen1");
-
-   } else if ((getText("dropdownQP989p") == "01-08" && getText("dropdown6") == "CGS-9001 Pager Gateway (Legacy)")) {
-     setText("Sol1", "NA");
-   } else if ((getText("dropdownQP989p") == "01-10" && getText("dropdown6") == "CGS-9001 Pager Gateway (Legacy)")) {
-     setText("Sol1", "NA");
-   } else if ((getText("dropdownQP989p") == "01-11" && getText("dropdown6") == "CGS-9001 Pager Gateway (Legacy)")) {
-     setText("Sol1", "NA");
-   } else if ((getText("dropdownQP989p") == "01-11a" && getText("dropdown6") == "CGS-9001 Pager Gateway (Legacy)")) {
-     setText("Sol1", "NA");
-
-   } else if ((getText("dropdownQP989p") == "01-08" && getText("dropdown6") == "CGS-9002 HL7 Gateway (Legacy)")) {
-     setText("Sol1", "NA");
-   } else if ((getText("dropdownQP989p") == "01-10" && getText("dropdown6") == "CGS-9002 HL7 Gateway (Legacy)")) {
-     setText("Sol1", "NA");
-   } else if ((getText("dropdownQP989p") == "01-11" && getText("dropdown6") == "CGS-9002 HL7 Gateway (Legacy)")) {
-     setText("Sol1", "NA");
-   } else if ((getText("dropdownQP989p") == "01-11a" && getText("dropdown6") == "CGS-9002 HL7 Gateway (Legacy)")) {
-    setText("Sol1", "NA");
-
-   } else if ((getText("dropdownQP989p") == "01-08" && getText("dropdown6") == "QP-983P NetKonnect/RNS Server")) {
-     setText("Sol1", "NA");
-   } else if ((getText("dropdownQP989p") == "01-10" && getText("dropdown6") == "QP-983P NetKonnect/RNS Server")) {
-     setText("Sol1", "NA");
-   } else if ((getText("dropdownQP989p") == "01-11" && getText("dropdown6") == "QP-983P NetKonnect/RNS Server")) {
-     setText("Sol1", "NA");
-   } else if ((getText("dropdownQP989p") == "01-11a" && getText("dropdown6") == "QP-983P NetKonnect/RNS Server")) {
-    setText("Sol1", "NA");
-
-   } else if ((getText("dropdownQP989p") == "01-08" && getText("dropdown6") == "QP-986P Host1000 Server")) {
-     setText("Sol1", "NA");
-   } else if ((getText("dropdownQP989p") == "01-10" && getText("dropdown6") == "QP-986P Host1000 Server")) {
-     setText("Sol1", "NA");
-   } else if ((getText("dropdownQP989p") == "01-11" && getText("dropdown6") == "QP-986P Host1000 Server")) {
-     setText("Sol1", "NA");
-   } else if ((getText("dropdownQP989p") == "01-11a" && getText("dropdown6") == "QP-986P Host1000 Server")) {
-    setText("Sol1", "NA");
-
-
-   } else if ((getText("dropdownQP989p") == "01-08" && getText("dropdown6") == "QP-988P Unified Gateway")) {
-     setText("Sol1", "≧01-08a");
-   } else if ((getText("dropdownQP989p") == "01-10" && getText("dropdown6") == "QP-988P Unified Gateway")) {
-     setText("Sol1", "≧01-08a");
-   } else if ((getText("dropdownQP989p") == "01-11" && getText("dropdown6") == "QP-988P Unified Gateway")) {
-     setText("Sol1", "≧01-08a");
-   } else if ((getText("dropdownQP989p") == "01-11a" && getText("dropdown6") == "QP-988P Unified Gateway")) {
-    setText("Sol1", "≧01-08a");
-
-   } else if ((getText("dropdownQP989p") == "01-08" && getText("dropdown6") == "QP-988P Enterprise Gateway")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownQP989p") == "01-10" && getText("dropdown6") == "QP-988P Enterprise Gateway")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownQP989p") == "01-11" && getText("dropdown6") == "QP-988P Enterprise Gateway")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownQP989p") == "01-11a" && getText("dropdown6") == "QP-988P Enterprise Gateway")) {
-     setScreen("screen1");
-
-   } else if ((getText("dropdownQP989p") == "01-08" && getText("dropdown6") == "QP-991P ViTrac Android")) {
-     setText("Sol1", "NA");
-   } else if ((getText("dropdownQP989p") == "01-10" && getText("dropdown6") == "QP-991P ViTrac Android")) {
-     setText("Sol1", "NA");
-   } else if ((getText("dropdownQP989p") == "01-11" && getText("dropdown6") == "QP-991P ViTrac Android")) {
-     setText("Sol1", "NA");
-   } else if ((getText("dropdownQP989p") == "01-11a" && getText("dropdown6") == "QP-991P ViTrac Android")) {
-    setText("Sol1", "NA");
-
-   } else if ((getText("dropdownQP989p") == "01-08" && getText("dropdown6") == "QP-999P NKAnywhere")) {
-     setText("Sol1", "NA");
-   } else if ((getText("dropdownQP989p") == "01-10" && getText("dropdown6") == "QP-999P NKAnywhere")) {
-     setText("Sol1", "NA");
-   } else if ((getText("dropdownQP989p") == "01-11" && getText("dropdown6") == "QP-999P NKAnywhere")) {
-     setText("Sol1", "NA");
-   } else if ((getText("dropdownQP989p") == "01-11a" && getText("dropdown6") == "QP-999P NKAnywhere")) {
-    setText("Sol1", "NA");
-
-   } else if ((getText("dropdownQP989p") == "01-08" && getText("dropdown6") == "OLG-3800")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownQP989p") == "01-10" && getText("dropdown6") == "OLG-3800")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownQP989p") == "01-11" && getText("dropdown6") == "OLG-3800")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownQP989p") == "01-11a" && getText("dropdown6") == "OLG-3800")) {
-     setScreen("screen1");
 
 //QP-991P
-   } else if ((getText("dropdownqp991p") == "01-04" && getText("dropdown6") == "BSM-1700 (+UG/TS)")) {
+   } else if ((getText("dropdownqp991p") == "01-04" && getText("dropdown6") == "Unified Gateway (01-08a)")) {
      setScreen("screen1");
-   } else if ((getText("dropdownqp991p") == "01-04" && getText("dropdown6") == "BSM-3500")) {
+   } else if ((getText("dropdownqp991p") == "01-04" && getText("dropdown6") == "Unified Gateway (01-10)")) {
      setScreen("screen1");
-   } else if ((getText("dropdownqp991p") == "01-04" && getText("dropdown6") == "BSM-6000")) {
+   } else if ((getText("dropdownqp991p") == "01-04" && getText("dropdown6") == "Unified Gateway (01-11)")) {
      setScreen("screen1");
-   } else if ((getText("dropdownqp991p") == "01-04" && getText("dropdown6") == "CSM-1901")) {
+   } else if ((getText("dropdownqp991p") == "01-04" && getText("dropdown6") == "Enterprise Gateway(01-02)")) {
      setScreen("screen1");
-   } else if ((getText("dropdownqp991p") == "01-04" && getText("dropdown6") == "CNS-6201")) {
+   } else if ((getText("dropdownqp991p") == "01-04" && getText("dropdown6") == "Enterprise Gateway(01-03)")) {
      setScreen("screen1");
-   } else if ((getText("dropdownqp991p") == "01-04" && getText("dropdown6") == "CNS-6801")) {
+   } else if ((getText("dropdownqp991p") == "01-04" && getText("dropdown6") == "Enterprise Gateway(02-01)")) {
      setScreen("screen1");
-   } else if ((getText("dropdownqp991p") == "01-04" && getText("dropdown6") == "RNS-9703(Old GUI)")) {
-     setText("Sol1", "NA");
-   } else if ((getText("dropdownqp991p") == "01-04" && getText("dropdown6") == "RNS-6803(Audio)")) {
-     setText("Sol1", "NA");
-   } else if ((getText("dropdownqp991p") == "01-04" && getText("dropdown6") == "RNS-6804(No Audio)")) {
-     setText("Sol1", "NA");
-   } else if ((getText("dropdownqp991p") == "01-04" && getText("dropdown6") == "EDNS-9001 Prefense")) {
-     setText("Sol1", "NA");
-   } else if ((getText("dropdownqp991p") == "01-04" && getText("dropdown6") == "GZ-100P (+UG/TS)")) {
+   } else if ((getText("dropdownqp991p") == "01-04" && getText("dropdown6") == "Enterprise Gateway(02-03)")) {
+      setScreen("screen1");
+   } else if ((getText("dropdownqp991p") == "01-04" && getText("dropdown6") == "Enterprise Gateway(02-04)")) {
      setScreen("screen1");
-   } else if ((getText("dropdownqp991p") == "01-04" && getText("dropdown6") == "ORG-9100")) {
+   } else if ((getText("dropdownqp991p") == "01-04" && getText("dropdown6") == "Enterprise Gateway(02-06)")) {
+      setScreen("screen1");
+   } else if ((getText("dropdownqp991p") == "01-04" && getText("dropdown6") == "Enterprise Gateway(04-01)")) {
      setScreen("screen1");
-   } else if ((getText("dropdownqp991p") == "01-04" && getText("dropdown6") == "CGS-9001 Pager Gateway (Legacy)")) {
-     setText("Sol1", "NA");
-   } else if ((getText("dropdownqp991p") == "01-04" && getText("dropdown6") == "CGS-9002 HL7 Gateway (Legacy)")) {
-     setText("Sol1", "NA");
-   } else if ((getText("dropdownqp991p") == "01-04" && getText("dropdown6") == "QP-983P NetKonnect/RNS Server")) {
-     setText("Sol1", "NA");
-   } else if ((getText("dropdownqp991p") == "01-04" && getText("dropdown6") == "QP-986P Host1000 Server")) {
-     setText("Sol1", "NA");
-   } else if ((getText("dropdownqp991p") == "01-04" && getText("dropdown6") == "QP-988P Unified Gateway")) {
-    setText("Sol1", "≧01-08a");
-   } else if ((getText("dropdownqp991p") == "01-04" && getText("dropdown6") == "QP-988P Enterprise Gateway")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownqp991p") == "01-04" && getText("dropdown6") == "QP-989P ViTrac iOS")) {
-    setText("Sol1", "NA");
-   } else if ((getText("dropdownqp991p") == "01-04" && getText("dropdown6") == "QP-999P NKAnywhere")) {
-    setText("Sol1", "NA");
-   } else if ((getText("dropdownqp991p") == "01-04" && getText("dropdown6") == "OLG-3800")) {
-     setScreen("screen1");
+ 
 
 //QP999P
-   } else if ((getText("dropdownqp999P") == "01-05" && getText("dropdown6") == "BSM-1700 (+UG/TS)")) {
-     setText("Sol1", "≧02-10");
-   } else if ((getText("dropdownqp999P") == "01-05" && getText("dropdown6") == "BSM-3500")) {
-      setText("Sol1", "≧07-41")
-   } else if ((getText("dropdownqp999P") == "01-05" && getText("dropdown6") == "BSM-6000")) {
-     setText("Sol1", "≧07-41")
-   } else if ((getText("dropdownqp999P") == "01-05" && getText("dropdown6") == "CSM-1901")) {
-     setText("Sol1", "≧01-271")
-   } else if ((getText("dropdownqp999P") == "01-05" && getText("dropdown6") == "CNS-6201")) {
-     setScreen("screen2");
-   } else if ((getText("dropdownqp999P") == "01-05" && getText("dropdown6") == "CNS-6801")) {
-     setScreen("screen2");
-   } else if ((getText("dropdownqp999P") == "01-05" && getText("dropdown6") == "RNS-9703(Old GUI)")) {
-     setScreen("screen2");
-   } else if ((getText("dropdownqp999P") == "01-05" && getText("dropdown6") == "RNS-6803(Audio)")) {
-     setScreen("screen2");
-   } else if ((getText("dropdownqp999P") == "01-05" && getText("dropdown6") == "RNS-6804(No Audio)")) {
-    setScreen("screen2");
-   } else if ((getText("dropdownqp999P") == "01-05" && getText("dropdown6") == "EDNS-9001 Prefense")) {
-     setScreen("screen2");
-   } else if ((getText("dropdownqp999P") == "01-05" && getText("dropdown6") == "GZ-100P (+UG/TS)")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownqp999P") == "01-05" && getText("dropdown6") == "ORG-9100")) {
-     setText("Sol1", "≧04-01")
-   } else if ((getText("dropdownqp999P") == "01-05" && getText("dropdown6") == "CGS-9001 Pager Gateway (Legacy)")) {
+   } else if ((getText("dropdownqp999P") == "01-05" && getText("dropdown6") == "Unified Gateway (01-08a)")) {
      setText("Sol1", "NA");
-   } else if ((getText("dropdownqp999P") == "01-05" && getText("dropdown6") == "CGS-9002 HL7 Gateway (Legacy)")) {
+  } else if ((getText("dropdownqp999P") == "01-05" && getText("dropdown6") == "Unified Gateway (01-10)")) {
      setText("Sol1", "NA");
-   } else if ((getText("dropdownqp999P") == "01-05" && getText("dropdown6") == "QP-983P NetKonnect/RNS Server")) {
+  } else if ((getText("dropdownqp999P") == "01-05" && getText("dropdown6") == "Unified Gateway (01-11)")) {
      setText("Sol1", "NA");
-   } else if ((getText("dropdownqp999P") == "01-05" && getText("dropdown6") == "QP-986P Host1000 Server")) {
+  } else if ((getText("dropdownqp999P") == "01-05" && getText("dropdown6") == "Enterprise Gateway(01-02)")) {
      setText("Sol1", "NA");
-   } else if ((getText("dropdownqp999P") == "01-05" && getText("dropdown6") == "QP-988P Unified Gateway")) {
-    setText("Sol1", "NA");
-   } else if ((getText("dropdownqp999P") == "01-05" && getText("dropdown6") == "QP-988P Enterprise Gateway")) {
-    setText("Sol1", "NA");
-   } else if ((getText("dropdownqp999P") == "01-05" && getText("dropdown6") == "QP-989P ViTrac iOS")) {
-    setText("Sol1", "NA");
-   } else if ((getText("dropdownqp999P") == "01-05" && getText("dropdown6") == "QP-991P ViTrac Android")) {
-    setText("Sol1", "NA");
-   } else if ((getText("dropdownqp999P") == "01-05" && getText("dropdown6") == "OLG-3800")) {
-     setScreen("screen2");
+    } else if ((getText("dropdownqp999P") == "01-05" && getText("dropdown6") == "Enterprise Gateway(01-03)")) {
+     setText("Sol1", "NA");
+   } else if ((getText("dropdownqp999P") == "01-05" && getText("dropdown6") == "Enterprise Gateway(02-01)")) {
+     setText("Sol1", "NA");
+   } else if ((getText("dropdownqp999P") == "01-05" && getText("dropdown6") == "Enterprise Gateway(02-03)")) {
+     setText("Sol1", "NA");
+   } else if ((getText("dropdownqp999P") == "01-05" && getText("dropdown6") == "Enterprise Gateway(02-04)")) {
+     setText("Sol1", "NA");
+   } else if ((getText("dropdownqp999P") == "01-05" && getText("dropdown6") == "Enterprise Gateway(02-06)")) {
+     setText("Sol1", "NA");
+   } else if ((getText("dropdownqp999P") == "01-05" && getText("dropdown6") == "Enterprise Gateway(04-01)")) {
+     setText("Sol1", "NA");
 
 //OLG-3800
 
-   } else if ((getText("dropdownolg3800") == "01-03" && getText("dropdown6") == "BSM-1700 (+UG/TS)")) {
+   } else if ((getText("dropdownolg3800") == "01-03" && getText("dropdown6") == "Unified Gateway (01-08a)")) {
      setScreen("screen1");
-   } else if ((getText("dropdownolg3800") == "01-03" && getText("dropdown6") == "BSM-3500")) {
+   } else if ((getText("dropdownolg3800") == "01-03" && getText("dropdown6") == "Unified Gateway (01-10)")) {
      setScreen("screen1");
-   } else if ((getText("dropdownolg3800") == "01-03" && getText("dropdown6") == "BSM-6000")) {
+   } else if ((getText("dropdownolg3800") == "01-03" && getText("dropdown6") == "Unified Gateway (01-11)")) {
      setScreen("screen1");
-   } else if ((getText("dropdownolg3800") == "01-03" && getText("dropdown6") == "CSM-1901")) {
+   } else if ((getText("dropdownolg3800") == "01-03" && getText("dropdown6") == "Enterprise Gateway(01-02)")) {
      setScreen("screen1");
-   } else if ((getText("dropdownolg3800") == "01-03" && getText("dropdown6") == "CNS-6201")) {
+   } else if ((getText("dropdownolg3800") == "01-03" && getText("dropdown6") == "Enterprise Gateway(01-03)")) {
      setScreen("screen1");
-   } else if ((getText("dropdownolg3800") == "01-03" && getText("dropdown6") == "CNS-6801")) {
+   } else if ((getText("dropdownolg3800") == "01-03" && getText("dropdown6") == "Enterprise Gateway(02-01)")) {
      setScreen("screen1");
-   } else if ((getText("dropdownolg3800") == "01-03" && getText("dropdown6") == "RNS-9703(Old GUI)")) {
-      setScreen("screen1");;
-   } else if ((getText("dropdownolg3800") == "01-03" && getText("dropdown6") == "RNS-6803(Audio)")) {
+   } else if ((getText("dropdownolg3800") == "01-03" && getText("dropdown6") == "Enterprise Gateway(02-03)")) {
       setScreen("screen1");
-   } else if ((getText("dropdownolg3800") == "01-03" && getText("dropdown6") == "RNS-6804(No Audio)")) {
+   } else if ((getText("dropdownolg3800") == "01-03" && getText("dropdown6") == "Enterprise Gateway(02-04)")) {
       setScreen("screen1");
-   } else if ((getText("dropdownolg3800") == "01-03" && getText("dropdown6") == "EDNS-9001 Prefense")) {
-     setText("Sol1", "NA");
-   } else if ((getText("dropdownolg3800") == "01-03" && getText("dropdown6") == "GZ-100P (+UG/TS)")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownolg3800") == "01-03" && getText("dropdown6") == "ORG-9100")) {
-     setText("Sol1", "NA");
-   } else if ((getText("dropdownolg3800") == "01-03" && getText("dropdown6") == "CGS-9001 Pager Gateway (Legacy)")) {
-    setScreen("screen1");
-   } else if ((getText("dropdownolg3800") == "01-03" && getText("dropdown6") == "CGS-9002 HL7 Gateway (Legacy)")) {
-    setScreen("screen1");
-   } else if ((getText("dropdownolg3800") == "01-03" && getText("dropdown6") == "QP-983P NetKonnect/RNS Server")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownolg3800") == "01-03" && getText("dropdown6") == "QP-986P Host1000 Server")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownolg3800") == "01-03" && getText("dropdown6") == "QP-988P Unified Gateway")) {
-    setScreen("screen1");
-   } else if ((getText("dropdownolg3800") == "01-03" && getText("dropdown6") == "QP-988P Enterprise Gateway")) {
-     setScreen("screen1");
-   } else if ((getText("dropdownolg3800") == "01-03" && getText("dropdown6") == "QP-989P ViTrac iOS")) {
-    ssetScreen("screen1");
-   } else if ((getText("dropdownolg3800") == "01-03" && getText("dropdown6") == "QP-999P NKAnywhere")) {
-   setScreen("screen2");
-   } else if ((getText("dropdownolg3800") == "01-03" && getText("dropdown6") == "QP-991P ViTrac Android")) {
-     setScreen("screen1");
+   } else if ((getText("dropdownolg3800") == "01-03" && getText("dropdown6") == "Enterprise Gateway(02-06)")) {
+      setScreen("screen1");
+   } else if ((getText("dropdownolg3800") == "01-03" && getText("dropdown6") == "Enterprise Gateway(04-01)")) {
+       setScreen("screen1");
+
 
 
 
@@ -5390,54 +2778,54 @@ onEvent("go_button", "click", function(event) {
 
 
   } else if ((getText("dropdownGZ100P") == "" || getText("dropdown6") == "")) {
-     setText("Sol1","Please Select a Firmware")
+     setText("Sol1","Please Select a Firmware");
 
   } else if ((getText("dropdownCSM1901") == "" || getText("dropdown6") == "")) {
-     setText("Sol1","Please Select a Firmware")
+     setText("Sol1","Please Select a Firmware");
   } else if ((getText("drop_170") == "" || getText("dropdown6") == "")) {
-     setText("Sol1","Please Select a Firmware")
+     setText("Sol1","Please Select a Firmware");
   } else if ((getText("dropdownCGS9002") == "" || getText("dropdown6") == "")) {
-     setText("Sol1","Please Select a Firmware")
+     setText("Sol1","Please Select a Firmware");
   } else if ((getText("dropdownCNS6201") == "" || getText("dropdown6") == "")) {
-     setText("Sol1","Please Select a Firmware")
+     setText("Sol1","Please Select a Firmware");
    } else if ((getText("dropdownCNS6801") == "" || getText("dropdown6") == "")) {
-     setText("Sol1","Please Select a Firmware")
+     setText("Sol1","Please Select a Firmware");
    } else if ((getText("dropdownEDNS9001") == "" || getText("dropdown6") == "")) {
-     setText("Sol1","Please Select a Firmware")
+     setText("Sol1","Please Select a Firmware");
    } else if ((getText("dropdownqp999P") == "" || getText("dropdown6") == "")) {
-     setText("Sol1","Please Select a Firmware")
+     setText("Sol1","Please Select a Firmware");
    } else if ((getText("dropdownqp991p") == "" || getText("dropdown6") == "")) {
-     setText("Sol1","Please Select a Firmware")
+     setText("Sol1","Please Select a Firmware");
    } else if ((getText("dropdownolg3800") == "" || getText("dropdown6") == "")) {
-     setText("Sol1","Please Select a Firmware")
+     setText("Sol1","Please Select a Firmware");
    } else if ((getText("dropdownRNS9703") == "" || getText("dropdown6") == "")) {
-     setText("Sol1","Please Select a Firmware")
+     setText("Sol1","Please Select a Firmware");
    } else if ((getText("dropdownRNS6804") == "" || getText("dropdown6") == "")) {
-     setText("Sol1","Please Select a Firmware")
+     setText("Sol1","Please Select a Firmware");
    } else if ((getText("dropdownRNS6803") == "" || getText("dropdown6") == "")) {
-     setText("Sol1","Please Select a Firmware")
+     setText("Sol1","Please Select a Firmware");
     } else if ((getText("dropdownQP989p") == "" || getText("dropdown6") == "")) {
-     setText("Sol1","Please Select a Firmware") 
+     setText("Sol1","Please Select a Firmware");
     } else if ((getText("dropdownQP988P") == "" || getText("dropdown6") == "")) {
-     setText("Sol1","Please Select a Firmware") 
+     setText("Sol1","Please Select a Firmware"); 
     } else if ((getText("dropdownQP983P") == "" || getText("dropdown6") == "")) {
-     setText("Sol1","Please Select a Firmware") 
+     setText("Sol1","Please Select a Firmware"); 
     } else if ((getText("dropdownQP-986P") == "" || getText("dropdown6") == "")) {
-     setText("Sol1","Please Select a Firmware") 
+     setText("Sol1","Please Select a Firmware");
     } else if ((getText("dropdownORG9100") == "" || getText("dropdown6") == "")) {
-     setText("Sol1","Please Select a Firmware") 
+     setText("Sol1","Please Select a Firmware"); 
     } else if ((getText("dropdownGZ100P") == "" || getText("dropdown6") == "")) {
-     setText("Sol1","Please Select a Firmware") 
+     setText("Sol1","Please Select a Firmware"); 
     } else if ((getText("dropdownCGS9001") == "" || getText("dropdown6") == "")) {
-     setText("Sol1","Please Select a Firmware") 
+     setText("Sol1","Please Select a Firmware"); 
     } else if ((getText("dropdown3500") == "" || getText("dropdown6") == "")) {
-     setText("Sol1","Please Select a Firmware") 
+     setText("Sol1","Please Select a Firmware"); 
     } else if ((getText("drop_1700") == "" || getText("dropdown6") == "")) {
-     setText("Sol1","Please Select a Firmware") 
+     setText("Sol1","Please Select a Firmware"); 
     } else if ((getText("BSM-6000") == "" || getText("dropdown6") == "")) {
-     setText("Sol1","Please Select a Firmware") 
+     setText("Sol1","Please Select a Firmware"); 
     } else if ((getText("dropdownqp999P") == "" || getText("dropdown6") == "")) {
-     setText("Sol1","Please Select a Firmware") 
+     setText("Sol1","Please Select a Firmware") ;
   } else {
     
   }
