@@ -1259,6 +1259,7 @@ onEvent("Homebutton2", "click", function(event) {
 onEvent("go_button", "click", function(event) {
   console.log("go_button clicked!");
   //To check if ready for 1700 
+<<<<<<< HEAD
   if (getText("drop_1700") == "01-15" && getText("UNG") == "01-08a") {
     setScreen("screen1");
   } else if ((getText("drop_1700") == "02-10" && getText("UNG") == "01-08a")) {
@@ -1520,10 +1521,186 @@ onEvent("go_button", "click", function(event) {
   } else if ((getText("drop_1700") == "02-30" && getText("Host1000") == "01-03")) { 
     setScreen("screen1");
   } else if ((getText("drop_1700") == "02-40" && getText("Host1000") == "01-03")) { 
+=======
+  if (getText("drop_1700") == "01-15" && getText("dropdown6") == "Unified Gateway (01-08a)") {
+    setScreen("screen1");
+  } else if ((getText("drop_1700") == "02-10" && getText("dropdown6") == "Unified Gateway (01-08a)")) {
+    setScreen("screen2");
+  } else if ((getText("drop_1700") == "02-30" && getText("dropdown6") == "Unified Gateway (01-08a)")) {
+    setScreen("screen2");
+  } else if ((getText("drop_1700") == "02-40" && getText("dropdown6") == "Unified Gateway (01-08a)")) {
+    setScreen("screen2");
+  } else if ((getText("drop_1700") == "02-61" && getText("dropdown6") == "Unified Gateway (01-08a)")) {
+    setScreen("screen2");
+    
+  } else if ((getText("drop_1700") == "01-15" && getText("dropdown6") == "Unified Gateway (01-10)")) {
+    setScreen("screen1");
+  } else if ((getText("drop_1700") == "02-10" && getText("dropdown6") == "Unified Gateway (01-10)")) {
+    setScreen("screen1"); 
+  } else if ((getText("drop_1700") == "02-30" && getText("dropdown6") == "Unified Gateway (01-10)")) {
+  	setScreen("screen1"); 
+  } else if ((getText("drop_1700") == "02-40" && getText("dropdown6") == "Unified Gateway (01-10)")) { 
+  	setScreen("screen2");
+  } else if ((getText("drop_1700") == "02-61" && getText("dropdown6") == "Unified Gateway (01-10)")) { 
+  	setScreen("screen2");
+  	
+
+  } else if ((getText("drop_1700") == "01-15" && getText("dropdown6") == "Unified Gateway (01-11)")) {
+    setScreen("screen1");
+  } else if ((getText("drop_1700") == "02-10" && getText("dropdown6") == "Unified Gateway (01-11)")) {
+  	setScreen("screen1");
+  } else if ((getText("drop_1700") == "02-30" && getText("dropdown6") == "Unified Gateway (01-11)")) { 
+     setScreen("screen1");
+  } else if ((getText("drop_1700") == "02-40" && getText("dropdown6") == "Unified Gateway (01-11)")) { 
+  	setScreen("screen2");
+   } else if ((getText("drop_1700") == "02-61" && getText("dropdown6") == "Unified Gateway (01-11)")) { 
+  setScreen("screen2");
+  
+  } else if ((getText("drop_1700") == "01-15" && getText("dropdown6") == "Enterprise Gateway(01-02)")) {
+    setScreen("screen1");
+  } else if ((getText("drop_1700") == "02-10" && getText("dropdown6") == "Enterprise Gateway(01-02)")) {
+  	setScreen("screen1");
+  } else if ((getText("drop_1700") == "02-30" && getText("dropdown6") == "Enterprise Gateway(01-02)")) { 
+  	setScreen("screen1");
+  } else if ((getText("drop_1700") == "02-40" && getText("dropdown6") == "Enterprise Gateway(01-02)")) { 
+  	setScreen("screen1");
+   } else if ((getText("drop_1700") == "02-61" && getText("dropdown6") == "Enterprise Gateway(01-02)")) { 
+  	setScreen("screen1");
+  	
+  } else if ((getText("drop_1700") == "01-15" && getText("dropdown6") == "Enterprise Gateway(01-03)")) {
+    setScreen("screen1");
+  } else if ((getText("drop_1700") == "02-10" && getText("dropdown6") == "Enterprise Gateway(01-03)")) {
+  	setScreen("screen1");
+  } else if ((getText("drop_1700") == "02-30" && getText("dropdown6") == "Enterprise Gateway(01-03)")) { 
+     setScreen("screen1");
+  } else if ((getText("drop_1700") == "02-40" && getText("dropdown6") == "Enterprise Gateway(01-03)")) { 
+  	setScreen("screen1");
+   } else if ((getText("drop_1700") == "02-61" && getText("dropdown6") == "Enterprise Gateway(01-03)")) { 
+  setScreen("screen1");
+
+  } else if ((getText("drop_1700") == "01-15" && getText("dropdown6") == "Enterprise Gateway(02-01)")) {
+    setScreen("screen1");
+  } else if ((getText("drop_1700") == "02-10" && getText("dropdown6") == "Enterprise Gateway(02-01)")) {
+  	setScreen("screen1");
+  } else if ((getText("drop_1700") == "02-30" && getText("dropdown6") == "Enterprise Gateway(02-01)")) { 
+     setScreen("screen1");
+  } else if ((getText("drop_1700") == "02-40" && getText("dropdown6") == "Enterprise Gateway(02-01)")) { 
+  	setScreen("screen1");
+   } else if ((getText("drop_1700") == "02-61" && getText("dropdown6") == "Enterprise Gateway(02-01)")) { 
+  setScreen("screen1");
+  
+  } else if ((getText("drop_1700") == "01-15" && getText("dropdown6") == "Enterprise Gateway(02-03)")) {
+    setScreen("screen1");
+  } else if ((getText("drop_1700") == "02-10" && getText("dropdown6") == "Enterprise Gateway(02-03)")) {
+  	setScreen("screen1");
+  } else if ((getText("drop_1700") == "02-30" && getText("dropdown6") == "Enterprise Gateway(02-03)")) { 
+     setScreen("screen1");
+  } else if ((getText("drop_1700") == "02-40" && getText("dropdown6") == "Enterprise Gateway(02-03)")) { 
+  	setScreen("screen1");
+   } else if ((getText("drop_1700") == "02-61" && getText("dropdown6") == "Enterprise Gateway(02-03)")) { 
+  setScreen("screen1");
+
+  } else if ((getText("drop_1700") == "01-15" && getText("dropdown6") == "Enterprise Gateway(02-04)")) {
+    setScreen("screen1");
+  } else if ((getText("drop_1700") == "02-10" && getText("dropdown6") == "Enterprise Gateway(02-04)")) {
+  	setScreen("screen1");
+  } else if ((getText("drop_1700") == "02-30" && getText("dropdown6") == "Enterprise Gateway(02-04)")) { 
+     setScreen("screen1");
+  } else if ((getText("drop_1700") == "02-40" && getText("dropdown6") == "Enterprise Gateway(02-04)")) { 
+  	setScreen("screen1");
+   } else if ((getText("drop_1700") == "02-61" && getText("dropdown6") == "Enterprise Gateway(02-04)")) { 
+  setScreen("screen1");
+
+  } else if ((getText("drop_1700") == "01-15" && getText("dropdown6") == "Enterprise Gateway(02-06)")) {
+    setScreen("screen1");
+  } else if ((getText("drop_1700") == "02-10" && getText("dropdown6") == "Enterprise Gateway(02-06)")) {
+  	setScreen("screen1");
+  } else if ((getText("drop_1700") == "02-30" && getText("dropdown6") == "Enterprise Gateway(02-06)")) { 
+     setScreen("screen1");
+  } else if ((getText("drop_1700") == "02-40" && getText("dropdown6") == "Enterprise Gateway(02-06)")) { 
+  	setScreen("screen1");
+   } else if ((getText("drop_1700") == "02-61" && getText("dropdown6") == "Enterprise Gateway(02-06)")) { 
+  setScreen("screen1");
+
+  } else if ((getText("drop_1700") == "01-15" && getText("dropdown6") == "Enterprise Gateway(04-01)")) {
+    setScreen("screen1");
+  } else if ((getText("drop_1700") == "02-10" && getText("dropdown6") == "Enterprise Gateway(04-01)")) {
+  	setScreen("screen1");
+  } else if ((getText("drop_1700") == "02-30" && getText("dropdown6") == "Enterprise Gateway(04-01)")) { 
+     setScreen("screen1");
+  } else if ((getText("drop_1700") == "02-40" && getText("dropdown6") == "Enterprise Gateway(04-01)")) { 
+  	setScreen("screen1");
+   } else if ((getText("drop_1700") == "02-61" && getText("dropdown6") == "Enterprise Gateway(04-01)")) { 
+  setScreen("screen1");
+
+BSM3500
+  } else if ((getText("dropdown3500") == "06-31" && getText("dropdown6") == "Unified Gateway (01-08a)")) {
+    setScreen("screen1");
+  } else if ((getText("dropdown3500") == "07-41" && getText("dropdown6") == "Unified Gateway (01-08a)")) {
+  	setScreen("screen1");
+  } else if ((getText("dropdown3500") == "08-11" && getText("dropdown6") == "Unified Gateway (01-08a)")) { 
+    setScreen("screen2");
+  } else if ((getText("dropdown3500") == "08-31" && getText("dropdown6") == "Unified Gateway (01-08a)")) { 
+  	setScreen("screen2");
+
+  } else if ((getText("dropdown3500") == "06-31" && getText("dropdown6") == "Unified Gateway (01-10)")) {
+    setScreen("screen1");
+  } else if ((getText("dropdown3500") == "07-41" && getText("dropdown6") == "Unified Gateway (01-10)")) {
+  	setScreen("screen1");
+  } else if ((getText("dropdown3500") == "08-11" && getText("dropdown6") == "Unified Gateway (01-10)")) { 
+    setScreen("screen2");
+  } else if ((getText("dropdown3500") == "08-31" && getText("dropdown6") == "Unified Gateway (01-10)")) { 
+  	setScreen("screen2");
+
+  } else if ((getText("dropdown3500") == "06-31" && getText("dropdown6") == "Unified Gateway (01-11)")) {
+    setScreen("screen1");
+  } else if ((getText("dropdown3500") == "07-41" && getText("dropdown6") == "Unified Gateway (01-11)")) {
+  	setScreen("screen1");
+  } else if ((getText("dropdown3500") == "08-11" && getText("dropdown6") == "Unified Gateway (01-11)")) { 
+    setScreen("screen2");
+  } else if ((getText("dropdown3500") == "08-31" && getText("dropdown6") == "Unified Gateway (01-11)")) { 
+  	setScreen("screen2");
+
+  } else if ((getText("dropdown3500") == "06-31" && getText("dropdown6") == "Enterprise Gateway(01-02)")) {
+    setScreen("screen1");
+  } else if ((getText("dropdown3500") == "07-41" && getText("dropdown6") == "Enterprise Gateway(01-02)")) {
+  	setScreen("screen1");;
+  } else if ((getText("dropdown3500") == "08-11" && getText("dropdown6") == "Enterprise Gateway(01-02)")) { 
+    setScreen("screen1");
+  } else if ((getText("dropdown3500") == "08-31" && getText("dropdown6") == "Enterprise Gateway(01-02)")) { 
+  	setScreen("screen1");
+
+  } else if ((getText("dropdown3500") == "06-31" && getText("dropdown6") == "Enterprise Gateway(01-03)")) {
+    setScreen("screen1");
+  } else if ((getText("dropdown3500") == "07-41" && getText("dropdown6") == "Enterprise Gateway(01-03)")) {
+  	setScreen("screen1");;
+  } else if ((getText("dropdown3500") == "08-11" && getText("dropdown6") == "Enterprise Gateway(01-03)")) { 
+    setScreen("screen1");
+  } else if ((getText("dropdown3500") == "08-31" && getText("dropdown6") == "Enterprise Gateway(01-03)")) { 
+  	setScreen("screen1");
+
+  } else if ((getText("dropdown3500") == "06-31" && getText("dropdown6") == "Enterprise Gateway(02-01)")) {
+    setScreen("screen1");
+  } else if ((getText("dropdown3500") == "07-41" && getText("dropdown6") == "Enterprise Gateway(02-01)")) {
+  	setScreen("screen1");;
+  } else if ((getText("dropdown3500") == "08-11" && getText("dropdown6") == "Enterprise Gateway(02-01)")) { 
+    setScreen("screen1");
+  } else if ((getText("dropdown3500") == "08-31" && getText("dropdown6") == "Enterprise Gateway(02-01)")) { 
+  	setScreen("screen1");
+
+  } else if ((getText("dropdown3500") == "06-31" && getText("dropdown6") == "Enterprise Gateway(02-03)")) {
+    setScreen("screen1");
+  } else if ((getText("dropdown3500") == "07-41" && getText("dropdown6") == "Enterprise Gateway(02-03)")) {
+  	setScreen("screen1");;
+  } else if ((getText("dropdown3500") == "08-11" && getText("dropdown6") == "Enterprise Gateway(02-03)")) { 
+    setScreen("screen1");
+  } else if ((getText("dropdown3500") == "08-31" && getText("dropdown6") == "Enterprise Gateway(02-03)")) { 
+>>>>>>> 36e1275e17d699d899702acf51e7cb4968260178
   	setScreen("screen1");
    } else if ((getText("drop_1700") == "02-61" && getText("Host1000") == "01-03")) { 
  setScreen("screen1");
 
+<<<<<<< HEAD
 
  } else if ((getText("drop_1700") == "01-15" && getText("Host1000") == "01-04")) {
     setScreen("screen1");
@@ -1572,8 +1749,47 @@ onEvent("go_button", "click", function(event) {
   } else if ((getText("dropdown3500") == "08-11" && getText("EG") == "01-02")) { 
     setScreen("screen1");
   } else if ((getText("dropdown3500") == "08-31" && getText("EG") == "01-02")) { 
+=======
+  } else if ((getText("dropdown3500") == "06-31" && getText("dropdown6") == "Enterprise Gateway(02-04)")) {
+    setScreen("screen1");
+  } else if ((getText("dropdown3500") == "07-41" && getText("dropdown6") == "Enterprise Gateway(02-04)")) {
+  	setScreen("screen1");;
+  } else if ((getText("dropdown3500") == "08-11" && getText("dropdown6") == "Enterprise Gateway(02-04)")) { 
+    setScreen("screen1");
+  } else if ((getText("dropdown3500") == "08-31" && getText("dropdown6") == "Enterprise Gateway(02-04)")) { 
   	setScreen("screen1");
 
+  } else if ((getText("dropdown3500") == "06-31" && getText("dropdown6") == "Enterprise Gateway(02-06)")) {
+    setScreen("screen1");
+  } else if ((getText("dropdown3500") == "07-41" && getText("dropdown6") == "Enterprise Gateway(02-06)")) {
+  	setScreen("screen1");;
+  } else if ((getText("dropdown3500") == "08-11" && getText("dropdown6") == "Enterprise Gateway(02-06)")) { 
+    setScreen("screen1");
+  } else if ((getText("dropdown3500") == "08-31" && getText("dropdown6") == "Enterprise Gateway(02-06)")) { 
+  	setScreen("screen1");
+
+  } else if ((getText("dropdown3500") == "06-31" && getText("dropdown6") == "Enterprise Gateway(04-01)")) {
+    setScreen("screen1");
+  } else if ((getText("dropdown3500") == "07-41" && getText("dropdown6") == "Enterprise Gateway(04-01)")) {
+  	setScreen("screen1");;
+  } else if ((getText("dropdown3500") == "08-11" && getText("dropdown6") == "Enterprise Gateway(04-01)")) { 
+    setScreen("screen1");
+  } else if ((getText("dropdown3500") == "08-31" && getText("dropdown6") == "Enterprise Gateway(04-01)")) { 
+  	setScreen("screen1");
+
+  } else if ((getText("BSM-6000") == "07-02" && getText("dropdown6") == "Unified Gateway (01-08a)")) {
+    setScreen("screen1");
+  } else if ((getText("BSM-6000") == "07-41" && getText("dropdown6") == "Unified Gateway (01-08a)")) {
+>>>>>>> 36e1275e17d699d899702acf51e7cb4968260178
+  	setScreen("screen1");
+  } else if ((getText("BSM-6000") == "08-02" && getText("dropdown6") == "Unified Gateway (01-08a)")) { 
+   setScreen("screen2");
+  } else if ((getText("BSM-6000") == "08-12" && getText("dropdown6") == "Unified Gateway (01-08a)")) { 
+  	setScreen("screen2");
+   } else if ((getText("BSM-6000") == "08-31" && getText("dropdown6") == "Unified Gateway (01-08a)")) { 
+  	setScreen("screen2");
+
+<<<<<<< HEAD
   } else if ((getText("dropdown3500") == "06-31" && getText("EG") == "01-03")) {
     setScreen("screen1");
   } else if ((getText("dropdown3500") == "07-41" && getText("EG") == "01-03")) {
@@ -1581,8 +1797,21 @@ onEvent("go_button", "click", function(event) {
   } else if ((getText("dropdown3500") == "08-11" && getText("EG") == "01-03")) { 
     setScreen("screen1");
   } else if ((getText("dropdown3500") == "08-31" && getText("EG") == "01-03")) { 
-  	setScreen("screen1");
+=======
 
+  } else if ((getText("BSM-6000") == "07-02" && getText("dropdown6") == "Unified Gateway (01-10)")) {
+    setScreen("screen1");
+  } else if ((getText("BSM-6000") == "07-41" && getText("dropdown6") == "Unified Gateway (01-10)")) {
+>>>>>>> 36e1275e17d699d899702acf51e7cb4968260178
+  	setScreen("screen1");
+  } else if ((getText("BSM-6000") == "08-02" && getText("dropdown6") == "Unified Gateway (01-10)")) { 
+    setScreen("screen2");
+  } else if ((getText("BSM-6000") == "08-12" && getText("dropdown6") == "Unified Gateway (01-10)")) { 
+  	setScreen("screen2");
+   } else if ((getText("BSM-6000") == "08-31" && getText("dropdown6") == "Unified Gateway (01-10)")) { 
+  	setScreen("screen2");
+
+<<<<<<< HEAD
   } else if ((getText("dropdown3500") == "06-31" && getText("EG") == "02-01")) {
     setScreen("screen1");
   } else if ((getText("dropdown3500") == "07-41" && getText("EG") == "02-01")) {
@@ -1752,8 +1981,122 @@ onEvent("go_button", "click", function(event) {
   } else if ((getText("dropdown3500") == "08-11" && getText("Host1000") == "01-03")) { 
     setScreen("screen1");
   } else if ((getText("dropdown3500") == "08-31" && getText("Host1000") == "01-03")) { 
+=======
+  } else if ((getText("BSM-6000") == "07-02" && getText("dropdown6") == "Unified Gateway (01-11)")) {
+    setScreen("screen1");
+  } else if ((getText("BSM-6000") == "07-41" && getText("dropdown6") == "Unified Gateway (01-11)")) {
+  	setScreen("screen1");
+  } else if ((getText("BSM-6000") == "08-02" && getText("dropdown6") == "Unified Gateway (01-11)")) { 
+    setScreen("screen2");
+  } else if ((getText("BSM-6000") == "08-12" && getText("dropdown6") == "Unified Gateway (01-11)")) { 
+  	setScreen("screen2");
+  } else if ((getText("BSM-6000") == "08-31" && getText("dropdown6") == "Unified Gateway (01-11)")) { 
+  	setScreen("screen2");
+
+
+  } else if ((getText("BSM-6000") == "07-02" && getText("dropdown6") == "Enterprise Gateway(01-02)")) {
+    setScreen("screen1");
+  } else if ((getText("BSM-6000") == "07-41" && getText("dropdown6") == "Enterprise Gateway(01-02)")) {
+  	setScreen("screen1");
+  } else if ((getText("BSM-6000") == "08-02" && getText("dropdown6") == "Enterprise Gateway(01-02)")) { 
+    setScreen("screen1");
+  } else if ((getText("BSM-6000") == "08-12" && getText("dropdown6") == "Enterprise Gateway(01-02)")) { 
+  	setScreen("screen1");
+  } else if ((getText("BSM-6000") == "08-31" && getText("dropdown6") == "Enterprise Gateway(01-02)")) { 
   	setScreen("screen1");
 
+
+  } else if ((getText("BSM-6000") == "07-02" && getText("dropdown6") == "Enterprise Gateway(01-03)")) {
+    setScreen("screen1");
+  } else if ((getText("BSM-6000") == "07-41" && getText("dropdown6") == "Enterprise Gateway(01-03)")) {
+  	setScreen("screen1");
+  } else if ((getText("BSM-6000") == "08-02" && getText("dropdown6") == "Enterprise Gateway(01-03)")) { 
+    setScreen("screen1");
+  } else if ((getText("BSM-6000") == "08-12" && getText("dropdown6") == "Enterprise Gateway(01-03)")) { 
+  	setScreen("screen1");
+  } else if ((getText("BSM-6000") == "08-31" && getText("dropdown6") == "Enterprise Gateway(01-03)")) { 
+  	setScreen("screen1");
+
+
+  } else if ((getText("BSM-6000") == "07-02" && getText("dropdown6") == "Enterprise Gateway(02-01)")) {
+    setScreen("screen1");
+  } else if ((getText("BSM-6000") == "07-41" && getText("dropdown6") == "Enterprise Gateway(02-01)")) {
+  setScreen("screen1");
+  } else if ((getText("BSM-6000") == "08-02" && getText("dropdown6") == "Enterprise Gateway(02-01)")) { 
+     setScreen("screen1");
+  } else if ((getText("BSM-6000") == "08-12" && getText("dropdown6") == "Enterprise Gateway(02-01)")) { 
+  	setScreen("screen1");
+  } else if ((getText("BSM-6000") == "08-31" && getText("dropdown6") == "Enterprise Gateway(02-01)")) { 
+  setScreen("screen1");
+  
+  
+  } else if ((getText("BSM-6000") == "07-02" && getText("dropdown6") == "Enterprise Gateway(02-03)")) {
+    setScreen("screen1");
+  } else if ((getText("BSM-6000") == "07-41" && getText("dropdown6") == "Enterprise Gateway(02-03)")) {
+  	setScreen("screen1");
+  } else if ((getText("BSM-6000") == "08-02" && getText("dropdown6") == "Enterprise Gateway(02-03)")) { 
+    setScreen("screen1");
+  } else if ((getText("BSM-6000") == "08-12" && getText("dropdown6") == "Enterprise Gateway(02-03)")) { 
+  	setScreen("screen1");
+  } else if ((getText("BSM-6000") == "08-31" && getText("dropdown6") == "Enterprise Gateway(02-03)")) { 
+  	setScreen("screen1");
+
+  } else if ((getText("BSM-6000") == "07-02" && getText("dropdown6") == "Enterprise Gateway(02-04)")) {
+    setScreen("screen1");
+  } else if ((getText("BSM-6000") == "07-41" && getText("dropdown6") == "Enterprise Gateway(02-04)")) {
+  	setScreen("screen1");
+  } else if ((getText("BSM-6000") == "08-02" && getText("dropdown6") == "Enterprise Gateway(02-04)")) { 
+    setScreen("screen1");
+  } else if ((getText("BSM-6000") == "08-12" && getText("dropdown6") == "Enterprise Gateway(02-04)")) { 
+  	setScreen("screen1");
+  } else if ((getText("BSM-6000") == "08-31" && getText("dropdown6") == "Enterprise Gateway(02-04)")) { 
+  	setScreen("screen1");
+
+  } else if ((getText("BSM-6000") == "07-02" && getText("dropdown6") == "Enterprise Gateway(04-01)")) {
+    setScreen("screen1");
+  } else if ((getText("BSM-6000") == "07-41" && getText("dropdown6") == "Enterprise Gateway(04-01)")) {
+  	setScreen("screen1");
+  } else if ((getText("BSM-6000") == "08-02" && getText("dropdown6") == "Enterprise Gateway(04-01)")) { 
+    setScreen("screen1");
+  } else if ((getText("BSM-6000") == "08-12" && getText("dropdown6") == "Enterprise Gateway(04-01)")) { 
+  	setScreen("screen1");
+  } else if ((getText("BSM-6000") == "08-31" && getText("dropdown6") == "Enterprise Gateway(04-01)")) { 
+  	setScreen("screen1");
+
+
+  } else if ((getText("dropdownCSM1901") == "01-21" && getText("dropdown6") == "Unified Gateway (01-08a)")) {
+    setScreen("screen1");
+  } else if ((getText("dropdownCSM1901") == "01-23" && getText("dropdown6") == "Unified Gateway (01-08a)")) {
+  	setScreen("screen1");
+  } else if ((getText("dropdownCSM1901") == "01-26" && getText("dropdown6") == "Unified Gateway (01-08a)")) { 
+   setScreen("screen1");
+  } else if ((getText("dropdownCSM1901") == "01-27" && getText("dropdown6") == "Unified Gateway (01-08a)")) { 
+  	setScreen("screen1");
+   } else if ((getText("dropdownCSM1901") == "01-28" && getText("dropdown6") == "Unified Gateway (01-08a)")) { 
+  	setScreen("screen1");
+   } else if ((getText("dropdownCSM1901") == "01-30" && getText("dropdown6") == "Unified Gateway (01-08a)")) { 
+  	setScreen("screen2");
+   } else if ((getText("dropdownCSM1901") == "01-32" && getText("dropdown6") == "Unified Gateway (01-08a)")) { 
+  	setScreen("screen2");
+
+
+  } else if ((getText("dropdownCSM1901") == "01-21" && getText("dropdown6") == "Unified Gateway (01-10)")) {
+    setScreen("screen1");
+  } else if ((getText("dropdownCSM1901") == "01-23" && getText("dropdown6") == "Unified Gateway (01-10)")) {
+  	setScreen("screen1");
+  } else if ((getText("dropdownCSM1901") == "01-26" && getText("dropdown6") == "Unified Gateway (01-10)")) { 
+    setScreen("screen1");
+  } else if ((getText("dropdownCSM1901") == "01-27" && getText("dropdown6") == "Unified Gateway (01-10)")) { 
+  	setScreen("screen1");
+   } else if ((getText("dropdownCSM1901") == "01-28" && getText("dropdown6") == "Unified Gateway (01-10)")) { 
+>>>>>>> 36e1275e17d699d899702acf51e7cb4968260178
+  	setScreen("screen1");
+  } else if ((getText("dropdownCSM1901") == "01-30" && getText("dropdown6") == "Unified Gateway (01-10)")) { 
+  	setScreen("screen2");
+   } else if ((getText("dropdownCSM1901") == "01-32" && getText("dropdown6") == "Unified Gateway (01-10)")) { 
+  	setScreen("screen2");
+
+<<<<<<< HEAD
   } else if ((getText("dropdown3500") == "06-31" && getText("Host1000") == "01-04")) {
     setScreen("screen1");
   } else if ((getText("dropdown3500") == "07-41" && getText("Host1000") == "01-04")) {
@@ -1792,6 +2135,36 @@ onEvent("go_button", "click", function(event) {
   } else if ((getText("BSM-6000") == "07-02" && getText("UNG") == "01-11")) {
     setScreen("screen1");
   } else if ((getText("BSM-6000") == "07-41" && getText("UNG") == "01-11")) {
+=======
+  } else if ((getText("dropdownCSM1901") == "01-21" && getText("dropdown6") == "Unified Gateway (01-11)")) {
+    setScreen("screen1");
+  } else if ((getText("dropdownCSM1901") == "01-23" && getText("dropdown6") == "Unified Gateway (01-11)")) {
+  	setScreen("screen1");
+  } else if ((getText("dropdownCSM1901") == "01-26" && getText("dropdown6") == "Unified Gateway (01-11)")) { 
+    setScreen("screen1");
+  } else if ((getText("dropdownCSM1901") == "01-27" && getText("dropdown6") == "Unified Gateway (01-11)")) { 
+  	setScreen("screen1");
+  } else if ((getText("dropdownCSM1901") == "01-28" && getText("dropdown6") == "Unified Gateway (01-11)")) { 
+  	setScreen("screen1");
+  } else if ((getText("dropdownCSM1901") == "01-30" && getText("dropdown6") == "Unified Gateway (01-11)")) { 
+  	setScreen("screen2");
+   } else if ((getText("dropdownCSM1901") == "01-32" && getText("dropdown6") == "Unified Gateway (01-11)")) { 
+  	setScreen("screen2");
+
+  } else if ((getText("dropdownCSM1901") == "01-21" && getText("dropdown6") == "Enterprise Gateway(01-02)")) {
+    setScreen("screen1");
+  } else if ((getText("dropdownCSM1901") == "01-23" && getText("dropdown6") == "Enterprise Gateway(01-02)")) {
+  	setScreen("screen1");
+  } else if ((getText("dropdownCSM1901") == "01-26" && getText("dropdown6") == "Enterprise Gateway(01-02)")) { 
+    setScreen("screen1");
+  } else if ((getText("dropdownCSM1901") == "01-27" && getText("dropdown6") == "Enterprise Gateway(01-02)")) { 
+  	setScreen("screen1");
+  } else if ((getText("dropdownCSM1901") == "01-28" && getText("dropdown6") == "Enterprise Gateway(01-02)")) { 
+  	setScreen("screen1");
+  } else if ((getText("dropdownCSM1901") == "01-30" && getText("dropdown6") == "Enterprise Gateway(01-02)")) { 
+  	setScreen("screen1");
+   } else if ((getText("dropdownCSM1901") == "01-32" && getText("dropdown6") == "Enterprise Gateway(01-02)")) { 
+>>>>>>> 36e1275e17d699d899702acf51e7cb4968260178
   	setScreen("screen1");
   } else if ((getText("BSM-6000") == "08-02" && getText("UNG") == "01-11")) { 
     setScreen("screen2");
@@ -1800,6 +2173,7 @@ onEvent("go_button", "click", function(event) {
   } else if ((getText("BSM-6000") == "08-31" && getText("UNG") == "01-11")) { 
   	setScreen("screen2");
 
+<<<<<<< HEAD
 
   } else if ((getText("BSM-6000") == "07-02" && getText("EG") == "01-02")) {
     setScreen("screen1");
@@ -3132,15 +3506,531 @@ onEvent("go_button", "click", function(event) {
   } else if ((getText("dropdownRNS9703") == "03-40" && getText("EG") == "02-03")) {
          setScreen("screen1");
   } else if ((getText("dropdownRNS9703") == "03-40b" && getText("EG") == "02-03")) {
+=======
+  } else if ((getText("dropdownCSM1901") == "01-21" && getText("dropdown6") == "Enterprise Gateway(01-03)")) {
+    setScreen("screen1");
+  } else if ((getText("dropdownCSM1901") == "01-23" && getText("dropdown6") == "Enterprise Gateway(01-03)")) {
+  	setScreen("screen1");
+  } else if ((getText("dropdownCSM1901") == "01-26" && getText("dropdown6") == "Enterprise Gateway(01-03)")) { 
+    setScreen("screen1");
+  } else if ((getText("dropdownCSM1901") == "01-27" && getText("dropdown6") == "Enterprise Gateway(01-03)")) { 
+  	setScreen("screen1");
+  } else if ((getText("dropdownCSM1901") == "01-28" && getText("dropdown6") == "Enterprise Gateway(01-03)")) { 
+  	setScreen("screen1");
+  } else if ((getText("dropdownCSM1901") == "01-30" && getText("dropdown6") == "Enterprise Gateway(01-03)")) { 
+  	setScreen("screen1");
+   } else if ((getText("dropdownCSM1901") == "01-32" && getText("dropdown6") == "Enterprise Gateway(01-03)")) { 
+  	setScreen("screen1");
+
+  } else if ((getText("dropdownCSM1901") == "01-21" && getText("dropdown6") == "Enterprise Gateway(02-01)")) {
+    setScreen("screen1");
+  } else if ((getText("dropdownCSM1901") == "01-23" && getText("dropdown6") == "Enterprise Gateway(02-01)")) {
+  	setScreen("screen1");
+  } else if ((getText("dropdownCSM1901") == "01-26" && getText("dropdown6") == "Enterprise Gateway(02-01)")) { 
+    setScreen("screen1");
+  } else if ((getText("dropdownCSM1901") == "01-27" && getText("dropdown6") == "Enterprise Gateway(02-01)")) { 
+  	setScreen("screen1");
+  } else if ((getText("dropdownCSM1901") == "01-28" && getText("dropdown6") == "Enterprise Gateway(02-01)")) { 
+  	setScreen("screen1");
+  } else if ((getText("dropdownCSM1901") == "01-30" && getText("dropdown6") == "Enterprise Gateway(02-01)")) { 
+  	setScreen("screen1");
+   } else if ((getText("dropdownCSM1901") == "01-32" && getText("dropdown6") == "Enterprise Gateway(02-01)")) { 
+  	setScreen("screen1");
+
+  } else if ((getText("dropdownCSM1901") == "01-21" && getText("dropdown6") == "Enterprise Gateway(02-03)")) {
+    setScreen("screen1");
+  } else if ((getText("dropdownCSM1901") == "01-23" && getText("dropdown6") == "Enterprise Gateway(02-03)")) {
+  	setScreen("screen1");
+  } else if ((getText("dropdownCSM1901") == "01-26" && getText("dropdown6") == "Enterprise Gateway(02-03)")) { 
+    setScreen("screen1");
+  } else if ((getText("dropdownCSM1901") == "01-27" && getText("dropdown6") == "Enterprise Gateway(02-03)")) { 
+  	setScreen("screen1");
+  } else if ((getText("dropdownCSM1901") == "01-28" && getText("dropdown6") == "Enterprise Gateway(02-03)")) { 
+  	setScreen("screen1");
+  } else if ((getText("dropdownCSM1901") == "01-30" && getText("dropdown6") == "Enterprise Gateway(02-03)")) { 
+  	setScreen("screen1");
+   } else if ((getText("dropdownCSM1901") == "01-32" && getText("dropdown6") == "Enterprise Gateway(02-03)")) { 
+  	setScreen("screen1");
+
+  } else if ((getText("dropdownCSM1901") == "01-21" && getText("dropdown6") == "Enterprise Gateway(02-04)")) {
+    setScreen("screen1");
+  } else if ((getText("dropdownCSM1901") == "01-23" && getText("dropdown6") == "Enterprise Gateway(02-04)")) {
+  	setScreen("screen1");
+  } else if ((getText("dropdownCSM1901") == "01-26" && getText("dropdown6") == "Enterprise Gateway(02-04)")) { 
+    setScreen("screen1");
+  } else if ((getText("dropdownCSM1901") == "01-27" && getText("dropdown6") == "Enterprise Gateway(02-04)")) { 
+  	setScreen("screen1");
+  } else if ((getText("dropdownCSM1901") == "01-28" && getText("dropdown6") == "Enterprise Gateway(02-04)")) { 
+  	setScreen("screen1");
+  } else if ((getText("dropdownCSM1901") == "01-30" && getText("dropdown6") == "Enterprise Gateway(02-04)")) { 
+  	setScreen("screen1");
+   } else if ((getText("dropdownCSM1901") == "01-32" && getText("dropdown6") == "Enterprise Gateway(02-04)")) { 
+  	setScreen("screen1");
+
+
+  } else if ((getText("dropdownCSM1901") == "01-21" && getText("dropdown6") == "Enterprise Gateway(02-06)")) {
+    setScreen("screen1");
+  } else if ((getText("dropdownCSM1901") == "01-23" && getText("dropdown6") == "Enterprise Gateway(02-06)")) {
+  	setScreen("screen1");
+  } else if ((getText("dropdownCSM1901") == "01-26" && getText("dropdown6") == "Enterprise Gateway(02-06)")) { 
+    setScreen("screen1");
+  } else if ((getText("dropdownCSM1901") == "01-27" && getText("dropdown6") == "Enterprise Gateway(02-06)")) { 
+  	setScreen("screen1");
+  } else if ((getText("dropdownCSM1901") == "01-28" && getText("dropdown6") == "Enterprise Gateway(02-06)")) { 
+  	setScreen("screen1");
+  } else if ((getText("dropdownCSM1901") == "01-30" && getText("dropdown6") == "Enterprise Gateway(02-06)")) { 
+  	setScreen("screen1");
+   } else if ((getText("dropdownCSM1901") == "01-32" && getText("dropdown6") == "Enterprise Gateway(02-06)")) { 
+  	setScreen("screen1");
+
+  } else if ((getText("dropdownCSM1901") == "01-21" && getText("dropdown6") == "Enterprise Gateway(04-01)")) {
+    setScreen("screen1");
+  } else if ((getText("dropdownCSM1901") == "01-23" && getText("dropdown6") == "Enterprise Gateway(04-01)")) {
+  	setScreen("screen1");
+  } else if ((getText("dropdownCSM1901") == "01-26" && getText("dropdown6") == "Enterprise Gateway(04-01)")) { 
+    setScreen("screen1");
+  } else if ((getText("dropdownCSM1901") == "01-27" && getText("dropdown6") == "Enterprise Gateway(04-01)")) { 
+  	setScreen("screen1");
+  } else if ((getText("dropdownCSM1901") == "01-28" && getText("dropdown6") == "Enterprise Gateway(04-01)")) { 
+  	setScreen("screen1");
+  } else if ((getText("dropdownCSM1901") == "01-30" && getText("dropdown6") == "Enterprise Gateway(04-01)")) { 
+  	setScreen("screen1");
+   } else if ((getText("dropdownCSM1901") == "01-32" && getText("dropdown6") == "Enterprise Gateway(04-01)")) { 
+  	setScreen("screen1");
+
+//cns6201
+
+  } else if ((getText("dropdownCNS6201") == "02-40" && getText("dropdown6") == "Unified Gateway (01-08a)")) {
+     setScreen("screen1"); 
+  } else if ((getText("dropdownCNS6201") == "03-40" && getText("dropdown6") == "Unified Gateway (01-08a)")) {
+  setScreen("screen1");
+  } else if ((getText("dropdownCNS6201") == "05-01" && getText("dropdown6") == "Unified Gateway (01-08a)")) { 
+    setScreen("screen1");
+  } else if ((getText("dropdownCNS6201") == "05-07" && getText("dropdown6") == "Unified Gateway (01-08a)")) { 
+  	setScreen("screen1");
+  } else if ((getText("dropdownCNS6201") == "05-08" && getText("dropdown6") == "Unified Gateway (01-08a)")) { 
+  	setScreen("screen1");
+  } else if ((getText("dropdownCNS6201") == "05-10" && getText("dropdown6") == "Unified Gateway (01-08a)")) { 
+  	setScreen("screen2");
+  } else if ((getText("dropdownCNS6201") == "05-13" && getText("dropdown6") == "Unified Gateway (01-08a)")) { 
+  	setScreen("screen2");
+ 
+  } else if ((getText("dropdownCNS6201") == "02-40" && getText("dropdown6") == "Unified Gateway (01-10)")) {
+     setScreen("screen1"); 
+  } else if ((getText("dropdownCNS6201") == "03-40" && getText("dropdown6") == "Unified Gateway (01-10)")) {
+  setScreen("screen1");
+  } else if ((getText("dropdownCNS6201") == "05-01" && getText("dropdown6") == "Unified Gateway (01-10)")) { 
+    setScreen("screen1");
+  } else if ((getText("dropdownCNS6201") == "05-07" && getText("dropdown6") == "Unified Gateway (01-10)")) { 
+  	setScreen("screen1");
+  } else if ((getText("dropdownCNS6201") == "05-08" && getText("dropdown6") == "Unified Gateway (01-10)")) { 
+  	setScreen("screen1");
+  } else if ((getText("dropdownCNS6201") == "05-10" && getText("dropdown6") == "Unified Gateway (01-10)")) { 
+  	setScreen("screen2");
+  } else if ((getText("dropdownCNS6201") == "05-13" && getText("dropdown6") == "Unified Gateway (01-10)")) { 
+  	setScreen("screen2");
+
+  } else if ((getText("dropdownCNS6201") == "02-40" && getText("dropdown6") == "Unified Gateway (01-11)")) {
+     setScreen("screen1"); 
+  } else if ((getText("dropdownCNS6201") == "03-40" && getText("dropdown6") == "Unified Gateway (01-11)")) {
+  setScreen("screen1");
+  } else if ((getText("dropdownCNS6201") == "05-01" && getText("dropdown6") == "Unified Gateway (01-11)")) { 
+    setScreen("screen1");
+  } else if ((getText("dropdownCNS6201") == "05-07" && getText("dropdown6") == "Unified Gateway (01-11)")) { 
+  	setScreen("screen1");
+  } else if ((getText("dropdownCNS6201") == "05-08" && getText("dropdown6") == "Unified Gateway (01-11)")) { 
+  	setScreen("screen1");
+  } else if ((getText("dropdownCNS6201") == "05-10" && getText("dropdown6") == "Unified Gateway (01-11)")) { 
+  	setScreen("screen2");
+  } else if ((getText("dropdownCNS6201") == "05-13" && getText("dropdown6") == "Unified Gateway (01-11)")) { 
+  	setScreen("screen2");
+
+  } else if ((getText("dropdownCNS6201") == "02-40" && getText("dropdown6") == "Enterprise Gateway(01-02)")) {
+     setScreen("screen1"); 
+  } else if ((getText("dropdownCNS6201") == "03-40" && getText("dropdown6") == "Enterprise Gateway(01-02)")) {
+  setScreen("screen1");
+  } else if ((getText("dropdownCNS6201") == "05-01" && getText("dropdown6") == "Enterprise Gateway(01-02)")) { 
+    setScreen("screen1");
+  } else if ((getText("dropdownCNS6201") == "05-07" && getText("dropdown6") == "Enterprise Gateway(01-02)")) { 
+  	setScreen("screen1");
+  } else if ((getText("dropdownCNS6201") == "05-08" && getText("dropdown6") == "Enterprise Gateway(01-02)")) { 
+  	setScreen("screen1");
+  } else if ((getText("dropdownCNS6201") == "05-10" && getText("dropdown6") == "Enterprise Gateway(01-02)")) { 
+  	setScreen("screen1");
+  } else if ((getText("dropdownCNS6201") == "05-13" && getText("dropdown6") == "Enterprise Gateway(01-02)")) { 
+  	setScreen("screen1");
+
+
+  } else if ((getText("dropdownCNS6201") == "02-40" && getText("dropdown6") == "Enterprise Gateway(01-03)")) {
+     setScreen("screen1"); 
+  } else if ((getText("dropdownCNS6201") == "03-40" && getText("dropdown6") == "Enterprise Gateway(01-03)")) {
+  setScreen("screen1");
+  } else if ((getText("dropdownCNS6201") == "05-01" && getText("dropdown6") == "Enterprise Gateway(01-03)")) { 
+    setScreen("screen1");
+  } else if ((getText("dropdownCNS6201") == "05-07" && getText("dropdown6") == "Enterprise Gateway(01-03)")) { 
+  	setScreen("screen1");
+  } else if ((getText("dropdownCNS6201") == "05-08" && getText("dropdown6") == "Enterprise Gateway(01-03)")) { 
+  	setScreen("screen1");
+  } else if ((getText("dropdownCNS6201") == "05-10" && getText("dropdown6") == "Enterprise Gateway(01-03)")) { 
+  	setScreen("screen1");
+  } else if ((getText("dropdownCNS6201") == "05-13" && getText("dropdown6") == "Enterprise Gateway(01-03)")) { 
+  	setScreen("screen1");
+
+  } else if ((getText("dropdownCNS6201") == "02-40" && getText("dropdown6") == "Enterprise Gateway(02-01)")) {
+     setScreen("screen1"); 
+  } else if ((getText("dropdownCNS6201") == "03-40" && getText("dropdown6") == "Enterprise Gateway(02-01)")) {
+  setScreen("screen1");
+  } else if ((getText("dropdownCNS6201") == "05-01" && getText("dropdown6") == "Enterprise Gateway(02-01)")) { 
+    setScreen("screen1");
+  } else if ((getText("dropdownCNS6201") == "05-07" && getText("dropdown6") == "Enterprise Gateway(02-01)")) { 
+  	setScreen("screen1");
+  } else if ((getText("dropdownCNS6201") == "05-08" && getText("dropdown6") == "Enterprise Gateway(02-01)")) { 
+  	setScreen("screen1");
+  } else if ((getText("dropdownCNS6201") == "05-10" && getText("dropdown6") == "Enterprise Gateway(02-01)")) { 
+  	setScreen("screen1");
+  } else if ((getText("dropdownCNS6201") == "05-13" && getText("dropdown6") == "Enterprise Gateway(02-01)")) { 
+  	setScreen("screen1");
+
+  } else if ((getText("dropdownCNS6201") == "02-40" && getText("dropdown6") == "Enterprise Gateway(02-03)")) {
+     setScreen("screen1"); 
+  } else if ((getText("dropdownCNS6201") == "03-40" && getText("dropdown6") == "Enterprise Gateway(02-03)")) {
+  setScreen("screen1");
+  } else if ((getText("dropdownCNS6201") == "05-01" && getText("dropdown6") == "Enterprise Gateway(02-03)")) { 
+    setScreen("screen1");
+  } else if ((getText("dropdownCNS6201") == "05-07" && getText("dropdown6") == "Enterprise Gateway(02-03)")) { 
+  	setScreen("screen1");
+  } else if ((getText("dropdownCNS6201") == "05-08" && getText("dropdown6") == "Enterprise Gateway(02-03)")) { 
+  	setScreen("screen1");
+  } else if ((getText("dropdownCNS6201") == "05-10" && getText("dropdown6") == "Enterprise Gateway(02-03)")) { 
+  	setScreen("screen1");
+  } else if ((getText("dropdownCNS6201") == "05-13" && getText("dropdown6") == "Enterprise Gateway(02-03)")) { 
+  	setScreen("screen1");
+
+  } else if ((getText("dropdownCNS6201") == "02-40" && getText("dropdown6") == "Enterprise Gateway(02-04)")) {
+     setScreen("screen1"); 
+  } else if ((getText("dropdownCNS6201") == "03-40" && getText("dropdown6") == "Enterprise Gateway(02-04)")) {
+  setScreen("screen1");
+  } else if ((getText("dropdownCNS6201") == "05-01" && getText("dropdown6") == "Enterprise Gateway(02-04)")) { 
+    setScreen("screen1");
+  } else if ((getText("dropdownCNS6201") == "05-07" && getText("dropdown6") == "Enterprise Gateway(02-04)")) { 
+  	setScreen("screen1");
+  } else if ((getText("dropdownCNS6201") == "05-08" && getText("dropdown6") == "Enterprise Gateway(02-04)")) { 
+  	setScreen("screen1");
+  } else if ((getText("dropdownCNS6201") == "05-10" && getText("dropdown6") == "Enterprise Gateway(02-04)")) { 
+  	setScreen("screen1");
+  } else if ((getText("dropdownCNS6201") == "05-13" && getText("dropdown6") == "Enterprise Gateway(02-04)")) { 
+  	setScreen("screen1");
+
+  } else if ((getText("dropdownCNS6201") == "02-40" && getText("dropdown6") == "Enterprise Gateway(02-06)")) {
+     setScreen("screen1"); 
+  } else if ((getText("dropdownCNS6201") == "03-40" && getText("dropdown6") == "Enterprise Gateway(02-06)")) {
+  setScreen("screen1");
+  } else if ((getText("dropdownCNS6201") == "05-01" && getText("dropdown6") == "Enterprise Gateway(02-06)")) { 
+    setScreen("screen1");
+  } else if ((getText("dropdownCNS6201") == "05-07" && getText("dropdown6") == "Enterprise Gateway(02-06)")) { 
+  	setScreen("screen1");
+  } else if ((getText("dropdownCNS6201") == "05-08" && getText("dropdown6") == "Enterprise Gateway(02-06)")) { 
+  	setScreen("screen1");
+  } else if ((getText("dropdownCNS6201") == "05-10" && getText("dropdown6") == "Enterprise Gateway(02-06)")) { 
+  	setScreen("screen1");
+  } else if ((getText("dropdownCNS6201") == "05-13" && getText("dropdown6") == "Enterprise Gateway(02-06)")) { 
+  	setScreen("screen1");
+
+  } else if ((getText("dropdownCNS6201") == "02-40" && getText("dropdown6") == "Enterprise Gateway(04-01)")) {
+     setScreen("screen1"); 
+  } else if ((getText("dropdownCNS6201") == "03-40" && getText("dropdown6") == "Enterprise Gateway(04-01)")) {
+  setScreen("screen1");
+  } else if ((getText("dropdownCNS6201") == "05-01" && getText("dropdown6") == "Enterprise Gateway(04-01)")) { 
+    setScreen("screen1");
+  } else if ((getText("dropdownCNS6201") == "05-07" && getText("dropdown6") == "Enterprise Gateway(04-01)")) { 
+  	setScreen("screen1");
+  } else if ((getText("dropdownCNS6201") == "05-08" && getText("dropdown6") == "Enterprise Gateway(04-01)")) { 
+  	setScreen("screen1");
+  } else if ((getText("dropdownCNS6201") == "05-10" && getText("dropdown6") == "Enterprise Gateway(04-01)")) { 
+  	setScreen("screen1");
+  } else if ((getText("dropdownCNS6201") == "05-13" && getText("dropdown6") == "Enterprise Gateway(04-01)")) { 
+  	setScreen("screen1");
+
+//CNS6801
+  } else if ((getText("dropdownCNS6801") == "02-01" && getText("dropdown6") == "Unified Gateway (01-08a)")) {
+     setScreen("screen1");
+  } else if ((getText("dropdownCNS6801") == "02-07" && getText("dropdown6") == "Unified Gateway (01-08a)")) {
+  setScreen("screen1");
+  } else if ((getText("dropdownCNS6801") == "02-08" && getText("dropdown6") == "Unified Gateway (01-08a)")) { 
+    setScreen("screen1");
+  } else if ((getText("dropdownCNS6801") == "02-10" && getText("dropdown6") == "Unified Gateway (01-08a)")) { 
+  	setScreen("screen2");
+  } else if ((getText("dropdownCNS6801") == "02-13" && getText("dropdown6") == "Unified Gateway (01-08a)")) { 
+  	setScreen("screen2");
+
+  } else if ((getText("dropdownCNS6801") == "02-01" && getText("dropdown6") == "Unified Gateway (01-10)")) {
+     setScreen("screen1");
+  } else if ((getText("dropdownCNS6801") == "02-07" && getText("dropdown6") == "Unified Gateway (01-10)")) {
+  setScreen("screen1");
+  } else if ((getText("dropdownCNS6801") == "02-08" && getText("dropdown6") == "Unified Gateway (01-10)")) { 
+    setScreen("screen1");
+  } else if ((getText("dropdownCNS6801") == "02-10" && getText("dropdown6") == "Unified Gateway (01-10)")) { 
+  	setScreen("screen2");
+  } else if ((getText("dropdownCNS6801") == "02-13" && getText("dropdown6") == "Unified Gateway (01-10)")) { 
+  	setScreen("screen2");
+
+  } else if ((getText("dropdownCNS6801") == "02-01" && getText("dropdown6") == "Unified Gateway (01-11)")) {
+     setScreen("screen1");
+  } else if ((getText("dropdownCNS6801") == "02-07" && getText("dropdown6") == "Unified Gateway (01-11)")) {
+  setScreen("screen1");
+  } else if ((getText("dropdownCNS6801") == "02-08" && getText("dropdown6") == "Unified Gateway (01-11)")) { 
+    setScreen("screen1");
+  } else if ((getText("dropdownCNS6801") == "02-10" && getText("dropdown6") == "Unified Gateway (01-11)")) { 
+  	setScreen("screen2");
+  } else if ((getText("dropdownCNS6801") == "02-13" && getText("dropdown6") == "Unified Gateway (01-11)")) { 
+  	setScreen("screen2");
+
+  } else if ((getText("dropdownCNS6801") == "02-01" && getText("dropdown6") == "Enterprise Gateway(01-02)")) {
+     setScreen("screen1");
+  } else if ((getText("dropdownCNS6801") == "02-07" && getText("dropdown6") == "Enterprise Gateway(01-02)")) {
+  setScreen("screen1");
+  } else if ((getText("dropdownCNS6801") == "02-08" && getText("dropdown6") == "Enterprise Gateway(01-02)")) { 
+    setScreen("screen1");
+  } else if ((getText("dropdownCNS6801") == "02-10" && getText("dropdown6") == "Enterprise Gateway(01-02)")) { 
+  	setScreen("screen1");
+  } else if ((getText("dropdownCNS6801") == "02-13" && getText("dropdown6") == "Enterprise Gateway(01-02)")) { 
+  	setScreen("screen1");
+
+
+  } else if ((getText("dropdownCNS6801") == "02-01" && getText("dropdown6") == "Enterprise Gateway(01-03)")) {
+     setScreen("screen1");
+  } else if ((getText("dropdownCNS6801") == "02-07" && getText("dropdown6") == "Enterprise Gateway(01-03)")) {
+  setScreen("screen1");
+  } else if ((getText("dropdownCNS6801") == "02-08" && getText("dropdown6") == "Enterprise Gateway(01-03)")) { 
+    setScreen("screen1");
+  } else if ((getText("dropdownCNS6801") == "02-10" && getText("dropdown6") == "Enterprise Gateway(01-03)")) { 
+  	setScreen("screen1");
+  } else if ((getText("dropdownCNS6801") == "02-13" && getText("dropdown6") == "Enterprise Gateway(01-03)")) { 
+  	setScreen("screen1");
+  	
+  } else if ((getText("dropdownCNS6801") == "02-01" && getText("dropdown6") == "Enterprise Gateway(02-01)")) {
+     setScreen("screen1");
+  } else if ((getText("dropdownCNS6801") == "02-07" && getText("dropdown6") == "Enterprise Gateway(02-01)")) {
+  setScreen("screen1");
+  } else if ((getText("dropdownCNS6801") == "02-08" && getText("dropdown6") == "Enterprise Gateway(02-01)")) { 
+    setScreen("screen1");
+  } else if ((getText("dropdownCNS6801") == "02-10" && getText("dropdown6") == "Enterprise Gateway(02-01)")) { 
+  	setScreen("screen1");
+  } else if ((getText("dropdownCNS6801") == "02-13" && getText("dropdown6") == "Enterprise Gateway(02-01)")) { 
+  	setScreen("screen1");
+
+
+  } else if ((getText("dropdownCNS6801") == "02-01" && getText("dropdown6") == "Enterprise Gateway(02-03)")) {
+     setScreen("screen1");
+  } else if ((getText("dropdownCNS6801") == "02-07" && getText("dropdown6") == "Enterprise Gateway(02-03)")) {
+  setScreen("screen1");
+  } else if ((getText("dropdownCNS6801") == "02-08" && getText("dropdown6") == "Enterprise Gateway(02-03)")) { 
+    setScreen("screen1");
+  } else if ((getText("dropdownCNS6801") == "02-10" && getText("dropdown6") == "Enterprise Gateway(02-03)")) { 
+  	setScreen("screen1");
+  } else if ((getText("dropdownCNS6801") == "02-13" && getText("dropdown6") == "Enterprise Gateway(02-03)")) { 
+  	setScreen("screen1");
+
+  } else if ((getText("dropdownCNS6801") == "02-01" && getText("dropdown6") == "Enterprise Gateway(02-04)")) {
+     setScreen("screen1");
+  } else if ((getText("dropdownCNS6801") == "02-07" && getText("dropdown6") == "Enterprise Gateway(02-04)")) {
+  setScreen("screen1");
+  } else if ((getText("dropdownCNS6801") == "02-08" && getText("dropdown6") == "Enterprise Gateway(02-04)")) { 
+    setScreen("screen1");
+  } else if ((getText("dropdownCNS6801") == "02-10" && getText("dropdown6") == "Enterprise Gateway(02-04)")) { 
+  	setScreen("screen1");
+  } else if ((getText("dropdownCNS6801") == "02-13" && getText("dropdown6") == "Enterprise Gateway(02-04)")) { 
+  	setScreen("screen1");
+
+
+  } else if ((getText("dropdownCNS6801") == "02-01" && getText("dropdown6") == "Enterprise Gateway(02-06)")) {
+     setScreen("screen1");
+  } else if ((getText("dropdownCNS6801") == "02-07" && getText("dropdown6") == "Enterprise Gateway(02-06)")) {
+  setScreen("screen1");
+  } else if ((getText("dropdownCNS6801") == "02-08" && getText("dropdown6") == "Enterprise Gateway(02-06)")) { 
+    setScreen("screen1");
+  } else if ((getText("dropdownCNS6801") == "02-10" && getText("dropdown6") == "Enterprise Gateway(02-06)")) { 
+  	setScreen("screen1");
+  } else if ((getText("dropdownCNS6801") == "02-13" && getText("dropdown6") == "Enterprise Gateway(02-06)")) { 
+  	setScreen("screen1");
+
+  } else if ((getText("dropdownCNS6801") == "02-01" && getText("dropdown6") == "Enterprise Gateway(04-01)")) {
+     setScreen("screen1");
+  } else if ((getText("dropdownCNS6801") == "02-07" && getText("dropdown6") == "Enterprise Gateway(04-01)")) {
+  setScreen("screen1");
+  } else if ((getText("dropdownCNS6801") == "02-08" && getText("dropdown6") == "Enterprise Gateway(04-01)")) { 
+    setScreen("screen1");
+  } else if ((getText("dropdownCNS6801") == "02-10" && getText("dropdown6") == "Enterprise Gateway(04-01)")) { 
+  	setScreen("screen1");
+  } else if ((getText("dropdownCNS6801") == "02-13" && getText("dropdown6") == "Enterprise Gateway(04-01)")) { 
+  	setScreen("screen1");
+  	
+//RNS9703
+
+  } else if ((getText("dropdownRNS9703") == "03-40" && getText("dropdown6") == "Unified Gateway (01-08a)")) {
+      setText("Sol1", "=NA");
+  } else if ((getText("dropdownRNS9703") == "03-40b" && getText("dropdown6") == "Unified Gateway (01-08a)")) {
+      setText("Sol1", "=NA");
+
+  } else if ((getText("dropdownRNS9703") == "03-40" && getText("dropdown6") == "Unified Gateway (01-10)")) {
+      setText("Sol1", "=NA");
+  } else if ((getText("dropdownRNS9703") == "03-40b" && getText("dropdown6") == "Unified Gateway (01-10)")) {
+      setText("Sol1", "=NA");
+
+  } else if ((getText("dropdownRNS9703") == "03-40" && getText("dropdown6") == "Unified Gateway (01-11)")) {
+      setText("Sol1", "=NA");
+  } else if ((getText("dropdownRNS9703") == "03-40b" && getText("dropdown6") == "Unified Gateway (01-11)")) {
+      setText("Sol1", "=NA");
+
+
+  } else if ((getText("dropdownRNS9703") == "03-40" && getText("dropdown6") == "Enterprise Gateway(01-02)")) {
+         setScreen("screen1");
+  } else if ((getText("dropdownRNS9703") == "03-40b" && getText("dropdown6") == "Enterprise Gateway(01-02)")) {
+    setScreen("screen1");
+
+  } else if ((getText("dropdownRNS9703") == "03-40" && getText("dropdown6") == "Enterprise Gateway(01-03)")) {
+         setScreen("screen1");
+  } else if ((getText("dropdownRNS9703") == "03-40b" && getText("dropdown6") == "Enterprise Gateway(01-03)")) {
+    setScreen("screen1");
+
+  } else if ((getText("dropdownRNS9703") == "03-40" && getText("dropdown6") == "Enterprise Gateway(02-01)")) {
+         setScreen("screen1");
+  } else if ((getText("dropdownRNS9703") == "03-40b" && getText("dropdown6") == "Enterprise Gateway(02-01)")) {
+    setScreen("screen1");
+    
+
+  } else if ((getText("dropdownRNS9703") == "03-40" && getText("dropdown6") == "Enterprise Gateway(02-03)")) {
+         setScreen("screen1");
+  } else if ((getText("dropdownRNS9703") == "03-40b" && getText("dropdown6") == "Enterprise Gateway(02-03)")) {
     setScreen("screen1");
 
 
+  } else if ((getText("dropdownRNS9703") == "03-40" && getText("dropdown6") == "Enterprise Gateway(02-04)")) {
+         setScreen("screen1");
+  } else if ((getText("dropdownRNS9703") == "03-40b" && getText("dropdown6") == "Enterprise Gateway(02-04)")) {
+    setScreen("screen1");
+
+
+  } else if ((getText("dropdownRNS9703") == "03-40" && getText("dropdown6") == "Enterprise Gateway(02-06)")) {
+         setScreen("screen1");
+  } else if ((getText("dropdownRNS9703") == "03-40b" && getText("dropdown6") == "Enterprise Gateway(02-06)")) {
+    setScreen("screen1");
+
+  } else if ((getText("dropdownRNS9703") == "03-40" && getText("dropdown6") == "Enterprise Gateway(04-01)")) {
+         setScreen("screen1");
+  } else if ((getText("dropdownRNS9703") == "03-40b" && getText("dropdown6") == "Enterprise Gateway(04-01)")) {
+    setScreen("screen1");
+    
+    
+//RNS6803
+
+
+  } else if ((getText("dropdownRNS6803") == "02-06" && getText("dropdown6") == "Unified Gateway (01-08a)")) {
+         setScreen("screen2");
+  } else if ((getText("dropdownRNS6803") == "02-10" && getText("dropdown6") == "Unified Gateway (01-08a)")) {
+    setScreen("screen2");
+
+  } else if ((getText("dropdownRNS6803") == "02-06" && getText("dropdown6") == "Unified Gateway (01-10)")) {
+         setScreen("screen2");
+  } else if ((getText("dropdownRNS6803") == "02-10" && getText("dropdown6") == "Unified Gateway (01-10)")) {
+    setScreen("screen2");
+
+  } else if ((getText("dropdownRNS6803") == "02-06" && getText("dropdown6") == "Unified Gateway (01-11)")) {
+         setScreen("screen2");
+  } else if ((getText("dropdownRNS6803") == "02-10" && getText("dropdown6") == "Unified Gateway (01-11)")) {
+    setScreen("screen2");
+
+  } else if ((getText("dropdownRNS6803") == "02-06" && getText("dropdown6") == "Enterprise Gateway(01-02)")) {
+         setScreen("screen1");
+  } else if ((getText("dropdownRNS6803") == "02-10" && getText("dropdown6") == "Enterprise Gateway(01-02)")) {
+    setScreen("screen1");
+
+  } else if ((getText("dropdownRNS6803") == "02-06" && getText("dropdown6") == "Enterprise Gateway(01-03)")) {
+         setScreen("screen1");
+  } else if ((getText("dropdownRNS6803") == "02-10" && getText("dropdown6") == "Enterprise Gateway(01-03)")) {
+    setScreen("screen1");
+
+  } else if ((getText("dropdownRNS6803") == "02-06" && getText("dropdown6") == "Enterprise Gateway(02-01)")) {
+         setScreen("screen1");
+  } else if ((getText("dropdownRNS6803") == "02-10" && getText("dropdown6") == "Enterprise Gateway(02-01)")) {
+    setScreen("screen1");
+
+  } else if ((getText("dropdownRNS6803") == "02-06" && getText("dropdown6") == "Enterprise Gateway(02-03)")) {
+         setScreen("screen1");
+  } else if ((getText("dropdownRNS6803") == "02-10" && getText("dropdown6") == "Enterprise Gateway(02-03)")) {
+    setScreen("screen1");
+
+  } else if ((getText("dropdownRNS6803") == "02-06" && getText("dropdown6") == "Enterprise Gateway(02-04)")) {
+         setScreen("screen1");
+  } else if ((getText("dropdownRNS6803") == "02-10" && getText("dropdown6") == "Enterprise Gateway(02-04)")) {
+    setScreen("screen1");
+
+  } else if ((getText("dropdownRNS6803") == "02-06" && getText("dropdown6") == "Enterprise Gateway(02-06)")) {
+         setScreen("screen1");
+  } else if ((getText("dropdownRNS6803") == "02-10" && getText("dropdown6") == "Enterprise Gateway(02-06)")) {
+    setScreen("screen1");
+
+
+  } else if ((getText("dropdownRNS6803") == "02-06" && getText("dropdown6") == "Enterprise Gateway(04-01)")) {
+         setScreen("screen1");
+  } else if ((getText("dropdownRNS6803") == "02-10" && getText("dropdown6") == "Enterprise Gateway(04-01)")) {
+    setScreen("screen1");
+
+
+//RNS6804
+
+
+  } else if ((getText("dropdownRNS6804") == "02-10" && getText("dropdown6") == "Unified Gateway (01-08a)")) {
+         setScreen("screen2");
+
+  } else if ((getText("dropdownRNS6804") == "02-10" && getText("dropdown6") == "Unified Gateway (01-10)")) {
+    setScreen("screen2");
+
+  } else if ((getText("dropdownRNS6804") == "02-10" && getText("dropdown6") == "Unified Gateway (01-11)")) {
+    setScreen("screen2");
+
+  } else if ((getText("dropdownRNS6804") == "02-10" && getText("dropdown6") == "Enterprise Gateway(01-02)")) {
+    setScreen("screen1");
+
+  } else if ((getText("dropdownRNS6804") == "02-10" && getText("dropdown6") == "Enterprise Gateway(01-03)")) {
+    setScreen("screen1");
+
+  } else if ((getText("dropdownRNS6804") == "02-10" && getText("dropdown6") == "Enterprise Gateway(02-01)")) {
+    setScreen("screen1");
+
+  } else if ((getText("dropdownRNS6804") == "02-10" && getText("dropdown6") == "Enterprise Gateway(02-03)")) {
+    setScreen("screen1");
+
+  } else if ((getText("dropdownRNS6804") == "02-10" && getText("dropdown6") == "Enterprise Gateway(02-04)")) {
+    setScreen("screen1");
+
+  } else if ((getText("dropdownRNS6804") == "02-10" && getText("dropdown6") == "Enterprise Gateway(02-06)")) {
+    setScreen("screen1");
+
+  } else if ((getText("dropdownRNS6804") == "02-10" && getText("dropdown6") == "Enterprise Gateway(04-01)")) {
+>>>>>>> 36e1275e17d699d899702acf51e7cb4968260178
+    setScreen("screen1");
+
+//EDNS-9001
+
+<<<<<<< HEAD
   } else if ((getText("dropdownRNS9703") == "03-40" && getText("EG") == "02-04")) {
          setScreen("screen1");
   } else if ((getText("dropdownRNS9703") == "03-40b" && getText("EG") == "02-04")) {
     setScreen("screen1");
+=======
+  } else if ((getText("dropdownEDNS9001") == "02-07" && getText("dropdown6") == "Unified Gateway (01-08a)")) {
+          setText("Sol1", "NA");
+  } else if ((getText("dropdownEDNS9001") == "02-08" && getText("dropdown6") == "Unified Gateway (01-08a)")) {
+    setText("Sol1", "NA");
+>>>>>>> 36e1275e17d699d899702acf51e7cb4968260178
 
+  } else if ((getText("dropdownEDNS9001") == "02-07" && getText("dropdown6") == "Unified Gateway (01-10)")) {
+          setText("Sol1", "NA");
+  } else if ((getText("dropdownEDNS9001") == "02-08" && getText("dropdown6") == "Unified Gateway (01-10)")) {
+    setText("Sol1", "NA");
 
+<<<<<<< HEAD
   } else if ((getText("dropdownRNS9703") == "03-40" && getText("EG") == "02-06")) {
          setScreen("screen1");
   } else if ((getText("dropdownRNS9703") == "03-40b" && getText("EG") == "02-06")) {
@@ -3504,12 +4394,92 @@ onEvent("go_button", "click", function(event) {
   } else if ((getText("dropdownGZ100P") == "02-06" && getText("UNG") == "01-10")) {
               setScreen("screen1");
   } else if ((getText("dropdownGZ100P") == "02-10" && getText("UNG") == "01-10")) {
+=======
+  } else if ((getText("dropdownEDNS9001") == "02-07" && getText("dropdown6") == "Unified Gateway (01-11)")) {
+          setText("Sol1", "NA");
+  } else if ((getText("dropdownEDNS9001") == "02-08" && getText("dropdown6") == "Unified Gateway (01-11)")) {
+    setText("Sol1", "NA");
+
+  } else if ((getText("dropdownEDNS9001") == "02-07" && getText("dropdown6") == "Enterprise Gateway(01-02)")) {
+           setScreen("screen3");
+  } else if ((getText("dropdownEDNS9001") == "02-08" && getText("dropdown6") == "Enterprise Gateway(01-02)")) {
+  setScreen("screen3");
+
+  } else if ((getText("dropdownEDNS9001") == "02-07" && getText("dropdown6") == "Enterprise Gateway(01-03)")) {
+           setScreen("screen3");
+  } else if ((getText("dropdownEDNS9001") == "02-08" && getText("dropdown6") == "Enterprise Gateway(01-03)")) {
+  setScreen("screen3");
+
+  } else if ((getText("dropdownEDNS9001") == "02-07" && getText("dropdown6") == "Enterprise Gateway(02-01)")) {
+           setScreen("screen3");
+  } else if ((getText("dropdownEDNS9001") == "02-08" && getText("dropdown6") == "Enterprise Gateway(02-01)")) {
+  setScreen("screen3");
+
+  } else if ((getText("dropdownEDNS9001") == "02-07" && getText("dropdown6") == "Enterprise Gateway(02-03)")) {
+           setScreen("screen3");
+  } else if ((getText("dropdownEDNS9001") == "02-08" && getText("dropdown6") == "Enterprise Gateway(02-03)")) {
+  setScreen("screen3");
+
+  } else if ((getText("dropdownEDNS9001") == "02-07" && getText("dropdown6") == "Enterprise Gateway(02-04)")) {
+           setScreen("screen3");
+  } else if ((getText("dropdownEDNS9001") == "02-08" && getText("dropdown6") == "Enterprise Gateway(02-04)")) {
+  setScreen("screen3");
+
+  } else if ((getText("dropdownEDNS9001") == "02-07" && getText("dropdown6") == "Enterprise Gateway(02-06)")) {
+           setScreen("screen3");
+  } else if ((getText("dropdownEDNS9001") == "02-08" && getText("dropdown6") == "Enterprise Gateway(02-06)")) {
+  setScreen("screen3");
+
+  } else if ((getText("dropdownEDNS9001") == "02-07" && getText("dropdown6") == "Enterprise Gateway(04-01)")) {
+           setScreen("screen3");
+  } else if ((getText("dropdownEDNS9001") == "02-08" && getText("dropdown6") == "Enterprise Gateway(04-01)")) {
+  setScreen("screen3");
+
+//GZ-100P
+
+
+  } else if ((getText("dropdownGZ100P") == "02-06" && getText("dropdown6") == "Unified Gateway (01-08a)")) {
+            setScreen("screen2");
+  } else if ((getText("dropdownGZ100P") == "02-10" && getText("dropdown6") == "Unified Gateway (01-08a)")) {
+     setScreen("screen2");
+   } else if ((getText("dropdownGZ100P") == "02-20" && getText("dropdown6") == "Unified Gateway (01-08a)")) {
+     setScreen("screen2");
+   } else if ((getText("dropdownGZ100P") == "02-22" && getText("dropdown6") == "Unified Gateway (01-08a)")) {
+     setScreen("screen2");
+
+  } else if ((getText("dropdownGZ100P") == "02-06" && getText("dropdown6") == "Unified Gateway (01-10)")) {
+              setScreen("screen1");
+  } else if ((getText("dropdownGZ100P") == "02-10" && getText("dropdown6") == "Unified Gateway (01-10)")) {
+    setScreen("screen1");
+   } else if ((getText("dropdownGZ100P") == "02-20" && getText("dropdown6") == "Unified Gateway (01-10)")) {
+    setScreen("screen2");
+   } else if ((getText("dropdownGZ100P") == "02-22" && getText("dropdown6") == "Unified Gateway (01-10)")) {
+    setScreen("screen2");
+
+  } else if ((getText("dropdownGZ100P") == "02-06" && getText("dropdown6") == "Unified Gateway (01-11)")) {
+              setScreen("screen1");
+  } else if ((getText("dropdownGZ100P") == "02-10" && getText("dropdown6") == "Unified Gateway (01-11)")) {
+    setScreen("screen1");
+   } else if ((getText("dropdownGZ100P") == "02-20" && getText("dropdown6") == "Unified Gateway (01-11)")) {
+    setScreen("screen2");
+   } else if ((getText("dropdownGZ100P") == "02-22" && getText("dropdown6") == "Unified Gateway (01-11)")) {
+    setScreen("screen2");
+
+  } else if ((getText("dropdownGZ100P") == "02-06" && getText("dropdown6") == "Enterprise Gateway(01-02)")) {
+              setScreen("screen1");
+  } else if ((getText("dropdownGZ100P") == "02-10" && getText("dropdown6") == "Enterprise Gateway(01-02)")) {
+    setScreen("screen1");
+   } else if ((getText("dropdownGZ100P") == "02-20" && getText("dropdown6") == "Enterprise Gateway(01-02)")) {
+    setScreen("screen1");
+   } else if ((getText("dropdownGZ100P") == "02-22" && getText("dropdown6") == "Enterprise Gateway(01-02)")) {
+>>>>>>> 36e1275e17d699d899702acf51e7cb4968260178
     setScreen("screen1");
    } else if ((getText("dropdownGZ100P") == "02-20" && getText("UNG") == "01-10")) {
     setScreen("screen2");
    } else if ((getText("dropdownGZ100P") == "02-22" && getText("UNG") == "01-10")) {
     setScreen("screen2");
 
+<<<<<<< HEAD
   } else if ((getText("dropdownGZ100P") == "02-06" && getText("UNG") == "01-11")) {
               setScreen("screen1");
   } else if ((getText("dropdownGZ100P") == "02-10" && getText("UNG") == "01-11")) {
@@ -3545,6 +4515,25 @@ onEvent("go_button", "click", function(event) {
    } else if ((getText("dropdownGZ100P") == "02-20" && getText("EG") == "02-01")) {
     setScreen("screen1");
    } else if ((getText("dropdownGZ100P") == "02-22" && getText("EG") == "02-01")) {
+=======
+  } else if ((getText("dropdownGZ100P") == "02-06" && getText("dropdown6") == "Enterprise Gateway(01-03)")) {
+              setScreen("screen1");
+  } else if ((getText("dropdownGZ100P") == "02-10" && getText("dropdown6") == "Enterprise Gateway(01-03)")) {
+    setScreen("screen1");
+   } else if ((getText("dropdownGZ100P") == "02-20" && getText("dropdown6") == "Enterprise Gateway(01-03)")) {
+    setScreen("screen1");
+   } else if ((getText("dropdownGZ100P") == "02-22" && getText("dropdown6") == "Enterprise Gateway(01-03)")) {
+    setScreen("screen1");
+
+
+  } else if ((getText("dropdownGZ100P") == "02-06" && getText("dropdown6") == "Enterprise Gateway(02-01)")) {
+              setScreen("screen1");
+  } else if ((getText("dropdownGZ100P") == "02-10" && getText("dropdown6") == "Enterprise Gateway(02-01)")) {
+    setScreen("screen1");
+   } else if ((getText("dropdownGZ100P") == "02-20" && getText("dropdown6") == "Enterprise Gateway(02-01)")) {
+    setScreen("screen1");
+   } else if ((getText("dropdownGZ100P") == "02-22" && getText("dropdown6") == "Enterprise Gateway(02-01)")) {
+>>>>>>> 36e1275e17d699d899702acf51e7cb4968260178
     setScreen("screen1");
 
 
@@ -3559,6 +4548,7 @@ onEvent("go_button", "click", function(event) {
 
 
 
+<<<<<<< HEAD
   } else if ((getText("dropdownGZ100P") == "02-06" && getText("EG") == "02-03")) {
               setScreen("screen1");
   } else if ((getText("dropdownGZ100P") == "02-10" && getText("EG") == "02-03")) {
@@ -4294,8 +5284,37 @@ onEvent("go_button", "click", function(event) {
    } else if ((getText("dropdownQP-986P") == "01-03" && getText("UNG") == "01-08a")) {
      setScreen("screen1");
    } else if ((getText("dropdownQP-986P") == "01-04" && getText("UNG") == "01-08a")) {
-     setScreen("screen1");
+=======
+  } else if ((getText("dropdownGZ100P") == "02-06" && getText("dropdown6") == "Enterprise Gateway(02-03)")) {
+              setScreen("screen1");
+  } else if ((getText("dropdownGZ100P") == "02-10" && getText("dropdown6") == "Enterprise Gateway(02-03)")) {
+    setScreen("screen1");
+   } else if ((getText("dropdownGZ100P") == "02-20" && getText("dropdown6") == "Enterprise Gateway(02-03)")) {
+    setScreen("screen1");
+   } else if ((getText("dropdownGZ100P") == "02-22" && getText("dropdown6") == "Enterprise Gateway(02-03)")) {
+    setScreen("screen1");
 
+  } else if ((getText("dropdownGZ100P") == "02-06" && getText("dropdown6") == "Enterprise Gateway(02-04)")) {
+              setScreen("screen1");
+  } else if ((getText("dropdownGZ100P") == "02-10" && getText("dropdown6") == "Enterprise Gateway(02-04)")) {
+    setScreen("screen1");
+   } else if ((getText("dropdownGZ100P") == "02-20" && getText("dropdown6") == "Enterprise Gateway(02-04)")) {
+    setScreen("screen1");
+   } else if ((getText("dropdownGZ100P") == "02-22" && getText("dropdown6") == "Enterprise Gateway(02-04)")) {
+    setScreen("screen1");
+
+  } else if ((getText("dropdownGZ100P") == "02-06" && getText("dropdown6") == "Enterprise Gateway(02-06)")) {
+              setScreen("screen1");
+  } else if ((getText("dropdownGZ100P") == "02-10" && getText("dropdown6") == "Enterprise Gateway(02-06)")) {
+    setScreen("screen1");
+   } else if ((getText("dropdownGZ100P") == "02-20" && getText("dropdown6") == "Enterprise Gateway(02-06)")) {
+>>>>>>> 36e1275e17d699d899702acf51e7cb4968260178
+     setScreen("screen1");
+   } else if ((getText("dropdownGZ100P") == "02-22" && getText("dropdown6") == "Enterprise Gateway(02-06)")) {
+    setScreen("screen1");
+
+
+<<<<<<< HEAD
    } else if ((getText("dropdownQP-986P") == "01-03" && getText("UNG") == "01-10")) {
      setScreen("screen1");
    } else if ((getText("dropdownQP-986P") == "01-04" && getText("UNG") == "01-10")) {
@@ -4314,19 +5333,146 @@ onEvent("go_button", "click", function(event) {
    } else if ((getText("dropdownQP-986P") == "01-03" && getText("EG") == "01-03")) {
      setScreen("screen1");
    } else if ((getText("dropdownQP-986P") == "01-04" && getText("EG") == "01-03")) {
+=======
+  } else if ((getText("dropdownGZ100P") == "02-06" && getText("dropdown6") == "Enterprise Gateway(04-01)")) {
+              setScreen("screen1");
+  } else if ((getText("dropdownGZ100P") == "02-10" && getText("dropdown6") == "Enterprise Gateway(04-01)")) {
+    setScreen("screen1");
+   } else if ((getText("dropdownGZ100P") == "02-20" && getText("dropdown6") == "Enterprise Gateway(04-01)")) {
      setScreen("screen1");
+   } else if ((getText("dropdownGZ100P") == "02-22" && getText("dropdown6") == "Enterprise Gateway(04-01)")) {
+    setScreen("screen1");
 
+//ORG-9100
+  } else if ((getText("dropdownORG9100") == "04-01" && getText("dropdown6") == "Unified Gateway (01-08a)")) {
+       setScreen("screen1");
+  } else if ((getText("dropdownORG9100") == "04-20" && getText("dropdown6") == "Unified Gateway (01-08a)")) {
+     setScreen("screen1");
+   } else if ((getText("dropdownORG9100") == "04-31" && getText("dropdown6") == "Unified Gateway (01-08a)")) {
+     setScreen("screen2");
+   } else if ((getText("dropdownORG9100") == "04-51" && getText("dropdown6") == "Unified Gateway (01-08a)")) {
+     setScreen("screen2");
+
+  } else if ((getText("dropdownORG9100") == "04-01" && getText("dropdown6") == "Unified Gateway (01-10)")) {
+       setScreen("screen1");
+  } else if ((getText("dropdownORG9100") == "04-20" && getText("dropdown6") == "Unified Gateway (01-10)")) {
+     setScreen("screen1");
+   } else if ((getText("dropdownORG9100") == "04-31" && getText("dropdown6") == "Unified Gateway (01-10)")) {
+     setScreen("screen2");
+   } else if ((getText("dropdownORG9100") == "04-51" && getText("dropdown6") == "Unified Gateway (01-10)")) {
+     setScreen("screen2");
+
+  } else if ((getText("dropdownORG9100") == "04-01" && getText("dropdown6") == "Unified Gateway (01-11)")) {
+       setScreen("screen1");
+  } else if ((getText("dropdownORG9100") == "04-20" && getText("dropdown6") == "Unified Gateway (01-11)")) {
+     setScreen("screen1");
+   } else if ((getText("dropdownORG9100") == "04-31" && getText("dropdown6") == "Unified Gateway (01-11)")) {
+     setScreen("screen2");
+   } else if ((getText("dropdownORG9100") == "04-51" && getText("dropdown6") == "Unified Gateway (01-11)")) {
+     setScreen("screen2");
+
+  } else if ((getText("dropdownORG9100") == "04-01" && getText("dropdown6") == "Enterprise Gateway(01-02)")) {
+       setScreen("screen1");
+  showElement("notearea");
+  	setText("notearea", "Diagnosis field with more than 200 characters causes an issue to ORG-9100 when ADT is used with QP-988P(EG) and HL7 Server Extension.");
+  } else if ((getText("dropdownORG9100") == "04-20" && getText("dropdown6") == "Enterprise Gateway(01-02)")) {
+     setScreen("screen1");
+  showElement("notearea");
+  	setText("notearea", "Diagnosis field with more than 200 characters causes an issue to ORG-9100 when ADT is used with QP-988P(EG) and HL7 Server Extension.");
+   } else if ((getText("dropdownORG9100") == "04-31" && getText("dropdown6") == "Enterprise Gateway(01-02)")) {
+     setScreen("screen1");
+  showElement("notearea");
+  	setText("notearea", "Diagnosis field with more than 200 characters causes an issue to ORG-9100 when ADT is used with QP-988P(EG) and HL7 Server Extension.");
+   } else if ((getText("dropdownORG9100") == "04-51" && getText("dropdown6") == "Enterprise Gateway(01-02)")) {
+>>>>>>> 36e1275e17d699d899702acf51e7cb4968260178
+     setScreen("screen1");
+  showElement("notearea");
+  	setText("notearea", "Diagnosis field with more than 200 characters causes an issue to ORG-9100 when ADT is used with QP-988P(EG) and HL7 Server Extension.");
+
+<<<<<<< HEAD
 
    } else if ((getText("dropdownQP-986P") == "01-03" && getText("EG") == "02-01")) {
      setScreen("screen1");
    } else if ((getText("dropdownQP-986P") == "01-04" && getText("EG") == "02-01")) {
+=======
+  } else if ((getText("dropdownORG9100") == "04-01" && getText("dropdown6") == "Enterprise Gateway(01-03)")) {
+       setScreen("screen1");
+  showElement("notearea");
+  	setText("notearea", "Diagnosis field with more than 200 characters causes an issue to ORG-9100 when ADT is used with QP-988P(EG) and HL7 Server Extension.");
+  } else if ((getText("dropdownORG9100") == "04-20" && getText("dropdown6") == "Enterprise Gateway(01-03)")) {
      setScreen("screen1");
+  showElement("notearea");
+  	setText("notearea", "Diagnosis field with more than 200 characters causes an issue to ORG-9100 when ADT is used with QP-988P(EG) and HL7 Server Extension.");
+   } else if ((getText("dropdownORG9100") == "04-31" && getText("dropdown6") == "Enterprise Gateway(01-03)")) {
+     setScreen("screen1");
+  showElement("notearea");
+  	setText("notearea", "Diagnosis field with more than 200 characters causes an issue to ORG-9100 when ADT is used with QP-988P(EG) and HL7 Server Extension.");
+   } else if ((getText("dropdownORG9100") == "04-51" && getText("dropdown6") == "Enterprise Gateway(01-03)")) {
+     setScreen("screen1");
+  showElement("notearea");
+  	setText("notearea", "Diagnosis field with more than 200 characters causes an issue to ORG-9100 when ADT is used with QP-988P(EG) and HL7 Server Extension.");
 
+
+  } else if ((getText("dropdownORG9100") == "04-01" && getText("dropdown6") == "Enterprise Gateway(02-01)")) {
+       setScreen("screen1");
+  showElement("notearea");
+  	setText("notearea", "Diagnosis field with more than 200 characters causes an issue to ORG-9100 when ADT is used with QP-988P(EG) and HL7 Server Extension.");
+  } else if ((getText("dropdownORG9100") == "04-20" && getText("dropdown6") == "Enterprise Gateway(02-01)")) {
+     setScreen("screen1");
+  showElement("notearea");
+  	setText("notearea", "Diagnosis field with more than 200 characters causes an issue to ORG-9100 when ADT is used with QP-988P(EG) and HL7 Server Extension.");
+   } else if ((getText("dropdownORG9100") == "04-31" && getText("dropdown6") == "Enterprise Gateway(02-01)")) {
+     setScreen("screen1");
+  showElement("notearea");
+  	setText("notearea", "Diagnosis field with more than 200 characters causes an issue to ORG-9100 when ADT is used with QP-988P(EG) and HL7 Server Extension.");
+   } else if ((getText("dropdownORG9100") == "04-51" && getText("dropdown6") == "Enterprise Gateway(02-01)")) {
+>>>>>>> 36e1275e17d699d899702acf51e7cb4968260178
+     setScreen("screen1");
+  showElement("notearea");
+  	setText("notearea", "Diagnosis field with more than 200 characters causes an issue to ORG-9100 when ADT is used with QP-988P(EG) and HL7 Server Extension.");
+
+<<<<<<< HEAD
    } else if ((getText("dropdownQP-986P") == "01-03" && getText("EG") == "02-02")) {
      setScreen("screen1");
    } else if ((getText("dropdownQP-986P") == "01-04" && getText("EG") == "02-02")) {
-     setScreen("screen1");
+=======
 
+  } else if ((getText("dropdownORG9100") == "04-01" && getText("dropdown6") == "Enterprise Gateway(02-03)")) {
+       setScreen("screen1");
+  showElement("notearea");
+  	setText("notearea", "Diagnosis field with more than 200 characters causes an issue to ORG-9100 when ADT is used with QP-988P(EG) and HL7 Server Extension.");
+  } else if ((getText("dropdownORG9100") == "04-20" && getText("dropdown6") == "Enterprise Gateway(02-03)")) {
+     setScreen("screen1");
+  showElement("notearea");
+  	setText("notearea", "Diagnosis field with more than 200 characters causes an issue to ORG-9100 when ADT is used with QP-988P(EG) and HL7 Server Extension.");
+   } else if ((getText("dropdownORG9100") == "04-31" && getText("dropdown6") == "Enterprise Gateway(02-03)")) {
+     setScreen("screen1");
+  showElement("notearea");
+  	setText("notearea", "Diagnosis field with more than 200 characters causes an issue to ORG-9100 when ADT is used with QP-988P(EG) and HL7 Server Extension.");
+   } else if ((getText("dropdownORG9100") == "04-51" && getText("dropdown6") == "Enterprise Gateway(02-03)")) {
+     setScreen("screen1");
+  showElement("notearea");
+  	setText("notearea", "Diagnosis field with more than 200 characters causes an issue to ORG-9100 when ADT is used with QP-988P(EG) and HL7 Server Extension.");
+
+  } else if ((getText("dropdownORG9100") == "04-01" && getText("dropdown6") == "Enterprise Gateway(02-04)")) {
+       setScreen("screen1");
+  showElement("notearea");
+  	setText("notearea", "Diagnosis field with more than 200 characters causes an issue to ORG-9100 when ADT is used with QP-988P(EG) and HL7 Server Extension.");
+  } else if ((getText("dropdownORG9100") == "04-20" && getText("dropdown6") == "Enterprise Gateway(02-04)")) {
+     setScreen("screen1");
+  showElement("notearea");
+  	setText("notearea", "Diagnosis field with more than 200 characters causes an issue to ORG-9100 when ADT is used with QP-988P(EG) and HL7 Server Extension.");
+   } else if ((getText("dropdownORG9100") == "04-31" && getText("dropdown6") == "Enterprise Gateway(02-04)")) {
+     setScreen("screen1");
+  showElement("notearea");
+  	setText("notearea", "Diagnosis field with more than 200 characters causes an issue to ORG-9100 when ADT is used with QP-988P(EG) and HL7 Server Extension.");
+   } else if ((getText("dropdownORG9100") == "04-51" && getText("dropdown6") == "Enterprise Gateway(02-04)")) {
+>>>>>>> 36e1275e17d699d899702acf51e7cb4968260178
+     setScreen("screen1");
+  showElement("notearea");
+  	setText("notearea", "Diagnosis field with more than 200 characters causes an issue to ORG-9100 when ADT is used with QP-988P(EG) and HL7 Server Extension.");
+
+<<<<<<< HEAD
    } else if ((getText("dropdownQP-986P") == "01-03" && getText("EG") == "02-03")) {
      setScreen("screen1");
    } else if ((getText("dropdownQP-986P") == "01-04" && getText("EG") == "02-03")) {
@@ -4347,9 +5493,210 @@ onEvent("go_button", "click", function(event) {
    } else if ((getText("dropdownQP-986P") == "01-04" && getText("EG") == "04-01")) {
      setScreen("screen1");
 
+=======
+  } else if ((getText("dropdownORG9100") == "04-01" && getText("dropdown6") == "Enterprise Gateway(02-06)")) {
+       setScreen("screen1");
+  showElement("notearea");
+  	setText("notearea", "Diagnosis field with more than 200 characters causes an issue to ORG-9100 when ADT is used with QP-988P(EG) and HL7 Server Extension.");
+  } else if ((getText("dropdownORG9100") == "04-20" && getText("dropdown6") == "Enterprise Gateway(02-06)")) {
+     setScreen("screen1");
+  showElement("notearea");
+  	setText("notearea", "Diagnosis field with more than 200 characters causes an issue to ORG-9100 when ADT is used with QP-988P(EG) and HL7 Server Extension.");
+   } else if ((getText("dropdownORG9100") == "04-31" && getText("dropdown6") == "Enterprise Gateway(02-06)")) {
+     setScreen("screen1");
+  showElement("notearea");
+  	setText("notearea", "Diagnosis field with more than 200 characters causes an issue to ORG-9100 when ADT is used with QP-988P(EG) and HL7 Server Extension.");
+   } else if ((getText("dropdownORG9100") == "04-51" && getText("dropdown6") == "Enterprise Gateway(02-06)")) {
+     setScreen("screen1");
+  showElement("notearea");
+  	setText("notearea", "Diagnosis field with more than 200 characters causes an issue to ORG-9100 when ADT is used with QP-988P(EG) and HL7 Server Extension.");
+
+  } else if ((getText("dropdownORG9100") == "04-01" && getText("dropdown6") == "Enterprise Gateway(04-01)")) {
+       setScreen("screen1");
+  showElement("notearea");
+  	setText("notearea", "Diagnosis field with more than 200 characters causes an issue to ORG-9100 when ADT is used with QP-988P(EG) and HL7 Server Extension.");
+  } else if ((getText("dropdownORG9100") == "04-20" && getText("dropdown6") == "Enterprise Gateway(04-01)")) {
+     setScreen("screen1");
+  showElement("notearea");
+  	setText("notearea", "Diagnosis field with more than 200 characters causes an issue to ORG-9100 when ADT is used with QP-988P(EG) and HL7 Server Extension.");
+   } else if ((getText("dropdownORG9100") == "04-31" && getText("dropdown6") == "Enterprise Gateway(04-01)")) {
+     setScreen("screen1");
+  showElement("notearea");
+  	setText("notearea", "Diagnosis field with more than 200 characters causes an issue to ORG-9100 when ADT is used with QP-988P(EG) and HL7 Server Extension.");
+   } else if ((getText("dropdownORG9100") == "04-51" && getText("dropdown6") == "Enterprise Gateway(04-01)")) {
+     setScreen("screen1");
+  showElement("notearea");
+  	setText("notearea", "Diagnosis field with more than 200 characters causes an issue to ORG-9100 when ADT is used with QP-988P(EG) and HL7 Server Extension.");
+
+//CGS-9001
+  } else if ((getText("dropdownCGS9001") == "02-03a" && getText("dropdown6") == "Unified Gateway (01-08a)")) {
+           setText("Sol1", "=NA");
+  } else if ((getText("dropdownCGS9001") == "02-03b" && getText("dropdown6") == "Unified Gateway (01-08a)")) {
+     setText("Sol1", "=NA");
+   } else if ((getText("dropdownCGS9001") == "02-03c" && getText("dropdown6") == "Unified Gateway (01-08a)")) {
+     setText("Sol1", "=NA");
+   } else if ((getText("dropdownCGS9001") == "02-03d" && getText("dropdown6") == "Unified Gateway (01-08a)")) {
+    setText("Sol1", "=NA");
+
+  } else if ((getText("dropdownCGS9001") == "02-03a" && getText("dropdown6") == "Unified Gateway (01-10)")) {
+           setText("Sol1", "=NA");
+  } else if ((getText("dropdownCGS9001") == "02-03b" && getText("dropdown6") == "Unified Gateway (01-10)")) {
+     setText("Sol1", "=NA");
+   } else if ((getText("dropdownCGS9001") == "02-03c" && getText("dropdown6") == "Unified Gateway (01-10)")) {
+     setText("Sol1", "=NA");
+   } else if ((getText("dropdownCGS9001") == "02-03d" && getText("dropdown6") == "Unified Gateway (01-10)")) {
+    setText("Sol1", "=NA");
+
+  } else if ((getText("dropdownCGS9001") == "02-03a" && getText("dropdown6") == "Unified Gateway (01-11)")) {
+           setText("Sol1", "=NA");
+  } else if ((getText("dropdownCGS9001") == "02-03b" && getText("dropdown6") == "Unified Gateway (01-11)")) {
+     setText("Sol1", "=NA");
+   } else if ((getText("dropdownCGS9001") == "02-03c" && getText("dropdown6") == "Unified Gateway (01-11)")) {
+     setText("Sol1", "=NA");
+   } else if ((getText("dropdownCGS9001") == "02-03d" && getText("dropdown6") == "Unified Gateway (01-11)")) {
+    setText("Sol1", "=NA");
+
+  } else if ((getText("dropdownCGS9001") == "02-03a" && getText("dropdown6") == "Enterprise Gateway(01-02)")) {
+           setScreen("screen3");
+  } else if ((getText("dropdownCGS9001") == "02-03b" && getText("dropdown6") == "Enterprise Gateway(01-02)")) {
+     setScreen("screen3");
+   } else if ((getText("dropdownCGS9001") == "02-03c" && getText("dropdown6") == "Enterprise Gateway(01-02)")) {
+     setScreen("screen3");
+   } else if ((getText("dropdownCGS9001") == "02-03d" && getText("dropdown6") == "Enterprise Gateway(01-02)")) {
+   setScreen("screen3");
+
+    } else if ((getText("dropdownCGS9001") == "02-03a" && getText("dropdown6") == "Enterprise Gateway(01-03)")) {
+           setScreen("screen3");
+  } else if ((getText("dropdownCGS9001") == "02-03b" && getText("dropdown6") == "Enterprise Gateway(01-03)")) {
+     setScreen("screen3");
+   } else if ((getText("dropdownCGS9001") == "02-03c" && getText("dropdown6") == "Enterprise Gateway(01-03)")) {
+     setScreen("screen3");
+   } else if ((getText("dropdownCGS9001") == "02-03d" && getText("dropdown6") == "Enterprise Gateway(01-03)")) {
+   setScreen("screen3");
+
+
+    } else if ((getText("dropdownCGS9001") == "02-03a" && getText("dropdown6") == "Enterprise Gateway(02-01)")) {
+           setScreen("screen3");
+  } else if ((getText("dropdownCGS9001") == "02-03b" && getText("dropdown6") == "Enterprise Gateway(02-01)")) {
+     setScreen("screen3");
+   } else if ((getText("dropdownCGS9001") == "02-03c" && getText("dropdown6") == "Enterprise Gateway(02-01)")) {
+     setScreen("screen3");
+   } else if ((getText("dropdownCGS9001") == "02-03d" && getText("dropdown6") == "Enterprise Gateway(02-01)")) {
+   setScreen("screen3");
+
+    } else if ((getText("dropdownCGS9001") == "02-03a" && getText("dropdown6") == "Enterprise Gateway(02-03)")) {
+           setScreen("screen3");
+  } else if ((getText("dropdownCGS9001") == "02-03b" && getText("dropdown6") == "Enterprise Gateway(02-03)")) {
+     setScreen("screen3");
+   } else if ((getText("dropdownCGS9001") == "02-03c" && getText("dropdown6") == "Enterprise Gateway(02-03)")) {
+     setScreen("screen3");
+   } else if ((getText("dropdownCGS9001") == "02-03d" && getText("dropdown6") == "Enterprise Gateway(02-03)")) {
+   setScreen("screen3");
+
+    } else if ((getText("dropdownCGS9001") == "02-03a" && getText("dropdown6") == "Enterprise Gateway(02-04)")) {
+           setScreen("screen3");
+  } else if ((getText("dropdownCGS9001") == "02-03b" && getText("dropdown6") == "Enterprise Gateway(02-04)")) {
+     setScreen("screen3");
+   } else if ((getText("dropdownCGS9001") == "02-03c" && getText("dropdown6") == "Enterprise Gateway(02-04)")) {
+     setScreen("screen3");
+   } else if ((getText("dropdownCGS9001") == "02-03d" && getText("dropdown6") == "Enterprise Gateway(02-04)")) {
+   setScreen("screen3");
+
+    } else if ((getText("dropdownCGS9001") == "02-03a" && getText("dropdown6") == "Enterprise Gateway(02-06)")) {
+           setScreen("screen3");
+  } else if ((getText("dropdownCGS9001") == "02-03b" && getText("dropdown6") == "Enterprise Gateway(02-06)")) {
+     setScreen("screen3");
+   } else if ((getText("dropdownCGS9001") == "02-03c" && getText("dropdown6") == "Enterprise Gateway(02-06)")) {
+     setScreen("screen3");
+   } else if ((getText("dropdownCGS9001") == "02-03d" && getText("dropdown6") == "Enterprise Gateway(02-06)")) {
+   setScreen("screen3");
+  
+
+    } else if ((getText("dropdownCGS9001") == "02-03a" && getText("dropdown6") == "Enterprise Gateway(04-01)")) {
+           setScreen("screen3");
+  } else if ((getText("dropdownCGS9001") == "02-03b" && getText("dropdown6") == "Enterprise Gateway(04-01)")) {
+     setScreen("screen3");
+   } else if ((getText("dropdownCGS9001") == "02-03c" && getText("dropdown6") == "Enterprise Gateway(04-01)")) {
+     setScreen("screen3");
+   } else if ((getText("dropdownCGS9001") == "02-03d" && getText("dropdown6") == "Enterprise Gateway(04-01)")) {
+   setScreen("screen3");
+
+  //CGS9002
+  
+  } else if ((getText("dropdownCGS9002") == "01-08a" && getText("dropdown6") == "Unified Gateway (01-08a)")) {
+           setText("Sol1", " =NA");
+  } else if ((getText("dropdownCGS9002") == "01-09" && getText("dropdown6") == "Unified Gateway (01-08a)")) {
+     setText("Sol1", "=NA");
+   } else if ((getText("dropdownCGS9002") == "01-09a" && getText("dropdown6") == "Unified Gateway (01-08a)")) {
+    setText("Sol1", "=NA");
+
+  } else if ((getText("dropdownCGS9002") == "01-08a" && getText("dropdown6") == "Unified Gateway (01-10)")) {
+           setText("Sol1", " =NA");
+  } else if ((getText("dropdownCGS9002") == "01-09" && getText("dropdown6") == "Unified Gateway (01-10)")) {
+     setText("Sol1", "=NA");
+   } else if ((getText("dropdownCGS9002") == "01-09a" && getText("dropdown6") == "Unified Gateway (01-10)")) {
+    setText("Sol1", "=NA");
+
+  } else if ((getText("dropdownCGS9002") == "01-08a" && getText("dropdown6") == "Unified Gateway (01-11)")) {
+           setText("Sol1", " =NA");
+  } else if ((getText("dropdownCGS9002") == "01-09" && getText("dropdown6") == "Unified Gateway (01-11)")) {
+     setText("Sol1", "=NA");
+   } else if ((getText("dropdownCGS9002") == "01-09a" && getText("dropdown6") == "Unified Gateway (01-11)")) {
+    setText("Sol1", "=NA");
+
+  } else if ((getText("dropdownCGS9002") == "01-08a" && getText("dropdown6") == "Enterprise Gateway(01-02)")) {
+           setScreen("screen3");
+  } else if ((getText("dropdownCGS9002") == "01-09" && getText("dropdown6") == "Enterprise Gateway(01-02)")) {
+     setScreen("screen3");
+   } else if ((getText("dropdownCGS9002") == "01-09a" && getText("dropdown6") == "Enterprise Gateway(01-02)")) {
+    setScreen("screen3");
+
+  } else if ((getText("dropdownCGS9002") == "01-08a" && getText("dropdown6") == "Enterprise Gateway(01-03)")) {
+           setScreen("screen3");
+  } else if ((getText("dropdownCGS9002") == "01-09" && getText("dropdown6") == "Enterprise Gateway(01-03)")) {
+     setScreen("screen3");
+   } else if ((getText("dropdownCGS9002") == "01-09a" && getText("dropdown6") == "Enterprise Gateway(01-03)")) {
+    setScreen("screen3");
+
+  } else if ((getText("dropdownCGS9002") == "01-08a" && getText("dropdown6") == "Enterprise Gateway(02-01)")) {
+           setScreen("screen3");
+  } else if ((getText("dropdownCGS9002") == "01-09" && getText("dropdown6") == "Enterprise Gateway(02-01)")) {
+     setScreen("screen3");
+   } else if ((getText("dropdownCGS9002") == "01-09a" && getText("dropdown6") == "Enterprise Gateway(02-01)")) {
+    setScreen("screen3");
+
+  } else if ((getText("dropdownCGS9002") == "01-08a" && getText("dropdown6") == "Enterprise Gateway(02-03)")) {
+           setScreen("screen3");
+  } else if ((getText("dropdownCGS9002") == "01-09" && getText("dropdown6") == "Enterprise Gateway(02-03)")) {
+     setScreen("screen3");
+   } else if ((getText("dropdownCGS9002") == "01-09a" && getText("dropdown6") == "Enterprise Gateway(02-03)")) {
+    setScreen("screen3");
+
+  } else if ((getText("dropdownCGS9002") == "01-08a" && getText("dropdown6") == "Enterprise Gateway(02-04)")) {
+           setScreen("screen3");
+  } else if ((getText("dropdownCGS9002") == "01-09" && getText("dropdown6") == "Enterprise Gateway(02-04)")) {
+     setScreen("screen3");
+   } else if ((getText("dropdownCGS9002") == "01-09a" && getText("dropdown6") == "Enterprise Gateway(02-04)")) {
+    setScreen("screen3");
+
+  } else if ((getText("dropdownCGS9002") == "01-08a" && getText("dropdown6") == "Enterprise Gateway(02-06)")) {
+           setScreen("screen3");
+  } else if ((getText("dropdownCGS9002") == "01-09" && getText("dropdown6") == "Enterprise Gateway(02-06)")) {
+     setScreen("screen3");
+   } else if ((getText("dropdownCGS9002") == "01-09a" && getText("dropdown6") == "Enterprise Gateway(02-06)")) {
+    setScreen("screen3");
+
+  } else if ((getText("dropdownCGS9002") == "01-08a" && getText("dropdown6") == "Enterprise Gateway(04-01)")) {
+           setScreen("screen3");
+  } else if ((getText("dropdownCGS9002") == "01-09" && getText("dropdown6") == "Enterprise Gateway(04-01)")) {
+     setScreen("screen3");
+   } else if ((getText("dropdownCGS9002") == "01-09a" && getText("dropdown6") == "Enterprise Gateway(04-01)")) {
+    setScreen("screen3");
+>>>>>>> 36e1275e17d699d899702acf51e7cb4968260178
 
 //QP989P
 
+<<<<<<< HEAD
    } else if ((getText("dropdownQP989p") == "01-08" && getText("UNG") == "01-08a")) {
      setScreen("screen1");
    } else if ((getText("dropdownQP989p") == "01-10" && getText("UNG") == "01-08a")) {
@@ -4423,33 +5770,189 @@ onEvent("go_button", "click", function(event) {
    } else if ((getText("dropdownQP989p") == "01-10" && getText("EG") == "02-03")) {
     setScreen("screen1");
    } else if ((getText("dropdownQP989p") == "01-11" && getText("EG") == "02-03")) {
+=======
+
+//QP-983P
+  } else if ((getText("dropdownQP983P") == "02-10" && getText("dropdown6") == "Unified Gateway (01-08a)")) {
+     setText("Sol1", "=NA");
+   } else if ((getText("dropdownQP983P") == "02-11" && getText("dropdown6") == "Unified Gateway (01-08a)")) {
+     setText("Sol1", "=NA");
+
+  } else if ((getText("dropdownQP983P") == "02-10" && getText("dropdown6") == "Unified Gateway (01-10)")) {
+     setText("Sol1", "=NA");
+   } else if ((getText("dropdownQP983P") == "02-11" && getText("dropdown6") == "Unified Gateway (01-10)")) {
+     setText("Sol1", "=NA");
+
+  } else if ((getText("dropdownQP983P") == "02-10" && getText("dropdown6") == "Unified Gateway (01-11)")) {
+     setText("Sol1", "=NA");
+   } else if ((getText("dropdownQP983P") == "02-11" && getText("dropdown6") == "Unified Gateway (01-11)")) {
+     setText("Sol1", "=NA");
+
+   } else if ((getText("dropdownQP983P") == "02-10" && getText("dropdown6") == "Enterprise Gateway(01-02)")) {
+     setScreen("screen3");
+   } else if ((getText("dropdownQP983P") == "02-11" && getText("dropdown6") == "Enterprise Gateway(01-02)")) {
+     setScreen("screen3");
+
+
+   } else if ((getText("dropdownQP983P") == "02-10" && getText("dropdown6") == "Enterprise Gateway(01-03)")) {
+     setScreen("screen3");
+   } else if ((getText("dropdownQP983P") == "02-11" && getText("dropdown6") == "Enterprise Gateway(01-03)")) {
+     setScreen("screen3");
+
+
+   } else if ((getText("dropdownQP983P") == "02-10" && getText("dropdown6") == "Enterprise Gateway(02-01)")) {
+     setScreen("screen3");
+   } else if ((getText("dropdownQP983P") == "02-11" && getText("dropdown6") == "Enterprise Gateway(02-01)")) {
+     setScreen("screen3");
+
+   } else if ((getText("dropdownQP983P") == "02-10" && getText("dropdown6") == "Enterprise Gateway(02-03)")) {
+     setScreen("screen3");
+   } else if ((getText("dropdownQP983P") == "02-11" && getText("dropdown6") == "Enterprise Gateway(02-03)")) {
+     setScreen("screen3");
+
+   } else if ((getText("dropdownQP983P") == "02-10" && getText("dropdown6") == "Enterprise Gateway(02-04)")) {
+     setScreen("screen3");
+   } else if ((getText("dropdownQP983P") == "02-11" && getText("dropdown6") == "Enterprise Gateway(02-04)")) {
+     setScreen("screen3");
+
+  } else if ((getText("dropdownQP983P") == "02-10" && getText("dropdown6") == "Enterprise Gateway(02-06)")) {
+     setScreen("screen3");
+   } else if ((getText("dropdownQP983P") == "02-11" && getText("dropdown6") == "Enterprise Gateway(02-06)")) {
+     setScreen("screen3");
+
+
+  } else if ((getText("dropdownQP983P") == "02-10" && getText("dropdown6") == "Enterprise Gateway(04-01)")) {
+     setScreen("screen3");
+   } else if ((getText("dropdownQP983P") == "02-11" && getText("dropdown6") == "Enterprise Gateway(04-01)")) {
+     setScreen("screen3");
+
+//qp986p
+
+   } else if ((getText("dropdownQP-986P") == "01-03" && getText("dropdown6") == "Unified Gateway (01-08a)")) {
+     setScreen("screen1");
+   } else if ((getText("dropdownQP-986P") == "01-04" && getText("dropdown6") == "Unified Gateway (01-08a)")) {
+     setScreen("screen1");
+
+   } else if ((getText("dropdownQP-986P") == "01-03" && getText("dropdown6") == "Unified Gateway (01-10)")) {
+     setScreen("screen1");
+   } else if ((getText("dropdownQP-986P") == "01-04" && getText("dropdown6") == "Unified Gateway (01-10)")) {
+     setScreen("screen1");
+
+   } else if ((getText("dropdownQP-986P") == "01-03" && getText("dropdown6") == "Unified Gateway (01-11)")) {
+     setScreen("screen1");
+   } else if ((getText("dropdownQP-986P") == "01-04" && getText("dropdown6") == "Unified Gateway (01-11)")) {
+     setScreen("screen1");
+
+   } else if ((getText("dropdownQP-986P") == "01-03" && getText("dropdown6") == "Enterprise Gateway(01-02)")) {
+     setScreen("screen1");
+   } else if ((getText("dropdownQP-986P") == "01-04" && getText("dropdown6") == "Enterprise Gateway(01-02)")) {
+     setScreen("screen1");
+
+   } else if ((getText("dropdownQP-986P") == "01-03" && getText("dropdown6") == "Enterprise Gateway(01-03)")) {
+     setScreen("screen1");
+   } else if ((getText("dropdownQP-986P") == "01-04" && getText("dropdown6") == "Enterprise Gateway(01-03)")) {
+     setScreen("screen1");
+
+   } else if ((getText("dropdownQP-986P") == "01-03" && getText("dropdown6") == "CNS-6801")) {
+     setScreen("screen1");
+   } else if ((getText("dropdownQP-986P") == "01-04" && getText("dropdown6") == "CNS-6801")) {
+     setScreen("screen1");
+
+
+   } else if ((getText("dropdownQP-986P") == "01-03" && getText("dropdown6") == "Enterprise Gateway(02-01)")) {
+     setScreen("screen1");
+   } else if ((getText("dropdownQP-986P") == "01-04" && getText("dropdown6") == "Enterprise Gateway(02-01)")) {
+     setScreen("screen1");
+
+   } else if ((getText("dropdownQP-986P") == "01-03" && getText("dropdown6") == "Enterprise Gateway(02-03)")) {
+     setScreen("screen1");
+   } else if ((getText("dropdownQP-986P") == "01-04" && getText("dropdown6") == "Enterprise Gateway(02-03)")) {
+     setScreen("screen1");
+
+   } else if ((getText("dropdownQP-986P") == "01-03" && getText("dropdown6") == "Enterprise Gateway(02-04)")) {
+     setScreen("screen1");
+   } else if ((getText("dropdownQP-986P") == "01-04" && getText("dropdown6") == "Enterprise Gateway(02-04)")) {
+     setScreen("screen1");
+
+   } else if ((getText("dropdownQP-986P") == "01-03" && getText("dropdown6") == "Enterprise Gateway(02-06)")) {
+     setScreen("screen1");
+   } else if ((getText("dropdownQP-986P") == "01-04" && getText("dropdown6") == "Enterprise Gateway(02-06)")) {
+     setScreen("screen1");
+
+   } else if ((getText("dropdownQP-986P") == "01-03" && getText("dropdown6") == "Enterprise Gateway(04-01)")) {
+     setScreen("screen1");
+   } else if ((getText("dropdownQP-986P") == "01-04" && getText("dropdown6") == "Enterprise Gateway(04-01)")) {
+     setScreen("screen1");
+
+
+//QP989P
+
+   } else if ((getText("dropdownQP989p") == "01-08" && getText("dropdown6") == "Unified Gateway (01-08a)")) {
+     setScreen("screen1");
+   } else if ((getText("dropdownQP989p") == "01-10" && getText("dropdown6") == "Unified Gateway (01-08a)")) {
+     setScreen("screen1");
+   } else if ((getText("dropdownQP989p") == "01-11" && getText("dropdown6") == "Unified Gateway (01-08a)")) {
+     setScreen("screen1");
+   } else if ((getText("dropdownQP989p") == "01-11a" && getText("dropdown6") == "Unified Gateway (01-08a)")) {
+>>>>>>> 36e1275e17d699d899702acf51e7cb4968260178
      setScreen("screen1");
    } else if ((getText("dropdownQP989p") == "01-11a" && getText("EG") == "02-03")) {
     setScreen("screen1");
 
+<<<<<<< HEAD
    } else if ((getText("dropdownQP989p") == "01-08" && getText("EG") == "02-04")) {
      setScreen("screen1");
    } else if ((getText("dropdownQP989p") == "01-10" && getText("EG") == "02-04")) {
     setScreen("screen1");
    } else if ((getText("dropdownQP989p") == "01-11" && getText("EG") == "02-04")) {
+=======
+   } else if ((getText("dropdownQP989p") == "01-08" && getText("dropdown6") == "Unified Gateway (01-10)")) {
+     setScreen("screen1");
+   } else if ((getText("dropdownQP989p") == "01-10" && getText("dropdown6") == "Unified Gateway (01-10)")) {
+     setScreen("screen1");
+   } else if ((getText("dropdownQP989p") == "01-11" && getText("dropdown6") == "Unified Gateway (01-10)")) {
+     setScreen("screen1");
+   } else if ((getText("dropdownQP989p") == "01-11a" && getText("dropdown6") == "Unified Gateway (01-10)")) {
+>>>>>>> 36e1275e17d699d899702acf51e7cb4968260178
      setScreen("screen1");
    } else if ((getText("dropdownQP989p") == "01-11a" && getText("EG") == "02-04")) {
     setScreen("screen1");
 
+<<<<<<< HEAD
    } else if ((getText("dropdownQP989p") == "01-08" && getText("EG") == "02-06")) {
      setScreen("screen1");
    } else if ((getText("dropdownQP989p") == "01-10" && getText("EG") == "02-06")) {
     setScreen("screen1");
    } else if ((getText("dropdownQP989p") == "01-11" && getText("EG") == "02-06")) {
+=======
+
+   } else if ((getText("dropdownQP989p") == "01-08" && getText("dropdown6") == "Unified Gateway (01-11)")) {
+     setScreen("screen1");
+   } else if ((getText("dropdownQP989p") == "01-10" && getText("dropdown6") == "Unified Gateway (01-11)")) {
+     setScreen("screen1");
+   } else if ((getText("dropdownQP989p") == "01-11" && getText("dropdown6") == "Unified Gateway (01-11)")) {
+     setScreen("screen1");
+   } else if ((getText("dropdownQP989p") == "01-11a" && getText("dropdown6") == "Unified Gateway (01-11)")) {
+>>>>>>> 36e1275e17d699d899702acf51e7cb4968260178
      setScreen("screen1");
    } else if ((getText("dropdownQP989p") == "01-11a" && getText("EG") == "02-06")) {
     setScreen("screen1");
 
+<<<<<<< HEAD
    } else if ((getText("dropdownQP989p") == "01-08" && getText("EG") == "04-01")) {
      setScreen("screen1");
    } else if ((getText("dropdownQP989p") == "01-10" && getText("EG") == "04-01")) {
     setScreen("screen1");
    } else if ((getText("dropdownQP989p") == "01-11" && getText("EG") == "04-01")) {
+=======
+   } else if ((getText("dropdownQP989p") == "01-08" && getText("dropdown6") == "Enterprise Gateway(01-02)")) {
+     setScreen("screen1");
+   } else if ((getText("dropdownQP989p") == "01-10" && getText("dropdown6") == "Enterprise Gateway(01-02)")) {
+     setScreen("screen1");
+   } else if ((getText("dropdownQP989p") == "01-11" && getText("dropdown6") == "Enterprise Gateway(01-02)")) {
+     setScreen("screen1");
+   } else if ((getText("dropdownQP989p") == "01-11a" && getText("dropdown6") == "Enterprise Gateway(01-02)")) {
+>>>>>>> 36e1275e17d699d899702acf51e7cb4968260178
      setScreen("screen1");
    } else if ((getText("dropdownQP989p") == "01-11a" && getText("EG") == "04-01")) {
     setScreen("screen1");
@@ -4457,6 +5960,7 @@ onEvent("go_button", "click", function(event) {
 //Pref_qp989
 
 
+<<<<<<< HEAD
    } else if ((getText("dropdownQP989p") == "01-08" && getText("Pref") == "02-07")) {
      setText("Sol1", "Not Applicable ");
    } else if ((getText("dropdownQP989p") == "01-10" && getText("Pref") == "02-07")) {
@@ -4465,6 +5969,17 @@ onEvent("go_button", "click", function(event) {
      setText("Sol1", "Not Applicable ");
    } else if ((getText("dropdownQP989p") == "01-11a" && getText("Pref") == "02-07")) {
     setText("Sol1", "Not Applicable ");
+=======
+   } else if ((getText("dropdownQP989p") == "01-08" && getText("dropdown6") == "Enterprise Gateway(01-03)")) {
+     setScreen("screen1");
+   } else if ((getText("dropdownQP989p") == "01-10" && getText("dropdown6") == "Enterprise Gateway(01-03)")) {
+     setScreen("screen1");
+   } else if ((getText("dropdownQP989p") == "01-11" && getText("dropdown6") == "Enterprise Gateway(01-03)")) {
+     setScreen("screen1");
+   } else if ((getText("dropdownQP989p") == "01-11a" && getText("dropdown6") == "Enterprise Gateway(01-03)")) {
+     setScreen("screen1");
+
+>>>>>>> 36e1275e17d699d899702acf51e7cb4968260178
 
    } else if ((getText("dropdownQP989p") == "01-08" && getText("Pref") == "02-08")) {
      setText("Sol1", "Not Applicable ");
@@ -4475,7 +5990,18 @@ onEvent("go_button", "click", function(event) {
    } else if ((getText("dropdownQP989p") == "01-11a" && getText("Pref") == "02-08")) {
     setText("Sol1", "Not Applicable ");
 
+<<<<<<< HEAD
 //Pager_QP989
+=======
+   } else if ((getText("dropdownQP989p") == "01-08" && getText("dropdown6") == "Enterprise Gateway(02-01)")) {
+     setScreen("screen1");
+   } else if ((getText("dropdownQP989p") == "01-10" && getText("dropdown6") == "Enterprise Gateway(02-01)")) {
+     setScreen("screen1");
+   } else if ((getText("dropdownQP989p") == "01-11" && getText("dropdown6") == "Enterprise Gateway(02-01)")) {
+     setScreen("screen1");
+   } else if ((getText("dropdownQP989p") == "01-11a" && getText("dropdown6") == "Enterprise Gateway(02-01)")) {
+     setScreen("screen1");
+>>>>>>> 36e1275e17d699d899702acf51e7cb4968260178
 
    } else if ((getText("dropdownQP989p") == "01-08" && getText("Pager") == "02-03a")) {
      setText("Sol1", "Not Applicable ");
@@ -4486,6 +6012,7 @@ onEvent("go_button", "click", function(event) {
    } else if ((getText("dropdownQP989p") == "01-11a" && getText("Pager") == "02-03a")) {
     setText("Sol1", "Not Applicable ");
 
+<<<<<<< HEAD
    } else if ((getText("dropdownQP989p") == "01-08" && getText("Pager") == "02-03b")) {
      setText("Sol1", "Not Applicable ");
    } else if ((getText("dropdownQP989p") == "01-10" && getText("Pager") == "02-03b")) {
@@ -4764,6 +6291,115 @@ onEvent("go_button", "click", function(event) {
    } else if ((getText("dropdownolg3800") == "01-03" && getText("NetKonnect") == "02-11")) {
        setScreen("screen1");
 //host1000_olg
+=======
+   } else if ((getText("dropdownQP989p") == "01-08" && getText("dropdown6") == "Enterprise Gateway(02-03)")) {
+     setScreen("screen1");
+   } else if ((getText("dropdownQP989p") == "01-10" && getText("dropdown6") == "Enterprise Gateway(02-03)")) {
+    setScreen("screen1");
+   } else if ((getText("dropdownQP989p") == "01-11" && getText("dropdown6") == "Enterprise Gateway(02-03)")) {
+     setScreen("screen1");
+   } else if ((getText("dropdownQP989p") == "01-11a" && getText("dropdown6") == "Enterprise Gateway(02-03)")) {
+    setScreen("screen1");
+
+   } else if ((getText("dropdownQP989p") == "01-08" && getText("dropdown6") == "Enterprise Gateway(02-04)")) {
+     setScreen("screen1");
+   } else if ((getText("dropdownQP989p") == "01-10" && getText("dropdown6") == "Enterprise Gateway(02-04)")) {
+    setScreen("screen1");
+   } else if ((getText("dropdownQP989p") == "01-11" && getText("dropdown6") == "Enterprise Gateway(02-04)")) {
+     setScreen("screen1");
+   } else if ((getText("dropdownQP989p") == "01-11a" && getText("dropdown6") == "Enterprise Gateway(02-04)")) {
+    setScreen("screen1");
+
+   } else if ((getText("dropdownQP989p") == "01-08" && getText("dropdown6") == "Enterprise Gateway(02-06)")) {
+     setScreen("screen1");
+   } else if ((getText("dropdownQP989p") == "01-10" && getText("dropdown6") == "Enterprise Gateway(02-06)")) {
+    setScreen("screen1");
+   } else if ((getText("dropdownQP989p") == "01-11" && getText("dropdown6") == "Enterprise Gateway(02-06)")) {
+     setScreen("screen1");
+   } else if ((getText("dropdownQP989p") == "01-11a" && getText("dropdown6") == "Enterprise Gateway(02-06)")) {
+    setScreen("screen1");
+
+   } else if ((getText("dropdownQP989p") == "01-08" && getText("dropdown6") == "Enterprise Gateway(04-01)")) {
+     setScreen("screen1");
+   } else if ((getText("dropdownQP989p") == "01-10" && getText("dropdown6") == "Enterprise Gateway(04-01)")) {
+    setScreen("screen1");
+   } else if ((getText("dropdownQP989p") == "01-11" && getText("dropdown6") == "Enterprise Gateway(04-01)")) {
+     setScreen("screen1");
+   } else if ((getText("dropdownQP989p") == "01-11a" && getText("dropdown6") == "Enterprise Gateway(04-01)")) {
+    setScreen("screen1");
+
+
+//QP-991P
+   } else if ((getText("dropdownqp991p") == "01-04" && getText("dropdown6") == "Unified Gateway (01-08a)")) {
+     setScreen("screen1");
+   } else if ((getText("dropdownqp991p") == "01-04" && getText("dropdown6") == "Unified Gateway (01-10)")) {
+     setScreen("screen1");
+   } else if ((getText("dropdownqp991p") == "01-04" && getText("dropdown6") == "Unified Gateway (01-11)")) {
+     setScreen("screen1");
+   } else if ((getText("dropdownqp991p") == "01-04" && getText("dropdown6") == "Enterprise Gateway(01-02)")) {
+     setScreen("screen1");
+   } else if ((getText("dropdownqp991p") == "01-04" && getText("dropdown6") == "Enterprise Gateway(01-03)")) {
+     setScreen("screen1");
+   } else if ((getText("dropdownqp991p") == "01-04" && getText("dropdown6") == "Enterprise Gateway(02-01)")) {
+     setScreen("screen1");
+   } else if ((getText("dropdownqp991p") == "01-04" && getText("dropdown6") == "Enterprise Gateway(02-03)")) {
+      setScreen("screen1");
+   } else if ((getText("dropdownqp991p") == "01-04" && getText("dropdown6") == "Enterprise Gateway(02-04)")) {
+     setScreen("screen1");
+   } else if ((getText("dropdownqp991p") == "01-04" && getText("dropdown6") == "Enterprise Gateway(02-06)")) {
+      setScreen("screen1");
+   } else if ((getText("dropdownqp991p") == "01-04" && getText("dropdown6") == "Enterprise Gateway(04-01)")) {
+     setScreen("screen1");
+ 
+
+//QP999P
+   } else if ((getText("dropdownqp999P") == "01-05" && getText("dropdown6") == "Unified Gateway (01-08a)")) {
+     setText("Sol1", "NA");
+  } else if ((getText("dropdownqp999P") == "01-05" && getText("dropdown6") == "Unified Gateway (01-10)")) {
+     setText("Sol1", "NA");
+  } else if ((getText("dropdownqp999P") == "01-05" && getText("dropdown6") == "Unified Gateway (01-11)")) {
+     setText("Sol1", "NA");
+  } else if ((getText("dropdownqp999P") == "01-05" && getText("dropdown6") == "Enterprise Gateway(01-02)")) {
+     setText("Sol1", "NA");
+    } else if ((getText("dropdownqp999P") == "01-05" && getText("dropdown6") == "Enterprise Gateway(01-03)")) {
+     setText("Sol1", "NA");
+   } else if ((getText("dropdownqp999P") == "01-05" && getText("dropdown6") == "Enterprise Gateway(02-01)")) {
+     setText("Sol1", "NA");
+   } else if ((getText("dropdownqp999P") == "01-05" && getText("dropdown6") == "Enterprise Gateway(02-03)")) {
+     setText("Sol1", "NA");
+   } else if ((getText("dropdownqp999P") == "01-05" && getText("dropdown6") == "Enterprise Gateway(02-04)")) {
+     setText("Sol1", "NA");
+   } else if ((getText("dropdownqp999P") == "01-05" && getText("dropdown6") == "Enterprise Gateway(02-06)")) {
+     setText("Sol1", "NA");
+   } else if ((getText("dropdownqp999P") == "01-05" && getText("dropdown6") == "Enterprise Gateway(04-01)")) {
+     setText("Sol1", "NA");
+
+//OLG-3800
+
+   } else if ((getText("dropdownolg3800") == "01-03" && getText("dropdown6") == "Unified Gateway (01-08a)")) {
+     setScreen("screen1");
+   } else if ((getText("dropdownolg3800") == "01-03" && getText("dropdown6") == "Unified Gateway (01-10)")) {
+     setScreen("screen1");
+   } else if ((getText("dropdownolg3800") == "01-03" && getText("dropdown6") == "Unified Gateway (01-11)")) {
+     setScreen("screen1");
+   } else if ((getText("dropdownolg3800") == "01-03" && getText("dropdown6") == "Enterprise Gateway(01-02)")) {
+     setScreen("screen1");
+   } else if ((getText("dropdownolg3800") == "01-03" && getText("dropdown6") == "Enterprise Gateway(01-03)")) {
+     setScreen("screen1");
+   } else if ((getText("dropdownolg3800") == "01-03" && getText("dropdown6") == "Enterprise Gateway(02-01)")) {
+     setScreen("screen1");
+   } else if ((getText("dropdownolg3800") == "01-03" && getText("dropdown6") == "Enterprise Gateway(02-03)")) {
+      setScreen("screen1");
+   } else if ((getText("dropdownolg3800") == "01-03" && getText("dropdown6") == "Enterprise Gateway(02-04)")) {
+      setScreen("screen1");
+   } else if ((getText("dropdownolg3800") == "01-03" && getText("dropdown6") == "Enterprise Gateway(02-06)")) {
+      setScreen("screen1");
+   } else if ((getText("dropdownolg3800") == "01-03" && getText("dropdown6") == "Enterprise Gateway(04-01)")) {
+       setScreen("screen1");
+
+
+
+>>>>>>> 36e1275e17d699d899702acf51e7cb4968260178
 
    } else if ((getText("dropdownolg3800") == "01-03" && getText("Host1000") == "01-03")) {
        setScreen("screen1");
