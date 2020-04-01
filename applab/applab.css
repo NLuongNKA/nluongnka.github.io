@@ -1140,19 +1140,12 @@ html[dir="RTL"] .prompt-icon-cell {
     clear: both; }
   #sharing #send-to-phone-left {
     float: left;
-<<<<<<< HEAD
     width: 65%;
     padding-right: 20px;
     box-sizing: border-box; }
   #sharing #send-to-phone-right {
     float: left;
     width: 35%;
-=======
-    width: 60%; }
-  #sharing #send-to-phone-right {
-    float: left;
-    width: 40%;
->>>>>>> 36e1275e17d699d899702acf51e7cb4968260178
     margin-bottom: 0px; }
   #sharing #send-to-phone-qr-code {
     margin-bottom: 0px; }

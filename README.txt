@@ -1,12 +1,6 @@
-<<<<<<< HEAD
 # README for NKA_COMP_R20 #
 
 This is the README file for the NKA_COMP_R20 app. It's a great place to write
-=======
-# README for Remix: Remix: NKA_COMP #
-
-This is the README file for the Remix: Remix: NKA_COMP app. It's a great place to write
->>>>>>> 36e1275e17d699d899702acf51e7cb4968260178
 down some notes about how your app works. For starters, here is some information
 about the other files in this folder.
 
@@ -29,4 +23,4 @@ The files in this folder contain everything you need to run your app:
   new behavior to your app.
 
 * `assets` - This is a directory with all the asset files (pictures and sounds)
-  that you uploaded in applab
+  that you uploaded in applab.
