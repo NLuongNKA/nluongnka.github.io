@@ -1,6 +1,6 @@
-# README for Remix: Remix: NKA_COMP #
+# README for NKA_COMP_R20 #
 
-This is the README file for the Remix: Remix: NKA_COMP app. It's a great place to write
+This is the README file for the NKA_COMP_R20 app. It's a great place to write
 down some notes about how your app works. For starters, here is some information
 about the other files in this folder.
 
