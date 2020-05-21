@@ -24,7 +24,7 @@ if (getText("dropdown6") == getText("direction_dropdown")) {
   hideElement("go_button");
   
 }
-
+// to set all drop down to be blank when going to home page after hitting the go button
 
 if (getText("dropdown6") != getText("direction_dropdown")) {
   showElement("go_button");
@@ -58,6 +58,8 @@ hideElement("go_button");
 hideElement("BSM-6000");
 hideElement("drop_1700");
 
+
+// Underneath is shown that when user select a device from the drop down, it will show the device firmware and hide the rest
 onEvent("dropdown6", "change", function(event) {
   console.log("Selected option: " + getText("dropdown6"));
 
@@ -1210,7 +1212,6 @@ onEvent("direction_dropdown", "click", function(event) {
     hideElement("dropdownCNS6201");
     hideElement("dropdownCNS6801");
     hideElement("dropdownEDNS9001");
-    hideElement("dropdownqp999P");
     hideElement("dropdownqp991p");
     hideElement("dropdownolg3800");
     hideElement("dropdownlist2");
@@ -1308,6 +1309,9 @@ onEvent("direction_dropdown", "click", function(event) {
     
   }
 });
+
+
+//below is to check between the server vs NKA product 
 onEvent("Homebutton2", "click", function(event) {
   console.log("Homebutton2 clicked!");
   setScreen("start_screen");
@@ -5223,7 +5227,7 @@ onEvent("Sol1", "change", function(event) {
 });
 onEvent("dropdown6", "change", function(event) {
   console.log("Selected option: " + getText("dropdown6"));
-  
+ // shown below will set the drop down for the version hidden and show only what is shown. 
 if ((getText("dropdown6") == "Unified Gateway")) {
     hideElement("EG");
     hideElement("Host1000");
@@ -10594,3 +10598,543 @@ onEvent("button8", "click", function(event) {
 
 
 
+
+//for the device only
+
+onEvent("dropdown6", "change", function(event) {
+ setText("text_input5",getText("dropdown6"));
+});
+
+
+ onEvent("direction_dropdown", "change", function(event) {
+ setText("text_input6",getText("direction_dropdown"));
+});
+
+ onEvent("direction_dropdown", "change", function(event) {
+ setText("text_input8",getText("direction_dropdown"));
+});
+
+
+onEvent("dropdown6", "change", function(event) {
+ setText("text_input7",getText("dropdown6"));
+});
+
+onEvent("dropdown6", "change", function(event) {
+ setText("text_input9",getText("dropdown6"));
+});
+
+ onEvent("direction_dropdown", "change", function(event) {
+ setText("text_input10",getText("direction_dropdown"));
+});
+
+ onEvent("direction_drop6", "change", function(event) {
+ setText("text_input11",getText("direction_drop6"));
+});
+
+ onEvent("drop", "change", function(event) {
+ setText("text_input12",getText("drop"));
+});
+
+ onEvent("direction_drop6", "change", function(event) {
+ setText("text_input13",getText("direction_drop6"));
+});
+
+ onEvent("drop", "change", function(event) {
+ setText("text_input14",getText("drop"));
+});
+//for ver of server
+onEvent("HL7", "change", function(event) {
+ setText("text_input1",getText("HL7"));
+});
+ onEvent("UNG", "change", function(event) {
+ setText("text_input1",getText("UNG"));
+ });
+ onEvent("EG", "change", function(event) {
+setText("text_input1",getText("EG"));
+});
+onEvent("Pref", "change", function(event) {
+setText("text_input1",getText("Pref"));
+});
+onEvent("Pager", "change", function(event) {
+setText("text_input1",getText("Pager"));
+});
+onEvent("Host1000", "change", function(event) {
+setText("text_input1",getText("Host1000"));
+});
+onEvent("NetKonnect", "change", function(event) {
+setText("text_input1",getText("NetKonnect"));
+});
+
+//For ver of NKA device
+onEvent("dropdownCSM1901", "change", function(event) {
+setText("label15",getText("dropdownCSM1901"));
+});
+
+onEvent("drop_1700", "change", function(event) {
+setText("label15",getText("drop_1700"));
+});
+
+onEvent("dropdownCGS9002", "change", function(event) {
+setText("label15",getText("dropdownCGS9002"));
+});
+
+onEvent("dropdownCNS6201", "change", function(event) {
+setText("label15",getText("dropdownCNS6201"));
+});
+
+onEvent("dropdownCNS6801", "change", function(event) {
+setText("label15",getText("dropdownCNS6801"));
+});
+
+onEvent("dropdownEDNS9001", "change", function(event) {
+setText("label15",getText("dropdownEDNS9001"));
+});
+
+onEvent("dropdownqp999P", "change", function(event) {
+setText("label15",getText("dropdownqp999P"));
+});
+
+onEvent("dropdownqp991p", "change", function(event) {
+setText("label15",getText("dropdownqp991p"));
+});
+
+onEvent("dropdownolg3800", "change", function(event) {
+setText("label15",getText("dropdownolg3800"));
+});
+
+onEvent("dropdownlist2", "change", function(event) {
+setText("label15",getText("dropdownlist2"));
+});
+
+onEvent("dropdownRNS9703", "change", function(event) {
+setText("label15",getText("dropdownRNS9703"));
+});
+
+onEvent("dropdownRNS6804", "change", function(event) {
+setText("label15",getText("dropdownRNS6804"));
+});
+
+onEvent("dropdownRNS6803", "change", function(event) {
+setText("label15",getText("dropdownRNS6803"));
+});
+
+onEvent("dropdownORG9100", "change", function(event) {
+setText("label15",getText("dropdownORG9100"));
+});
+
+onEvent("dropdownGZ100P", "change", function(event) {
+setText("label15",getText("dropdownGZ100P"));
+});
+
+onEvent("dropdownCGS9001", "change", function(event) {
+setText("label15",getText("dropdownCGS9001"));
+});
+
+onEvent("dropdown3500", "change", function(event) {
+setText("label15",getText("dropdown3500"));
+});
+
+onEvent("BSM-6000", "change", function(event) {
+setText("label15",getText("BSM-6000"));
+});
+
+onEvent("dropdownqp999P", "change", function(event) {
+setText("label15",getText("dropdownqp999P"));
+});
+
+//for ver of server for not comp 
+onEvent("HL7", "change", function(event) {
+ setText("label28",getText("HL7"));
+});
+ onEvent("UNG", "change", function(event) {
+ setText("label28",getText("UNG"));
+ });
+ onEvent("EG", "change", function(event) {
+setText("label28",getText("EG"));
+});
+onEvent("Pref", "change", function(event) {
+setText("label28",getText("Pref"));
+});
+onEvent("Pager", "change", function(event) {
+setText("label28",getText("Pager"));
+});
+onEvent("Host1000", "change", function(event) {
+setText("label28",getText("Host1000"));
+});
+onEvent("NetKonnect", "change", function(event) {
+setText("label28",getText("NetKonnect"));
+});
+
+//For NKA Device Ver for not comp
+onEvent("dropdownCSM1901", "change", function(event) {
+setText("label29",getText("dropdownCSM1901"));
+});
+
+onEvent("drop_1700", "change", function(event) {
+setText("label29",getText("drop_1700"));
+});
+
+onEvent("dropdownCGS9002", "change", function(event) {
+setText("label29",getText("dropdownCGS9002"));
+});
+
+onEvent("dropdownCNS6201", "change", function(event) {
+setText("label29",getText("dropdownCNS6201"));
+});
+
+onEvent("dropdownCNS6801", "change", function(event) {
+setText("label29",getText("dropdownCNS6801"));
+});
+
+onEvent("dropdownEDNS9001", "change", function(event) {
+setText("label29",getText("dropdownEDNS9001"));
+});
+
+onEvent("dropdownqp999P", "change", function(event) {
+setText("label29",getText("dropdownqp999P"));
+});
+
+onEvent("dropdownqp991p", "change", function(event) {
+setText("label29",getText("dropdownqp991p"));
+});
+
+onEvent("dropdownolg3800", "change", function(event) {
+setText("label29",getText("dropdownolg3800"));
+});
+
+onEvent("dropdownlist2", "change", function(event) {
+setText("label29",getText("dropdownlist2"));
+});
+
+onEvent("dropdownRNS9703", "change", function(event) {
+setText("label29",getText("dropdownRNS9703"));
+});
+
+onEvent("dropdownRNS6804", "change", function(event) {
+setText("label29",getText("dropdownRNS6804"));
+});
+
+onEvent("dropdownRNS6803", "change", function(event) {
+setText("label29",getText("dropdownRNS6803"));
+});
+
+onEvent("dropdownORG9100", "change", function(event) {
+setText("label29",getText("dropdownORG9100"));
+});
+
+onEvent("dropdownGZ100P", "change", function(event) {
+setText("label29",getText("dropdownGZ100P"));
+});
+
+onEvent("dropdownCGS9001", "change", function(event) {
+setText("label29",getText("dropdownCGS9001"));
+});
+
+onEvent("dropdown3500", "change", function(event) {
+setText("label29",getText("dropdown3500"));
+});
+
+onEvent("BSM-6000", "change", function(event) {
+setText("label29",getText("BSM-6000"));
+});
+
+onEvent("dropdownqp999P", "change", function(event) {
+setText("label29",getText("dropdownqp999P"));
+});
+
+//for ver of server for not comp 
+onEvent("HL7", "change", function(event) {
+ setText("label28",getText("HL7"));
+});
+ onEvent("UNG", "change", function(event) {
+ setText("label28",getText("UNG"));
+ });
+ onEvent("EG", "change", function(event) {
+setText("label28",getText("EG"));
+});
+onEvent("Pref", "change", function(event) {
+setText("label28",getText("Pref"));
+});
+onEvent("Pager", "change", function(event) {
+setText("label28",getText("Pager"));
+});
+onEvent("Host1000", "change", function(event) {
+setText("label28",getText("Host1000"));
+});
+onEvent("NetKonnect", "change", function(event) {
+setText("label28",getText("NetKonnect"));
+});
+
+
+
+/////// not comp server
+//for ver of server for not comp 
+onEvent("HL7", "change", function(event) {
+ setText("label34",getText("HL7"));
+});
+ onEvent("UNG", "change", function(event) {
+ setText("label34",getText("UNG"));
+ });
+ onEvent("EG", "change", function(event) {
+setText("label34",getText("EG"));
+});
+onEvent("Pref", "change", function(event) {
+setText("label34",getText("Pref"));
+});
+onEvent("Pager", "change", function(event) {
+setText("label34",getText("Pager"));
+});
+onEvent("Host1000", "change", function(event) {
+setText("label34",getText("Host1000"));
+});
+
+//Not comp NKA 
+onEvent("dropdownCSM1901", "change", function(event) {
+setText("label35",getText("dropdownCSM1901"));
+});
+
+onEvent("drop_1700", "change", function(event) {
+setText("label35",getText("drop_1700"));
+});
+
+onEvent("dropdownCGS9002", "change", function(event) {
+setText("label35",getText("dropdownCGS9002"));
+});
+
+onEvent("dropdownCNS6201", "change", function(event) {
+setText("label35",getText("dropdownCNS6201"));
+});
+
+onEvent("dropdownCNS6801", "change", function(event) {
+setText("label35",getText("dropdownCNS6801"));
+});
+
+onEvent("dropdownEDNS9001", "change", function(event) {
+setText("label35",getText("dropdownEDNS9001"));
+});
+
+onEvent("dropdownqp999P", "change", function(event) {
+setText("label35",getText("dropdownqp999P"));
+});
+
+onEvent("dropdownqp991p", "change", function(event) {
+setText("label35",getText("dropdownqp991p"));
+});
+
+onEvent("dropdownolg3800", "change", function(event) {
+setText("label35",getText("dropdownolg3800"));
+});
+
+onEvent("dropdownRNS9703", "change", function(event) {
+setText("label35",getText("dropdownRNS9703"));
+});
+
+onEvent("dropdownRNS6804", "change", function(event) {
+setText("label35",getText("dropdownRNS6804"));
+});
+
+onEvent("dropdownRNS6803", "change", function(event) {
+setText("label35",getText("dropdownRNS6803"));
+});
+
+onEvent("dropdownORG9100", "change", function(event) {
+setText("label35",getText("dropdownORG9100"));
+});
+
+onEvent("dropdownGZ100P", "change", function(event) {
+setText("label35",getText("dropdownGZ100P"));
+});
+
+onEvent("dropdownCGS9001", "change", function(event) {
+setText("label35",getText("dropdownCGS9001"));
+});
+
+onEvent("dropdown3500", "change", function(event) {
+setText("label35",getText("dropdown3500"));
+});
+
+onEvent("BSM-6000", "change", function(event) {
+setText("label35",getText("BSM-6000"));
+});
+
+onEvent("dropdownqp999P", "change", function(event) {
+setText("label35",getText("dropdownqp999P"));
+});
+
+
+
+///////////////////////////////
+////App 2 for comp 
+
+onEvent("1700", "change", function(event) {
+setText("label37",getText("1700"));
+});
+
+onEvent("CGS9002", "change", function(event) {
+setText("label37",getText("CGS9002"));
+});
+
+onEvent("CNS6201", "change", function(event) {
+setText("label37",getText("CNS6201"));
+});
+
+onEvent("CNS6801", "change", function(event) {
+setText("label37",getText("CNS6801"));
+});
+
+onEvent("EDNS9001", "change", function(event) {
+setText("label37",getText("EDNS9001"));
+});
+
+onEvent("qp999P", "change", function(event) {
+setText("label37",getText("qp999P"));
+});
+
+onEvent("qp991p", "change", function(event) {
+setText("label37",getText("qp991p"));
+});
+
+onEvent("RNS9703", "change", function(event) {
+setText("label37",getText("RNS9703"));
+});
+
+onEvent("RNS6804", "change", function(event) {
+setText("label37",getText("RNS6804"));
+});
+
+onEvent("RNS6803", "change", function(event) {
+setText("label37",getText("RNS6803"));
+});
+
+onEvent("QP989p", "change", function(event) {
+setText("label37",getText("QP989p"));
+});
+
+onEvent("QP988P", "change", function(event) {
+setText("label37",getText("QP988P"));
+});
+
+onEvent("QP988", "change", function(event) {
+setText("label37",getText("QP988"));
+});
+
+onEvent("QP983P", "change", function(event) {
+setText("label37",getText("QP983P"));
+});
+
+onEvent("QP-986P", "change", function(event) {
+setText("label37",getText("QP-986P"));
+});
+
+onEvent("ORG9100", "change", function(event) {
+setText("label37",getText("ORG9100"));
+});
+
+onEvent("GZ100P", "change", function(event) {
+setText("label37",getText("GZ100P"));
+});
+
+onEvent("3500", "change", function(event) {
+setText("label37",getText("3500"));
+});
+
+onEvent("6000", "change", function(event) {
+setText("label37",getText("6000"));
+});
+
+
+onEvent("CSM1901", "change", function(event) {
+setText("label37",getText("CSM1901"));
+});
+
+
+onEvent("qp999P", "change", function(event) {
+setText("label37",getText("qp999P"));
+});
+
+///////app2 for not comp for ver
+onEvent("1700", "change", function(event) {
+setText("label43",getText("1700"));
+});
+
+onEvent("CGS9002", "change", function(event) {
+setText("label43",getText("CGS9002"));
+});
+
+onEvent("CNS6201", "change", function(event) {
+setText("label43",getText("CNS6201"));
+});
+
+onEvent("CNS6801", "change", function(event) {
+setText("label43",getText("CNS6801"));
+});
+
+onEvent("EDNS9001", "change", function(event) {
+setText("label43",getText("EDNS9001"));
+});
+
+onEvent("qp999P", "change", function(event) {
+setText("label43",getText("qp999P"));
+});
+
+onEvent("qp991p", "change", function(event) {
+setText("label43",getText("qp991p"));
+});
+
+onEvent("RNS9703", "change", function(event) {
+setText("label43",getText("RNS9703"));
+});
+
+onEvent("RNS6804", "change", function(event) {
+setText("label43",getText("RNS6804"));
+});
+
+onEvent("RNS6803", "change", function(event) {
+setText("label43",getText("RNS6803"));
+});
+
+onEvent("QP989p", "change", function(event) {
+setText("label43",getText("QP989p"));
+});
+
+onEvent("QP988P", "change", function(event) {
+setText("label43",getText("QP988P"));
+});
+
+onEvent("QP988", "change", function(event) {
+setText("label43",getText("QP9883"));
+});
+
+onEvent("QP983P", "change", function(event) {
+setText("label43",getText("QP983P"));
+});
+
+onEvent("QP-986P", "change", function(event) {
+setText("label43",getText("QP-986P"));
+});
+
+onEvent("ORG9100", "change", function(event) {
+setText("label43",getText("ORG9100"));
+});
+
+onEvent("GZ100P", "change", function(event) {
+setText("label43",getText("GZ100P"));
+});
+
+onEvent("3500", "change", function(event) {
+setText("label43",getText("3500"));
+});
+
+onEvent("6000", "change", function(event) {
+setText("label43",getText("6000"));
+});
+
+
+onEvent("CSM1901", "change", function(event) {
+setText("label43",getText("CSM1901"));
+});
+
+
+onEvent("qp999P", "change", function(event) {
+setText("label43",getText("qp999P"));
+});

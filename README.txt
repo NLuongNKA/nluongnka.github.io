@@ -1,6 +1,6 @@
-# README for NKA_COMP_R25 #
+# README for Remix: NKA_COMP_R26 #
 
-This is the README file for the NKA_COMP_R25 app. It's a great place to write
+This is the README file for the Remix: NKA_COMP_R26 app. It's a great place to write
 down some notes about how your app works. For starters, here is some information
 about the other files in this folder.
 
