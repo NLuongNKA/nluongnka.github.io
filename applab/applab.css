@@ -179,6 +179,8 @@ button.arrow:disabled {
   vertical-align: top;
   margin-left: -9px;
   -webkit-touch-callout: none; }
+  #soft-buttons.soft-buttons-none {
+    display: none; }
   #soft-buttons.soft-buttons-compact {
     margin: 0; }
     #soft-buttons.soft-buttons-compact button {
@@ -965,15 +967,9 @@ html[dir="RTL"] .prompt-icon-cell {
 #showVersionsModal {
   width: 700px;
   margin-left: -350px; }
-  #showVersionsModal h1 {
-    border-bottom: solid 1px; }
-  #showVersionsModal p {
-    font-size: 14px;
-    margin: 0; }
-  #showVersionsModal td {
-    vertical-align: middle; }
-  #showVersionsModal tr:nth-child(even) {
-    background-color: #ebe8f1; }
+
+#showVersionsModal .versionRow p {
+  margin: 15px 0 0 0; }
 
 .blocklyText, .blocklyMenuText, .blocklyTreeLabel, .blocklyHtmlInput,
 .blocklyIconMark, .blocklyTooltipText, .goog-menuitem-content {
@@ -1753,6 +1749,9 @@ div#visualizationResizeBar {
 
 #playSpaceHeader > div {
   height: 30px; }
+
+.small-footer-base {
+  width: 340px; }
 
 /*
  * Shrink the visualization area on small displays.
