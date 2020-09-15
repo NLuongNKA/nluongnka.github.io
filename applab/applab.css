@@ -159,7 +159,7 @@ button.arrow {
   border: 1px solid #FFA000;
   background-color: #FFA000;
   color: #fff;
-  margin-left: 5px;
+  margin-left: 9px;
   margin-right: 0px;
   display: none; }
 
@@ -177,14 +177,12 @@ button.arrow:disabled {
 #soft-buttons {
   display: inline-block;
   vertical-align: top;
-  margin-left: -5px;
+  margin-left: -9px;
   -webkit-touch-callout: none; }
-  #soft-buttons.soft-buttons-none {
-    display: none; }
   #soft-buttons.soft-buttons-compact {
-    margin-left: 0; }
+    margin: 0; }
     #soft-buttons.soft-buttons-compact button {
-      margin: 0; }
+      margin: 0 4px 0 0; }
 
 .soft-buttons-1 {
   display: table-cell;
@@ -460,9 +458,9 @@ html[dir='rtl'] div#visualizationResizeBar {
     font-size: 32px;
     stroke-width: 2px; }
   #soft-buttons {
-    margin-left: 0; }
+    margin: 5px -8px 0 0; }
     #soft-buttons button {
-      margin: 0; }
+      margin: 0 4px 0 0; }
   .small-footer-base.responsive small {
     float: left; } }
 
@@ -967,9 +965,15 @@ html[dir="RTL"] .prompt-icon-cell {
 #showVersionsModal {
   width: 700px;
   margin-left: -350px; }
-
-#showVersionsModal .versionRow p {
-  margin: 15px 0 0 0; }
+  #showVersionsModal h1 {
+    border-bottom: solid 1px; }
+  #showVersionsModal p {
+    font-size: 14px;
+    margin: 0; }
+  #showVersionsModal td {
+    vertical-align: middle; }
+  #showVersionsModal tr:nth-child(even) {
+    background-color: #ebe8f1; }
 
 .blocklyText, .blocklyMenuText, .blocklyTreeLabel, .blocklyHtmlInput,
 .blocklyIconMark, .blocklyTooltipText, .goog-menuitem-content {
@@ -1216,11 +1220,21 @@ body.readonly #codeWorkspace > svg {
 body.readonly.embed-block #codeWorkspace .userHidden {
   display: none; }
 
-.tooltip-example-link, .tooltip-choose-link {
+.tooltip-example-link,
+.tooltip-choose-link,
+.tooltip-code-link {
   margin-top: 5px;
   float: right; }
 
-.tooltip-example-link > a:hover, .tooltip-example-link > a:link, .tooltip-example-link > a:active, .tooltip-example-link > a:visited, .tooltip-choose-link > a:hover, .tooltip-choose-link > a:link, .tooltip-choose-link > a:active, .tooltip-choose-link > a:visited {
+.tooltip-example-link > a:hover, .tooltip-example-link > a:link, .tooltip-example-link > a:active, .tooltip-example-link > a:visited,
+.tooltip-choose-link > a:hover,
+.tooltip-choose-link > a:link,
+.tooltip-choose-link > a:active,
+.tooltip-choose-link > a:visited,
+.tooltip-code-link > a:hover,
+.tooltip-code-link > a:link,
+.tooltip-code-link > a:active,
+.tooltip-code-link > a:visited {
   border-bottom: 3px solid #ffb81d;
   color: white;
   font-family: "Gotham 5r", sans-serif; }
@@ -1390,6 +1404,55 @@ a.WireframeButtons_active, div.WireframeButtons_active {
   @media screen and (orientation: portrait) and (max-device-width: 900px) {
     #rotateContainer {
       display: block; } }
+
+.hide_toolbar_helper {
+  position: fixed;
+  top: 22px;
+  left: 6%;
+  background-color: #fff;
+  color: #000;
+  z-index: 1040;
+  padding: 20px 40px 20px 20px;
+  max-width: 40%;
+  border-radius: 5px;
+  background: #fff;
+  border: 1px solid #000; }
+  .hide_toolbar_helper em {
+    font-size: 70%;
+    font-family: inherit; }
+  .hide_toolbar_helper p {
+    font-size: 16px;
+    margin-bottom: 0px; }
+
+.hide_toolbar_helper:after, .hide_toolbar_helper:before {
+  bottom: 100%;
+  left: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none; }
+
+.hide_toolbar_helper:after {
+  border-color: rgba(255, 255, 255, 0);
+  border-bottom-color: #fff;
+  border-width: 20px;
+  margin-left: -20px; }
+
+.hide_toolbar_helper:before {
+  border-color: rgba(0, 0, 0, 0);
+  border-bottom-color: #000;
+  border-width: 21px;
+  margin-left: -21px; }
+
+.blocklyHelp .blocklyText {
+  text-anchor: middle;
+  dominant-baseline: central; }
+
+.blocklyUnusedFrame {
+  transition: opacity 2s;
+  opacity: 0.8; }
 #debugResizeBar {
   width: 100%;
   height: 13px;
@@ -1659,7 +1722,7 @@ a.WireframeButtons_active, div.WireframeButtons_active {
     #divApplab.appModern select::-ms-expand, #designModeViz.appModern select::-ms-expand, .draggingParent select::-ms-expand {
       display: none; }
     #divApplab.appModern select:hover, #designModeViz.appModern select:hover, .draggingParent select:hover {
-      filter: opacity(0.8); }
+      opacity: 0.8; }
   #divApplab.appModern button, #divApplab.appModern select, #divApplab.appModern input, #divApplab.appModern .textArea, #designModeViz.appModern button, #designModeViz.appModern select, #designModeViz.appModern input, #designModeViz.appModern .textArea, .draggingParent button, .draggingParent select, .draggingParent input, .draggingParent .textArea {
     outline: 0; }
   #divApplab.appModern img[data-canonical-image-url=''], #designModeViz.appModern img[data-canonical-image-url=''], .draggingParent img[data-canonical-image-url=''] {
@@ -1698,9 +1761,6 @@ div#visualizationResizeBar {
 
 #playSpaceHeader > div {
   height: 30px; }
-
-.small-footer-base {
-  width: 340px; }
 
 /*
  * Shrink the visualization area on small displays.
@@ -2078,3 +2138,16 @@ div#visualizationResizeBar {
 #designModeViz .ui-resizable-s {
   width: calc(100% - 12px);
   bottom: 0; }
+
+.theme-dropdown .Select-value {
+  height: 44px; }
+  .theme-dropdown .Select-value .theme-dropdown-label img {
+    width: 36px;
+    height: 36px; }
+
+.theme-dropdown .Select-menu, .theme-dropdown .Select-menu-outer {
+  height: 516px;
+  max-height: 516px; }
+
+.theme-dropdown .Select-control {
+  height: 44px; }
